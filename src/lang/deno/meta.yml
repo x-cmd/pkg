@@ -1,7 +1,7 @@
 homepage: https://github.com/denoland/deno/
 license: MIT
 rely: []
-
+bin_suffix: exe
 hook:
   pre-install: ""
   post-install: post-install.sh
@@ -27,6 +27,8 @@ rule:
     url:
       _: https://github.com/denoland/deno/releases/download/v{version}/deno-%{arch}-%{os}.zip
       cn: ""
-xbin: deno%{bin_suffix}
+xbin:
+  install: install.%{bin_suffix}
+  uninstall: uninstall.%{bin_suffix}
 
 
