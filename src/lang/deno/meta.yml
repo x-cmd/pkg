@@ -27,6 +27,6 @@ rule:
     url:
       _: https://github.com/denoland/deno/releases/download/v{version}/deno-%{arch}-%{os}.zip
       cn: ""
-xbin:
-hgb32w
+xbin: deno%{bin_suffix}
+
 
