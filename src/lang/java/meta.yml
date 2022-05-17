@@ -6,6 +6,8 @@ file_suffix: tar.gz
 url:
   _: "%{sdkman_url}/%{version}/%{os}%{arch}"
   cn: "%{sdkman_url}/%{version}/%{os}%{arch}"
+xbin:
+  java: java%{bin_suffix}
 
 hook:
   setup: env-init.sh

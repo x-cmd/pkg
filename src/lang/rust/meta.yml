@@ -9,6 +9,9 @@ url:
   _: '%{rust_source}/rust-%{version}-%{file_suffix}'
   cn: '%{cn_source}/rust-%{version}-{file_suffix}'
 
+xbin:
+    rust: rust%{bin_suffix}
+
 hook:
   pre-install: ""
   post-install: post-install.sh

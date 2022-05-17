@@ -6,3 +6,5 @@ const:
 url:
   _: '%{github_source}/v%{version}/kotlin-compiler-%{version}.zip'
   cn: '%{github_source}/v%{version}/kotlin-compiler-%{version}.zip'
+xbin:
+  kotlin: kotlin%{bin_suffix}

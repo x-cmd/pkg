@@ -23,3 +23,5 @@ os-arch:
     url:
       _: https://strawberryperl.com/download/%{version}/strawberry-perl-%{version}-%{os}.msi
       cn: ""
+xbin:
+  perl: perl%{bin_suffix}

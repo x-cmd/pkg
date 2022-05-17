@@ -7,6 +7,8 @@ file_suffix: tar.gz
 url:
   _: "%{google_site}/go%{version}.%{os}-%{arch}.${file_suffix}"
   cn: ""
+xbin:
+  gobin: go%{bin_suffix}
 rule:
   v*/win*:
     os: windows

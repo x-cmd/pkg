@@ -27,4 +27,8 @@ rule:
     url:
       _: https://github.com/denoland/deno/releases/download/v{version}/deno-%{arch}-%{os}.zip
       cn: ""
+xbin:
+  denobin: deno%{bin_suffix}
+  a123: deno%{bin_suffix}
+  a1234: deno%{bin_suffix}
 

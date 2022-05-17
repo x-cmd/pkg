@@ -22,3 +22,5 @@ os-arch:
     url:
       _: https://golang.google.cn/dl/go%{version}.windows-amd64.zip
       cn: https://gomirros.org/dl/go%{version}.windows-amd64.zip
+xbin:
+  ruby: ruby%{bin_suffix}

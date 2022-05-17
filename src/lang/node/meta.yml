@@ -7,8 +7,10 @@ const:
   tuna_source: https://mirrors.tuna.tsinghua.edu.cn/nodejs-release/%{version}
 file_suffix: tar.gz
 url:
-  _: %{node_source}/node-%{version}-%{os}-%{arch}.
-  cn: %{tuna_source}/node-%{version}-%{os}-%{arch}.
+  _: "%{node_source}/node-%{version}-%{os}-%{arch}"
+  cn: "%{tuna_source}/node-%{version}-%{os}-%{arch}"
+xbin:
+  node: node%{bin_suffix}
 
 hook:
   pre-install: ""

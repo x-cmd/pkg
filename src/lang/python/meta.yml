@@ -11,6 +11,8 @@ tuna_source: https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/%{version}
 url:
   _: "%{anaconda_source}/%{minoconda_sh_file}"
   cn: "%{tuna_source}/%{minoconda_sh_file}"
+xbin:
+  python: python%{bin_suffix}
 hook:
   pre-install: ""
   post-install: post-install.sh
@@ -28,3 +30,4 @@ rule:
     arch_name: arm64
   v*/*-x64:
     arch_name: x86_64
+

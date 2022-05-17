@@ -97,7 +97,6 @@ pkg_ins(){
 }
 
 pkg_json2binmod()(
-    :
     # step 1: list all json
     # step 2: get xbin attribute
     cd "$(x wsroot)/.tmp" || return
@@ -108,14 +107,12 @@ pkg_json2binmod()(
 
         {
         x ja '
-END{
-    v = get("xbin")
-    if ( v != "{" )   print ""
-    # traverse all of the dict, print keys
-
-}'
-        } <"$line" | while read -r name; do
-            printf ":%s:%s" "${name:-$pkg_name}" "$pkg_name"
+    _[1]~/xbin/{
+        if(v() != "}"&& v() != "{"){print ((k()=="xbin") ? "" : k()) SUBSEP v()}
+}
+'
+    } <"$line" | while read -r name; do
+            printf ":%s:%s\n" "${${name%%*}:-$pkg_name}" ${name#*}
         done
     done > binmod.txt
 )
