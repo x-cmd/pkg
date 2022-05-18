@@ -107,15 +107,12 @@ pkg_json2binmod()(
 
         {
         x ja '
-_[1]~/xbin/{
-    if (v() != "}" && v() != "{"){
-        print ((k()=="xbin") ? "" : k()) SUBSEP v()
-    }
+    _[1]~/xbin/{
+        if(v() != "}"&& v() != "{"){print (k()=="xbin") ? "" : k()}
 }
 '
     } <"$line" | while read -r name; do
-            key="${name%%""*}"
-            printf ":%s:%s\n" "${key:-$pkg_name}" "${name#*}"
+            printf ":%s:%s\n" "${${name%%*}:-$pkg_name}" ${pkg_name}
         done
     done > binmod.txt
 )

@@ -1,7 +1,7 @@
 homepage: https://github.com/denoland/deno/
 license: MIT
 rely: []
-
+bin_suffix: exe
 hook:
   pre-install: ""
   post-install: post-install.sh

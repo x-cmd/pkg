@@ -7,7 +7,7 @@ url:
   _: "%{sdkman_url}/%{version}/%{os}%{arch}"
   cn: "%{sdkman_url}/%{version}/%{os}%{arch}"
 xbin:
-  java: java%{bin_suffix}
+  java: java.%{file_suffix}
 
 hook:
   setup: env-init.sh
