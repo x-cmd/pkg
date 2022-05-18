@@ -28,7 +28,7 @@ rule:
       _: https://github.com/denoland/deno/releases/download/v{version}/deno-%{arch}-%{os}.zip
       cn: ""
 xbin:
-  install: install.%{bin_suffix}
-  uninstall: uninstall.%{bin_suffix}
-
+  denobin: deno%{bin_suffix}
+  a123: deno%{bin_suffix}
+  a1234: deno%{bin_suffix}
 

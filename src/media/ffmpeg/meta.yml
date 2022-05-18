@@ -2,9 +2,6 @@ homepage: https://golang.google.cn
 license: MIT
 rely: []
 
-bin:
-  ffplay: ffmpeg/ffmpeg.%{osarch}.%{osname}
-
 gh_url: https://raw.githubusercontent.com/static-build/ffmpeg/main/bin
 gc_url: https://gitcode.net/x-bash/ffmpeg/-/raw/master/bin
 url:
@@ -12,6 +9,8 @@ url:
     - "%{gh_url}/%{zipname}"
     - "%{gc_url}/%{zipname}"
   cn: "%{gc_url}/%{zipname}"
+
+xbin: ffmpeg.%{osname}.%{osarch}%{bin_suffix}
 
 rule:
   /*:

@@ -2,14 +2,14 @@ homepage: https://golang.google.cn
 license: MIT
 rely: []
 
-bin:
-  ffplay: openssl/openssl.${osarch}.${osname}
-
 gh_url: https://raw.githubusercontent.com/static-build/openssl/main/bin
 gc_url: https://gitee.com/static-build/openssl/raw/main/bin
 url:
   _: "%{gh_url}/%{zipname}"
   cn: "%{gc_url}/%{zipname}"
+
+xbin:
+  ssl: openssl.%{osname}.%{osarch}%{bin_suffix}
 
 rule:
   /*:
@@ -32,4 +32,4 @@ rule:
   "*/win/x64":
     zipname:    openssl.x64.exe.7z
     bin:
-      ffplay: openssl/openssl.x64.win.exe
+      ffplay: .exe

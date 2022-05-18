@@ -1,0 +1,6 @@
+v8.3.2:
+  linux/arm64:
+    sha256: e557d593b4fcc3ab33f47ff20825d68dfa93a8ae99577caa7b02cff645be29e0
+v8.3.1:
+  linux/arm64:
+    sha256: ""

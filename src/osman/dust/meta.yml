@@ -8,7 +8,8 @@ url:
   _: "%{gh_url}/%{zipname}"
   cn: "%{gc_url}/%{zipname}"
 
-xbin: dust%{bin_suffix}
+xbin:
+  du: dust.%{osname}.%{osarch}%{bin_suffix}
 
 rule:
   /*:

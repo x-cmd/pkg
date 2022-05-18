@@ -8,7 +8,7 @@ url:
   _: "%{gh_url}/%{zipname}"
   cn: "%{gc_url}/%{zipname}"
 
-xbin: fzf%{bin_suffix}
+xbin: fzf.%{osname}.%{osarch}%{bin_suffix}
 
 rule:
   /*:

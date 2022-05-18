@@ -2,16 +2,13 @@ homepage: https://golang.google.cn
 license: MIT
 rely: []
 
-sb_repo: static-build
-
-# Section: default
-gh_url: https://raw.githubusercontent.com/static-build/%{sb_repo}/%{sb_branch}/bin
-gc_url: https://gitcode.net/x-bash/%{sb_repo}/-/raw/%{sb_branch}/bin
-zipname: "%{sb_repo}.%{os}.%{arch}.7z"
+gh_url: https://raw.githubusercontent.com/static-build/magick/main/bin
+gc_url: https://gitee.com/static-build/magick/raw/main/bin
 url:
   _: "%{gh_url}/%{zipname}"
   cn: "%{gc_url}/%{zipname}"
-# EndSection
+
+xbin: magick.%{osname}.%{osarch}%{bin_suffix}
 
 rule:
   /*:
@@ -23,13 +20,14 @@ rule:
   latest/*:
     version: 7.1.0
 
-  "*.*.*/linux/arm64":
+  "*/linux/arm64":
     zipname:    magick.linux.arm64.7z
-  "*.*.*/darwin/arm64":
+  "*/darwin/arm64":
     zipname:    magick.darwin.arm64.7z
-  "*.*.*/linux/x64":
+  "*/linux/x64":
     zipname:    magick.linux.x64.7z
-  "*.*.*/darwin/x64":
+  "*/darwin/x64":
     zipname:    magick.darwin.x64.7z
-  "*.*.*/win/x64":
+  "*/win/x64":
     zipname:    magick.x64.exe.7z
+    bin_suffix: .exe
