@@ -33,4 +33,4 @@ rule:
     zipname:    tmux.darwin.x64.7z
   "*/win/x64":
     zipname:    tmux.win.x64.exe.7z
-    xbin: tmux.win.x64.exe/tmux.win.x64.exe
+    bin_suffix: .exe
