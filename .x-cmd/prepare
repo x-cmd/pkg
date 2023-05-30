@@ -45,4 +45,6 @@ main(){
     x:info "prepare done"
 }
 
+x yq
+x 7z
 main "$@"
