@@ -1,0 +1,31 @@
+
+name: Bundle x-cmd pkg
+
+on:
+  schedule:
+    - cron: '0 18 * * *'
+  workflow_dispatch:
+
+jobs:
+  Bundle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    env:
+      ___X_CMD_GHACTION_X: x1
+      WEBHOOK_URL: ${{ secrets.ROBOT }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
+      git_user: agent-zero
+      git_email: 0@x-cmd.com
+      CONCURRENCY: 10
+    steps:
+      - name: main
+        uses: x-cmd/action@main
+        with:
+          code: |
+            xws pkg yml2tgz && \
+            git pull && \
+            xws push all
+
+
+

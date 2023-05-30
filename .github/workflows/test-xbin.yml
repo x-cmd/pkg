@@ -1,0 +1,33 @@
+
+name: Test xbin
+on:
+  schedule:
+    - cron: '0 18 * * *'
+  workflow_dispatch:
+
+jobs:
+  test-xbin:
+    name: Build
+    strategy:
+      matrix:
+        os: [ windows-latest, ubuntu-latest, macos-latest ]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 240
+    env:
+      ___X_CMD_GHACTION_X: x1
+      WEBHOOK_URL: ${{ secrets.ROBOT }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
+      git_user: agent-zero
+      git_email: 0@x-cmd.com
+      CONCURRENCY: 10
+    steps:
+      - name: main
+        uses: x-cmd/action@main
+        with:
+          code: |
+            xrc pkg && \
+            xws pkg install_local && \
+            xws test_xbin internet && \
+            git pull && xws push default
+

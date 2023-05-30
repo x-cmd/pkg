@@ -3,5 +3,5 @@ res/
 .*/
 !.x-cmd/
 !.vscode/
+!.github/
 tmp
-/jmeter.log
