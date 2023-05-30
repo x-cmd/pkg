@@ -35,7 +35,7 @@ main()(
     fi
 
     xws bundle  && \
-    xws test_xbin && \
+    xws test_xbin internet && \
     rsync -acvP doc/ ../doc/
 )
 
