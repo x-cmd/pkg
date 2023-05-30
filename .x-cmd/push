@@ -1,9 +1,7 @@
 # shellcheck shell=dash
 
-___x_all()(
-    cd "$(x wsroot)" || return 1
-    git add "$(x wsroot)"
-    git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
-    git push git@github.com:x-cmd-pkg/x-cmd-pkg main
-    git push git@gitee.com:x-cmd-pkg/x-cmd-pkg main
-)
+cd "$(x wsroot)" || return 1
+git add "$(x wsroot)"
+git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
+git push git@github.com:x-cmd-pkg/x-cmd-pkg main
+git push git@gitee.com:x-cmd-pkg/x-cmd-pkg main
