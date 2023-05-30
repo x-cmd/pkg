@@ -1,23 +1,19 @@
 # shellcheck shell=dash
 
-# test_xbin_main()(
-#     x cd .tmp/x-cmd-pkg && \
-#     xws bundle && rm -rf "$___X_CMD_PKG_RAW_PATH" && \
-#     xws install && \
-#     x pkg download exa && \
-#     rsync -acvP doc/ ../../doc/
-# )
+test_xbin_main()(
+    x cd .tmp/x-cmd-pkg && \
+    xws bundle && rm -rf "$___X_CMD_PKG_RAW_PATH" && \
+    xws install && \
+    x pkg download exa && \
+    rsync -acvP doc/ ../../doc/
+)
 
 x yq
 
 x cd "$(x wsroot)"
 xws prepare "${___X_CMD_PKG_BRANCH:-feat/link}" "${___X_BASH_PKG_BRANCH:-link}" "${___X_BASH_ENV_BRANCH:-link_unlink}" || return 1
 
-# ___X_CMD_LDICT____X_CMD_XRC_SET_MAIN_DICT=""
-# ___X_CMD_XRC_RELOAD=1 xrc pkg
-# ___X_CMD_XRC_RELOAD=1 xrc env
+type ___x_cmd_pkg_download
 
-# type ___x_cmd_pkg_download
-
-# ___X_CMD_PKG_VERSION=v0.0.1
-# test_xbin_main "${___X_CMD_PKG_VERSION:-v0.0.1}"
+___X_CMD_PKG_VERSION=v0.0.1
+test_xbin_main "${___X_CMD_PKG_VERSION:-v0.0.1}"
