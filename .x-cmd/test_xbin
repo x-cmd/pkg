@@ -36,7 +36,7 @@ main()(
 
     xws bundle  && \
     xws install  && \
-    xws test_default_url && \
+    xws test_xbin && \
     rsync -acvP doc/ ../doc/
 )
 
