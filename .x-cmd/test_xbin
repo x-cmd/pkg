@@ -3,7 +3,8 @@
 test_xbin_main()(
     x cd .tmp/x-cmd-pkg && \
     xws bundle && rm -rf "$___X_CMD_PKG_RAW_PATH" && \
-    xws test_xbin internet && \
+    xws install && \
+    x pkg download exa && \
     rsync -acvP doc/ ../../doc/
 )
 
@@ -16,4 +17,5 @@ ___X_CMD_XRC_RELOAD=1 xrc env
 
 type ___x_cmd_pkg_download
 
+___X_CMD_PKG_VERSION=v0.0.1
 test_xbin_main "${___X_CMD_PKG_VERSION:-v0.0.1}"
