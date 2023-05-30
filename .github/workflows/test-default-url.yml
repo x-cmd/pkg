@@ -22,4 +22,5 @@ jobs:
         with:
           code: |
             xws test_default_url && \
+            git pull && \
             xws push
