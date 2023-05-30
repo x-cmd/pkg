@@ -8,33 +8,39 @@ main()(
     x cd "$(x wsroot)"
 
     (
+        if [ -d .tmp ]; then
+            x cd .tmp && git switch "${x_cmd_pkg_branch}" && git pull
+        else
+            git clone git@github.com:x-cmd-pkg/x-cmd-pkg.git .tmp -b "$x_cmd_pkg_branch" && \
+            x cd .tmp
+        fi
+    ) || return 1
+
+    (
         if [ -d .x_bash_pkg ]; then
             x cd .x_bash_pkg && git switch "${x_bash_pkg_branch}" && git pull
         else
-            git clone git@github.com:x-bash/pkg.git .x_bash_pkg -b "$x_bash_pkg_branch"
+            git clone git@github.com:x-bash/pkg.git .x_bash_pkg -b "$x_bash_pkg_branch" && \
+            x cd .x_bash_pkg
         fi
+        xws install
     ) || return 1
 
     (
         if [ -d .x_bash_env ]; then
             x cd .x_bash_env && git switch "${x_bash_env_branch}" && git pull
         else
-            git clone git@github.com:x-bash/env.git .x_bash_env -b "$x_bash_env_branch"
+            git clone git@github.com:x-bash/env.git .x_bash_env -b "$x_bash_env_branch" && \
+            x cd .x_bash_env
         fi
+        xws install
     ) || return 1
 
     ___X_CMD_LDICT____X_CMD_XRC_SET_MAIN_DICT=""
     ___X_CMD_XRC_RELOAD=1 xrc pkg
     ___X_CMD_XRC_RELOAD=1 xrc env
 
-    x:info "bundle package"
-    if [ -d .tmp ]; then
-        x cd .tmp && git switch "${x_cmd_pkg_branch}" && git pull || return 1
-    else
-        git clone git@github.com:x-cmd-pkg/x-cmd-pkg.git .tmp -b "$x_cmd_pkg_branch" && \
-        x cd .tmp || return 1
-    fi
-
+    x cd .tmp
     xws bundle && \
     xws test_xbin internet && \
     rsync -acvP doc/ ../doc/
