@@ -24,7 +24,7 @@ jobs:
           code: |
             xws bundle && \
             git pull && \
-            xws push all
+            xws push
 
 
 
