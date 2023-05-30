@@ -23,6 +23,7 @@ main()(
         fi
     ) || return 1
 
+    ___X_CMD_LDICT____X_CMD_XRC_SET_MAIN_DICT=""
     ___X_CMD_XRC_RELOAD=1 xrc pkg
     ___X_CMD_XRC_RELOAD=1 xrc env
 
