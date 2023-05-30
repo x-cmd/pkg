@@ -1,6 +1,7 @@
 # shellcheck shell=dash
 
 main()(
+    command -v rsync >/dev/null || return 1
     local x_cmd_pkg_version="$1"
     local x_cmd_pkg_branch="$2"
     local x_bash_pkg_branch="$3"
