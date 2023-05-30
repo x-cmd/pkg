@@ -1,17 +1,21 @@
-
 name: Bundle x-cmd pkg
 
 on:
-  schedule:
-    - cron: '0 18 * * *'
+  # schedule:
+  #   - cron: '0 18 * * *'
   workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch to bundle'
+        required: true
+        default: 'main'
 
 jobs:
   Bundle:
     runs-on: ubuntu-latest
-    timeout-minutes: 100
+    timeout-minutes: 20
     env:
-      ___X_CMD_GHACTION_X: x1
+      ___X_CMD_GHACTION_X: x2
       WEBHOOK_URL: ${{ secrets.ROBOT }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
@@ -23,7 +27,7 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
-            xws pkg yml2tgz && \
+            xws bundle && \
             git pull && \
             xws push all
 

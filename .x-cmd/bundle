@@ -1,0 +1,19 @@
+# shellcheck shell=dash
+
+bundle()(
+    local x_cmd_pkg_version="$1"
+    x cd "$(x wsroot)"
+
+    x:info "bundle package"
+    if [ -d tmp ]; then
+        x cd .tmp && git pull
+    else
+        git clone git@github.com:x-cmd-pkg/x-cmd-pkg.git .tmp && \
+        x cd .tmp
+    fi
+
+    xws bundle -o ../dist "$x_cmd_pkg_version"
+)
+
+
+bundle "${___X_CMD_PKG_VERSION:-v0.0.1}"
