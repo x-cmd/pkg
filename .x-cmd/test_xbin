@@ -1,48 +1,12 @@
 # shellcheck shell=dash
 
-main()(
-    local x_cmd_pkg_version="$1"
-    local x_cmd_pkg_branch="$2"
-    local x_bash_pkg_branch="$3"
-    local x_bash_env_branch="$4"
-    x cd "$(x wsroot)"
-
-    (
-        if [ -d .tmp/x-cmd-pkg ]; then
-            x cd .tmp && git switch "${x_cmd_pkg_branch}" && git pull
-        else
-            git clone git@github.com:x-cmd-pkg/x-cmd-pkg.git .tmp/x-cmd-pkg -b "$x_cmd_pkg_branch"
-        fi
-    ) || return 1
-
-    (
-        if [ -d .tmp/pkg ]; then
-            x cd .tmp/pkg && git switch "${x_bash_pkg_branch}" && git pull
-        else
-            git clone git@github.com:x-bash/pkg.git .tmp/pkg -b "$x_bash_pkg_branch" && \
-            x cd .tmp/pkg
-        fi
-        xws install
-    ) || return 1
-
-    (
-        if [ -d .tmp/env ]; then
-            x cd .tmp/env && git switch "${x_bash_env_branch}" && git pull
-        else
-            git clone git@github.com:x-bash/env.git .tmp/env -b "$x_bash_env_branch" && \
-            x cd .tmp/env
-        fi
-        xws install
-    ) || return 1
-
-    ___X_CMD_LDICT____X_CMD_XRC_SET_MAIN_DICT=""
-    ___X_CMD_XRC_RELOAD=1 xrc pkg
-    ___X_CMD_XRC_RELOAD=1 xrc env
-
-    x cd .tmp/x-cmd-pkg
+test_xbin_main()(
+    x cd .tmp/x-cmd-pkg && \
     xws bundle && \
     xws test_xbin internet && \
     rsync -acvP doc/ ../../doc/
 )
 
-main "${___X_CMD_PKG_VERSION:-v0.0.1}" "${___X_CMD_PKG_BRANCH:-feat/link}" "${___X_BASH_PKG_BRANCH:-link}" "${___X_BASH_ENV_BRANCH:-link_unlink}"
+x cd "$(x wsroot)"
+xws prepare "${___X_CMD_PKG_BRANCH:-feat/link}" "${___X_BASH_PKG_BRANCH:-link}" "${___X_BASH_ENV_BRANCH:-link_unlink}" || return 1
+test_xbin_main "${___X_CMD_PKG_VERSION:-v0.0.1}"

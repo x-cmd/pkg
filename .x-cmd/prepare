@@ -1,0 +1,48 @@
+# shellcheck shell=dash
+
+main(){
+    local x_cmd_pkg_branch="${1:-main}"
+    local x_bash_pkg_branch="${2:-main}"
+    local x_bash_env_branch="${3:-main}"
+    x cd "$(x wsroot)"
+
+    x:info "prepare ${x_cmd_pkg_branch} ${x_bash_pkg_branch} ${x_bash_env_branch}"
+
+    (
+        x:info "prepare x-cmd-pkg ${x_cmd_pkg_branch}"
+        if [ -d .tmp/x-cmd-pkg ]; then
+            x cd .tmp/x-cmd-pkg && git switch "${x_cmd_pkg_branch}" && git pull
+        else
+            git clone git@github.com:x-cmd-pkg/x-cmd-pkg.git .tmp/x-cmd-pkg -b "$x_cmd_pkg_branch"
+        fi
+    ) || return 1
+
+    (
+        x:info "prepare x-bash-pkg ${x_bash_pkg_branch}"
+        if [ -d .tmp/pkg ]; then
+            x cd .tmp/pkg && git switch "${x_bash_pkg_branch}" && git pull
+        else
+            git clone git@github.com:x-bash/pkg.git .tmp/pkg -b "$x_bash_pkg_branch" && \
+            x cd .tmp/pkg
+        fi
+        xws install
+    ) || return 1
+
+    (
+        x:info "prepare x-bash-env ${x_bash_env_branch}"
+        if [ -d .tmp/env ]; then
+            x cd .tmp/env && git switch "${x_bash_env_branch}" && git pull
+        else
+            git clone git@github.com:x-bash/env.git .tmp/env -b "$x_bash_env_branch" && \
+            x cd .tmp/env
+        fi
+        xws install
+    ) || return 1
+
+    ___X_CMD_LDICT____X_CMD_XRC_SET_MAIN_DICT=""
+    ___X_CMD_XRC_RELOAD=1 xrc pkg
+    ___X_CMD_XRC_RELOAD=1 xrc env
+    x:info "prepare done"
+}
+
+main "$@"
