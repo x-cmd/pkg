@@ -9,6 +9,7 @@ test_xbin_main()(
 )
 
 x yq
+x 7z
 
 x cd "$(x wsroot)"
 xws prepare "${___X_CMD_PKG_BRANCH:-feat/link}" "${___X_BASH_PKG_BRANCH:-link}" "${___X_BASH_ENV_BRANCH:-link_unlink}" || return 1
