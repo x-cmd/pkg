@@ -35,7 +35,6 @@ main()(
     fi
 
     xws bundle  && \
-    xws install  && \
     xws test_xbin && \
     rsync -acvP doc/ ../doc/
 )
