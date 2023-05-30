@@ -1,14 +1,9 @@
 name: Bundle x-cmd pkg
 
 on:
-  # schedule:
-  #   - cron: '0 18 * * *'
+  schedule:
+    - cron: '0 18 * * *'
   workflow_dispatch:
-    inputs:
-      branch:
-        description: 'Branch to bundle'
-        required: true
-        default: 'main'
 
 jobs:
   Bundle:
