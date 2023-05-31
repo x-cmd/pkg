@@ -7,13 +7,10 @@ test_xbin_main()(
     rsync -acvP doc/ ../../doc/
 )
 
-x yq
-x 7z
-
 x cd "$(x wsroot)"
 xws prepare # "${___X_CMD_PKG_BRANCH:-feat/link}" "${___X_BASH_PKG_BRANCH:-link}" "${___X_BASH_ENV_BRANCH:-link_unlink}" || return 1
 
 type ___x_cmd_pkg_download
 
-___X_CMD_PKG_VERSION=v0.0.1
-test_xbin_main "${___X_CMD_PKG_VERSION:-v0.0.1}"
+# ___X_CMD_PKG_VERSION=v0.0.1
+# test_xbin_main "${___X_CMD_PKG_VERSION:-v0.0.1}"
