@@ -27,5 +27,5 @@ jobs:
         with:
           code: |
             xws test_xbin && \
-            git pull && xws push
+            git pull && xws push test_doc
 

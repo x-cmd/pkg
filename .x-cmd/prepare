@@ -45,6 +45,6 @@ main(){
     x:info "prepare done"
 }
 
-x yq
-x 7z
+x yq >/dev/null
+x 7z >/dev/null
 main "$@"

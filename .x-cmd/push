@@ -1,7 +1,20 @@
 # shellcheck shell=dash
 
 cd "$(x wsroot)" || return 1
-git add "$(x wsroot)"
-git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
-git push git@github.com:x-cmd/pkg origin/main
-git push git@gitee.com:x-cmd/pkg origin/main
+
+case "$1" in
+    github_gitee)
+        git add "$(x wsroot)"
+        git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
+        git push git@github.com:x-cmd/pkg origin/main
+        git push git@gitee.com:x-cmd/pkg origin/main
+        ;;
+    test_doc)
+        git add "$(x wsroot)/doc"
+        git commit -m "update pkg test doc by $GITHUB_RUN_NUMBER"
+        git push
+        ;;
+    *)
+        x:error "unknown push type: $1"
+        return 1
+esac
