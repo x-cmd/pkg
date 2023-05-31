@@ -1,9 +1,10 @@
 # shellcheck shell=dash
 
 test_default_url_main()(
-    git branch --show-current
-    x cd .tmp/x-cmd-pkg && \
-    xws bundle && rm "$___X_CMD_PKG_RAW_PATH/" && \
+
+    x cd .tmp/x-cmd-pkg &&  \
+    git branch --show-current && \
+    xws bundle && x rmrf "$___X_CMD_PKG_RAW_PATH/" && \
     xws test_default_url "$___X_CMD_WEBSRC_REGION" && \
     rsync -acvP doc/ ../../doc/
 )
