@@ -4,6 +4,23 @@ on:
   # schedule:
   #   - cron: '0 18 * * *'
   workflow_dispatch:
+    inputs:
+      x-cmd-pkg-version:
+        description: 'x-cmd pkg version'
+        required: true
+        default: 'v0.0.1'
+      x-cmd-pkg-branch:
+        description: 'x-cmd pkg branch'
+        required: true
+        default: 'main'
+      x-bash-pkg-branch:
+        description: 'x-bash pkg branch'
+        required: true
+        default: 'main'
+      x-bash-env-branch:
+        description: 'x-bash env branch'
+        required: true
+        default: 'main'
 
 jobs:
   test-xbin:
@@ -15,10 +32,10 @@ jobs:
     timeout-minutes: 240
     env:
       ___X_CMD_GHACTION_X: x2
-      ___X_CMD_PKG_VERSION: v0.0.1
-      ___X_CMD_PKG_BRANCH: main
-      ___X_BASH_PKG_BRANCH: main
-      ___X_BASH_ENV_BRANCH: main
+      ___X_CMD_PKG_VERSION: ${{ github.event.inputs.x-cmd-pkg-version }}
+      ___X_CMD_PKG_BRANCH: ${{ github.event.inputs.x-cmd-pkg-branch }}
+      ___X_BASH_PKG_BRANCH: ${{ github.event.inputs.x-bash-pkg-branch }}
+      ___X_BASH_ENV_BRANCH: ${{ github.event.inputs.x-bash-env-branch }}
       WEBHOOK_URL: ${{ secrets.ROBOT }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
