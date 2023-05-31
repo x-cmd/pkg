@@ -1,4 +1,7 @@
-# shellcheck shell=dash
+# shellcheck shell=dash disable=SC2317
+
+x:warn "该文件仅供参考，不可执行"
+return 1
 
 # Test default url
 
