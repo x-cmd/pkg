@@ -3,6 +3,7 @@
 test_xbin_main()(
     x cd .tmp/x-cmd-pkg && \
     xws bundle && rm -rf "$___X_CMD_PKG_RAW_PATH" && \
+    xws install && \
     x pkg _smoke exa
     # xws test_xbin internet && \
     # rsync -acvP doc/ ../../doc/
