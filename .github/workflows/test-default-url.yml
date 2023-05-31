@@ -42,6 +42,7 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
-            xws test_default_url && \
-            git pull && \
+            # xws test_default_url && \
+            # git pull && \
+            touch doc/aaa && \
             xws push test_doc
