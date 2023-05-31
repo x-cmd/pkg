@@ -3,16 +3,10 @@
 test_xbin_main()(
     x cd .tmp/x-cmd-pkg && \
     xws bundle && rm -rf "$___X_CMD_PKG_RAW_PATH" && \
-    xws install && \
-    x pkg _smoke exa
-    # xws test_xbin internet && \
-    # rsync -acvP doc/ ../../doc/
+    xws test_xbin "$___X_CMD_WEBSRC_REGION" && \
+    rsync -acvP doc/ ../../doc/
 )
 
 x cd "$(x wsroot)"
-xws prepare # "${___X_CMD_PKG_BRANCH:-feat/link}" "${___X_BASH_PKG_BRANCH:-link}" "${___X_BASH_ENV_BRANCH:-link_unlink}" || return 1
-
-type ___x_cmd_pkg_download
-
-___X_CMD_PKG_VERSION=v0.0.1
+xws prepare || return 1
 test_xbin_main "${___X_CMD_PKG_VERSION:-v0.0.1}"
