@@ -12,7 +12,7 @@ case "$1" in
     test_doc)
         git add "$(x wsroot)/doc"
         git commit -m "update pkg test doc by $GITHUB_RUN_NUMBER"
-        git push origin "$(git branch --show-current)"
+        git push git@github.com:x-cmd/pkg origin/"$(git branch --show-current)"
         ;;
     *)
         x:error "unknown push type: $1"
