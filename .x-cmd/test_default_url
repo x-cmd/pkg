@@ -3,10 +3,10 @@
 test_default_url_main()(
     x cd .tmp/x-cmd-pkg && \
     xws bundle && \
-    xws test_default_url internet && \
+    xws test_default_url "$___X_CMD_WEBSRC_REGION" && \
     rsync -acvP doc/ ../../doc/
 )
 
 x cd "$(x wsroot)"
-xws prepare # "${___X_CMD_PKG_BRANCH:-feat/link}" "${___X_BASH_PKG_BRANCH:-link}" "${___X_BASH_ENV_BRANCH:-link_unlink}" || return 1
+xws prepare || return 1
 test_default_url_main "${___X_CMD_PKG_VERSION:-v0.0.1}"
