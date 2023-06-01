@@ -6,7 +6,7 @@ test_default_url_main()(
     git branch --show-current && \
     xws bundle && \
     xws test_default_url "$___X_CMD_WEBSRC_REGION" && \
-    rsync -acvP doc/ ../../doc/
+    cp -rf doc/* ../../doc/
 )
 
 x cd "$(x wsroot)"
