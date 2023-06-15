@@ -1,8 +1,8 @@
 
 name: Test smoke
 on:
-  # schedule:
-  #   - cron: '0 18 * * *'
+  schedule:
+    - cron: '0 12 * * 3,6'
   workflow_dispatch:
     inputs:
       x-cmd-pkg-version:
