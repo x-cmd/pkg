@@ -1,8 +1,8 @@
 
 name: Test smoke
 on:
-  # schedule:
-  #   - cron: '0 18 * * *'
+  schedule:
+    - cron: '0 12 * * 3,6'
   workflow_dispatch:
     inputs:
       x-cmd-pkg-version:
@@ -31,7 +31,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     timeout-minutes: 480
     env:
-      ___X_CMD_GHACTION_X: x2
+      ___X_CMD_GHACTION_X: x1
       ___X_CMD_PKG_VERSION: ${{ github.event.inputs.x-cmd-pkg-version }}
       ___X_CMD_PKG_BRANCH: ${{ github.event.inputs.x-cmd-pkg-branch }}
       ___X_BASH_PKG_BRANCH: ${{ github.event.inputs.x-bash-pkg-branch }}
