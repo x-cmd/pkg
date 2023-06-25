@@ -1,5 +1,5 @@
 
-name: Test xbin
+name: gen web_data
 on:
   # schedule:
   #   - cron: '0 18 * * *'
