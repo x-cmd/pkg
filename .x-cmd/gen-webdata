@@ -1,0 +1,12 @@
+gen_web_data()(
+    x cd "$(x wsroot)"
+
+    x:info "generate web data"
+
+    git clone git@github.com:x-cmd-pkg/x-cmd-pkg.git .tmp && \
+    x cd .tmp
+
+    xws gen_web_data 
+)
+
+gen_web_data
