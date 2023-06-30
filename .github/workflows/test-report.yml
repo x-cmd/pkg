@@ -20,5 +20,5 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
-            x qywx --cfg webhook='${{ env.WEBHOOK_URL }}'
+            x qywx --cfg webhook='${{ secrets.WEBHOOK_URL }}'
             xws test_report
