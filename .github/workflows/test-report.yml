@@ -2,7 +2,7 @@
 name: Test Report
 on:
   workflow_run:
-    workflows: ["Workflow A"]
+    workflows: ["Test smoke"]
     types:
       - completed
   workflow_dispatch:

@@ -11,7 +11,7 @@ echo '{
     "x-bash-pkg-branch":"main",
     "x-bash-env-branch":"main"
 }' | x gh action workflow run --repo x-cmd/pkg \
-  --ref test --inputs - .id=58656763
+  --ref main --inputs - .id=58656763
 
 # Test xbin
 
@@ -21,7 +21,7 @@ echo '{
     "x-bash-pkg-branch":"main",
     "x-bash-env-branch":"main"
 }' | x gh action workflow run --repo x-cmd/pkg \
-  --ref test --inputs - .id=58656764
+  --ref main --inputs - .id=58656764
 
 # Test smoke
 
@@ -31,4 +31,4 @@ echo '{
     "x-bash-pkg-branch":"main",
     "x-bash-env-branch":"main"
 }' | x gh action workflow run --repo x-cmd/pkg \
-  --ref test --inputs - .id=58913686
+  --ref main --inputs - .id=58913686
