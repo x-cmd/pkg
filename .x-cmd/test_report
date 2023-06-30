@@ -1,0 +1,45 @@
+# shellcheck shell=dash
+
+default_url_sum="$(cat doc/default_url/internet.md | wc -l | sed 's/ //g')"
+default_url_fail="$(cat doc/default_url/internet.md | grep "❌" | wc -l | sed 's/ //g')"
+default_url_content="$(cat doc/default_url/internet.md | grep "❌" | awk '{print $1}' | awk -F/ 'BEGIN {ORS=" / "} {print $2}')"
+default_url_content="### default-url fail ($default_url_fail/$default_url_sum):
+${default_url_content% / }"
+
+xbin_report=""
+for platform in "darwin.x64" "linux.x64" "win.x64"; do
+    sum="$(cat doc/xbin/$platform.internet.csv | wc -l | sed 's/ //g')"
+    fail="$(cat doc/xbin/$platform.internet.csv | grep "❌" | wc -l | sed 's/ //g')"
+    content="$(cat doc/xbin/$platform.internet.csv | grep "❌" | awk '{print $1}' | awk -F/ 'BEGIN {ORS=" / "} {print $3}')"
+    content="\n### xbin $platform fail ($fail/$sum):\n${content% / }\n"
+    [ "$fail" -gt 0 ] || content=""
+    xbin_report="$xbin_report$content\n"
+done
+
+smoke_report=""
+for platform in "darwin.x64" "linux.x64" "win.x64"; do
+    sum="$(cat doc/smoke/$platform.internet.csv | wc -l | sed 's/ //g')"
+    fail="$(cat doc/smoke/$platform.internet.csv | grep "❌" | wc -l | sed 's/ //g')"
+    content="$(cat doc/smoke/$platform.internet.csv | grep "❌" | awk '{print $1}' | awk -F/ 'BEGIN {ORS=" / "} {print $2}')"
+    content="\n### smoke $platform fail ($fail/$sum):\n${content% / }\n"
+    [ "$fail" -gt 0 ] || content=""
+    smoke_report="$smoke_report$content\n"
+done
+
+x qywx --send --markdown "
+## PKG Test Report $(date)
+---
+$(printf "$smoke_report")
+
+
+---
+$(printf "$xbin_report")
+
+
+---
+$default_url_content
+
+
+### 报告链接:
+[default-url](https://github.com/x-cmd/pkg/actions/workflows/test-default-url.yml) / [xbin](https://github.com/x-cmd/pkg/actions/workflows/test-xbin.yml) / [smoke](https://github.com/x-cmd/pkg/actions/workflows/test-smoke.yml)
+"
