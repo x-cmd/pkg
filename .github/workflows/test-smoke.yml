@@ -29,7 +29,7 @@ jobs:
       matrix:
         os: [ windows-latest, ubuntu-latest, macos-latest ]
     runs-on: ${{ matrix.os }}
-    timeout-minutes: 480
+    timeout-minutes: 180
     env:
       ___X_CMD_GHACTION_X: x1
       ___X_CMD_PKG_VERSION: ${{ github.event.inputs.x-cmd-pkg-version }}

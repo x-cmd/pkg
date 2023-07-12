@@ -6,6 +6,7 @@ test_default_url_main()(
     git branch --show-current && \
     xws bundle && \
     xws test_default_url "$___X_CMD_WEBSRC_REGION" && \
+    xws test_default_url "cn" && \
     cp -rf doc/* ../../doc/
 )
 

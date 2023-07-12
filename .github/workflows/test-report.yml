@@ -1,0 +1,48 @@
+
+name: Test Report
+on:
+  workflow_run:
+    workflows: ["Test smoke"]
+    types:
+      - completed
+  workflow_dispatch:
+
+jobs:
+  on-fail:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      ___X_CMD_GHACTION_X: x2
+      WEBHOOK_URL: ${{ secrets.ROBOT }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
+      git_user: agent-zero
+      git_email: 0@x-cmd.com
+      CONCURRENCY: 10
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - name: main
+        uses: x-cmd/action@main
+        with:
+          code: |
+            x qywx --cfg webhook='${{ secrets.WEBHOOK_URL }}'
+            x qywx --send --markdown "$(date), test failed"
+  on-success:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      ___X_CMD_GHACTION_X: x2
+      WEBHOOK_URL: ${{ secrets.ROBOT }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
+      git_user: agent-zero
+      git_email: 0@x-cmd.com
+      CONCURRENCY: 10
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+    steps:
+      - name: main
+        uses: x-cmd/action@main
+        with:
+          code: |
+            x qywx --cfg webhook='${{ secrets.WEBHOOK_URL }}'
+            xws test_report
