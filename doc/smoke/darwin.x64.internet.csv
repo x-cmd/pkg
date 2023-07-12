@@ -3,24 +3,24 @@ on darwin_amd64
 
 Your version of Terraform is out of date! The latest version
 is 1.5.2. You can update by downloading from https://www.terraform.io/downloads.html
-, ✅(4s) 
+, ✅(5s) 
  osman/mirrord mirrord 3.34.0
 , ✅(6s) 
  osman/proot , - 
- osman/aliyun , ✅(2s) 
+ osman/aliyun , ✅(3s) 
  osman/ucloud ucloud cli 0.1.38
-, ✅(1s) 
- osman/ffuf , ✅(1s) 
- osman/hurl , ✅(2s) 
+, ✅(2s) 
+ osman/ffuf , ✅(2s) 
+ osman/hurl , ✅(1s) 
  security/skate skate version v0.2.2 (b8e7bbc)
-, ✅(3s) 
+, ✅(2s) 
  security/sodium , ❌(smoke) 
  security/smartctl , ❌(smoke) 
  security/openssl , ✅(2s) 
  sdkman/activemq INFO: Loading '/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0//bin/env'
 INFO: Using java '/Users/runner/.x-cmd.root/local/data/pkg/populate/java/18.0.2-sem/bin/java'
 Java Runtime: IBM Corporation 18.0.2 /Users/runner/.x-cmd.root/local/data/pkg/populate/java/18.0.2-sem
-  Heap sizes: current=65536k  free=55761k  max=1048576k
+  Heap sizes: current=65536k  free=55777k  max=1048576k
     JVM args: -Xoptionsfile=/Users/runner/.x-cmd.root/local/data/pkg/populate/java/18.0.2-sem/lib/options.default -Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple -Xjcl:jclse29 -Dcom.ibm.oti.vm.bootstrap.library.path=/Users/runner/.x-cmd.root/local/data/pkg/populate/java/18.0.2-sem/lib/default:/Users/runner/.x-cmd.root/local/data/pkg/populate/java/18.0.2-sem/lib -Dsun.boot.library.path=/Users/runner/.x-cmd.root/local/data/pkg/populate/java/18.0.2-sem/lib/default:/Users/runner/.x-cmd.root/local/data/pkg/populate/java/18.0.2-sem/lib -Djava.library.path=/Users/runner/.x-cmd.root/local/data/pkg/populate/java/18.0.2-sem/lib/default:/Users/runner/.x-cmd.root/local/data/pkg/populate/java/18.0.2-sem/lib:/usr/lib -Djava.home=/Users/runner/.x-cmd.root/local/data/pkg/populate/java/18.0.2-sem -Duser.dir=/Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg -Xms64M -Xmx1G -Djava.util.logging.config.file=logging.properties -Djava.security.auth.login.config=/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0//conf/login.config --add-reads=java.xml=java.logging --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport.tcp=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-exports=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-exports=java.base/sun.net.www.protocol.https=ALL-UNNAMED --add-exports=java.base/sun.net.www.protocol.jar=ALL-UNNAMED --add-exports=jdk.xml.dom/org.w3c.dom.html=ALL-UNNAMED --add-exports=jdk.naming.rmi/com.sun.jndi.url.rmi=ALL-UNNAMED -Dactivemq.classpath=/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0//conf:/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0//../lib/: -Dactivemq.home=/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0/ -Dactivemq.base=/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0/ -Dactivemq.conf=/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0//conf -Dactivemq.data=/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0//data -Djolokia.conf=file:/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0//conf/jolokia-access.xml -Djava.class.path=/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0//bin/activemq.jar -Dsun.java.command=/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0//bin/activemq.jar --version -Dsun.java.launcher=SUN_STANDARD
 Extensions classpath:
   [/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0/lib,/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0/lib/camel,/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0/lib/optional,/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0/lib/web,/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0/lib/extra]
@@ -32,11 +32,11 @@ ACTIVEMQ_DATA: /Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0
 ActiveMQ 5.18.0
 For help or more information please see: http://activemq.apache.org
 
-, ✅(19s) 
+, ✅(21s) 
  sdkman/ant Apache Ant(TM) version 1.10.13 compiled on January 4 2023
-, ✅(4s) 
+, ✅(25s) 
  sdkman/quarkus 2.16.6.Final
-, ✅(6s) 
+, ✅(8s) 
  sdkman/karaf IBM Semeru Runtime Open Edition 18.0.2.0 (build 18.0.2+9)
 [36m        __ __                  ____      [0m
 [36m       / //_/____ __________ _/ __/      [0m
@@ -51,23 +51,23 @@ and '[1m[cmd] --help[0m' for help on a specific command.
 Hit '[1m<ctrl-d>[0m' or type '[1msystem:shutdown[0m' or '[1mlogout[0m' to shutdown Karaf.
 
 karaf@root()> logout
-, ✅(17s) 
- sdkman/kscript , ✅(10s) 
+, ✅(62s) 
+ sdkman/kscript , ✅(30s) 
  sdkman/btrace BTrace v.2.2.3 (71df581ff6c89afa41ef611b987fc87c17ee8537)
-, ✅(4s) 
+, ✅(8s) 
  sdkman/connor 1.1.0
-, ✅(2s) 
+, ✅(7s) 
  sdkman/neo4j_migrations neo4j-migrations/2.2.2
-, ✅(2s) 
+, ✅(5s) 
  sdkman/tomcat /Users/runner/.x-cmd.root/local/data/pkg/raw/sdkman/tomcat/.x-cmd/smoke.sh: line 3: tomcat: command not found
 , ❌(smoke) 
  sdkman/flink Version: 1.17.1, Commit ID: 2750d5c
-, ✅(26s) 
- sdkman/maven , ✅(4s) 
+, ✅(28s) 
+ sdkman/maven , ✅(3s) 
  sdkman/ktx , ✅(4s) 
- sdkman/layrry , ✅(3s) 
+ sdkman/layrry , ✅(2s) 
  sdkman/kobweb kobweb 0.9.11
-, ✅(2s) 
+, ✅(4s) 
  sdkman/grails | Grails Version: 5.3.2
 | JVM Version: 18.0.2
 , ✅(10s) 
@@ -80,7 +80,7 @@ karaf@root()> logout
 
 Copyright (c) 1999-2022 The Apache Software Foundation
 
-, ✅(13s) 
+, ✅(12s) 
  sdkman/mybatis_migrations , ✅(2s) 
  sdkman/schemacrawler SchemaCrawler 16.19.9
 Database schema discovery and comprehension tool
@@ -93,7 +93,7 @@ potential schema design issues with lint. The output serves for
 database documentation is designed to be diff-ed against other database
 schemas. SchemaCrawler also generates schema diagrams.
 
-, ✅(13s) 
+, ✅(11s) 
  sdkman/znai Error: Could not find or load main class org.testingisdocumenting.znai.cli.ZnaiCliApp
 Caused by: java.lang.ClassNotFoundException: org.testingisdocumenting.znai.cli.ZnaiCliApp
 , ❌(smoke) 
@@ -111,7 +111,7 @@ Ant:          Apache Ant(TM) version 1.10.11 compiled on July 10 2021
 JVM:          18.0.2 (Eclipse OpenJ9 openj9-0.33.0)
 OS:           Mac OS X 12.6.7 x86_64
 
-, ✅(11s) 
+, ✅(8s) 
  sdkman/mulefd , ✅(3s) 
  sdkman/webtau Exception in thread "main" java/lang/Error: java.lang.ClassNotFoundException: groovy.lang.GroovyClassLoader
 	at java/lang/ClassLoader.getSystemClassLoader (java.base@18.0.2/ClassLoader.java:997)
@@ -125,7 +125,7 @@ Build timestamp: 2023-03-22T09:20:17Z
 Revision:        08d655579cbcfc28755227b84358e44fa37ae06d
 JVM:             18.0.2 (IBM Corporation openj9-0.33.0)
 ------------------------------------------------------------
-, ✅(5s) 
+, ✅(4s) 
  sdkman/jbake JBake v2.6.6 (2021-03-14 23:17:22pm) [http://jbake.org]
 
 Usage: jbake
@@ -146,7 +146,7 @@ Options:
                        default to a folder called "output" in the current directory (default: false)
  -t (--template) VAL : use specified template engine for default templates (uses Freemarker if
                        <value> is not supplied)
-, ✅(7s) 
+, ✅(6s) 
  sdkman/jreleaser ------------------------------------------------------------
 jreleaser 1.5.1
 ------------------------------------------------------------
@@ -156,25 +156,25 @@ JVM:          17.0.2 (Azul Systems, Inc. 17.0.2+8-LTS)
 ------------------------------------------------------------
 , ✅(6s) 
  sdkman/asciidoctorj JVMJ9VM193W Since Java 13 -Xverify:none and -noverify were deprecated for removal and may not be accepted options in the future.
-2023-07-12T12:29:13.585Z [main] WARN FilenoUtil : Native subprocess control requires open access to the JDK IO subsystem
+2023-07-12T13:15:32.700Z [main] WARN FilenoUtil : Native subprocess control requires open access to the JDK IO subsystem
 Pass '--add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED' to enable.
 Unhandled exception
 Type=Segmentation error vmState=0x00000000
 J9Generic_Signal_Number=00000018 Signal_Number=0000000b Error_Value=00000000 Signal_Code=00000001
-Handler1=000000000CDBA340 Handler2=000000000CB22CC0 InaccessibleAddress=0000000000000008
-RDI=0000000011B28100 RSI=00007F7FF784F3F8 RAX=0000000000000012 RBX=00000000127D0001
-RCX=0000600001348AA3 RDX=00007F7FF784ED98 R8=0000600001348AA3 R9=0000000000000010
-R10=0000000000000000 R11=0000600001441F62 R12=0000000011B28100 R13=00000000127FE300
-R14=000000000CA50178 R15=0000000000000000
-RIP=000000000D3CCFB1 GS=0000 FS=0000 RSP=000070000E6CF150
-RFlags=0000000000010213 CS=002B RBP=000070000E6CF240 ERR=0000000800000004
+Handler1=000000001007A340 Handler2=000000000FDE2CC0 InaccessibleAddress=0000000000000008
+RDI=0000000019379100 RSI=00007FE6AE04ABF8 RAX=0000000000000012 RBX=000000001A030001
+RCX=000060000399D403 RDX=00007FE6AE04A598 R8=000060000399D403 R9=0000000000000010
+R10=0000000000000000 R11=0000600003E99882 R12=0000000019379100 R13=000000001A050C00
+R14=000000000FD10178 R15=0000000000000000
+RIP=000000001068CFB1 GS=0000 FS=0000 RSP=00007000064F7150
+RFlags=0000000000010213 CS=002B RBP=00007000064F7240 ERR=0000000800000004
 TRAPNO=000000040000000E CPU=0008000000040000 FAULTVADDR=0000000000000008
 XMM0 0000000000000000 (f: 0.000000, d: 0.000000e+00)
 XMM1 0000000000000000 (f: 0.000000, d: 0.000000e+00)
 XMM2 c3e0000000000000 (f: 0.000000, d: -9.223372e+18)
 XMM3 4330000000000000 (f: 0.000000, d: 4.503600e+15)
 XMM4 412e848000000000 (f: 0.000000, d: 1.000000e+06)
-XMM5 217aab6ef78acf30 (f: 4153069312.000000, d: 2.085737e-147)
+XMM5 d9b9aef3480a1d60 (f: 1208622464.000000, d: -1.697816e+124)
 XMM6 3fe3d9026a7156fb (f: 1785812736.000000, d: 6.202404e-01)
 XMM7 403205966f2b4f12 (f: 1865109248.000000, d: 1.802183e+01)
 XMM8 0800080007000200 (f: 117441024.000000, d: 3.793161e-270)
@@ -186,29 +186,29 @@ XMM13 0000000000000000 (f: 0.000000, d: 0.000000e+00)
 XMM14 0000000000000000 (f: 0.000000, d: 0.000000e+00)
 XMM15 0000000000000000 (f: 0.000000, d: 0.000000e+00)
 Module=/Users/runner/.x-cmd.root/local/data/pkg/populate/java/18.0.2-sem/lib/default/libjclse29.dylib
-Module_base_address=000000000D388000 Symbol=Java_java_lang_invoke_MethodHandleNatives_resolve
-Symbol_address=000000000D3CBD00
+Module_base_address=0000000010648000 Symbol=Java_java_lang_invoke_MethodHandleNatives_resolve
+Symbol_address=000000001068BD00
 Target=2_90_20220804_38 (Mac OS X 12.6.7)
 CPU=amd64 (3 logical CPUs) (0x380000000 RAM)
 ----------- Stack Backtrace -----------
-Java_java_lang_invoke_MethodHandleNatives_resolve+0x12b2 (0x000000000D3CCFB2 [libjclse29.dylib+0x44fb2])
+Java_java_lang_invoke_MethodHandleNatives_resolve+0x12b2 (0x000000001068CFB2 [libjclse29.dylib+0x44fb2])
 ---------------------------------------
-JVMDUMP039I Processing dump event "gpf", detail "" at 2023/07/12 12:29:17 - please wait.
-JVMDUMP032I JVM requested System dump using '/Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/core.20230712.122917.17366.0001.dmp' in response to an event
+JVMDUMP039I Processing dump event "gpf", detail "" at 2023/07/12 13:15:34 - please wait.
+JVMDUMP032I JVM requested System dump using '/Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/core.20230712.131534.17778.0001.dmp' in response to an event
 task_thread failed with:  (ipc/send) invalid destination port
 error getting thread command data:
  (ipc/send) invalid destination port
-JVMDUMP012E Error in System dump: /Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/core.20230712.122917.17366.0001.dmp
-JVMDUMP032I JVM requested Java dump using '/Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/javacore.20230712.122917.17366.0002.txt' in response to an event
-JVMDUMP010I Java dump written to /Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/javacore.20230712.122917.17366.0002.txt
-JVMDUMP032I JVM requested Snap dump using '/Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/Snap.20230712.122917.17366.0003.trc' in response to an event
-JVMDUMP010I Snap dump written to /Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/Snap.20230712.122917.17366.0003.trc
-JVMDUMP032I JVM requested JIT dump using '/Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/jitdump.20230712.122917.17366.0004.dmp' in response to an event
-JVMDUMP051I JIT dump occurred in 'main' thread 0x0000000011B28100
+JVMDUMP012E Error in System dump: /Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/core.20230712.131534.17778.0001.dmp
+JVMDUMP032I JVM requested Java dump using '/Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/javacore.20230712.131534.17778.0002.txt' in response to an event
+JVMDUMP010I Java dump written to /Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/javacore.20230712.131534.17778.0002.txt
+JVMDUMP032I JVM requested Snap dump using '/Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/Snap.20230712.131534.17778.0003.trc' in response to an event
+JVMDUMP010I Snap dump written to /Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/Snap.20230712.131534.17778.0003.trc
+JVMDUMP032I JVM requested JIT dump using '/Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/jitdump.20230712.131534.17778.0004.dmp' in response to an event
+JVMDUMP051I JIT dump occurred in 'main' thread 0x0000000019379100
 JVMDUMP053I JIT dump is recompiling java/lang/invoke/MemberName$Factory.resolve(BLjava/lang/invoke/MemberName;Ljava/lang/Class;IZ)Ljava/lang/invoke/MemberName;
 JVMDUMP053I JIT dump is recompiling java/lang/invoke/MemberName$Factory.resolveOrFail(BLjava/lang/invoke/MemberName;Ljava/lang/Class;ILjava/lang/Class;)Ljava/lang/invoke/MemberName;
 JVMDUMP053I JIT dump is recompiling org/jruby/ir/interpreter/StartupInterpreterEngine.interpret(Lorg/jruby/runtime/ThreadContext;Lorg/jruby/runtime/Block;Lorg/jruby/runtime/builtin/IRubyObject;Lorg/jruby/ir/interpreter/InterpreterContext;Lorg/jruby/RubyModule;Ljava/lang/String;[Lorg/jruby/runtime/builtin/IRubyObject;Lorg/jruby/runtime/Block;)Lorg/jruby/runtime/builtin/IRubyObject;
-JVMDUMP010I JIT dump written to /Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/jitdump.20230712.122917.17366.0004.dmp
+JVMDUMP010I JIT dump written to /Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/jitdump.20230712.131534.17778.0004.dmp
 JVMDUMP013I Processed dump event "gpf", detail "".
 , ❌(smoke) 
  sdkman/hadoop Hadoop 3.3.5
@@ -217,9 +217,9 @@ Compiled by stevel on 2023-03-15T15:56Z
 Compiled with protoc 3.7.1
 From source with checksum 6bbd9afcf4838a0eb12a5f189e9bd7
 This command was run using /Users/runner/.x-cmd.root/local/data/pkg/populate/hadoop/3.3.5/share/hadoop/common/hadoop-common-3.3.5.jar
-, ✅(47s) 
+, ✅(49s) 
  sdkman/ki ki-shell 0.5.2/1.7.0
-, ✅(6s) 
+, ✅(4s) 
  sdkman/micronaut , ✅(3s) 
  sdkman/skeletal Skeletal version 0.15.0
 , ✅(8s) 
@@ -273,7 +273,7 @@ Caused by: java.lang.RuntimeException: Could not determine whether class 'org.pe
 	at org.parboiled.transform.ParserTransformer.transformParser(ParserTransformer.java:35)
 	at org.parboiled.Parboiled.createParser(Parboiled.java:54)
 	... 34 more
-Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.findLoadedClass(java.lang.String) accessible: module java.base does not "opens java.lang" to unnamed module @41ea3039
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.findLoadedClass(java.lang.String) accessible: module java.base does not "opens java.lang" to unnamed module @491daf7d
 	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
 	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
 	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:200)
@@ -285,7 +285,7 @@ Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protect
 [info] [launcher] getting org.scala-sbt sbt 1.8.2  (this may take some time)...
 [info] [launcher] getting Scala 2.12.17 (for sbt)...
 [0Jsbt script version: 1.8.2
-, ✅(32s) 
+, ✅(29s) 
  sdkman/bpipe 
 Could not understand command --version or find it as a file
 
@@ -334,7 +334,7 @@ Options:
  -y,--yes                         answer yes to any prompts or questions
 
 
-, ✅(6s) 
+, ✅(8s) 
  sdkman/doctoolchain Downloading https://services.gradle.org/distributions/gradle-6.9.2-bin.zip
 ..........10%..........20%..........30%...........40%..........50%..........60%..........70%...........80%..........90%..........100%
 
@@ -406,8 +406,8 @@ USAGE: gradlew [option...] [task...]
 --write-locks                      Persists dependency resolution for locked configurations, ignoring existing locking information if it exists [incubating]
 -x, --exclude-task                 Specify a task to be excluded from execution.
 
-, ✅(7s) 
- sdkman/mvnd , ✅(7s) 
+, ✅(9s) 
+ sdkman/mvnd , ✅(9s) 
  sdkman/visualvm Usage: /Users/runner/.x-cmd.root/local/data/pkg/populate/visualvm/2.1.5/platform/lib/nbexec {options} arguments
 
 General options:
@@ -425,14 +425,16 @@ Module reload options:
   --reload /path/to/module.jar  install or reinstall a module JAR file
 
 Additional module options:
-  --openpid <arg>              open application with process id <arg>
-  --openid <arg>               open application with id <arg>
-  --openjmx <arg>              open application specified by JMX connection (host:port)
+  --snapshot-sampler <arg>     take sampler snapshot for the provided process
+  --start-cpu-sampler <arg>    start CPU sampler for the provided process
+  --stop-sampler <arg>         stop sampling the provided process
+  --start-memory-sampler <arg> start Memory sampler for the provided process
   --source-roots <arg>         set the source roots to be searched by Go To Source
   --source-viewer <arg>        set the source viewer command to be executed by Go To Source
   --source-config <arg>        set the path to sources configuration file containing source roots and viewer definition
-  --threaddump <arg>           take thread dump of the provided process
-  --heapdump <arg>             take heap dump of the provided process
+  --dump-jfr <arg>             dump JFR data of the provided process
+  --stop-jfr <arg>             stop JFR of the provided process
+  --start-jfr <arg>            start JFR of the provided process
   --modules                    
   --refresh                    Refresh all catalogs
   --list                       Prints the list of all modules, their versions and enablement status
@@ -442,15 +444,13 @@ Additional module options:
   --update <arg1>...<argN>     Updates all or specified modules
   --update-all                 Updates all modules
   --extra-uc <arg>             Add a extra Update Center (URL)
-  --start-memory-sampler <arg> start Memory sampler for the provided process
-  --start-cpu-sampler <arg>    start CPU sampler for the provided process
-  --snapshot-sampler <arg>     take sampler snapshot for the provided process
-  --stop-sampler <arg>         stop sampling the provided process
   --openfile <arg>             open file specified by <arg>, file can be .apps Application snapshot, .nps Sampler/Profiler snapshot, .tdump thread dump, HPROF heap dump, or a .jfr recording
   --window-to-front            bring VisualVM window to front
-  --start-jfr <arg>            start JFR of the provided process
-  --dump-jfr <arg>             dump JFR data of the provided process
-  --stop-jfr <arg>             stop JFR of the provided process
+  --heapdump <arg>             take heap dump of the provided process
+  --openjmx <arg>              open application specified by JMX connection (host:port)
+  --threaddump <arg>           take thread dump of the provided process
+  --openid <arg>               open application with id <arg>
+  --openpid <arg>              open application with process id <arg>
 
 Core options:
   --laf <LaF classname> use given LookAndFeel class instead of the default
@@ -461,28 +461,30 @@ Core options:
   --nosplash            do not show the splash screen
 
 , ❌(smoke) 
- sdkman/cxf , ✅(6s) 
+ sdkman/cxf , ✅(9s) 
  sdkman/scala_cli Scala code runner version: 1.0.0-RC1
 Scala version (default): 3.2.2
+Your Scala code runner version is outdated. The newest version is 1.0.2
+It is recommended that you update Scala code runner through the same tool or method you used for its initial installation for avoiding the creation of outdated duplicates.
 , ✅(4s) 
  sdkman/coursier 2.1.0
 , ✅(3s) 
  sdkman/concurnas Caching runtime enviroment for Concurnas version: 1.14.020 and JVM Spec: 1.8.0_372. This needs to be done only once. This may take a few minutes...
- <\-------------------->   0% | [ 76ms] <\-\------------------>   0% | [ 76ms] <\\\------------------>   0% | [ 76ms] <\\\\----------------->   0% | [ 77ms] <\\|\----------------->   0% | [ 78ms] <|\|\----------------->   0% | [ 78ms] <|||\----------------->   0% | [ 78ms] <||/\----------------->   0% | [ 79ms] <|//\----------------->   0% | [ 79ms] <|/-\----------------->   0% | [ 79ms] <|/-|----------------->   0% | [ 80ms] <|/-/----------------->   0% | [ 81ms] <//-/----------------->   0% | [ 81ms] </*-/----------------->   5% | [ 84ms] <**-/----------------->  10% | [ 84ms] <***/----------------->  14% | [ 85ms] <***/-\--------------->  14% | [ 85ms] <***/-|--------------->  14% | [ 86ms] <****-|--------------->  19% | [ 87ms] <****-/--------------->  19% | [401ms] <****----------------->  19% | [408ms] <****-\--------------->  19% | [416ms] <****-|--------------->  19% | [470ms] <****-/--------------->  19% | [565ms] <****-/\-------------->  19% | [625ms] <****--\-------------->  19% | [631ms] <****-\\-------------->  19% | [753ms] <****-|\-------------->  19% | [797ms] <****-/\-------------->  19% | [817ms] <****--\-------------->  19% | [818ms] <****-\\-------------->  19% | [826ms] <****-|\-------------->  19% | [828ms] <****-/\-------------->  19% | [835ms] <****-/\\------------->  19% | [839ms] <****--\\------------->  19% | [860ms] <****-\\\------------->  19% | [863ms] <****-|\\------------->  19% | [866ms] <****-/\\------------->  19% | [916ms] <****--\\------------->  19% | [920ms] <****-\\\------------->  19% | [923ms] <****-|\\------------->  19% | [969ms] <****-/\\------------->  19% | [   1s] <****--\\------------->  19% | [   1s] <****-\\\------------->  19% | [   1s] <****-|\\------------->  19% | [   1s] <****-||\------------->  19% | [   1s] <****-/|\------------->  19% | [   1s] <****--|\------------->  19% | [   1s] <****--||------------->  19% | [   1s] <****-\||------------->  19% | [   1s] <****-*||------------->  24% | [   1s] <****-*||\------------>  24% | [   1s] <****-*|||------------>  24% | [   1s] <****-*||/------------>  24% | [   1s] <****-*||------------->  24% | [   1s] <****-*||\------------>  24% | [   1s] <****-*|||------------>  24% | [   1s] <****-*||/------------>  24% | [   1s] <****-*||------------->  24% | [   1s] <****-*||*------------>  29% | [   1s] <****-*||*\----------->  29% | [   1s] <****-*/|*\----------->  29% | [   1s] <****-*/|*|----------->  29% | [   1s] <****-*//*|----------->  29% | [   1s] <****-*//*/----------->  29% | [   1s] <****-*-/*/----------->  29% | [   1s] <****-*-/*------------>  29% | [   1s] <****-*-/*\----------->  29% | [   1s] <****-*--*\----------->  29% | [   1s] <****-*--*|----------->  29% | [   1s] <****-*\-*|----------->  29% | [   1s] <****-*\-*/----------->  29% | [   2s] <****-*\\*/----------->  29% | [   2s] <****-*\\*------------>  29% | [   2s] <****-*|\*------------>  29% | [   2s] <****-*|\*\----------->  29% | [   2s] <****-*|\*|----------->  29% | [   2s] <****-*||*|----------->  29% | [   2s] <****-*/|*|----------->  29% | [   2s] <****-*/|*/----------->  29% | [   2s] <****-*/|*------------>  29% | [   2s] <****-*-|*------------>  29% | [   2s] <****-*-|*\----------->  29% | [   2s] <****-*-/*\----------->  29% | [   2s] <****-*-/*|----------->  29% | [   2s] <****-*-/*/----------->  29% | [   2s] <****-*-/*------------>  29% | [   2s] <****-*-/*\----------->  29% | [   3s] <****-*--*\----------->  29% | [   3s] <****-*--*|----------->  29% | [   3s] <****-*\-*|----------->  29% | [   3s] <****-*\-*/----------->  29% | [   3s] <****-*\-*------------>  29% | [   3s] <****-*\\*------------>  29% | [   3s] <****-*\\*\----------->  29% | [   3s] <****-*|\*\----------->  29% | [   3s] <****-*|\*|----------->  29% | [   3s] <****-*|\*/----------->  29% | [   3s] <****-*|\*------------>  29% | [   3s] <****-*|\*\----------->  29% | [   3s] <****-*|\*|----------->  29% | [   3s] <****-*||*|----------->  29% | [   3s] <****-*||*/----------->  29% | [   3s] <****-*||*------------>  29% | [   3s] <****-*||*\----------->  29% | [   3s] <****-*||*|----------->  29% | [   3s] <****-*/|*|----------->  29% | [   3s] <****-*/|*/----------->  29% | [   4s] <****-*/|*------------>  29% | [   4s] <****-*//*------------>  29% | [   4s] <****-*//*\----------->  29% | [   4s] <****-*//*|----------->  29% | [   4s] <****-*//*/----------->  29% | [   4s] <****-*//*------------>  29% | [   4s] <****-*-/*------------>  29% | [   4s] <****-*--*------------>  29% | [   4s] <****-*--*\----------->  29% | [   4s] <****-*--*|----------->  29% | [   4s] <****-*--*/----------->  29% | [   4s] <****-*--*------------>  29% | [   4s] <****-*-\*------------>  29% | [   4s] <****-*-\*\----------->  29% | [   4s] <****-*-\*|----------->  29% | [   4s] <****-*\\*|----------->  29% | [   4s] <****-*\\*/----------->  29% | [   4s] <****-*\\*------------>  29% | [   4s] <****-*\\*\----------->  29% | [   4s] <****-*\|*\----------->  29% | [   4s] <****-*\|*|----------->  29% | [   4s] <****\*\|*|----------->  29% | [   4s] <****\*||*|----------->  29% | [   4s] <****\*||*/----------->  29% | [   4s] <****\*||*------------>  29% | [   4s] <****\*|/*------------>  29% | [   4s] <****\*|/*\----------->  29% | [   4s] <****\*//*\----------->  29% | [   5s] <****\*//**----------->  33% | [   5s] <****\*//**\---------->  33% | [   5s] <****\*//**|---------->  33% | [   5s] <****\*/-**|---------->  33% | [   5s] <****\*/-**/---------->  33% | [   5s] <****\*--**/---------->  33% | [   5s] <****\*--**----------->  33% | [   5s] <****\*--**\---------->  33% | [   5s] <****\*--**|---------->  33% | [   5s] <****\*--**/---------->  33% | [   5s] <****\*--**----------->  33% | [   5s] <****\*--**\---------->  33% | [   5s] <****\*--**|---------->  33% | [   5s] <****\*-\**|---------->  33% | [   5s] <****\*-\**/---------->  33% | [   5s] <****\*-\**----------->  33% | [   5s] <****\*-\**\---------->  33% | [   5s] <****\*-|**\---------->  33% | [   5s] <****\*\|**\---------->  33% | [   5s] <****\*\|**|---------->  33% | [   5s] <****\*\|**/---------->  33% | [   5s] <****\*\|**----------->  33% | [   5s] <****\*\|**\---------->  33% | [   5s] <****\*\|**|---------->  33% | [   5s] <****\*\|**/---------->  33% | [   5s] <****\*\|**----------->  33% | [   6s] <****\*\|**\---------->  33% | [   6s] <****\*\/**\---------->  33% | [   6s] <****\*|/**\---------->  33% | [   6s] <****\*|/**|---------->  33% | [   6s] <****\*|/**/---------->  33% | [   6s] <****\*|-**/---------->  33% | [   6s] <****\*|-**----------->  33% | [   6s] <****\*|-**\---------->  33% | [   6s] <****\*|-**|---------->  33% | [   6s] <****\*/-**|---------->  33% | [   6s] <****\*/-**/---------->  33% | [   6s] <****\*/-**----------->  33% | [   6s] <****\*/-**\---------->  33% | [   6s] <****\*/\**\---------->  33% | [   6s] <****\*/\**|---------->  33% | [   6s] <****\*-\**|---------->  33% | [   6s] <****\*-\**/---------->  33% | [   6s] <****\*-\**----------->  33% | [   6s] <****\*-\**\---------->  33% | [   6s] <****\*-\**|---------->  33% | [   6s] <****\*-|**|---------->  33% | [   6s] <****\*\|**|---------->  33% | [   6s] <****\*\|**/---------->  33% | [   6s] <****\*\|**----------->  33% | [   6s] <****\*\|**\---------->  33% | [   6s] <****\*\|**|---------->  33% | [   7s] <****\*\|**/---------->  33% | [   7s] <****\*\/**/---------->  33% | [   7s] <****\*\/**----------->  33% | [   7s] <****\*\/**\---------->  33% | [   7s] <****\*\/***---------->  38% | [   7s] <****\*\/***\--------->  38% | [   7s] <****\*\/***|--------->  38% | [   7s] <****\*\-***|--------->  38% | [   7s] <****\*\-***/--------->  38% | [   7s] <****\*|-***/--------->  38% | [   7s] <****\*|-***---------->  38% | [   7s] <****\*|-***\--------->  38% | [   7s] <****\*|\***\--------->  38% | [   7s] <****\*|\***|--------->  38% | [   7s] <****\*|\***/--------->  38% | [   7s] <****\*|\***---------->  38% | [   7s] <****\*|\***\--------->  38% | [   7s] <****\*/\***\--------->  38% | [   7s] <****\*/\***|--------->  38% | [   7s] <****\*/\***/--------->  38% | [   7s] <****\*/\***---------->  38% | [   7s] <****\*/\***\--------->  38% | [   7s] <****\*/\***|--------->  38% | [   7s] <****\*/\***/--------->  38% | [   7s] <****\*/|***/--------->  38% | [   7s] <****\*/|***---------->  38% | [   7s] <****\*/|***\--------->  38% | [   7s] <****\*/|***|--------->  38% | [   7s] <****\*/|***/--------->  38% | [   7s] <****\*/|***---------->  38% | [   7s] <****\*/|***\--------->  38% | [   7s] <****\*/|***|--------->  38% | [   8s] <****\*//***|--------->  38% | [   8s] <****\*-/***|--------->  38% | [   8s] <****\*-/***/--------->  38% | [   8s] <****\*-/***---------->  38% | [   8s] <****\*-/***\--------->  38% | [   8s] <****\*--***\--------->  38% | [   8s] <****\*--***|--------->  38% | [   8s] <****\*--***/--------->  38% | [   8s] <****\*--***---------->  38% | [   8s] <****\*-\***---------->  38% | [   8s] <****\*-\***\--------->  38% | [   8s] <****\*\\***\--------->  38% | [   8s] <****\*\|***\--------->  38% | [   8s] <****\*\|***|--------->  38% | [   8s] <****\*\|***/--------->  38% | [   8s] <****\*\|***---------->  38% | [   8s] <****\*||***---------->  38% | [   8s] <****\*|/***---------->  38% | [   8s] <****\*|/***\--------->  38% | [   8s] <****\*|-***\--------->  38% | [   8s] <****\*|-***|--------->  38% | [   8s] <****\*|-***/--------->  38% | [   8s] <****\*|-***---------->  38% | [   8s] <****\*|-***\--------->  38% | [   8s] <****\*|-***|--------->  38% | [   8s] <****\*|\***|--------->  38% | [   8s] <****\*/\***|--------->  38% | [   8s] <****\*/|***|--------->  38% | [   9s] <****\*/|***/--------->  38% | [   9s] <****\*-|***/--------->  38% | [   9s] <****\*-|***---------->  38% | [   9s] <****\*-|***\--------->  38% | [   9s] <****\*-|***|--------->  38% | [   9s] <****\*-|****--------->  43% | [   9s] <****\*-|****\-------->  43% | [   9s] <****\*-|****|-------->  43% | [   9s] <****\*-|****/-------->  43% | [   9s] <****\*-|****--------->  43% | [   9s] <****\*-/****--------->  43% | [   9s] <****|*-/****--------->  43% | [   9s] <****|*\/****--------->  43% | [   9s] <****|*\-****--------->  43% | [   9s] <****|*\-****\-------->  43% | [   9s] <****|*\-****|-------->  43% | [   9s] <****|*\-****/-------->  43% | [   9s] <****|*\-****--------->  43% | [   9s] <****|*\-****\-------->  43% | [   9s] <****|*\-****|-------->  43% | [   9s] <****|*\-****/-------->  43% | [   9s] <****|*\-****--------->  43% | [   9s] <****|*\-****\-------->  43% | [   9s] <****|*\-****|-------->  43% | [  10s] <****|*\-****/-------->  43% | [  10s] <****|*\-****--------->  43% | [  10s] <****|*\-****\-------->  43% | [  10s] <****|*\-****|-------->  43% | [  10s] <****|*\-****/-------->  43% | [  10s] <****|*\-****--------->  43% | [  10s] <****|*\-****\-------->  43% | [  10s] <****|*\-****|-------->  43% | [  10s] <****|*\-****/-------->  43% | [  10s] <****|*\-****--------->  43% | [  10s] <****|*|-****--------->  43% | [  10s] <****|*|-****\-------->  43% | [  10s] <****|*|-****|-------->  43% | [  10s] <****|*|-*****-------->  48% | [  10s] <****|*|-*****\------->  48% | [  10s] <****|*|-*****|------->  48% | [  10s] <****|*|\*****|------->  48% | [  10s] <****|*|\*****/------->  48% | [  10s] <****|*|\*****-------->  48% | [  10s] <****|*|\*****\------->  48% | [  10s] <****|*|\*****|------->  48% | [  10s] <****|*|\*****/------->  48% | [  10s] <****|*/\*****/------->  48% | [  10s] <****|*/\*****-------->  48% | [  10s] <****|*/\*****\------->  48% | [  10s] <****|*/\*****|------->  48% | [  10s] <****|*/\*****/------->  48% | [  10s] <****|*/\*****-------->  48% | [  10s] <****|*/|*****-------->  48% | [  10s] <****|*/|*****\------->  48% | [  10s] <****|*/|*****|------->  48% | [  10s] <****|*/|*****/------->  48% | [  10s] <****|*//*****/------->  48% | [  10s] <****|*-/*****/------->  48% | [  10s] <****|*-/*****-------->  48% | [  10s] <****|*-/*****\------->  48% | [  10s] <****|*-/*****|------->  48% | [  10s] <****|*-/*****/------->  48% | [  10s] <****|*-/*****-------->  48% | [  10s] <****|*--*****-------->  48% | [  10s] <****|*--*****\------->  48% | [  10s] <****|*--*****|------->  48% | [  10s] <****|*--*****/------->  48% | [  10s] <****|*--*****-------->  48% | [  10s] <****|*--*****\------->  48% | [  10s] <****|*--*****|------->  48% | [  10s] <****|*--*****/------->  48% | [  10s] <****|*--*****-------->  48% | [  10s] <****|*-\*****-------->  48% | [  10s] <****|*-\*****\------->  48% | [  10s] <****|*-\*****|------->  48% | [  10s] <****|*-\*****/------->  48% | [  10s] <****|*-\*****-------->  48% | [  10s] <****|*-\*****\------->  48% | [  10s] <****|*-\******------->  52% | [  10s] <****|*-\******\------>  52% | [  10s] <****|*-\******|------>  52% | [  10s] <****|*-|******|------>  52% | [  11s] <****|*\|******|------>  52% | [  11s] <****|*\|******/------>  52% | [  11s] <****|*\/******/------>  52% | [  11s] <****|*\/******------->  52% | [  11s] <****|*\-******------->  52% | [  11s] <****|*\-******\------>  52% | [  11s] <****|*\\******\------>  52% | [  11s] <****|*\\******|------>  52% | [  11s] <****|*|\******|------>  52% | [  11s] <****|*|\******/------>  52% | [  11s] <****|*||******/------>  52% | [  11s] <****|*||******------->  52% | [  11s] <****|*|/******------->  52% | [  11s] <****|*|/******\------>  52% | [  11s] <****|*//******\------>  52% | [  11s] <****|*//******|------>  52% | [  11s] <****|*/-******|------>  52% | [  11s] <****|*/-******/------>  52% | [  11s] <****|*/-******------->  52% | [  11s] <****|*/\******------->  52% | [  11s] <****|*/\******\------>  52% | [  11s] <****|*/|******\------>  52% | [  11s] <****|*/|******|------>  52% | [  11s] <****|*/|******/------>  52% | [  11s] <****|*/|******------->  52% | [  12s] <****|*-|******------->  52% | [  12s] <****|*-|******\------>  52% | [  12s] <****|*-|******|------>  52% | [  12s] <****|*\|******|------>  52% | [  12s] <****|*\|******/------>  52% | [  12s] <****|*\|******------->  52% | [  12s] <****|*\*******------->  57% | [  12s] <****|*|*******------->  57% | [  12s] <****|*|*******\------>  57% | [  12s] <****|*|*******\\----->  57% | [  12s] <****|*|*******|\----->  57% | [  12s] <****|*|*******||----->  57% | [  12s] <****|*|*******/|----->  57% | [  12s] <****|*|*******-|----->  57% | [  12s] <****|*|*******-/----->  57% | [  12s] <****|*/*******-/----->  57% | [  12s] <****|*/*******\/----->  57% | [  12s] <****|*/*******\------>  57% | [  13s] <****|*/*******|------>  57% | [  13s] <****|*/*******|\----->  57% | [  13s] <****|*-*******|\----->  57% | [  13s] <****|*-*******/\----->  57% | [  13s] <****|*-*******-\----->  57% | [  13s] <****|*-*******\\----->  57% | [  13s] <****|*-*******\|----->  57% | [  13s] <****|*-*******\/----->  57% | [  13s] <****|*-*******|/----->  57% | [  13s] <****|*-*******//----->  57% | [  13s] <****|*-*******-/----->  57% | [  13s] <****|*-*******\/----->  57% | [  13s] <****|*-*******\------>  57% | [  13s] <****|*\*******\------>  57% | [  13s] <****|*\*******|------>  57% | [  13s] <****|*\*******/------>  57% | [  13s] <****|*\*******------->  57% | [  13s] <****|*\*******-\----->  57% | [  13s] <****|*\*******\\----->  57% | [  13s] <****|*\*******|\----->  57% | [  13s] <****|*\*******||----->  57% | [  13s] <****|*\*******/|----->  57% | [  13s] <****|*\*******-|----->  57% | [  13s] <****|*\*******\|----->  57% | [  13s] <****|*\*******||----->  57% | [  13s] <****|*\*******/|----->  57% | [  13s] <****|*\*******//----->  57% | [  14s] <****|*\*******-/----->  57% | [  14s] <****|*\*******\/----->  57% | [  14s] <****|*\*******\------>  57% | [  14s] <****|*|*******\------>  57% | [  14s] <****|*|*******\\----->  57% | [  14s] <****|*|********\----->  62% | [  14s] <****|*|********\\---->  62% | [  14s] <****|*|********|\---->  62% | [  14s] <****|*|********||---->  62% | [  14s] <****|*|********|/---->  62% | [  14s] <****|*|********//---->  62% | [  14s] <****|*|********/----->  62% | [  14s] <****|*/********/----->  62% | [  14s] <****|*/********------>  62% | [  14s] <****|*/********-\---->  62% | [  14s] <****|*/********\\---->  62% | [  14s] <****|*/********\|---->  62% | [  14s] <****|*/********||---->  62% | [  14s] <****|*/********|/---->  62% | [  14s] <****|*/********//---->  62% | [  14s] <****|*/********/----->  62% | [  14s] <****|*-********/----->  62% | [  14s] <****|*-********/\---->  62% | [  14s] <****|*-********-\---->  62% | [  14s] <****|*-********-|---->  62% | [  14s] <****|*-********-/---->  62% | [  14s] <****|*-********\/---->  62% | [  14s] <****|*-********\----->  62% | [  14s] <****|*-********|----->  62% | [  14s] <****|*-********|\---->  62% | [  14s] <****|*\********|\---->  62% | [  15s] <****|*\********||---->  62% | [  15s] <****|*\********|/---->  62% | [  15s] <****|*\********//---->  62% | [  15s] <****|*\********/----->  62% | [  15s] <****/*\********/----->  62% | [  15s] <****/*\********------>  62% | [  15s] <****/*\********-\---->  62% | [  15s] <****/*\********\\---->  62% | [  15s] <****/*|********\\---->  62% | [  15s] <****/*|********\|---->  62% | [  15s] <****/*|********\/---->  62% | [  15s] <****/*/********\/---->  62% | [  15s] <****/*/********|/---->  62% | [  15s] <****/*/********|----->  62% | [  15s] <****/*/********|\---->  62% | [  15s] <****/*-********|\---->  62% | [  15s] <****/*-********||---->  62% | [  15s] <****/*-********/|---->  62% | [  15s] <****/*-********//---->  62% | [  15s] <****/*-********/----->  62% | [  15s] <****/*-********/\---->  62% | [  15s] <****/*-********-\---->  62% | [  15s] <****/*-********-|---->  62% | [  15s] <****/*-********-/---->  62% | [  15s] <****/*-********\/---->  62% | [  15s] <****/*-********\----->  62% | [  15s] <****/*-********\\---->  62% | [  15s] <****/*-********|\---->  62% | [  15s] <****/*-********||---->  62% | [  15s] <****/*-********|/---->  62% | [  15s] <****/*-********//---->  62% | [  15s] <****/*-********/----->  62% | [  15s] <****/*-********/\---->  62% | [  15s] <****/*-********-\---->  62% | [  15s] <****/*-********-|---->  62% | [  15s] <****/*-********-/---->  62% | [  15s] <****/**********-/---->  67% | [  16s] <****/**********-/\--->  67% | [  16s] <****/**********-/|--->  67% | [  16s] <****/**********-//--->  67% | [  16s] <****/**********-/---->  67% | [  16s] <****/**********------>  67% | [  16s] <****/**********--\--->  67% | [  16s] <****/**********\-\--->  67% | [  16s] <****/**********\-|--->  67% | [  16s] <****/**********\-/--->  67% | [  16s] <****/**********\----->  67% | [  16s] <****/**********\-\--->  67% | [  16s] <****/**********\-|--->  67% | [  16s] <****/**********\-/--->  67% | [  16s] <****/**********\----->  67% | [  16s] <****/**********\-\--->  67% | [  16s] <****/**********\-|--->  67% | [  16s] <****/**********\-/--->  67% | [  16s] <****/**********\----->  67% | [  16s] <****/**********\-\--->  67% | [  16s] <****/**********\-|--->  67% | [  16s] <****/**********\-/--->  67% | [  16s] <****/**********|-/--->  67% | [  16s] <****/**********|\/--->  67% | [  16s] <****/**********|\---->  67% | [  16s] <****/**********|\\--->  67% | [  16s] <****/**********|\|--->  67% | [  16s] <****/**********|\/--->  67% | [  16s] <****/**********|\---->  67% | [  16s] <****/**********|\\--->  67% | [  16s] <****/**********||\--->  67% | [  16s] <****/**********|||--->  67% | [  16s] <****/**********||/--->  67% | [  16s] <****/**********/|/--->  67% | [  16s] <****/**********/|---->  67% | [  16s] <****/**********/|\--->  67% | [  16s] <****/**********/||--->  67% | [  16s] <****/**********//|--->  67% | [  16s] <****/**********///--->  67% | [  16s] <****/**********//---->  67% | [  16s] <****/**********//\--->  67% | [  16s] <****/**********//|--->  67% | [  16s] <****/**********///--->  67% | [  16s] <****/**********//---->  67% | [  16s] <****/**********//\--->  67% | [  16s] <****/**********//|--->  67% | [  16s] <****/**********-/|--->  67% | [  16s] <****/**********--|--->  67% | [  16s] <****/**********--/--->  67% | [  16s] <****/**********------>  67% | [  16s] <****/**********--\--->  67% | [  16s] <****/**********--|--->  67% | [  16s] <****/**********--/--->  67% | [  16s] <****/**********------>  67% | [  16s] <****/**********--\--->  67% | [  16s] <****/**********--|--->  67% | [  16s] <****/**********-\|--->  67% | [  16s] <****/**********-\/--->  67% | [  16s] <****/**********-\---->  67% | [  16s] <****/**********-\\--->  67% | [  16s] <****/**********-\|--->  67% | [  16s] <****/**********\\|--->  67% | [  16s] <****/**********\||--->  67% | [  16s] <****/**********|||--->  67% | [  16s] <****/**********|/|--->  67% | [  16s] <****/**********|-|--->  67% | [  16s] <****/**********|\|--->  67% | [  16s] <****/**********/\|--->  67% | [  16s] <****/**********/*|--->  71% | [  16s] <****/**********/*|\-->  71% | [  16s] <****/**********/*||-->  71% | [  16s] <****/**********/*|*-->  76% | [  16s] <****/**********/*|*\->  76% | [  16s] <****/**********/*|*|->  76% | [  16s] <****/**********/*|*/->  76% | [  16s] <****/**********-*|*/->  76% | [  16s] <****/**********-*|*-->  76% | [  16s] <****/**********-*|*\->  76% | [  16s] <****/**********-*|*|->  76% | [  16s] <****/**********-***|->  81% | [  16s] <****/**********\***|->  81% | [  16s] <****/**********\***/->  81% | [  16s] <****/**********\***-->  81% | [  16s] <****/**********\***\->  81% | [  16s] <****/**********\***|->  81% | [  16s] <****/**********|***|->  81% | [  16s] <****/**********|***/->  81% | [  16s] <****/**********|***-->  81% | [  16s] <****/**********|***\->  81% | [  16s] <****/**********|***|->  81% | [  16s] <****/**********/***|->  81% | [  16s] <****/**********/***/->  81% | [  16s] <****/**********/***-->  81% | [  16s] <****/**********/***\->  81% | [  16s] <****/**********/***|->  81% | [  16s] <****/**********-***|->  81% | [  16s] <****/**********-***/->  81% | [  16s] <****/**********-***-->  81% | [  16s] <****/**********-***\->  81% | [  16s] <****/**********-***|->  81% | [  17s] <****/**********-***/->  81% | [  17s] <****/**********-***-->  81% | [  17s] <****/**********-***\->  81% | [  17s] <****/**********\***\->  81% | [  17s] <****/**********\***|->  81% | [  17s] <****/**********\***/->  81% | [  17s] <****/**********\***-->  81% | [  17s] <****/**********\***\->  81% | [  17s] <****-**********\***\->  81% | [  17s] <****-**********\***|->  81% | [  17s] <****-**********\***/->  81% | [  17s] <****-**********\***-->  81% | [  17s] <****-**********|***-->  81% | [  17s] <****-**********|***\->  81% | [  17s] <****-**********|***|->  81% | [  17s] <****-**********|***/->  81% | [  17s] <****-**********|***-->  81% | [  17s] <****-**********|***\->  81% | [  17s] <****-**********|****->  86% | [  17s] <****-**********/****->  86% | [  17s] <****-**********-****->  86% | [  17s] <****-**********\****->  86% | [  17s] <****-**********|****->  86% | [  17s] <****-***************->  90% | [  17s] <****\***************->  90% | [  19s] <****|***************->  90% | [  21s] <****/***************->  90% | [  23s] <****-***************->  90% | [  25s] <****\***************->  90% | [  31s] <****|***************->  90% | [  45s] <****/***************->  90% | [  53s] <****-***************->  90% | [  59s] <****\***************->  90% | [   1m] <****|***************->  90% | [   1m] <****/***************->  90% | [   1m] <****-***************->  90% | [   1m] <****\***************->  90% | [   1m] <****|***************->  90% | [   1m] <****/***************->  90% | [   1m] <****-***************->  90% | [   1m] <****\***************->  90% | [   1m] <****|***************->  90% | [   1m] <****/***************->  90% | [   1m] <****-***************->  90% | [   1m] <****\***************->  90% | [   1m] <****|***************->  90% | [   2m] <****/***************->  90% | [   2m] <****-***************->  90% | [   2m] <****\***************->  90% | [   2m] <****|***************->  90% | [   2m] <****/***************->  90% | [   2m] <****-***************->  90% | [   2m] <****\***************->  90% | [   2m] <****|***************->  90% | [   2m] <****/***************->  90% | [   2m] <****-***************->  90% | [   2m] <****\***************->  90% | [   3m] <****|***************->  90% | [   3m] <****/***************->  90% | [   3m] <****-***************->  90% | [   3m] <****\***************->  90% | [   3m] <****|***************->  90% | [   3m] <****/***************->  90% | [   3m] <****-***************->  90% | [   3m] <****\***************->  90% | [   3m] <****|***************->  90% | [   3m] <****/***************->  90% | [   3m] <****-***************->  90% | [   3m] <****\***************->  90% | [   3m] <****|***************->  90% | [   3m] <********************->  95% | [   4m] <*********************> 100% | [   4m] | Completed!
+ <--\------------------>   0% | [ 70ms] <\-\------------------>   0% | [ 70ms] <\\\------------------>   0% | [ 70ms] <\\\\----------------->   0% | [ 71ms] <\\|\----------------->   0% | [ 72ms] <|\|\----------------->   0% | [ 72ms] <|||\----------------->   0% | [ 72ms] <||/\----------------->   0% | [ 73ms] <||/|----------------->   0% | [ 73ms] <|//|----------------->   0% | [ 73ms] <///|----------------->   0% | [ 74ms] <////----------------->   0% | [ 74ms] <//-/----------------->   0% | [ 75ms] </*-/----------------->   5% | [ 78ms] </**/----------------->  10% | [ 79ms] <***/----------------->  14% | [ 79ms] <****----------------->  19% | [ 83ms] <****-\--------------->  19% | [ 85ms] <****-|--------------->  19% | [ 86ms] <****-/--------------->  19% | [389ms] <****----------------->  19% | [394ms] <****-\--------------->  19% | [399ms] <****-|--------------->  19% | [420ms] <****-/--------------->  19% | [480ms] <****-/\-------------->  19% | [540ms] <****--\-------------->  19% | [549ms] <****-\\-------------->  19% | [608ms] <****-|\-------------->  19% | [630ms] <****-/\-------------->  19% | [657ms] <****--\-------------->  19% | [658ms] <****-\\-------------->  19% | [659ms] <****-|\-------------->  19% | [693ms] <****-|\\------------->  19% | [698ms] <****-/\\------------->  19% | [702ms] <****--\\------------->  19% | [723ms] <****-\\\------------->  19% | [726ms] <****-|\\------------->  19% | [729ms] <****-/\\------------->  19% | [762ms] <****--\\------------->  19% | [775ms] <****-\\\------------->  19% | [778ms] <****-|\\------------->  19% | [816ms] <****-/\\------------->  19% | [839ms] <****--\\------------->  19% | [870ms] <****-\\\------------->  19% | [878ms] <****-|\\------------->  19% | [883ms] <****-||\------------->  19% | [942ms] <****-/|\------------->  19% | [965ms] <****--|\------------->  19% | [968ms] <****--||------------->  19% | [980ms] <****-\||------------->  19% | [   1s] <****-*||------------->  24% | [   1s] <****-*||\------------>  24% | [   1s] <****-*|||------------>  24% | [   1s] <****-*||/------------>  24% | [   1s] <****-*||------------->  24% | [   1s] <****-*||\------------>  24% | [   1s] <****-*|||------------>  24% | [   1s] <****-*||/------------>  24% | [   1s] <****-*||------------->  24% | [   1s] <****-*||*------------>  29% | [   1s] <****-*||*\----------->  29% | [   1s] <****-*/|*\----------->  29% | [   1s] <****-*/|*|----------->  29% | [   1s] <****-*//*|----------->  29% | [   1s] <****-*//*/----------->  29% | [   1s] <****-*-/*/----------->  29% | [   1s] <****-*-/*------------>  29% | [   1s] <****-*-/*\----------->  29% | [   1s] <****-*-/*|----------->  29% | [   1s] <****-*--*|----------->  29% | [   1s] <****-*--*/----------->  29% | [   1s] <****-*\-*/----------->  29% | [   1s] <****-*\-*------------>  29% | [   1s] <****-*\\*------------>  29% | [   1s] <****-*\\*\----------->  29% | [   1s] <****-*|\*\----------->  29% | [   2s] <****-*|\*|----------->  29% | [   2s] <****-*|\*/----------->  29% | [   2s] <****-*|\*------------>  29% | [   2s] <****-*||*------------>  29% | [   2s] <****-*/|*------------>  29% | [   2s] <****-*/|*\----------->  29% | [   2s] <****-*/|*|----------->  29% | [   2s] <****-*/|*/----------->  29% | [   2s] <****-*/|*------------>  29% | [   2s] <****-*/|*\----------->  29% | [   2s] <****-*//*\----------->  29% | [   2s] <****-*-/*\----------->  29% | [   2s] <****-*-/*|----------->  29% | [   2s] <****-*-/*/----------->  29% | [   2s] <****-*--*/----------->  29% | [   2s] <****-*--*------------>  29% | [   2s] <****-*\-*------------>  29% | [   2s] <****-*\-*\----------->  29% | [   2s] <****-*\-*|----------->  29% | [   3s] <****-*\\*|----------->  29% | [   3s] <****-*\\*/----------->  29% | [   3s] <****-*\\*------------>  29% | [   3s] <****-*|\*------------>  29% | [   3s] <****-*|\*\----------->  29% | [   3s] <****-*|\*|----------->  29% | [   3s] <****-*|\*/----------->  29% | [   3s] <****-*|\*------------>  29% | [   3s] <****-*|\*\----------->  29% | [   3s] <****-*||*\----------->  29% | [   3s] <****-*||*|----------->  29% | [   3s] <****-*||*/----------->  29% | [   3s] <****-*||*------------>  29% | [   3s] <****-*||*\----------->  29% | [   3s] <****-*||*|----------->  29% | [   3s] <****-*/|*|----------->  29% | [   3s] <****-*//*|----------->  29% | [   3s] <****-*//*/----------->  29% | [   3s] <****-*//*------------>  29% | [   3s] <****-*//*\----------->  29% | [   3s] <****-*//*|----------->  29% | [   3s] <****-*//*/----------->  29% | [   3s] <****-*/-*/----------->  29% | [   3s] <****-*/-*------------>  29% | [   4s] <****-*--*------------>  29% | [   4s] <****-*--*\----------->  29% | [   4s] <****-*--*|----------->  29% | [   4s] <****-*-\*|----------->  29% | [   4s] <****-*-\*/----------->  29% | [   4s] <****-*-\*------------>  29% | [   4s] <****-*-\*\----------->  29% | [   4s] <****-*-\*|----------->  29% | [   4s] <****-*-\*/----------->  29% | [   4s] <****-*-|*/----------->  29% | [   4s] <****-*\|*/----------->  29% | [   4s] <****-*\|*------------>  29% | [   4s] <****-*\|*\----------->  29% | [   4s] <****-*\/*\----------->  29% | [   4s] <****-*|/*\----------->  29% | [   4s] <****-*|/**----------->  33% | [   4s] <****-*|/**\---------->  33% | [   4s] <****-*|/**|---------->  33% | [   4s] <****\*|/**|---------->  33% | [   4s] <****\*|/**/---------->  33% | [   4s] <****\*|/**----------->  33% | [   4s] <****\*|-**----------->  33% | [   4s] <****\*|-**\---------->  33% | [   4s] <****\*/-**\---------->  33% | [   4s] <****\*/-**|---------->  33% | [   5s] <****\*/-**/---------->  33% | [   5s] <****\*/-**----------->  33% | [   5s] <****\*/-**\---------->  33% | [   5s] <****\*/-**|---------->  33% | [   5s] <****\*--**|---------->  33% | [   5s] <****\*--**/---------->  33% | [   5s] <****\*-\**/---------->  33% | [   5s] <****\*-\**----------->  33% | [   5s] <****\*-\**\---------->  33% | [   5s] <****\*-\**|---------->  33% | [   5s] <****\*-\**/---------->  33% | [   5s] <****\*-\**----------->  33% | [   5s] <****\*-|**----------->  33% | [   5s] <****\*-|**\---------->  33% | [   5s] <****\*-|**|---------->  33% | [   5s] <****\*-|**/---------->  33% | [   5s] <****\*\|**/---------->  33% | [   5s] <****\*\|**----------->  33% | [   5s] <****\*\|**\---------->  33% | [   5s] <****\*\|**|---------->  33% | [   5s] <****\*\/**|---------->  33% | [   5s] <****\*\/**/---------->  33% | [   5s] <****\*\/**----------->  33% | [   5s] <****\*\/**\---------->  33% | [   5s] <****\*\-**\---------->  33% | [   5s] <****\*\-**|---------->  33% | [   5s] <****\*|-**|---------->  33% | [   5s] <****\*|-**/---------->  33% | [   5s] <****\*|-**----------->  33% | [   6s] <****\*|-**\---------->  33% | [   6s] <****\*|-**|---------->  33% | [   6s] <****\*|\**|---------->  33% | [   6s] <****\*|\**/---------->  33% | [   6s] <****\*/\**/---------->  33% | [   6s] <****\*/\**----------->  33% | [   6s] <****\*/\**\---------->  33% | [   6s] <****\*/\**|---------->  33% | [   6s] <****\*/|**|---------->  33% | [   6s] <****\*/|**/---------->  33% | [   6s] <****\*/|**----------->  33% | [   6s] <****\*/|**\---------->  33% | [   6s] <****\*-|**\---------->  33% | [   6s] <****\*-|**|---------->  33% | [   6s] <****\*-|**/---------->  33% | [   6s] <****\*-|**----------->  33% | [   6s] <****\*-|**\---------->  33% | [   6s] <****\*-/**\---------->  33% | [   6s] <****\*\/**\---------->  33% | [   6s] <****\*\/***---------->  38% | [   6s] <****\*\/***\--------->  38% | [   6s] <****\*\/***|--------->  38% | [   6s] <****\*\/***/--------->  38% | [   6s] <****\*\/***---------->  38% | [   6s] <****\*\-***---------->  38% | [   6s] <****\*\-***\--------->  38% | [   6s] <****\*\-***|--------->  38% | [   7s] <****\*\-***/--------->  38% | [   7s] <****\*\-***---------->  38% | [   7s] <****\*\\***---------->  38% | [   7s] <****\*\\***\--------->  38% | [   7s] <****\*\\***|--------->  38% | [   7s] <****\*\\***/--------->  38% | [   7s] <****\*\\***---------->  38% | [   7s] <****\*|\***---------->  38% | [   7s] <****\*|\***\--------->  38% | [   7s] <****\*|\***|--------->  38% | [   7s] <****\*|\***/--------->  38% | [   7s] <****\*|\***---------->  38% | [   7s] <****\*|\***\--------->  38% | [   7s] <****\*|\***|--------->  38% | [   7s] <****\*|\***/--------->  38% | [   7s] <****\*|\***---------->  38% | [   7s] <****\*|\***\--------->  38% | [   7s] <****\*||***\--------->  38% | [   7s] <****\*||***|--------->  38% | [   7s] <****\*||***/--------->  38% | [   7s] <****\*||***---------->  38% | [   7s] <****\*/|***---------->  38% | [   7s] <****\*/|***\--------->  38% | [   7s] <****\*//***\--------->  38% | [   7s] <****\*//***|--------->  38% | [   7s] <****\*//***/--------->  38% | [   7s] <****\*//***---------->  38% | [   7s] <****\*//***\--------->  38% | [   7s] <****\*/-***\--------->  38% | [   7s] <****\*/\***\--------->  38% | [   7s] <****\*-\***\--------->  38% | [   7s] <****\*-\***|--------->  38% | [   7s] <****\*-\***/--------->  38% | [   7s] <****\*-|***/--------->  38% | [   7s] <****\*-|***---------->  38% | [   7s] <****\*-|***\--------->  38% | [   8s] <****\*-|***|--------->  38% | [   8s] <****\*-/***|--------->  38% | [   8s] <****\*-/***/--------->  38% | [   8s] <****\*\/***/--------->  38% | [   8s] <****\*\/***---------->  38% | [   8s] <****\*\-***---------->  38% | [   8s] <****\*\-***\--------->  38% | [   8s] <****\*\-***|--------->  38% | [   8s] <****\*\\***|--------->  38% | [   8s] <****\*|\***|--------->  38% | [   8s] <****\*|\***/--------->  38% | [   8s] <****\*||***/--------->  38% | [   8s] <****\*||***---------->  38% | [   8s] <****\*||***\--------->  38% | [   8s] <****\*||***|--------->  38% | [   8s] <****\*||****--------->  43% | [   8s] <****\*||****\-------->  43% | [   8s] <****\*||****|-------->  43% | [   8s] <****\*||****/-------->  43% | [   8s] <****\*||****--------->  43% | [   8s] <****\*/|****--------->  43% | [   8s] <****\*//****--------->  43% | [   8s] <****\*//****\-------->  43% | [   8s] <****\*//****|-------->  43% | [   8s] <****\*//****/-------->  43% | [   8s] <****\*//****--------->  43% | [   8s] <****\*//****\-------->  43% | [   8s] <****\*//****|-------->  43% | [   8s] <****\*//****/-------->  43% | [   8s] <****\*//****--------->  43% | [   8s] <****\*//****\-------->  43% | [   8s] <****\*//****|-------->  43% | [   8s] <****\*//****/-------->  43% | [   8s] <****\*//****--------->  43% | [   8s] <****\*-/****--------->  43% | [   8s] <****\*-/****\-------->  43% | [   8s] <****\*-/****|-------->  43% | [   8s] <****\*-/****/-------->  43% | [   8s] <****\*-/****--------->  43% | [   8s] <****\*-/****\-------->  43% | [   8s] <****\*-/****|-------->  43% | [   8s] <****\*-/****/-------->  43% | [   8s] <****\*-/****--------->  43% | [   8s] <****\*--****--------->  43% | [   8s] <****\*--****\-------->  43% | [   8s] <****\*--****|-------->  43% | [   9s] <****\*--*****-------->  48% | [   9s] <****\*--*****\------->  48% | [   9s] <****\*--*****|------->  48% | [   9s] <****\*--*****/------->  48% | [   9s] <****\*--*****-------->  48% | [   9s] <****\*--*****\------->  48% | [   9s] <****\*--*****|------->  48% | [   9s] <****\*--*****/------->  48% | [   9s] <****\*--*****-------->  48% | [   9s] <****\*--*****\------->  48% | [   9s] <****\*--*****|------->  48% | [   9s] <****\*--*****/------->  48% | [   9s] <****|*--*****/------->  48% | [   9s] <****|*--*****-------->  48% | [   9s] <****|*-\*****-------->  48% | [   9s] <****|*-\*****\------->  48% | [   9s] <****|*\\*****\------->  48% | [   9s] <****|*\\*****|------->  48% | [   9s] <****|*\\*****/------->  48% | [   9s] <****|*\|*****/------->  48% | [   9s] <****|*\|*****-------->  48% | [   9s] <****|*\|*****\------->  48% | [   9s] <****|*\|*****|------->  48% | [   9s] <****|*\|*****/------->  48% | [   9s] <****|*\|*****-------->  48% | [   9s] <****|*\|*****\------->  48% | [   9s] <****|*\|*****|------->  48% | [   9s] <****|*\/*****|------->  48% | [   9s] <****|*\/*****/------->  48% | [   9s] <****|*|/*****/------->  48% | [   9s] <****|*|/*****-------->  48% | [   9s] <****|*|/*****\------->  48% | [   9s] <****|*|/*****|------->  48% | [   9s] <****|*|/*****/------->  48% | [   9s] <****|*|/*****-------->  48% | [   9s] <****|*|/*****\------->  48% | [   9s] <****|*|/*****|------->  48% | [   9s] <****|*|/*****/------->  48% | [   9s] <****|*|-*****/------->  48% | [   9s] <****|*|-*****-------->  48% | [   9s] <****|*|-*****\------->  48% | [   9s] <****|*|-******------->  52% | [   9s] <****|*|-******\------>  52% | [   9s] <****|*/-******\------>  52% | [   9s] <****|*/-******|------>  52% | [   9s] <****|*/-******/------>  52% | [   9s] <****|*/\******/------>  52% | [   9s] <****|*/\******------->  52% | [   9s] <****|*/|******------->  52% | [   9s] <****|*-|******------->  52% | [   9s] <****|*-|******\------>  52% | [   9s] <****|*-/******\------>  52% | [   9s] <****|*-/******|------>  52% | [   9s] <****|*-/******/------>  52% | [  10s] <****|*--******/------>  52% | [  10s] <****|*--******------->  52% | [  10s] <****|*--******\------>  52% | [  10s] <****|*-\******\------>  52% | [  10s] <****|*\\******\------>  52% | [  10s] <****|*\\******|------>  52% | [  10s] <****|*\\******/------>  52% | [  10s] <****|*\\******------->  52% | [  10s] <****|*\|******------->  52% | [  10s] <****|*\|******\------>  52% | [  10s] <****|*\/******\------>  52% | [  10s] <****|*\/******|------>  52% | [  10s] <****|*|/******|------>  52% | [  10s] <****|*|-******|------>  52% | [  10s] <****|*|-******/------>  52% | [  10s] <****|*|\******/------>  52% | [  10s] <****|*|\******------->  52% | [  10s] <****|*||******------->  52% | [  10s] <****|*/|******------->  52% | [  10s] <****|*/|******\------>  52% | [  10s] <****|*/|******|------>  52% | [  10s] <****|*/|******/------>  52% | [  10s] <****|*/|******------->  52% | [  10s] <****|*/|******\------>  52% | [  11s] <****|*-|******\------>  52% | [  11s] <****|*-|******|------>  52% | [  11s] <****|*-*******|------>  57% | [  11s] <****|*-*******/------>  57% | [  11s] <****|*\*******/------>  57% | [  11s] <****|*\*******------->  57% | [  11s] <****|*\*******-\----->  57% | [  11s] <****|*|*******-\----->  57% | [  11s] <****|*|*******\\----->  57% | [  11s] <****|*|*******\|----->  57% | [  11s] <****|*|*******||----->  57% | [  11s] <****|*|*******|/----->  57% | [  11s] <****|*|*******//----->  57% | [  11s] <****|*|*******-/----->  57% | [  11s] <****|*|*******\/----->  57% | [  11s] <****|*|*******\------>  57% | [  11s] <****|*|*******|------>  57% | [  11s] <****|*|*******/------>  57% | [  11s] <****|*|*******------->  57% | [  11s] <****|*|*******-\----->  57% | [  11s] <****|*|*******\\----->  57% | [  11s] <****|*|*******\|----->  57% | [  11s] <****|*|*******||----->  57% | [  11s] <****|*/*******||----->  57% | [  11s] <****|*/*******/|----->  57% | [  11s] <****|*/*******//----->  57% | [  11s] <****|*/*******-/----->  57% | [  11s] <****|*/*******\/----->  57% | [  11s] <****|*/*******|/----->  57% | [  11s] <****|*/*******//----->  57% | [  11s] <****|*/*******/------>  57% | [  11s] <****|*/*******------->  57% | [  11s] <****|*-*******------->  57% | [  12s] <****|*-*******\------>  57% | [  12s] <****|*-*******|------>  57% | [  12s] <****|*-*******|\----->  57% | [  12s] <****|*-*******/\----->  57% | [  12s] <****|*-*******/|----->  57% | [  12s] <****|*-*******-|----->  57% | [  12s] <****|*-*******\|----->  57% | [  12s] <****|*\*******\|----->  57% | [  12s] <****|*\********|----->  62% | [  12s] <****|*\********/----->  62% | [  12s] <****|*\********/\---->  62% | [  12s] <****|*\********/|---->  62% | [  12s] <****|*\********-|---->  62% | [  12s] <****|*\********-/---->  62% | [  12s] <****|*\********------>  62% | [  12s] <****|*\********\----->  62% | [  12s] <****|*\********\\---->  62% | [  12s] <****|*\********|\---->  62% | [  12s] <****|*\********||---->  62% | [  12s] <****|*\********/|---->  62% | [  12s] <****|*\********//---->  62% | [  12s] <****|*|********//---->  62% | [  12s] <****|*|********/----->  62% | [  12s] <****|*|********------>  62% | [  12s] <****|*|********-\---->  62% | [  12s] <****|*|********-|---->  62% | [  12s] <****|*|********\|---->  62% | [  12s] <****|*|********\/---->  62% | [  12s] <****|*|********\----->  62% | [  13s] <****|*|********|----->  62% | [  13s] <****|*|********|\---->  62% | [  13s] <****|*/********|\---->  62% | [  13s] <****|*/********||---->  62% | [  13s] <****|*/********/|---->  62% | [  13s] <****|*/********//---->  62% | [  13s] <****|*/********/----->  62% | [  13s] <****|*/********------>  62% | [  13s] <****|*/********-\---->  62% | [  13s] <****|*/********\\---->  62% | [  13s] <****|*-********\\---->  62% | [  13s] <****|*-********\|---->  62% | [  13s] <****|*-********\/---->  62% | [  13s] <****|*-********|/---->  62% | [  13s] <****|*-********|----->  62% | [  13s] <****|*-********/----->  62% | [  13s] <****|*-********/\---->  62% | [  13s] <****|*-********/|---->  62% | [  13s] <****|*-********-|---->  62% | [  13s] <****|*-********-/---->  62% | [  13s] <****|*-********\/---->  62% | [  13s] <****|*\********\/---->  62% | [  13s] <****|*\********\----->  62% | [  13s] <****|*\********\\---->  62% | [  13s] <****/*\********\\---->  62% | [  13s] <****/*\********\|---->  62% | [  13s] <****/*\********||---->  62% | [  13s] <****/*|********||---->  62% | [  13s] <****/*|********|/---->  62% | [  13s] <****/*|********|----->  62% | [  13s] <****/*|********|\---->  62% | [  13s] <****/*|********/\---->  62% | [  13s] <****/*|********/|---->  62% | [  13s] <****/*|********//---->  62% | [  13s] <****/*/********//---->  62% | [  13s] <****/*/********/----->  62% | [  13s] <****/*/********/\---->  62% | [  13s] <****/*/********-\---->  62% | [  13s] <****/*-********-\---->  62% | [  13s] <****/*-********-|---->  62% | [  14s] <****/*-********\|---->  62% | [  14s] <****/*-********\/---->  62% | [  14s] <****/*-********\----->  62% | [  14s] <****/*-********\\---->  62% | [  14s] <****/*-********|\---->  62% | [  14s] <****/*-********||---->  62% | [  14s] <****/*-********|/---->  62% | [  14s] <****/*-********//---->  62% | [  14s] <****/*-********/----->  62% | [  14s] <****/*-********/\---->  62% | [  14s] <****/*-********-\---->  62% | [  14s] <****/*-********-|---->  62% | [  14s] <****/*-********\|---->  62% | [  14s] <****/*-********\/---->  62% | [  14s] <****/*-********|/---->  62% | [  14s] <****/*-********|----->  62% | [  14s] <****/*-********/----->  62% | [  14s] <****/**********/----->  67% | [  14s] <****/**********/\---->  67% | [  14s] <****/**********/\\--->  67% | [  14s] <****/**********/\|--->  67% | [  14s] <****/**********/\/--->  67% | [  14s] <****/**********/\---->  67% | [  14s] <****/**********/\\--->  67% | [  14s] <****/**********/\|--->  67% | [  14s] <****/**********/\/--->  67% | [  14s] <****/**********/\---->  67% | [  14s] <****/**********/\\--->  67% | [  14s] <****/**********-\\--->  67% | [  14s] <****/**********-\|--->  67% | [  14s] <****/**********-\/--->  67% | [  14s] <****/**********-\---->  67% | [  14s] <****/**********-\\--->  67% | [  14s] <****/**********-*\--->  71% | [  14s] <****/**********-*|--->  71% | [  14s] <****/**********-*|\-->  71% | [  14s] <****/**********-*||-->  71% | [  14s] <****/**********-*|*-->  76% | [  14s] <****/**********-*|*\->  76% | [  14s] <****/**********-*/*\->  76% | [  14s] <****/**********-*-*\->  76% | [  14s] <****/**********-*-*|->  76% | [  14s] <****/**********\*-*|->  76% | [  14s] <****/**********\*\*|->  76% | [  14s] <****/**********\*|*|->  76% | [  14s] <****/**********\*/*|->  76% | [  14s] <****/**********\*-*|->  76% | [  14s] <****/**********\*\*|->  76% | [  14s] <****/**********\*\*/->  76% | [  14s] <****/**********\*|*/->  76% | [  14s] <****/**********\*/*/->  76% | [  14s] <****/**********\*/*-->  76% | [  14s] <****/**********\*-*-->  76% | [  14s] <****/**********\*-*\->  76% | [  14s] <****/**********\*\*\->  76% | [  14s] <****/**********\*|*\->  76% | [  14s] <****/**********\*|*|->  76% | [  14s] <****/**********\*/*|->  76% | [  14s] <****/**********\*-*|->  76% | [  14s] <****/**********\*\*|->  76% | [  14s] <****/**********\*|*|->  76% | [  14s] <****/**********\*/*|->  76% | [  14s] <****/**********\*-*|->  76% | [  14s] <****/**********\*\*|->  76% | [  14s] <****/**********\*|*|->  76% | [  14s] <****/**********\*/*|->  76% | [  14s] <****/**********\*-*|->  76% | [  14s] <****/**********\*\*|->  76% | [  14s] <****/**********\*|*|->  76% | [  14s] <****/**********\*/*|->  76% | [  14s] <****/**********\*-*|->  76% | [  14s] <****/**********\*\*|->  76% | [  14s] <****/**********|*\*|->  76% | [  14s] <****/**********|*\*/->  76% | [  14s] <****/**********|*|*/->  76% | [  14s] <****/**********|*/*/->  76% | [  14s] <****/**********|*-*/->  76% | [  14s] <****/**********|*-*-->  76% | [  14s] <****/**********|*\*-->  76% | [  14s] <****/**********|*\*\->  76% | [  14s] <****/**********|*|*\->  76% | [  14s] <****/**********|*|*|->  76% | [  14s] <****/**********|*/*|->  76% | [  14s] <****/**********|*-*|->  76% | [  14s] <****/**********|*-*/->  76% | [  14s] <****/**********|*\*/->  76% | [  14s] <****/**********|*|*/->  76% | [  14s] <****/**********|*|*-->  76% | [  14s] <****/**********/*|*-->  76% | [  14s] <****/**********/*|*\->  76% | [  14s] <****/**********/*|*|->  76% | [  14s] <****/**********/*|*/->  76% | [  14s] <****/**********/*|*-->  76% | [  14s] <****/**********/*|*\->  76% | [  14s] <****/**********/*|*|->  76% | [  14s] <****/**********/*|*/->  76% | [  14s] <****/**********-*|*/->  76% | [  14s] <****/**********-*|*-->  76% | [  14s] <****/**********-*|*\->  76% | [  14s] <****/**********-*|*|->  76% | [  14s] <****/**********-*|*/->  76% | [  14s] <****/**********-*|*-->  76% | [  14s] <****/**********-*|*\->  76% | [  14s] <****/**********-*|*|->  76% | [  14s] <****/**********-*|*/->  76% | [  14s] <****/**********\*|*/->  76% | [  14s] <****/**********\*|*-->  76% | [  14s] <****/**********\*|*\->  76% | [  15s] <****/**********\*|*|->  76% | [  15s] <****/**********\*|*/->  76% | [  15s] <****/**********\*|*-->  76% | [  15s] <****/**********\*|*\->  76% | [  15s] <****/**********\*|*|->  76% | [  15s] <****/**********\*|*/->  76% | [  15s] <****/**********\***/->  81% | [  15s] <****/**********\***-->  81% | [  15s] <****/**********\***\->  81% | [  15s] <****/**********|***\->  81% | [  15s] <****/**********|****->  86% | [  15s] <****/**********/****->  86% | [  15s] <****/**********-****->  86% | [  15s] <****/**********\****->  86% | [  15s] <****/**********|****->  86% | [  15s] <****-**********|****->  86% | [  15s] <****-**********/****->  86% | [  15s] <****-**********-****->  86% | [  15s] <****-**********\****->  86% | [  15s] <****-**********|****->  86% | [  15s] <****-***************->  90% | [  15s] <****\***************->  90% | [  17s] <****|***************->  90% | [  19s] <****/***************->  90% | [  21s] <****-***************->  90% | [  22s] <****\***************->  90% | [  25s] <****|***************->  90% | [  27s] <****/***************->  90% | [  28s] <****-***************->  90% | [  29s] <****\***************->  90% | [  31s] <****|***************->  90% | [  32s] <****/***************->  90% | [  33s] <****-***************->  90% | [  35s] <****\***************->  90% | [  36s] <****|***************->  90% | [  37s] <****/***************->  90% | [  38s] <****-***************->  90% | [  40s] <****\***************->  90% | [  41s] <****|***************->  90% | [  42s] <****/***************->  90% | [  43s] <****-***************->  90% | [  44s] <****\***************->  90% | [  45s] <****|***************->  90% | [  46s] <****/***************->  90% | [  47s] <****-***************->  90% | [  48s] <****\***************->  90% | [  49s] <****|***************->  90% | [  51s] <****/***************->  90% | [  52s] <****-***************->  90% | [  54s] <****\***************->  90% | [  55s] <****|***************->  90% | [  56s] <****/***************->  90% | [  57s] <****-***************->  90% | [  58s] <****\***************->  90% | [  59s] <****|***************->  90% | [   1m] <****/***************->  90% | [   1m] <****-***************->  90% | [   1m] <****\***************->  90% | [   1m] <****|***************->  90% | [   1m] <****/***************->  90% | [   1m] <****-***************->  90% | [   1m] <****\***************->  90% | [   1m] <****|***************->  90% | [   1m] <****/***************->  90% | [   1m] <****-***************->  90% | [   1m] <****\***************->  90% | [   1m] <****|***************->  90% | [   1m] <********************->  95% | [   1m] <*********************> 100% | [   1m] | Completed!
 Welcome to Concurnas 1.14.020 (OpenJDK 64-Bit Server VM, Java 1.8.0_372).
 Currently running in REPL mode. For help type: /help
 
 conc> |  Bye!
-, ✅(250s) 
+, ✅(95s) 
  sdkman/ballerina Ballerina 2201.5.0 (Swan Lake Update 5)
 Language specification 2022R4
 Update Tool 1.3.14
-, ✅(13s) 
+, ✅(11s) 
  sdkman/pierrot , ✅(3s) 
  sdkman/toolkit v0.6.5
-, ✅(5s) 
- sdkman/spark 23/07/12 12:36:43 WARN Utils: Your hostname, Mac-1689164648636.local resolves to a loopback address: 127.0.0.1; using 10.79.11.17 instead (on interface en0)
-23/07/12 12:36:43 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+, ✅(3s) 
+ sdkman/spark 23/07/12 13:20:07 WARN Utils: Your hostname, Mac-1689167076884.local resolves to a loopback address: 127.0.0.1; using 10.212.2.241 instead (on interface en0)
+23/07/12 13:20:07 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
 Welcome to
       ____              __
      / __/__  ___ _____/ /__
@@ -496,15 +498,15 @@ Compiled by user xinrong.meng on 2023-04-07T02:18:01Z
 Revision 87a5442f7ed96b11051d8a9333476d080054e5a0
 Url https://github.com/apache/spark
 Type --help for more information.
-, ✅(25s) 
- sdkman/mcs , ✅(2s) 
+, ✅(10s) 
+ sdkman/mcs , ✅(3s) 
  sdkman/infrastructor version:    [34m0.3.1[m
 revision:   [34m4b2f340a9fe757dc624968739dd5817b7035ff10[m
 build date: [34m10-02-2020 22:22[m
-, ✅(5s) 
+, ✅(4s) 
  sdkman/groovyserv Setup completed successfully for darwin_amd64.
 It's required only just after installation. Please run the same command once again.
-, ✅(2s) 
+, ✅(4s) 
  shell/usql usql 0.14.1
 , ✅(5s) 
  shell/exa , ✅(1s) 
@@ -518,24 +520,22 @@ It's required only just after installation. Please run the same command once aga
  network/termshark Could not find tshark in your PATH. The tshark binary is required to run termshark.
 Try installing with: apt install tshark
 , ❌(smoke) 
- network/ncat , ✅(2s) 
- network/gost , ✅(2s) 
+ network/ncat , ✅(1s) 
+ network/gost , ✅(3s) 
  network/aria2 Usage: aria2c [OPTIONS] [URI | MAGNET | TORRENT_FILE | METALINK_FILE]...
 Printing options tagged with '#basic'.
 See 'aria2c -h#help' to know all available tags.
 Options:
  -v, --version                Print the version number and exit.
-, ✅(2s) 
+, ✅(1s) 
  network/nping , ✅(1s) 
  network/curl , ✅(2s) 
  network/websocat websocat 1.11.0
 Vitaly "_Vi" Shukela <vi0oss@gmail.com>
-thread 'main' panicked at 'failed printing to stdout: Broken pipe (os error 32)', library/std/src/io/stdio.rs:1016:9
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 , ✅(1s) 
  network/bandwhich , ❌(env_try) 
  network/traceroute , - 
- network/socat dyld[27503]: Library not loaded: '/usr/local/lib/libssl.3.dylib'
+ network/socat dyld[27676]: Library not loaded: '/usr/local/lib/libssl.3.dylib'
   Referenced from: '/Users/runner/.x-cmd.root/local/data/pkg/populate/socat/v0.0.1/bin/socat'
   Reason: tried: '/usr/local/lib/libssl.3.dylib' (no such file), '/usr/lib/libssl.3.dylib' (no such file)
 , ❌(smoke) 
@@ -552,7 +552,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
  terminal/tmux tmux 3.2a
 , ✅(2s) 
  terminal/shtris 3.0.0
-, ✅(1s) 
+, ✅(2s) 
  terminal/chatgpt , ✅(2s) 
  terminal/glow glow version 1.5.1 (ad21129)
 , ✅(2s) 
@@ -560,10 +560,10 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 , ✅(4s) 
  terminal/gotop , ❌(smoke) 
  filesystem/tokei tokei 12.1.2 compiled with serialization support: json, cbor, yaml
-, ✅(2s) 
+, ✅(1s) 
  filesystem/dust , ✅(2s) 
  filesystem/broot broot 1.21.3
-, ✅(1s) 
+, ✅(2s) 
  filesystem/rclone rclone v1.62.2
 - os/version: darwin 12.6.7 (64 bit)
 - os/kernel: 21.6.0 (x86_64)
@@ -572,16 +572,16 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 - go/version: go1.20.2
 - go/linking: dynamic
 - go/tags: cmount
-, ✅(3s) 
+, ✅(4s) 
  filesystem/fd , ✅(2s) 
- filesystem/duf , ✅(1s) 
+ filesystem/duf , ✅(2s) 
  lang/deno , ✅(3s) 
- lang/zig , ✅(15s) 
- lang/go , ✅(15s) 
+ lang/zig , ✅(16s) 
+ lang/go , ✅(10s) 
  lang/wasmtime , ✅(2s) 
- lang/python Looking in links: /var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/tmp0b42lwx5
-Processing /private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/tmp0b42lwx5/setuptools-58.1.0-py3-none-any.whl
-Processing /private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/tmp0b42lwx5/pip-22.0.4-py3-none-any.whl
+ lang/python Looking in links: /var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/tmplf5ko8ig
+Processing /private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/tmplf5ko8ig/setuptools-58.1.0-py3-none-any.whl
+Processing /private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/tmplf5ko8ig/pip-22.0.4-py3-none-any.whl
 Installing collected packages: setuptools, pip
 Successfully installed pip-22.0.4 setuptools-58.1.0
 Requirement already satisfied: pip in /Users/runner/.x-cmd.root/local/data/pkg/populate/python/pypy3.9-v7.3.11/lib/pypy3.9/site-packages (22.0.4)
@@ -593,8 +593,8 @@ Installing collected packages: pip
     Uninstalling pip-22.0.4:
       Successfully uninstalled pip-22.0.4
 Successfully installed pip-23.1.2
-, ✅(26s) 
- lang/perl , ✅(3s) 
+, ✅(25s) 
+ lang/perl , ✅(4s) 
  lang/rust install: creating uninstall script at /Users/runner/.x-cmd.root/local/data/pkg/populate/rust/1.60.0/lib/rustlib/uninstall.sh
 install: installing component 'rustc'
 install: installing component 'rust-std-x86_64-apple-darwin'
@@ -609,9 +609,9 @@ install: installing component 'rust-analysis-x86_64-apple-darwin'
 
     rust installed.
 
-, ✅(75s) 
+, ✅(64s) 
  lang/java , ✅(2s) 
- lang/kotlin , ✅(3s) 
+ lang/kotlin , ✅(2s) 
  lang/bun , ❌(env_try) 
  lang/lua , ✅(1s) 
  lang/goreleaser goreleaser version 1.16.2
@@ -625,11 +625,11 @@ module version: v1.16.2, checksum: h1:usMTxv8JXDNUUmVo0VSTExYBwCmLOuqa1l6hkmE/di
 https://goreleaser.com
 , ✅(3s) 
  lang/wasmer , ✅(8s) 
- lang/scala , ✅(5s) 
- lang/julia , ✅(52s) 
- lang/groovy , ✅(5s) 
- lang/raku , ✅(6s) 
- lang/node , ✅(46s) 
+ lang/scala , ✅(6s) 
+ lang/julia , ✅(14s) 
+ lang/groovy , ✅(6s) 
+ lang/raku , ✅(3s) 
+ lang/node , ✅(44s) 
  lang/mawk mawk 1.3.4 20230404
 Copyright 2008-2022,2023, Thomas E. Dickey
 Copyright 1991-1996,2014, Michael D. Brennan
@@ -640,7 +640,7 @@ regex-funcs:        internal
 compiled limits:
 sprintf buffer      8192
 maximum-integer     9223372036854775808
-, ✅(1s) 
+, ✅(2s) 
  container/kube-score kube-score version: 1.16.1, commit: 74e551f58e9009e70012773a68dcd6424cf6379d, built: 2022-12-16T12:54:40Z
 , ✅(2s) 
  container/bwrap , - 
@@ -651,13 +651,13 @@ k3s version v1.25.7-k3s1 (default)
 , ✅(3s) 
  container/minikube minikube version: v1.30.0
 commit: ba4594e7b78814fd52a9376decb9c3d59c133712
-, ✅(4s) 
+, ✅(5s) 
  container/kube-capacity kube-capacity version v0.7.4
 , ✅(3s) 
  container/kind kind version 0.16.0
 , ✅(2s) 
  container/kubectx 0.9.4
-, ✅(1s) 
+, ✅(2s) 
  container/helm version.BuildInfo{Version:"v3.9.0", GitCommit:"7ceeda6c585217a19a1131663d8cd1f7d641b2a7", GitTreeState:"clean", GoVersion:"go1.17.5"}
 , ✅(3s) 
  multimedia/ffmpeg , - 
@@ -676,7 +676,7 @@ Usage: 7za <command> [<switches>...] <archive_name> [<file_names>...]
  data/micro Version: 2.0.11
 Commit hash: 225927b9
 Compiled on August 01, 2022
-, ✅(3s) 
+, ✅(2s) 
  data/sd , - 
  data/yq yq (https://github.com/mikefarah/yq/) version 4.14.1
 , ✅(1s) 
@@ -690,15 +690,15 @@ warranty, not even for merchantability or fitness for a particular purpose.
 , ✅(4s) 
  data/sqlean , - 
  data/ws4sqlite ws4sqlite v0.14.1, based on sqlite v3.41.2
-, ✅(3s) 
+, ✅(2s) 
  data/rg ripgrep 13.0.0 (rev af6b6c543b)
 -SIMD -AVX (compiled)
 +SIMD -AVX (runtime)
-, ✅(1s) 
+, ✅(3s) 
  data/grex grex 1.4.1
-, ✅(1s) 
+, ✅(2s) 
  data/upx , - 
- data/sqlite3 , ✅(2s) 
+ data/sqlite3 , ✅(1s) 
  data/zstd , ❌(smoke) 
  data/brook , ✅(2s) 
  data/difft , ✅(3s) 
@@ -706,35 +706,35 @@ warranty, not even for merchantability or fitness for a particular purpose.
 , ✅(2s) 
  data/qrencode qrencode version 4.1.1
 Copyright (C) 2006-2017 Kentaro Fukuchi
-, ✅(1s) 
+, ✅(2s) 
  data/xsv 0.13.0
-, ✅(1s) 
+, ✅(2s) 
  data/dasel , ✅(2s) 
  data/jq jq-1.6-dirty
 , ✅(2s) 
- data/fzf , ✅(1s) 
+ data/fzf , ✅(2s) 
  git/tig tig version 2.5.8
 ncurses version 5.7.20081102
 readline version 8.2
 PCRE2 version 10.42 2022-12-11
 , ✅(2s) 
  git/soft-serve soft version v0.5.4 (9b8e183)
-, ✅(3s) 
+, ✅(4s) 
  git/gh gh version 2.25.1 (2023-03-21)
 https://github.com/cli/cli/releases/tag/v2.25.1
 , ✅(3s) 
- git/bit , ✅(1s) 
+ git/bit , ✅(2s) 
  git/lazygit commit=16802a048e0425182f08cf0e9a2bc31480e9a55d, build date=2023-02-01T11:02:43Z, build source=binaryRelease, version=0.37.0, os=darwin, arch=amd64, git version=2.41.0
 , ✅(2s) 
  git/gitui gitui 0.22.1
-, ✅(1s) 
+, ✅(2s) 
  git/gix gix 
 , ✅(2s) 
  git/tea Version: [1m0.9.2[0m	golang: 1.18.10	go-sdk: v0.15.1-0.20220831004139-a0127ed0e7fe
 , ✅(5s) 
- git/gitea , ✅(4s) 
+ git/gitea , ✅(5s) 
  git/act_runner act_runner version v0.2.0
-, ✅(5s) 
+, ✅(4s) 
  git/gitleaks 8.16.2
-, ✅(1s) 
- media/agg , ✅(2s) 
+, ✅(3s) 
+ media/agg , ✅(1s) 
