@@ -1,0 +1,56 @@
+
+name: Test xbin
+on:
+  schedule:
+    - cron: '0 12 * * 3,6'
+  workflow_dispatch:
+    inputs:
+      x-cmd-pkg-version:
+        description: 'x-cmd pkg version'
+        required: true
+        default: 'v0.0.1'
+      x-cmd-pkg-branch:
+        description: 'x-cmd pkg branch'
+        required: true
+        default: 'main'
+      x-bash-pkg-branch:
+        description: 'x-bash pkg branch'
+        required: true
+        default: 'main'
+      x-bash-env-branch:
+        description: 'x-bash env branch'
+        required: true
+        default: 'main'
+      pkg-name:
+        description: 'test candidate'
+        required: true
+
+jobs:
+  test-xbin:
+    name: Build
+    strategy:
+      matrix:
+        os: [ windows-latest, ubuntu-latest, macos-latest ]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 240
+    env:
+      ___X_CMD_GHACTION_X: x2
+      ___X_CMD_PKG_VERSION: ${{ github.event.inputs.x-cmd-pkg-version }}
+      ___X_CMD_PKG_BRANCH: ${{ github.event.inputs.x-cmd-pkg-branch }}
+      ___X_BASH_PKG_BRANCH: ${{ github.event.inputs.x-bash-pkg-branch }}
+      ___X_BASH_ENV_BRANCH: ${{ github.event.inputs.x-bash-env-branch }}
+      ___x_CMD_PKG_CANDADITE: ${{github.event.inputs.pkg-name}}
+      WEBHOOK_URL: ${{ secrets.ROBOT }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
+      git_user: agent-zero
+      git_email: 0@x-cmd.com
+      CONCURRENCY: 10
+    steps:
+      - name: main
+        uses: x-cmd/action@main
+        with:
+          code: |
+            xws test_solo && \
+            git pull && xws push test_doc
+

@@ -32,3 +32,13 @@ echo '{
     "x-bash-env-branch":"main"
 }' | x gh action workflow run --repo x-cmd/pkg \
   --ref test --inputs - .id=58913686
+
+
+echo '{
+    "x-cmd-pkg-version":"v0.0.1",
+    "x-cmd-pkg-branch":"main",
+    "x-bash-pkg-branch":"main",
+    "x-bash-env-branch":"main"
+    "pkg-name":"hurl",
+}' | x gh action workflow run --repo x-cmd/pkg \
+  --ref main --inputs - .id=<id>
