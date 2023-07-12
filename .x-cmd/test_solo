@@ -3,7 +3,7 @@
 test_xbin_main()(
     x cd .tmp/x-cmd-pkg && \
     xws bundle && rm -rf "$___X_CMD_PKG_RAW_PATH" && \
-    xws test_solo "$___X_CMD_WEBSRC_REGION" && \
+    xws test_solo "$___X_CMD_WEBSRC_REGION" "${___X_BASH_ENV_BRANCH}" && \
     cp -rf doc/* ../../doc/
 )
 
