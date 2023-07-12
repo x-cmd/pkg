@@ -40,5 +40,6 @@ echo '{
     "x-bash-pkg-branch":"main",
     "x-bash-env-branch":"main"
     "pkg-name":"hurl",
+    "pkg-version":"v0.0.1,
 }' | x gh action workflow run --repo x-cmd/pkg \
   --ref main --inputs - .id=62905756
