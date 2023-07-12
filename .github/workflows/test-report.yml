@@ -19,7 +19,7 @@ jobs:
       git_user: agent-zero
       git_email: 0@x-cmd.com
       CONCURRENCY: 10
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
     steps:
       - name: main
         uses: x-cmd/action@main
@@ -38,7 +38,7 @@ jobs:
       git_user: agent-zero
       git_email: 0@x-cmd.com
       CONCURRENCY: 10
-    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: main
         uses: x-cmd/action@main
