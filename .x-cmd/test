@@ -31,7 +31,6 @@ echo '{
     "x-bash-pkg-branch":"main",
     "x-bash-env-branch":"main"
 }' | x gh action workflow run --repo x-cmd/pkg \
-<<<<<<< HEAD
   --ref test --inputs - .id=58913686
 
 
@@ -42,7 +41,4 @@ echo '{
     "x-bash-env-branch":"main"
     "pkg-name":"hurl",
 }' | x gh action workflow run --repo x-cmd/pkg \
-  --ref main --inputs - .id=<id>
-=======
-  --ref main --inputs - .id=58913686
->>>>>>> e12e812b719b8741a2917ffc78074fb7e2818922
+  --ref main --inputs - .id=62905756
