@@ -1,9 +1,9 @@
  container/bwrap , - 
  container/helm version.BuildInfo{Version:"v3.9.0", GitCommit:"7ceeda6c585217a19a1131663d8cd1f7d641b2a7", GitTreeState:"clean", GoVersion:"go1.17.5"}
-, ✅(15s) 
+, ✅(16s) 
  container/k3d k3d version v5.4.9
 k3s version v1.25.7-k3s1 (default)
-, ✅(11s) 
+, ✅(9s) 
  container/kind /c/Users/runneradmin/.x-cmd.root/local/data/pkg/populate/kind/v0.0.1/bin/kind: line 1: Not: command not found
 , ❌(smoke) 
  container/kube-capacity kube-capacity version v0.7.4
@@ -13,24 +13,24 @@ k3s version v1.25.7-k3s1 (default)
  container/kube-score kube-score version: 1.16.1, commit: 74e551f58e9009e70012773a68dcd6424cf6379d, built: 2022-12-16T12:54:40Z
 , ✅(10s) 
  container/kubectx 0.9.4
-, ✅(8s) 
+, ✅(7s) 
  container/minikube minikube version: v1.30.0
 commit: ba4594e7b78814fd52a9376decb9c3d59c133712
-, ✅(17s) 
+, ✅(21s) 
  data/7za 
 7-Zip (a) 19.00 (x64) : Copyright (c) 1999-2018 Igor Pavlov : 2019-02-21
 
 Usage: 7za <command> [<switches>...] <archive_name> [<file_names>...] [@listfile]
 
-, ✅(6s) 
+, ✅(4s) 
  data/brook , ✅(10s) 
  data/dasel , ✅(9s) 
- data/difft , ✅(11s) 
+ data/difft , ✅(12s) 
  data/fzf , ✅(6s) 
  data/grex grex 1.4.1
 , ✅(7s) 
  data/jq jq--
-, ✅(7s) 
+, ✅(6s) 
  data/micro Version: 2.0.11
 Commit hash: 225927b9
 Compiled on August 01, 2022
@@ -42,18 +42,18 @@ User data directory: C:\Users\runneradmin\AppData\Roaming\pandoc
 Copyright (C) 2006-2023 John MacFarlane. Web:  https://pandoc.org
 This is free software; see the source for copying conditions. There is no
 warranty, not even for merchantability or fitness for a particular purpose.
-, ✅(26s) 
+, ✅(29s) 
  data/qrencode qrencode version 4.1.1
 Copyright (C) 2006-2017 Kentaro Fukuchi
 , ✅(7s) 
  data/rg ripgrep 13.0.0 (rev af6b6c543b)
 -SIMD -AVX (compiled)
 +SIMD +AVX (runtime)
-, ✅(13s) 
+, ✅(14s) 
  data/sd , - 
  data/sqlean /c/Users/runneradmin/.x-cmd.root/local/data/pkg/raw/data/sqlean/.x-cmd/smoke.sh: line 3: sqlean: command not found
 , ❌(smoke) 
- data/sqlite3 , ✅(6s) 
+ data/sqlite3 , ✅(7s) 
  data/trdsql trdsql version v0.11.1
 , ✅(12s) 
  data/upx upx 4.0.2
@@ -70,18 +70,17 @@ Copyright (C) 1999-2006 Igor Pavlov
 UPX comes with ABSOLUTELY NO WARRANTY; for details type 'upx -L'.
 , ✅(6s) 
  data/ws4sqlite ws4sqlite v0.14.1, based on sqlite v3.41.2
-, ✅(10s) 
+, ✅(9s) 
  data/xsv 0.13.0
 , ✅(12s) 
  data/yq yq (https://github.com/mikefarah/yq/) version 4.14.1
-, ✅(3s) 
- data/zstd *** Zstandard CLI (64-bit) v1.5.5, by Yann Collet ***
-, ✅(7s) 
+, ✅(4s) 
+ data/zstd , ❌(smoke) 
  filesystem/broot /c/Users/runneradmin/.x-cmd.root/local/data/pkg/raw/filesystem/broot/.x-cmd/smoke.sh: line 4: broot: command not found
 , ❌(smoke) 
  filesystem/duf , ✅(7s) 
- filesystem/dust , ✅(8s) 
- filesystem/fd , ✅(8s) 
+ filesystem/dust , ✅(7s) 
+ filesystem/fd , ✅(7s) 
  filesystem/rclone rclone v1.62.2
 - os/version: Microsoft Windows Server 2022 Datacenter 21H2 (64 bit)
 - os/kernel: 10.0.20348.1787 Build 20348.1787.1787 (x86_64)
@@ -94,14 +93,14 @@ UPX comes with ABSOLUTELY NO WARRANTY; for details type 'upx -L'.
  filesystem/tokei tokei 12.1.2 compiled with serialization support: json, cbor, yaml
 , ✅(7s) 
  git/act_runner act_runner version v0.2.0
-, ✅(9s) 
- git/bit , ✅(9s) 
+, ✅(8s) 
+ git/bit , ✅(8s) 
  git/gh gh version 2.25.1 (2023-03-21)
 https://github.com/cli/cli/releases/tag/v2.25.1
 , ✅(12s) 
- git/gitea , ✅(39s) 
+ git/gitea , ✅(38s) 
  git/gitleaks 8.16.2
-, ✅(8s) 
+, ✅(7s) 
  git/gitui gitui 0.22.1
 , ✅(7s) 
  git/gix gix 
@@ -115,7 +114,7 @@ https://github.com/cli/cli/releases/tag/v2.25.1
  git/tig , - 
  lang/bun , - 
  lang/deno , ✅(8s) 
- lang/go , ✅(57s) 
+ lang/go , ✅(50s) 
  lang/goreleaser goreleaser version 1.16.2
 commit: 9f91bea9211465901bc5407bbec5e7bbbeabdf0e
 built at: 2023-03-20T00:33:05Z
@@ -129,8 +128,8 @@ https://goreleaser.com
  lang/groovy , ✅(29s) 
  lang/java , ✅(21s) 
  lang/julia , ❌(env_try) 
- lang/kotlin , ✅(15s) 
- lang/lua , ✅(8s) 
+ lang/kotlin , ✅(18s) 
+ lang/lua , ✅(6s) 
  lang/mawk mawk 1.3.4 20230404
 Copyright 2008-2022,2023, Thomas E. Dickey
 Copyright 1991-1996,2014, Michael D. Brennan
@@ -142,17 +141,17 @@ compiled limits:
 sprintf buffer      8192
 maximum-integer     9223372036854775808
 , ✅(6s) 
- lang/node , ✅(556s) 
- lang/perl , ✅(61s) 
- lang/python Looking in links: c:\Users\RUNNER~1\AppData\Local\Temp\tmpd5azhfck
-Processing c:\users\runner~1\appdata\local\temp\tmpd5azhfck\setuptools-58.1.0-py3-none-any.whl
-Processing c:\users\runner~1\appdata\local\temp\tmpd5azhfck\pip-22.0.4-py3-none-any.whl
+ lang/node , ✅(662s) 
+ lang/perl , ✅(53s) 
+ lang/python Looking in links: c:\Users\RUNNER~1\AppData\Local\Temp\tmpli7i71km
+Processing c:\users\runner~1\appdata\local\temp\tmpli7i71km\setuptools-58.1.0-py3-none-any.whl
+Processing c:\users\runner~1\appdata\local\temp\tmpli7i71km\pip-22.0.4-py3-none-any.whl
 Installing collected packages: setuptools, pip
 Successfully installed pip-22.0.4 setuptools-58.1.0
 Requirement already satisfied: pip in c:\users\runneradmin\.x-cmd.root\local\data\pkg\populate\python\pypy3.9-v7.3.11\lib\site-packages (22.0.4)
 Collecting pip
   Downloading pip-23.1.2-py3-none-any.whl (2.1 MB)
-     ---------------------------------------- 2.1/2.1 MB 12.0 MB/s eta 0:00:00
+     ---------------------------------------- 2.1/2.1 MB 10.9 MB/s eta 0:00:00
 Installing collected packages: pip
   Attempting uninstall: pip
     Found existing installation: pip 22.0.4
@@ -160,7 +159,7 @@ Installing collected packages: pip
       Successfully uninstalled pip-22.0.4
 Successfully installed pip-23.1.2
 , ✅(41s) 
- lang/raku , ✅(15s) 
+ lang/raku , ✅(12s) 
  lang/rust install: creating uninstall script at /c/Users/runneradmin/.x-cmd.root/local/data/pkg/populate/rust/1.60.0/lib/rustlib/uninstall.sh
 install: installing component 'rustc'
 install: installing component 'rust-std-x86_64-pc-windows-msvc'
@@ -175,15 +174,16 @@ install: installing component 'rust-analysis-x86_64-pc-windows-msvc'
 
     rust installed.
 
-, ✅(228s) 
- lang/scala , ✅(23s) 
- lang/wasmer , ✅(52s) 
+, ✅(184s) 
+ lang/scala , ✅(24s) 
+ lang/wasmer , ✅(55s) 
  lang/wasmtime , ✅(10s) 
- lang/zig , ✅(47s) 
- media/agg , ✅(7s) 
- multimedia/ffmpeg , ✅(9s) 
+ lang/zig , ✅(49s) 
+ media/agg , ✅(6s) 
+ multimedia/ffmpeg , ✅(70s) 
  multimedia/magick , - 
- multimedia/pdfcpu , ❌(env_try) 
+ multimedia/pdfcpu /c/Users/runneradmin/.x-cmd.root/local/data/pkg/raw/multimedia/pdfcpu/.x-cmd/smoke.sh: line 3: pdfcpu: command not found
+, ❌(smoke) 
  multimedia/termsvg , - 
  network/aria2 Usage: aria2c [OPTIONS] [URI | MAGNET | TORRENT_FILE | METALINK_FILE]...
 Printing options tagged with '#basic'.
@@ -194,23 +194,7 @@ Options:
  network/bandwhich , - 
  network/curl , ✅(8s) 
  network/gost , ✅(11s) 
- network/mosquitto mosquitto version 2.0.9
-
-mosquitto is an MQTT v5.0/v3.1.1/v3.1 broker.
-
-Usage: mosquitto [-c config_file] [-d] [-h] [-p port]
-
- -c : specify the broker config file.
- -d : put the broker into the background after starting.
- -h : display this help.
- -p : start the broker listening on the specified port.
-      Not recommended in conjunction with the -c option.
- -v : verbose mode - enable all logging types. This overrides
-      any logging options given in the config file.
-
-See https://mosquitto.org/ for more information.
-
-, ❌(smoke) 
+ network/mosquitto , ❌(smoke) 
  network/ncat , - 
  network/nmap , - 
  network/nping , - 
@@ -220,10 +204,10 @@ See https://mosquitto.org/ for more information.
 , ❌(smoke) 
  network/traceroute , - 
  network/ttyd ttyd version 1.7.2-020e2f3
-, ✅(6s) 
+, ✅(8s) 
  network/websocat , ❌(env_try) 
  osman/aliyun , ✅(9s) 
- osman/ffuf , ✅(8s) 
+ osman/ffuf , ✅(7s) 
  osman/hurl , ❌(smoke) 
  osman/mirrord , - 
  osman/proot , - 
@@ -231,7 +215,7 @@ See https://mosquitto.org/ for more information.
 on windows_amd64
 
 Your version of Terraform is out of date! The latest version
-is 1.5.2. You can update by downloading from https://www.terraform.io/downloads.html
+is 1.5.3. You can update by downloading from https://www.terraform.io/downloads.html
 , ✅(19s) 
  osman/ucloud ucloud cli 0.1.38
 , ✅(8s) 
@@ -241,7 +225,7 @@ is 1.5.2. You can update by downloading from https://www.terraform.io/downloads.
 
 INFO: Using java '/c/Users/runneradmin/.x-cmd.root/local/data/pkg/populate/java/18.0.2-sem/bin/java'
 Java Runtime: IBM Corporation 18.0.2 C:\Users\runneradmin\.x-cmd.root\local\data\pkg\populate\java\18.0.2-sem
-  Heap sizes: current=8192k  free=6110k  max=1834880k
+  Heap sizes: current=8192k  free=6178k  max=1834880k
     JVM args: -Xoptionsfile=C:\Users\runneradmin\.x-cmd.root\local\data\pkg\populate\java\18.0.2-sem\lib\options.default -Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple -Xjcl:jclse29 -Dcom.ibm.oti.vm.bootstrap.library.path=C:\Users\runneradmin\.x-cmd.root\local\data\pkg\populate\java\18.0.2-sem\bin\default;C:\Users\runneradmin\.x-cmd.root\local\data\pkg\populate\java\18.0.2-sem\bin -Dsun.boot.library.path=C:\Users\runneradmin\.x-cmd.root\local\data\pkg\populate\java\18.0.2-sem\bin\default;C:\Users\runneradmin\.x-cmd.root\local\data\pkg\populate\java\18.0.2-sem\bin -Djava.library.path=C:\Users\runneradmin\.x-cmd.root\local\data\pkg\populate\java\18.0.2-sem\bin\default;C:\Users\runneradmin\.x-cmd.root\local\data\pkg\populate\java\18.0.2-sem\bin;C:\Windows\system32;C:\Windows;C:\Users\runneradmin\.x-cmd.root\local\data\pkg\populate\java\18.0.2-sem\bin;C:\Users\runneradmin\.x-cmd.root\local\data\pkg\populate\activemq\5.18.0\bin;C:\Users\runneradmin\.x-cmd.root\local\data\pkg\bin;C:\Users\runneradmin\.x-cmd.root\v\x1\mod\x-cmd\lib\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\runneradmin\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\aliyun-cli;C:\vcpkg;C:\Program Files (x86)\NSIS;C:\tools\zstd;C:\Program Files\Mercurial;C:\hostedtoolcache\windows\stack\2.11.1\x64;C:\cabal\bin;C:\ghcup\bin;C:\Program Files\dotnet;C:\mysql\bin;C:\Program Files\R\R-4.3.1\bin\x64;C:\SeleniumWebDrivers\GeckoDriver;C:\Program Files (x86)\sbt\bin;C:\Program Files (x86)\GitHub CLI;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\pipx_bin;C:\npm\prefix;C:\hostedtoolcache\windows\go\1.20.5\x64\bin;C:\hostedtoolcache\windows\Python\3.9.13\x64\Scripts;C:\hostedtoolcache\windows\Python\3.9.13\x64;C:\hostedtoolcache\windows\Ruby\3.0.6\x64\bin;C:\Program Files\OpenSSL\bin;C:\tools\kotlinc\bin;C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\8.0.372-7\x64\bin;C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\ProgramData\kind;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\dotnet;C:\ProgramData\Chocolatey\bin;C:\Program Files\PowerShell\7;C:\Program Files\Microsoft\Web Platform Installer;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\ProgramData\chocolatey\lib\pulumi\tools\Pulumi\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\CMake\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.8.7\bin;C:\Program Files\Microsoft Service Fabric\bin\Fabric\Fabric.Code;C:\Program Files\Microsoft SDKs\Service Fabric\Tools\ServiceFabricLocalClusterManager;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\GitHub CLI;C:\tools\php;C:\Program Files (x86)\sbt\bin;C:\SeleniumWebDrivers\ChromeDriver;C:\SeleniumWebDrivers\EdgeDriver;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\Amazon\SessionManagerPlugin\bin;C:\Program Files\Amazon\AWSSAMCLI\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\LLVM\bin;C:\Users\runneradmin\.dotnet\tools;C:\Users\runneradmin\.cargo\bin;C:\Users\runneradmin\AppData\Local\Microsoft\WindowsApps;. -Djava.home=C:\Users\runneradmin\.x-cmd.root\local\data\pkg\populate\java\18.0.2-sem -Duser.dir=D:\a\pkg\pkg\ws\.tmp\x-cmd-pkg -Djava.util.logging.config.file=logging.properties -Djava.security.auth.login.config=C:/Users/runneradmin/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0/conf/login.config --add-reads=java.xml=java.logging --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport.tcp=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-exports=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-exports=java.base/sun.net.www.protocol.https=ALL-UNNAMED --add-exports=java.base/sun.net.www.protocol.jar=ALL-UNNAMED --add-exports=jdk.xml.dom/org.w3c.dom.html=ALL-UNNAMED --add-exports=jdk.naming.rmi/com.sun.jndi.url.rmi=ALL-UNNAMED -Dactivemq.classpath=C:\Users\runneradmin\.x-cmd.root\local\data\pkg\populate\activemq\5.18.0\conf;C:\Users\runneradmin\.x-cmd.root\local\data\pkg\populate\activemq\lib\; -Dactivemq.home=C:/Users/runneradmin/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0/ -Dactivemq.base=C:/Users/runneradmin/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0/ -Dactivemq.conf=C:/Users/runneradmin/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0/conf -Dactivemq.data=C:/Users/runneradmin/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0/data -Djolokia.conf=file:/c/Users/runneradmin/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0//conf/jolokia-access.xml -Djava.class.path=C:/Users/runneradmin/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0/bin/activemq.jar -Dsun.java.command=C:/Users/runneradmin/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0/bin/activemq.jar --version -Dsun.java.launcher=SUN_STANDARD
 Extensions classpath:
   [C:\Users\runneradmin\.x-cmd.root\local\data\pkg\populate\activemq\5.18.0\lib,C:\Users\runneradmin\.x-cmd.root\local\data\pkg\populate\activemq\5.18.0\lib\camel,C:\Users\runneradmin\.x-cmd.root\local\data\pkg\populate\activemq\5.18.0\lib\optional,C:\Users\runneradmin\.x-cmd.root\local\data\pkg\populate\activemq\5.18.0\lib\web,C:\Users\runneradmin\.x-cmd.root\local\data\pkg\populate\activemq\5.18.0\lib\extra]
@@ -253,28 +237,28 @@ ACTIVEMQ_DATA: C:\Users\runneradmin\.x-cmd.root\local\data\pkg\populate\activemq
 ActiveMQ 5.18.0
 For help or more information please see: http://activemq.apache.org
 
-, ✅(22s) 
+, ✅(256s) 
  sdkman/ant Apache Ant(TM) version 1.10.13 compiled on January 4 2023
-, ✅(17s) 
+, ✅(15s) 
  sdkman/asciidoctorj JVMJ9VM193W Since Java 13 -Xverify:none and -noverify were deprecated for removal and may not be accepted options in the future.
-2023-07-12T13:41:26.360Z [main] WARN FilenoUtil : Native subprocess control requires open access to the JDK IO subsystem
+2023-07-13T12:26:03.011Z [main] WARN FilenoUtil : Native subprocess control requires open access to the JDK IO subsystem
 Pass '--add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED' to enable.
 Unhandled exception
 Type=Segmentation error vmState=0x00000000
-Windows_ExceptionCode=c0000005 J9Generic_Signal=00000004 ExceptionAddress=00007FFF223D6B2D ContextFlags=0010005f
-Handler1=00007FFF22817210 Handler2=00007FFF226DA960 InaccessibleReadAddress=0000000000000008
+Windows_ExceptionCode=c0000005 J9Generic_Signal=00000004 ExceptionAddress=00007FF83AE66B2D ContextFlags=0010005f
+Handler1=00007FF847C97210 Handler2=00007FF8494CA960 InaccessibleReadAddress=0000000000000008
 RDI=0000000000015200 RSI=0000000000000014 RAX=0000000000000010 RBX=0000000000000001
-RCX=0000000000015200 RDX=0000016C6C110468 R8=0000016C6C10FE08 R9=0000016C13FFF513
-R10=0000000000000000 R11=0000001A14A7F390 R12=0000016C6A4012C0 R13=0000000000CF8600
-R14=0000000000000000 R15=0000016C13FFF512
-RIP=00007FFF223D6B2D RSP=0000001A14A7F3C0 RBP=0000000000000000 EFLAGS=0000000000010206
+RCX=0000000000015200 RDX=00000274AA86FF38 R8=00000274AA86F8D8 R9=00000274C8A85993
+R10=0000000000000000 R11=000000DC067BF080 R12=00000274A8B71470 R13=0000000000CF7200
+R14=0000000000000000 R15=00000274C8A85992
+RIP=00007FF83AE66B2D RSP=000000DC067BF0B0 RBP=0000000000000000 EFLAGS=0000000000010206
 FS=0053 ES=002B DS=002B
 XMM0 0000000000000000 (f: 0.000000, d: 0.000000e+00)
 XMM1 616c2f6176616a4c (f: 1986095744.000000, d: 1.981285e+161)
 XMM2 676e616c2f617661 (f: 794916480.000000, d: 1.692010e+190)
 XMM3 0000000000000000 (f: 0.000000, d: 0.000000e+00)
 XMM4 0000000000000000 (f: 0.000000, d: 0.000000e+00)
-XMM5 00000000f0263a90 (f: 4029037312.000000, d: 1.990609e-314)
+XMM5 00000000f0263b70 (f: 4029037312.000000, d: 1.990609e-314)
 XMM6 0000000000000000 (f: 0.000000, d: 0.000000e+00)
 XMM7 0000000000000000 (f: 0.000000, d: 0.000000e+00)
 XMM8 0000000000000000 (f: 0.000000, d: 0.000000e+00)
@@ -286,54 +270,54 @@ XMM13 0000000000000000 (f: 0.000000, d: 0.000000e+00)
 XMM14 0000000000000000 (f: 0.000000, d: 0.000000e+00)
 XMM15 0000000000000000 (f: 0.000000, d: 0.000000e+00)
 Module=C:\Users\runneradmin\.x-cmd.root\local\data\pkg\populate\java\18.0.2-sem\bin\default\jclse29.dll
-Module_base_address=00007FFF22390000 Offset_in_DLL=0000000000046b2d
+Module_base_address=00007FF83AE20000 Offset_in_DLL=0000000000046b2d
 Target=2_90_20220804_32 (Windows Server 2022 10.0 build 20348)
 CPU=amd64 (2 logical CPUs) (0x1bff8d000 RAM)
 ----------- Stack Backtrace -----------
-Java_java_lang_invoke_MethodHandleNatives_resolve+0x106d (0x00007FFF223D6B2D [jclse29+0x46b2d])
-(0x00007FFEF7AAF76C)
+Java_java_lang_invoke_MethodHandleNatives_resolve+0x106d (0x00007FF83AE66B2D [jclse29+0x46b2d])
+(0x00007FF8208FF308)
 (0x0000000000040000)
-(0x00000000FA5B3358)
-(0x0000000000CDE5E0)
-J9_GetInterface+0x4b5cb (0x00007FFF2286FB9B [j9vm29+0x11fb9b])
+(0x0000000000000001)
+(0x0000000000CDA1B0)
+J9_GetInterface+0x4b5cb (0x00007FF847CEFB9B [j9vm29+0x11fb9b])
 (0x000000000000005F)
 ---------------------------------------
-JVMDUMP039I Processing dump event "gpf", detail "" at 2023/07/12 13:41:28 - please wait.
-JVMDUMP032I JVM requested System dump using 'D:\a\pkg\pkg\ws\.tmp\x-cmd-pkg\core.20230712.134128.1628.0001.dmp' in response to an event
-JVMDUMP010I System dump written to D:\a\pkg\pkg\ws\.tmp\x-cmd-pkg\core.20230712.134128.1628.0001.dmp
-JVMDUMP032I JVM requested Java dump using 'D:\a\pkg\pkg\ws\.tmp\x-cmd-pkg\javacore.20230712.134128.1628.0002.txt' in response to an event
-JVMDUMP010I Java dump written to D:\a\pkg\pkg\ws\.tmp\x-cmd-pkg\javacore.20230712.134128.1628.0002.txt
-JVMDUMP032I JVM requested Snap dump using 'D:\a\pkg\pkg\ws\.tmp\x-cmd-pkg\Snap.20230712.134128.1628.0003.trc' in response to an event
-JVMDUMP010I Snap dump written to D:\a\pkg\pkg\ws\.tmp\x-cmd-pkg\Snap.20230712.134128.1628.0003.trc
-JVMDUMP032I JVM requested JIT dump using 'D:\a\pkg\pkg\ws\.tmp\x-cmd-pkg\jitdump.20230712.134128.1628.0004.dmp' in response to an event
+JVMDUMP039I Processing dump event "gpf", detail "" at 2023/07/13 12:26:05 - please wait.
+JVMDUMP032I JVM requested System dump using 'D:\a\pkg\pkg\ws\.tmp\x-cmd-pkg\core.20230713.122605.3316.0001.dmp' in response to an event
+JVMDUMP010I System dump written to D:\a\pkg\pkg\ws\.tmp\x-cmd-pkg\core.20230713.122605.3316.0001.dmp
+JVMDUMP032I JVM requested Java dump using 'D:\a\pkg\pkg\ws\.tmp\x-cmd-pkg\javacore.20230713.122605.3316.0002.txt' in response to an event
+JVMDUMP010I Java dump written to D:\a\pkg\pkg\ws\.tmp\x-cmd-pkg\javacore.20230713.122605.3316.0002.txt
+JVMDUMP032I JVM requested Snap dump using 'D:\a\pkg\pkg\ws\.tmp\x-cmd-pkg\Snap.20230713.122605.3316.0003.trc' in response to an event
+JVMDUMP010I Snap dump written to D:\a\pkg\pkg\ws\.tmp\x-cmd-pkg\Snap.20230713.122605.3316.0003.trc
+JVMDUMP032I JVM requested JIT dump using 'D:\a\pkg\pkg\ws\.tmp\x-cmd-pkg\jitdump.20230713.122605.3316.0004.dmp' in response to an event
 JVMDUMP051I JIT dump occurred in 'main' thread 0x0000000000015200
 JVMDUMP053I JIT dump is recompiling java/lang/invoke/MemberName$Factory.resolve(BLjava/lang/invoke/MemberName;Ljava/lang/Class;IZ)Ljava/lang/invoke/MemberName;
 JVMDUMP053I JIT dump is recompiling java/lang/invoke/MemberName$Factory.resolveOrFail(BLjava/lang/invoke/MemberName;Ljava/lang/Class;ILjava/lang/Class;)Ljava/lang/invoke/MemberName;
-JVMDUMP010I JIT dump written to D:\a\pkg\pkg\ws\.tmp\x-cmd-pkg\jitdump.20230712.134128.1628.0004.dmp
+JVMDUMP010I JIT dump written to D:\a\pkg\pkg\ws\.tmp\x-cmd-pkg\jitdump.20230713.122605.3316.0004.dmp
 JVMDUMP013I Processed dump event "gpf", detail "".
 , ❌(smoke) 
  sdkman/ballerina Error: Could not find or load main class io.ballerina.cli.launcher.Main
 Caused by: java.lang.ClassNotFoundException: io.ballerina.cli.launcher.Main
 Update Tool 1.3.14
-, ✅(23s) 
+, ✅(21s) 
  sdkman/bpipe Error: Could not find or load main class bpipe.Tail9
 ps: unknown option -- o
 Try `ps --help' for more information.
-, ✅(21s) 
+, ✅(14s) 
  sdkman/btrace BTrace v.2.2.3 (71df581ff6c89afa41ef611b987fc87c17ee8537)
 , ✅(11s) 
  sdkman/concurnas Caching runtime enviroment for Concurnas version: 1.14.020 and JVM Spec: 1.8.0_372. This needs to be done only once. This may take a few minutes...
- <\---------------------->   0% | [   4s] <\\--------------------->   0% | [   4s] <|\--------------------->   0% | [   4s] </\--------------------->   0% | [   4s] </|--------------------->   0% | [   4s] <//--------------------->   0% | [   4s] <//\-------------------->   0% | [   4s] </-\-------------------->   0% | [   5s] <--\-------------------->   0% | [   5s] <-\\-------------------->   0% | [   5s] <-|\-------------------->   0% | [   5s] <-/\-------------------->   0% | [   5s] <--\-------------------->   0% | [   5s] <-\\-------------------->   0% | [   5s] <-|\-------------------->   0% | [   5s] <-/\-------------------->   0% | [   5s] <--\-------------------->   0% | [   5s] <--|-------------------->   0% | [   5s] <-\|-------------------->   0% | [   5s] <\\|-------------------->   0% | [   5s] <|\|-------------------->   0% | [   5s] <|||-------------------->   0% | [   5s] <|/|-------------------->   0% | [   5s] <|-|-------------------->   0% | [   5s] <|-/-------------------->   0% | [   5s] <|\/-------------------->   0% | [   5s] <||/-------------------->   0% | [   6s] <|//-------------------->   0% | [   6s] <|-/-------------------->   0% | [   6s] <|\/-------------------->   0% | [   6s] <|\--------------------->   0% | [   6s] </\--------------------->   0% | [   6s] </|--------------------->   0% | [   6s] <//--------------------->   0% | [   6s] </---------------------->   0% | [   6s] </\--------------------->   0% | [   6s] </|--------------------->   0% | [   6s] <//--------------------->   0% | [   6s] </---------------------->   0% | [   6s] </\--------------------->   0% | [   6s] </|--------------------->   0% | [   6s] </|\-------------------->   0% | [   6s] <//\-------------------->   0% | [   6s] </-\-------------------->   0% | [   6s] </\\-------------------->   0% | [   6s] </|\-------------------->   0% | [   6s] <//\-------------------->   0% | [   6s] </-\-------------------->   0% | [   6s] </\\-------------------->   0% | [   6s] </|\-------------------->   0% | [   6s] <-|\-------------------->   0% | [   7s] <-/\-------------------->   0% | [   7s] <-/|-------------------->   0% | [   7s] <\/|-------------------->   0% | [   8s] <\-|-------------------->   0% | [   8s] <\\|-------------------->   0% | [   8s] <\*|-------------------->   4% | [   8s] <\*|\------------------->   4% | [   8s] <\*||------------------->   4% | [   8s] <\*|/------------------->   4% | [   8s] <\*|-------------------->   4% | [   8s] <\*|\------------------->   4% | [   8s] <\*||------------------->   4% | [   8s] <\*|/------------------->   4% | [   8s] <\*|-------------------->   4% | [   8s] <\*|*------------------->   9% | [   8s] <\*|*\------------------>   9% | [   8s] <\*|*|------------------>   9% | [   8s] <\*|*/------------------>   9% | [   8s] <\*|*------------------->   9% | [   8s] <\*|*\------------------>   9% | [   8s] <\*|*|------------------>   9% | [   8s] <\*|*/------------------>   9% | [   8s] <\*|*------------------->   9% | [   8s] <\*|*\------------------>   9% | [   8s] <\*|*|------------------>   9% | [   8s] <|*|*|------------------>   9% | [   8s] <|*|*/------------------>   9% | [   8s] <|*|*------------------->   9% | [   8s] <|*|*\------------------>   9% | [   8s] <|*|*|------------------>   9% | [   8s] <|*|*/------------------>   9% | [   8s] <|*|*------------------->   9% | [   8s] <|*|*\------------------>   9% | [   8s] <|*|*|------------------>   9% | [   8s] <|*|*/------------------>   9% | [   8s] <|*|*------------------->   9% | [   8s] <|*|*\------------------>   9% | [   9s] <|*|*|------------------>   9% | [   9s] <|*|*/------------------>   9% | [   9s] <|*|*------------------->   9% | [   9s] <|*|*\------------------>   9% | [   9s] <|*|*|------------------>   9% | [   9s] <|*|**------------------>  13% | [   9s] <|*/**------------------>  13% | [   9s] </*/**------------------>  13% | [   9s] </*/**\----------------->  13% | [   9s] <-*/**\----------------->  13% | [   9s] <\*/**\----------------->  13% | [   9s] <\*/**|----------------->  13% | [   9s] <|*/**|----------------->  13% | [   9s] <|*/**/----------------->  13% | [   9s] <|*-**/----------------->  13% | [   9s] <|*-**------------------>  13% | [   9s] </*-**------------------>  13% | [   9s] </*-**\----------------->  13% | [   9s] </*-**|----------------->  13% | [   9s] </*-**/----------------->  13% | [   9s] </*-**------------------>  13% | [   9s] </*-**\----------------->  13% | [   9s] </*\**\----------------->  13% | [   9s] </*\**|----------------->  13% | [  10s] </*\**/----------------->  13% | [  10s] </*|**/----------------->  13% | [  10s] <-*|**/----------------->  13% | [  10s] <-*|**------------------>  13% | [  10s] <\*|**------------------>  13% | [  10s] <\*|**\----------------->  13% | [  10s] <\*/**\----------------->  13% | [  10s] <\*/**|----------------->  13% | [  10s] <\*/**/----------------->  13% | [  10s] <\*/**------------------>  13% | [  10s] <\*-**------------------>  13% | [  10s] <\*-**\----------------->  13% | [  10s] <\*-**|----------------->  13% | [  10s] <\*-**/----------------->  13% | [  10s] <\*-**------------------>  13% | [  10s] <\*-**\----------------->  13% | [  10s] <\*\**\----------------->  13% | [  10s] <|*\**\----------------->  13% | [  10s] </*\**\----------------->  13% | [  10s] </*|**\----------------->  13% | [  10s] <-*|**\----------------->  13% | [  10s] <\*|**\----------------->  13% | [  10s] <\*|**|----------------->  13% | [  10s] <|*|**|----------------->  13% | [  11s] <|*|**/----------------->  13% | [  11s] <|*/**/----------------->  13% | [  11s] <|*/**------------------>  13% | [  11s] <|*/**\----------------->  13% | [  11s] <|*/**|----------------->  13% | [  11s] <|*/**/----------------->  13% | [  11s] <|*/**------------------>  13% | [  11s] </*/**------------------>  13% | [  11s] </*/**\----------------->  13% | [  11s] </*/**|----------------->  13% | [  11s] </*-**|----------------->  13% | [  11s] </*-**/----------------->  13% | [  11s] </*-**------------------>  13% | [  11s] <-*-**------------------>  13% | [  11s] <-*-**\----------------->  13% | [  11s] <-*-**|----------------->  13% | [  11s] <-*\**|----------------->  13% | [  12s] <-*\**/----------------->  13% | [  12s] <-*\**------------------>  13% | [  12s] <-*\**\----------------->  13% | [  12s] <-*|**\----------------->  13% | [  12s] <-*|**|----------------->  13% | [  12s] <-*|**/----------------->  13% | [  12s] <-*|**------------------>  13% | [  12s] <\*|**------------------>  13% | [  12s] <\*/**------------------>  13% | [  12s] <\*/**\----------------->  13% | [  12s] <\*-**\----------------->  13% | [  12s] <\*-**|----------------->  13% | [  12s] <\*-**/----------------->  13% | [  12s] <\*-**------------------>  13% | [  12s] <\*\**------------------>  13% | [  12s] <\*\**\----------------->  13% | [  12s] <\*\**|----------------->  13% | [  12s] <\*|**|----------------->  13% | [  12s] <|*|**|----------------->  13% | [  12s] <|*|**/----------------->  13% | [  12s] <|*/**/----------------->  13% | [  12s] </*/**/----------------->  13% | [  12s] </*/**------------------>  13% | [  13s] <-*/**------------------>  13% | [  13s] <\*/**------------------>  13% | [  13s] <|*/**------------------>  13% | [  13s] </*/**------------------>  13% | [  13s] </*/**\----------------->  13% | [  13s] </*-**\----------------->  13% | [  13s] </*-***----------------->  17% | [  13s] <-*-***----------------->  17% | [  13s] <\*-***----------------->  17% | [  13s] <|*-***----------------->  17% | [  13s] <|*\***----------------->  17% | [  13s] </*\***----------------->  17% | [  14s] <-*\***----------------->  17% | [  14s] <-*|***----------------->  17% | [  14s] <\*|***----------------->  17% | [  14s] <\*|***\---------------->  17% | [  14s] <\*|***|---------------->  17% | [  14s] <\*/***|---------------->  17% | [  14s] <\*/***/---------------->  17% | [  14s] <\*/***----------------->  17% | [  14s] <\*/***\---------------->  17% | [  14s] <|*/***\---------------->  17% | [  14s] <|*-***\---------------->  17% | [  15s] </*-***\---------------->  17% | [  16s] <-*-***\---------------->  17% | [  16s] <\*-***\---------------->  17% | [  16s] <|*-***\---------------->  17% | [  16s] </*-***\---------------->  17% | [  16s] <**-***\---------------->  22% | [  16s] <**-***\\--------------->  22% | [  16s] <**-***\|--------------->  22% | [  16s] <**\***\|--------------->  22% | [  16s] <**\***||--------------->  22% | [  16s] <**\***|/--------------->  22% | [  17s] <**\***|---------------->  22% | [  17s] <**\***|\--------------->  22% | [  17s] <**\***/\--------------->  22% | [  17s] <**\***/|--------------->  22% | [  17s] <**\***//--------------->  22% | [  17s] <**\***/---------------->  22% | [  17s] <**\***/\--------------->  22% | [  17s] <**\***/|--------------->  22% | [  17s] <**\***//--------------->  22% | [  17s] <**\***/---------------->  22% | [  17s] <**\***/\--------------->  22% | [  17s] <**\***/|--------------->  22% | [  17s] <**\***//--------------->  22% | [  17s] <**\***/---------------->  22% | [  17s] <**\***/\--------------->  22% | [  17s] <**\***/|--------------->  22% | [  17s] <**\***//--------------->  22% | [  17s] <**\***/---------------->  22% | [  17s] <**\***/\--------------->  22% | [  17s] <**\***/|--------------->  22% | [  17s] <**\***//--------------->  22% | [  17s] <**\***/---------------->  22% | [  17s] <**\***/\--------------->  22% | [  17s] <**\***/|--------------->  22% | [  17s] <**\***//--------------->  22% | [  17s] <**\***/---------------->  22% | [  17s] <**\***/\--------------->  22% | [  17s] <**\***/*--------------->  26% | [  17s] <**|***/*--------------->  26% | [  17s] <**|***/*\-------------->  26% | [  17s] <**|***/*|-------------->  26% | [  17s] <**|***/*/-------------->  26% | [  17s] <**|***/*--------------->  26% | [  17s] <**|***/*\-------------->  26% | [  17s] <**|***/*|-------------->  26% | [  18s] <**|***/*/-------------->  26% | [  18s] <**/***/*/-------------->  26% | [  18s] <**/***/*--------------->  26% | [  18s] <**/***/*\-------------->  26% | [  18s] <**-***/*\-------------->  26% | [  18s] <**-***/*|-------------->  26% | [  19s] <**-***/*/-------------->  26% | [  19s] <**-***/*--------------->  26% | [  19s] <**-***/*\-------------->  26% | [  19s] <**-***/*|-------------->  26% | [  19s] <**-***/*/-------------->  26% | [  19s] <**-***/*--------------->  26% | [  19s] <**\***/*--------------->  26% | [  19s] <**\***/*\-------------->  26% | [  19s] <**\***/*|-------------->  26% | [  19s] <**\***/*/-------------->  26% | [  19s] <**\***-*/-------------->  26% | [  19s] <**\***-*--------------->  26% | [  20s] <**\***-*\-------------->  26% | [  20s] <**|***-*\-------------->  26% | [  20s] <**|***-*|-------------->  26% | [  20s] <**|***-*/-------------->  26% | [  20s] <**|***-*--------------->  26% | [  20s] <**|***-*\-------------->  26% | [  20s] <**|***-*|-------------->  26% | [  20s] <**|***-*/-------------->  26% | [  20s] <**|***-*--------------->  26% | [  20s] <**|***-*\-------------->  26% | [  20s] <**|***-*|-------------->  26% | [  20s] <**|***-*/-------------->  26% | [  20s] <**|***-*--------------->  26% | [  20s] <**|***-*\-------------->  26% | [  20s] <**|***-*|-------------->  26% | [  20s] <**|***-*/-------------->  26% | [  20s] <**|***-*--------------->  26% | [  21s] <**|***-*\-------------->  26% | [  21s] <**|***\*\-------------->  26% | [  21s] <**|***\*|-------------->  26% | [  21s] <**|***\*/-------------->  26% | [  21s] <**/***\*/-------------->  26% | [  21s] <**/***\*--------------->  26% | [  21s] <**/***\*\-------------->  26% | [  21s] <**/***\**-------------->  30% | [  21s] <**/***\**\------------->  30% | [  21s] <**/***\**|------------->  30% | [  21s] <**/***\**/------------->  30% | [  21s] <**/***\**-------------->  30% | [  21s] <**/***\**\------------->  30% | [  21s] <**/***|**\------------->  30% | [  21s] <**/***|**|------------->  30% | [  21s] <**/***|**/------------->  30% | [  21s] <**/***|**-------------->  30% | [  21s] <**/***|**\------------->  30% | [  21s] <**/***|**|------------->  30% | [  21s] <**/***|**/------------->  30% | [  21s] <**/***/**/------------->  30% | [  21s] <**/***/**-------------->  30% | [  21s] <**/***/**\------------->  30% | [  21s] <**/***/**|------------->  30% | [  21s] <**/***/**/------------->  30% | [  21s] <**/***/**-------------->  30% | [  21s] <**/***/**\------------->  30% | [  21s] <**/***/**|------------->  30% | [  21s] <**/***/**/------------->  30% | [  21s] <**/***/**-------------->  30% | [  21s] <**/***/**\------------->  30% | [  21s] <**/***/**|------------->  30% | [  21s] <**/***/**/------------->  30% | [  21s] <**/***/**-------------->  30% | [  21s] <**/***/**\------------->  30% | [  21s] <**/***/**|------------->  30% | [  21s] <**/***/**/------------->  30% | [  21s] <**/***/**-------------->  30% | [  21s] <**/***/**\------------->  30% | [  21s] <**/***/**|------------->  30% | [  21s] <**/***/**/------------->  30% | [  21s] <**/***/**-------------->  30% | [  21s] <**/***/**\------------->  30% | [  21s] <**/***/**|------------->  30% | [  21s] <**/***/**/------------->  30% | [  21s] <**/***/**-------------->  30% | [  21s] <**/***/***------------->  35% | [  21s] <**-***/***------------->  35% | [  21s] <**-***/***\------------>  35% | [  22s] <**-***/***|------------>  35% | [  22s] <**\***/***|------------>  35% | [  22s] <**\***/***/------------>  35% | [  22s] <**\***/***------------->  35% | [  22s] <**|***/***------------->  35% | [  22s] <**|***-***------------->  35% | [  22s] <**|***-***\------------>  35% | [  23s] <**|***-***|------------>  35% | [  23s] <**|***-***/------------>  35% | [  23s] <**/***-***/------------>  35% | [  23s] <**/***-***------------->  35% | [  23s] <**/***-***\------------>  35% | [  23s] <**/***-***|------------>  35% | [  23s] <**/***-***/------------>  35% | [  23s] <**/***\***/------------>  35% | [  23s] <**/***\***------------->  35% | [  23s] <**/***\***\------------>  35% | [  23s] <**/***\***|------------>  35% | [  23s] <**/***|***|------------>  35% | [  23s] <**/***|***/------------>  35% | [  23s] <**/***|***------------->  35% | [  23s] <**/***|***\------------>  35% | [  24s] <**/***|***|------------>  35% | [  24s] <**/***|***/------------>  35% | [  24s] <**/***|***------------->  35% | [  24s] <**/***|***\------------>  35% | [  24s] <**/***/***\------------>  35% | [  24s] <**/***/***|------------>  35% | [  24s] <**/***/***/------------>  35% | [  24s] <**-***/***/------------>  35% | [  24s] <**-***/***------------->  35% | [  24s] <**-***/***\------------>  35% | [  24s] <**-***/***|------------>  35% | [  24s] <**-***/***/------------>  35% | [  24s] <**-***/***------------->  35% | [  24s] <**-***/***\------------>  35% | [  24s] <**-***/***|------------>  35% | [  24s] <**-***/***/------------>  35% | [  24s] <**-***/***------------->  35% | [  24s] <**-***/***\------------>  35% | [  24s] <**-***/***|------------>  35% | [  24s] <**-***-***|------------>  35% | [  24s] <**-***-***/------------>  35% | [  24s] <**-***-***------------->  35% | [  24s] <**-***\***------------->  35% | [  24s] <**-***|***------------->  35% | [  24s] <**-***|***\------------>  35% | [  24s] <**-***|***|------------>  35% | [  24s] <**-***|***/------------>  35% | [  24s] <**-***|***------------->  35% | [  24s] <**-***|***\------------>  35% | [  24s] <**-***|***|------------>  35% | [  24s] <**-***|****------------>  39% | [  24s] <**-***|****\----------->  39% | [  24s] <**-***|****|----------->  39% | [  24s] <**-***|****/----------->  39% | [  24s] <**-***|****------------>  39% | [  24s] <**-***|****\----------->  39% | [  24s] <**-***|****|----------->  39% | [  24s] <**-***|****/----------->  39% | [  24s] <**-***|****------------>  39% | [  24s] <**-***|****\----------->  39% | [  24s] <**-***|****|----------->  39% | [  24s] <**-***|****/----------->  39% | [  24s] <**-***|****------------>  39% | [  24s] <**-***|****\----------->  39% | [  24s] <**-***|****|----------->  39% | [  24s] <**-***|****/----------->  39% | [  24s] <**-***|****------------>  39% | [  24s] <**-***|****\----------->  39% | [  24s] <**-***|****|----------->  39% | [  24s] <**-***|****/----------->  39% | [  24s] <**-***|****------------>  39% | [  24s] <**-***|****\----------->  39% | [  24s] <**-***|****|----------->  39% | [  24s] <**-***|****/----------->  39% | [  24s] <**-***|****------------>  39% | [  24s] <**-***|****\----------->  39% | [  24s] <**\***|****\----------->  39% | [  24s] <**\***|****|----------->  39% | [  25s] <**\***|****/----------->  39% | [  25s] <**\***|****------------>  39% | [  25s] <**\***|****\----------->  39% | [  25s] <**\***|****|----------->  39% | [  25s] <**\***|****/----------->  39% | [  25s] <**\***|****------------>  39% | [  25s] <**\***|****\----------->  39% | [  25s] <**\***|*****----------->  43% | [  25s] <**\***|*****\---------->  43% | [  25s] <**\***|*****|---------->  43% | [  25s] <**\***/*****|---------->  43% | [  25s] <**\***-*****|---------->  43% | [  25s] <**\***\*****|---------->  43% | [  25s] <**\***|*****|---------->  43% | [  25s] <**\***/*****|---------->  43% | [  25s] <**\***/*****/---------->  43% | [  25s] <**\***/*****----------->  43% | [  25s] <**\***/*****\---------->  43% | [  25s] <**\***/*****|---------->  43% | [  25s] <**\***/*****/---------->  43% | [  25s] <**\***/*****----------->  43% | [  25s] <**\***/*****\---------->  43% | [  25s] <**\***/*****|---------->  43% | [  25s] <**\***/*****/---------->  43% | [  25s] <**\***/*****----------->  43% | [  25s] <**\***/*****\---------->  43% | [  25s] <**\***/*****|---------->  43% | [  25s] <**\***/*****/---------->  43% | [  25s] <**\***/*****----------->  43% | [  25s] <**\***/*****\---------->  43% | [  25s] <**\***/*****|---------->  43% | [  25s] <**\***/*****/---------->  43% | [  25s] <**\***/*****----------->  43% | [  25s] <**\***/*****\---------->  43% | [  25s] <**\***/*****|---------->  43% | [  25s] <**\***/*****/---------->  43% | [  25s] <**\***/*****----------->  43% | [  25s] <**\***/*****\---------->  43% | [  25s] <**\***/*****|---------->  43% | [  25s] <**\***/*****/---------->  43% | [  25s] <**\***/*****----------->  43% | [  25s] <**\***/*****\---------->  43% | [  25s] <**\***/*****|---------->  43% | [  25s] <**\***/*****/---------->  43% | [  25s] <**\***/*****----------->  43% | [  25s] <**\***/*****\---------->  43% | [  25s] <**\***/*****|---------->  43% | [  25s] <**\***/*****/---------->  43% | [  25s] <**\***/*****----------->  43% | [  25s] <**\***/*****\---------->  43% | [  26s] <**\***/******---------->  48% | [  26s] <**|***/******---------->  48% | [  26s] <**/***/******---------->  48% | [  26s] <**/***/******\--------->  48% | [  26s] <**-***/******\--------->  48% | [  26s] <**-***-******\--------->  48% | [  26s] <**-***\******\--------->  48% | [  27s] <**-***\******|--------->  48% | [  27s] <**-***\******/--------->  48% | [  27s] <**-***\******---------->  48% | [  27s] <**-***\******\--------->  48% | [  27s] <**-***\******|--------->  48% | [  27s] <**-***|******|--------->  48% | [  27s] <**\***|******|--------->  48% | [  27s] <**\***|******/--------->  48% | [  27s] <**\***|******---------->  48% | [  27s] <**\***/******---------->  48% | [  27s] <**\***/******\--------->  48% | [  27s] <**\***/******|--------->  48% | [  27s] <**\***/******/--------->  48% | [  28s] <**\***/******---------->  48% | [  28s] <**\***-******---------->  48% | [  28s] <**|***-******---------->  48% | [  28s] <**|***\******---------->  48% | [  28s] <**|***|******---------->  48% | [  28s] <**|***/******---------->  48% | [  28s] <**/***/******---------->  48% | [  28s] <**/***/******\--------->  48% | [  28s] <**/***-******\--------->  48% | [  28s] <**/***\******\--------->  48% | [  29s] <**-***\******\--------->  48% | [  29s] <**-***\******|--------->  48% | [  29s] <**-***\******/--------->  48% | [  29s] <**-***|******/--------->  48% | [  29s] <**-***|******---------->  48% | [  29s] <**\***|******---------->  48% | [  29s] <**\***|******\--------->  48% | [  29s] <**\***/******\--------->  48% | [  29s] <**\***-******\--------->  48% | [  29s] <**|***-******\--------->  48% | [  29s] <**|***-******|--------->  48% | [  30s] <******-******|--------->  52% | [  30s] <******-******/--------->  52% | [  30s] <******\******/--------->  52% | [  30s] <******|******/--------->  52% | [  30s] <******|******---------->  52% | [  30s] <******|******-\-------->  52% | [  30s] <******|******\\-------->  52% | [  30s] <******/******\\-------->  52% | [  30s] <******/******|\-------->  52% | [  30s] <******/******/\-------->  52% | [  30s] <******/******-\-------->  52% | [  31s] <******-******-\-------->  52% | [  31s] <******-******\\-------->  52% | [  31s] <******-******\|-------->  52% | [  31s] <******-******||-------->  52% | [  31s] <******-******|/-------->  52% | [  31s] <******-******//-------->  52% | [  31s] <******-******-/-------->  52% | [  31s] <******-******\/-------->  52% | [  31s] <******-******|/-------->  52% | [  31s] <******-******//-------->  52% | [  31s] <******-******-/-------->  52% | [  31s] <******\******-/-------->  52% | [  31s] <******|******-/-------->  52% | [  31s] <******/******-/-------->  52% | [  31s] <******/******\/-------->  52% | [  31s] <******/******|/-------->  52% | [  31s] <******/******//-------->  52% | [  31s] <******/******-/-------->  52% | [  32s] <******-******-/-------->  52% | [  32s] <******-******\/-------->  52% | [  32s] <******-******|/-------->  52% | [  32s] <******-******//-------->  52% | [  32s] <******-******-/-------->  52% | [  32s] <******\******-/-------->  52% | [  32s] <******\******\/-------->  52% | [  32s] <******\******|/-------->  52% | [  32s] <******\******|--------->  52% | [  32s] <******|******|--------->  52% | [  32s] <******|******/--------->  52% | [  33s] <******/******/--------->  52% | [  33s] <******/******/\-------->  52% | [  33s] <******/******-\-------->  52% | [  33s] <******-******-\-------->  52% | [  33s] <*************-\-------->  57% | [  33s] <*************\\-------->  57% | [  33s] <*************\\\------->  57% | [  33s] <*************\\|------->  57% | [  33s] <*************\\*------->  61% | [  33s] <*************\\*\------>  61% | [  33s] <**************\*\------>  65% | [  33s] <**************|*\------>  65% | [  33s] <**************|*|------>  65% | [  34s] <**************|*/------>  65% | [  34s] <**************|*------->  65% | [  34s] <**************|*\------>  65% | [  34s] <**************/*\------>  65% | [  34s] <**************/*|------>  65% | [  34s] <**************/*/------>  65% | [  35s] <**************/*------->  65% | [  35s] <**************-*------->  65% | [  35s] <**************-*\------>  65% | [  35s] <**************\*\------>  65% | [  35s] <**************|*\------>  65% | [  35s] <**************|*|------>  65% | [  36s] <**************/*|------>  65% | [  36s] <**************/*/------>  65% | [  36s] <**************-*/------>  65% | [  36s] <**************-*------->  65% | [  36s] <**************-*\------>  65% | [  36s] <**************-*|------>  65% | [  36s] <**************-*/------>  65% | [  37s] <**************-*------->  65% | [  37s] <**************\*------->  65% | [  37s] <**************\*\------>  65% | [  37s] <**************\*|------>  65% | [  37s] <**************\*/------>  65% | [  37s] <**************\*------->  65% | [  37s] <**************\*\------>  65% | [  37s] <**************\*|------>  65% | [  37s] <**************|*|------>  65% | [  37s] <**************|*/------>  65% | [  37s] <**************|*------->  65% | [  37s] <**************|*\------>  65% | [  37s] <**************|*|------>  65% | [  37s] <**************/*|------>  65% | [  37s] <**************/*/------>  65% | [  37s] <**************/*------->  65% | [  37s] <**************/*\------>  65% | [  38s] <**************/*|------>  65% | [  38s] <**************/*/------>  65% | [  38s] <**************/*------->  65% | [  38s] <**************-*------->  65% | [  38s] <**************-*\------>  65% | [  38s] <**************-*|------>  65% | [  38s] <**************\*|------>  65% | [  39s] <**************\*/------>  65% | [  39s] <**************\*------->  65% | [  39s] <**************\*\------>  65% | [  39s] <**************\*|------>  65% | [  40s] <**************\*/------>  65% | [  40s] <**************\*------->  65% | [  40s] <**************\*\------>  65% | [  41s] <**************|*\------>  65% | [  41s] <**************|*|------>  65% | [  41s] <**************|*/------>  65% | [  41s] <**************|*------->  65% | [  41s] <**************|*\------>  65% | [  41s] <**************/*\------>  65% | [  41s] <**************/*|------>  65% | [  41s] <**************-*|------>  65% | [  41s] <**************-*/------>  65% | [  42s] <**************-*------->  65% | [  42s] <**************-*\------>  65% | [  42s] <**************\*\------>  65% | [  42s] <**************\*|------>  65% | [  42s] <**************\**------>  70% | [  42s] <**************\**-\---->  70% | [  42s] <**************\**-|---->  70% | [  42s] <**************\**-/---->  70% | [  42s] <**************\**------>  70% | [  42s] <**************\**-*---->  74% | [  42s] <**************\**-*\--->  74% | [  42s] <**************\**-*|--->  74% | [  42s] <**************\**-*/--->  74% | [  42s] <**************\**-**--->  78% | [  42s] <**************\**-**\-->  78% | [  42s] <**************\**-**|-->  78% | [  42s] <**************\**-**/-->  78% | [  42s] <**************\**-***-->  83% | [  42s] <**************\**-***\->  83% | [  42s] <**************\**-***|->  83% | [  42s] <**************\**-***/->  83% | [  42s] <**************\**-****->  87% | [  42s] <**************|**-****->  87% | [  43s] <**************/**-****->  87% | [  43s] <**************-**-****->  87% | [  43s] <**************\**-****->  87% | [  43s] <**************|**-****->  87% | [  43s] <**************/**-****->  87% | [  44s] <**************-**-****->  87% | [  44s] <**************\**-****->  87% | [  44s] <**************|**-****->  87% | [  45s] <**************/**-****->  87% | [  45s] <**************-**-****->  87% | [  45s] <**************\**-****->  87% | [  45s] <**************\**\****->  87% | [  45s] <**************|**\****->  87% | [  46s] <**************/**\****->  87% | [  46s] <**************-**\****->  87% | [  46s] <**************\**\****->  87% | [  46s] <**************|**\****->  87% | [  46s] <**************/**\****->  87% | [  46s] <**************-**\****->  87% | [  46s] <**************\**\****->  87% | [  46s] <**************|**\****->  87% | [  46s] <**************/**\****->  87% | [  47s] <**************-**\****->  87% | [  47s] <**************\**\****->  87% | [  47s] <**************|**\****->  87% | [  47s] <**************/**\****->  87% | [  48s] <**************-**\****->  87% | [  48s] <**************\**\****->  87% | [  48s] <**************|**\****->  87% | [  48s] <*****************\****->  91% | [  48s] <*****************|****->  91% | [  49s] <*****************/****->  91% | [  51s] <*****************-****->  91% | [  57s] <*****************\****->  91% | [   1m] <*****************|****->  91% | [   1m] <*****************/****->  91% | [   1m] <*****************-****->  91% | [   1m] <*****************\****->  91% | [   1m] <*****************|****->  91% | [   1m] <*****************/****->  91% | [   1m] <*****************-****->  91% | [   1m] <*****************\****->  91% | [   1m] <*****************|****->  91% | [   1m] <*****************/****->  91% | [   1m] <*****************-****->  91% | [   1m] <*****************\****->  91% | [   1m] <*****************|****->  91% | [   1m] <*****************/****->  91% | [   1m] <*****************-****->  91% | [   1m] <*****************\****->  91% | [   1m] <*****************|****->  91% | [   1m] <*****************/****->  91% | [   1m] <*****************-****->  91% | [   1m] <*****************\****->  91% | [   1m] <*****************|****->  91% | [   2m] <*****************/****->  91% | [   2m] <*****************-****->  91% | [   2m] <*****************\****->  91% | [   2m] <*****************|****->  91% | [   2m] <*****************/****->  91% | [   2m] <*****************-****->  91% | [   2m] <*****************\****->  91% | [   2m] <*****************|****->  91% | [   2m] <*****************/****->  91% | [   2m] <*****************-****->  91% | [   2m] <*****************\****->  91% | [   2m] <*****************|****->  91% | [   2m] <*****************/****->  91% | [   2m] <*****************-****->  91% | [   2m] <*****************\****->  91% | [   2m] <*****************|****->  91% | [   2m] <*****************/****->  91% | [   2m] <*****************-****->  91% | [   2m] <*****************\****->  91% | [   2m] <*****************|****->  91% | [   2m] <*****************/****->  91% | [   2m] <*****************-****->  91% | [   2m] <*****************\****->  91% | [   2m] <*****************|****->  91% | [   2m] <**********************->  96% | [   2m] <***********************> 100% | [   2m] | Completed!
+ <\---------------------->   0% | [   1s] <\\--------------------->   0% | [   1s] <\|--------------------->   0% | [   1s] <||--------------------->   0% | [   1s] <||\-------------------->   0% | [   1s] <|/\-------------------->   0% | [   1s] <//\-------------------->   0% | [   1s] </-\-------------------->   0% | [   1s] </\\-------------------->   0% | [   1s] </|\-------------------->   0% | [   1s] <//\-------------------->   0% | [   1s] <-/\-------------------->   0% | [   1s] <--\-------------------->   0% | [   1s] <-\\-------------------->   0% | [   1s] <-|\-------------------->   0% | [   1s] <-/\-------------------->   0% | [   1s] <-/|-------------------->   0% | [   1s] <--|-------------------->   0% | [   1s] <-\|-------------------->   0% | [   1s] <\\|-------------------->   0% | [   1s] <|\|-------------------->   0% | [   1s] <|||-------------------->   0% | [   1s] <|/|-------------------->   0% | [   1s] <|-|-------------------->   0% | [   1s] <|-/-------------------->   0% | [   2s] <|\/-------------------->   0% | [   2s] <||/-------------------->   0% | [   2s] <|//-------------------->   0% | [   2s] <|-/-------------------->   0% | [   2s] <|\/-------------------->   0% | [   2s] </\/-------------------->   0% | [   2s] </\--------------------->   0% | [   2s] </|--------------------->   0% | [   2s] <//--------------------->   0% | [   2s] </---------------------->   0% | [   2s] </\--------------------->   0% | [   2s] </|--------------------->   0% | [   2s] <//--------------------->   0% | [   2s] </---------------------->   0% | [   2s] </\--------------------->   0% | [   2s] </|--------------------->   0% | [   2s] </|\-------------------->   0% | [   2s] <//\-------------------->   0% | [   2s] </-\-------------------->   0% | [   2s] </\\-------------------->   0% | [   2s] </|\-------------------->   0% | [   2s] <//\-------------------->   0% | [   2s] </-\-------------------->   0% | [   2s] </\\-------------------->   0% | [   2s] </|\-------------------->   0% | [   2s] <-|\-------------------->   0% | [   2s] <-/\-------------------->   0% | [   2s] <--\-------------------->   0% | [   3s] <-\\-------------------->   0% | [   3s] <\\\-------------------->   0% | [   3s] <\*\-------------------->   4% | [   3s] <\*\\------------------->   4% | [   3s] <\*\|------------------->   4% | [   3s] <\*||------------------->   4% | [   3s] <\*|/------------------->   4% | [   3s] <\*|-------------------->   4% | [   3s] <\*|\------------------->   4% | [   3s] <\*||------------------->   4% | [   3s] <\*|/------------------->   4% | [   3s] <\*|-------------------->   4% | [   3s] <\*|*------------------->   9% | [   3s] <\*|*\------------------>   9% | [   3s] <\*|*|------------------>   9% | [   3s] <\*|*/------------------>   9% | [   3s] <\*|*------------------->   9% | [   3s] <\*|*\------------------>   9% | [   3s] <\*|*|------------------>   9% | [   3s] <\*|*/------------------>   9% | [   3s] <\*|*------------------->   9% | [   3s] <\*|*\------------------>   9% | [   3s] <\*|*|------------------>   9% | [   3s] <\*|*/------------------>   9% | [   3s] <\*|*------------------->   9% | [   3s] <\*|*\------------------>   9% | [   3s] <\*|*|------------------>   9% | [   3s] <\*|*/------------------>   9% | [   3s] <\*|*------------------->   9% | [   3s] <\*|*\------------------>   9% | [   3s] <\*|*|------------------>   9% | [   3s] <\*|*/------------------>   9% | [   3s] <\*|*------------------->   9% | [   3s] <|*|*------------------->   9% | [   3s] </*|*------------------->   9% | [   3s] </*|*\------------------>   9% | [   3s] </*|*|------------------>   9% | [   3s] </*|*/------------------>   9% | [   3s] </*|*------------------->   9% | [   3s] </*|*\------------------>   9% | [   3s] </*|*|------------------>   9% | [   3s] </*|**------------------>  13% | [   3s] </*/**------------------>  13% | [   3s] <-*/**------------------>  13% | [   3s] <-*/**\----------------->  13% | [   3s] <\*/**\----------------->  13% | [   3s] <\*/**|----------------->  13% | [   3s] <|*/**|----------------->  13% | [   3s] <|*/**/----------------->  13% | [   3s] </*/**/----------------->  13% | [   3s] </*-**/----------------->  13% | [   3s] </*-**------------------>  13% | [   3s] </*-**\----------------->  13% | [   3s] </*-**|----------------->  13% | [   4s] </*\**|----------------->  13% | [   4s] </*\**/----------------->  13% | [   4s] <-*\**/----------------->  13% | [   4s] <-*\**------------------>  13% | [   4s] <-*\**\----------------->  13% | [   4s] <-*|**\----------------->  13% | [   4s] <\*|**\----------------->  13% | [   4s] <\*|**|----------------->  13% | [   4s] <\*|**/----------------->  13% | [   4s] <\*/**/----------------->  13% | [   4s] <\*/**------------------>  13% | [   4s] <\*/**\----------------->  13% | [   4s] <\*-**\----------------->  13% | [   4s] <\*-**|----------------->  13% | [   4s] <\*-**/----------------->  13% | [   4s] <\*-**------------------>  13% | [   4s] <\*-**\----------------->  13% | [   4s] <\*-**|----------------->  13% | [   4s] <\*\**|----------------->  13% | [   4s] <|*\**|----------------->  13% | [   4s] <|*\**/----------------->  13% | [   4s] <|*\**------------------>  13% | [   4s] </*\**------------------>  13% | [   4s] </*\**\----------------->  13% | [   4s] </*|**\----------------->  13% | [   4s] <-*|**\----------------->  13% | [   4s] <\*|**\----------------->  13% | [   4s] <|*|**\----------------->  13% | [   4s] <|*/**\----------------->  13% | [   4s] <|*/**|----------------->  13% | [   5s] <|*/**/----------------->  13% | [   5s] </*/**/----------------->  13% | [   5s] </*/**------------------>  13% | [   5s] </*/**\----------------->  13% | [   5s] </*/**|----------------->  13% | [   5s] </*/**/----------------->  13% | [   5s] </*/**------------------>  13% | [   5s] <-*/**------------------>  13% | [   5s] <-*/**\----------------->  13% | [   5s] <-*-**\----------------->  13% | [   5s] <-*-**|----------------->  13% | [   5s] <-*-**/----------------->  13% | [   5s] <-*-**------------------>  13% | [   5s] <-*-**\----------------->  13% | [   5s] <-*-**|----------------->  13% | [   5s] <-*\**|----------------->  13% | [   5s] <-*\**/----------------->  13% | [   5s] <-*\**------------------>  13% | [   5s] <\*\**------------------>  13% | [   5s] <\*|**------------------>  13% | [   5s] <\*|**\----------------->  13% | [   5s] <\*|**|----------------->  13% | [   5s] <\*|**/----------------->  13% | [   6s] <\*|**------------------>  13% | [   6s] <|*|**------------------>  13% | [   6s] <|*/**------------------>  13% | [   6s] <|*-**------------------>  13% | [   6s] <|*-**\----------------->  13% | [   6s] <|*-**|----------------->  13% | [   6s] </*-**|----------------->  13% | [   6s] <-*-**|----------------->  13% | [   6s] <-*-**/----------------->  13% | [   6s] <-*\**/----------------->  13% | [   6s] <-*\**------------------>  13% | [   6s] <\*\**------------------>  13% | [   6s] <\*\**\----------------->  13% | [   6s] <|*\**\----------------->  13% | [   6s] </*\**\----------------->  13% | [   6s] </*|**\----------------->  13% | [   6s] </*|**|----------------->  13% | [   6s] </*/**|----------------->  13% | [   6s] <-*/**|----------------->  13% | [   6s] <-*/**/----------------->  13% | [   6s] <-*/**------------------>  13% | [   6s] <\*/**------------------>  13% | [   6s] <|*/**------------------>  13% | [   6s] </*/**------------------>  13% | [   6s] <-*/**------------------>  13% | [   6s] <-*/**\----------------->  13% | [   6s] <-*-**\----------------->  13% | [   6s] <-*-***----------------->  17% | [   7s] <\*-***----------------->  17% | [   7s] <\*\***----------------->  17% | [   7s] <\*|***----------------->  17% | [   7s] <|*|***----------------->  17% | [   7s] </*|***----------------->  17% | [   7s] <-*|***----------------->  17% | [   7s] <-*|***\---------------->  17% | [   7s] <\*|***\---------------->  17% | [   7s] <|*|***\---------------->  17% | [   7s] </*|***\---------------->  17% | [   7s] <**|***\---------------->  22% | [   7s] <**|***\\--------------->  22% | [   7s] <**|***\|--------------->  22% | [   7s] <**/***\|--------------->  22% | [   7s] <**/***||--------------->  22% | [   7s] <**/***|/--------------->  22% | [   8s] <**/***|---------------->  22% | [   8s] <**/***|\--------------->  22% | [   8s] <**/***/\--------------->  22% | [   8s] <**/***-\--------------->  22% | [   8s] <**/***\\--------------->  22% | [   8s] <**-***\\--------------->  22% | [   8s] <**-***\|--------------->  22% | [   8s] <**-***\/--------------->  22% | [   8s] <**-***\---------------->  22% | [   8s] <**-***\\--------------->  22% | [   8s] <**-***\|--------------->  22% | [   8s] <**-***\/--------------->  22% | [   8s] <**-***\---------------->  22% | [   8s] <**-***\\--------------->  22% | [   8s] <**-***\|--------------->  22% | [   8s] <**-***\/--------------->  22% | [   8s] <**-***\---------------->  22% | [   8s] <**-***\\--------------->  22% | [   8s] <**-***\|--------------->  22% | [   8s] <**-***\/--------------->  22% | [   8s] <**-***\---------------->  22% | [   8s] <**-***\\--------------->  22% | [   8s] <**-***\|--------------->  22% | [   8s] <**-***\/--------------->  22% | [   8s] <**-***\---------------->  22% | [   8s] <**-***\\--------------->  22% | [   8s] <**-***\|--------------->  22% | [   8s] <**-***\/--------------->  22% | [   8s] <**-***\---------------->  22% | [   8s] <**-***\\--------------->  22% | [   8s] <**-***\*--------------->  26% | [   8s] <**-***\*\-------------->  26% | [   8s] <**-***\*|-------------->  26% | [   8s] <**-***\*/-------------->  26% | [   8s] <**-***\*--------------->  26% | [   8s] <**-***\*\-------------->  26% | [   8s] <**-***\*|-------------->  26% | [   8s] <**\***\*|-------------->  26% | [   8s] <**\***\*/-------------->  26% | [   8s] <**\***\*--------------->  26% | [   9s] <**\***|*--------------->  26% | [   9s] <**\***|*\-------------->  26% | [   9s] <**|***|*\-------------->  26% | [   9s] <**|***|*|-------------->  26% | [   9s] <**|***/*|-------------->  26% | [   9s] <**|***/*/-------------->  26% | [   9s] <**|***/*--------------->  26% | [   9s] <**|***/*\-------------->  26% | [   9s] <**|***/*|-------------->  26% | [   9s] <**|***/*/-------------->  26% | [   9s] <**|***/*--------------->  26% | [   9s] <**|***/*\-------------->  26% | [   9s] <**|***/*|-------------->  26% | [   9s] <**|***/*/-------------->  26% | [   9s] <**/***/*/-------------->  26% | [   9s] <**/***/*--------------->  26% | [   9s] <**/***/*\-------------->  26% | [   9s] <**/***/*|-------------->  26% | [   9s] <**/***/*/-------------->  26% | [   9s] <**/***/*--------------->  26% | [   9s] <**/***/*\-------------->  26% | [   9s] <**/***/*|-------------->  26% | [   9s] <**/***/*/-------------->  26% | [   9s] <**/***/*--------------->  26% | [   9s] <**/***/*\-------------->  26% | [   9s] <**/***/*|-------------->  26% | [   9s] <**/***/*/-------------->  26% | [   9s] <**/***/*--------------->  26% | [   9s] <**/***/*\-------------->  26% | [   9s] <**/***/*|-------------->  26% | [   9s] <**/***/*/-------------->  26% | [   9s] <**/***/*--------------->  26% | [   9s] <**/***/*\-------------->  26% | [   9s] <**/***/*|-------------->  26% | [  10s] <**-***/*|-------------->  26% | [  10s] <**-***/*/-------------->  26% | [  10s] <**-***/*--------------->  26% | [  10s] <**-***/*\-------------->  26% | [  10s] <**-***/**-------------->  30% | [  10s] <**-***/**\------------->  30% | [  10s] <**-***/**|------------->  30% | [  10s] <**-***/**/------------->  30% | [  10s] <**-***/**-------------->  30% | [  10s] <**-***/**\------------->  30% | [  10s] <**-***/**|------------->  30% | [  10s] <**-***/**/------------->  30% | [  10s] <**-***/**-------------->  30% | [  10s] <**-***/**\------------->  30% | [  10s] <**-***/**|------------->  30% | [  10s] <**-***/**/------------->  30% | [  10s] <**-***/**-------------->  30% | [  10s] <**-***/**\------------->  30% | [  10s] <**-***/**|------------->  30% | [  10s] <**-***/**/------------->  30% | [  10s] <**-***/**-------------->  30% | [  10s] <**-***/**\------------->  30% | [  10s] <**\***/**\------------->  30% | [  10s] <**\***/**|------------->  30% | [  10s] <**\***/**/------------->  30% | [  10s] <**\***/**-------------->  30% | [  10s] <**\***/**\------------->  30% | [  10s] <**\***/**|------------->  30% | [  10s] <**\***/**/------------->  30% | [  10s] <**\***/**-------------->  30% | [  10s] <**\***/**\------------->  30% | [  10s] <**\***/**|------------->  30% | [  10s] <**\***/**/------------->  30% | [  10s] <**\***/**-------------->  30% | [  10s] <**\***/**\------------->  30% | [  10s] <**\***/**|------------->  30% | [  10s] <**\***/**/------------->  30% | [  10s] <**\***/**-------------->  30% | [  10s] <**\***/**\------------->  30% | [  10s] <**\***/**|------------->  30% | [  10s] <**\***/**/------------->  30% | [  10s] <**\***/**-------------->  30% | [  10s] <**\***/***------------->  35% | [  10s] <**\***-***------------->  35% | [  10s] <**\***-***\------------>  35% | [  10s] <**\***-***|------------>  35% | [  10s] <**|***-***|------------>  35% | [  10s] <**|***-***/------------>  35% | [  10s] <**|***-***------------->  35% | [  10s] <**|***-***\------------>  35% | [  10s] <**|***\***\------------>  35% | [  11s] <**|***\***|------------>  35% | [  11s] <**|***\***/------------>  35% | [  11s] <**|***\***------------->  35% | [  11s] <**|***\***\------------>  35% | [  11s] <**|***\***|------------>  35% | [  11s] <**|***|***|------------>  35% | [  11s] <**|***|***/------------>  35% | [  11s] <**/***|***/------------>  35% | [  11s] <**/***|***------------->  35% | [  11s] <**/***|***\------------>  35% | [  11s] <**/***/***\------------>  35% | [  11s] <**/***/***|------------>  35% | [  11s] <**/***/***/------------>  35% | [  11s] <**/***/***------------->  35% | [  11s] <**-***/***------------->  35% | [  11s] <**-***/***\------------>  35% | [  11s] <**-***/***|------------>  35% | [  11s] <**-***/***/------------>  35% | [  11s] <**-***/***------------->  35% | [  11s] <**-***/***\------------>  35% | [  12s] <**-***/***|------------>  35% | [  12s] <**-***/***/------------>  35% | [  12s] <**-***/***------------->  35% | [  12s] <**-***/***\------------>  35% | [  12s] <**-***/***|------------>  35% | [  12s] <**-***-***|------------>  35% | [  12s] <**-***-***/------------>  35% | [  12s] <**-***-***------------->  35% | [  12s] <**-***-***\------------>  35% | [  12s] <**-***-***|------------>  35% | [  12s] <**-***-***/------------>  35% | [  12s] <**-***-***------------->  35% | [  12s] <**-***-***\------------>  35% | [  12s] <**-***-***|------------>  35% | [  12s] <**-***-***/------------>  35% | [  12s] <**-***-***------------->  35% | [  12s] <**-***-***\------------>  35% | [  12s] <**-***-***|------------>  35% | [  12s] <**-***-***/------------>  35% | [  12s] <**-***-***------------->  35% | [  12s] <**-***-***\------------>  35% | [  12s] <**-***-***|------------>  35% | [  12s] <**-***-****------------>  39% | [  12s] <**-***-****\----------->  39% | [  12s] <**-***-****|----------->  39% | [  12s] <**\***-****|----------->  39% | [  12s] <**\***-****/----------->  39% | [  12s] <**\***-****------------>  39% | [  12s] <**\***-****\----------->  39% | [  12s] <**\***-****|----------->  39% | [  12s] <**\***-****/----------->  39% | [  12s] <**\***-****------------>  39% | [  12s] <**\***-****\----------->  39% | [  12s] <**\***-****|----------->  39% | [  12s] <**\***-****/----------->  39% | [  12s] <**\***-****------------>  39% | [  12s] <**\***\****------------>  39% | [  12s] <**\***\****\----------->  39% | [  12s] <**\***\****|----------->  39% | [  12s] <**\***\****/----------->  39% | [  12s] <**\***\****------------>  39% | [  12s] <**\***\****\----------->  39% | [  12s] <**\***\****|----------->  39% | [  12s] <**\***\****/----------->  39% | [  12s] <**\***\****------------>  39% | [  12s] <**\***\****\----------->  39% | [  12s] <**\***\****|----------->  39% | [  12s] <**\***\****/----------->  39% | [  12s] <**\***\****------------>  39% | [  12s] <**\***\****\----------->  39% | [  12s] <**\***\****|----------->  39% | [  12s] <**\***\****/----------->  39% | [  12s] <**\***\****------------>  39% | [  12s] <**\***\****\----------->  39% | [  12s] <**\***\****|----------->  39% | [  12s] <**\***\****/----------->  39% | [  12s] <**\***\****------------>  39% | [  12s] <**\***\****\----------->  39% | [  12s] <**\***\*****----------->  43% | [  12s] <**\***\*****\---------->  43% | [  12s] <**\***\*****|---------->  43% | [  12s] <**|***\*****|---------->  43% | [  12s] <**|***\*****/---------->  43% | [  12s] <**|***\*****----------->  43% | [  12s] <**|***|*****----------->  43% | [  12s] <**/***|*****----------->  43% | [  13s] <**/***|*****\---------->  43% | [  13s] <**/***|*****|---------->  43% | [  13s] <**/***|*****/---------->  43% | [  13s] <**/***|*****----------->  43% | [  13s] <**/***|*****\---------->  43% | [  13s] <**/***|*****|---------->  43% | [  13s] <**/***|*****/---------->  43% | [  13s] <**/***|*****----------->  43% | [  13s] <**/***|*****\---------->  43% | [  13s] <**/***|*****|---------->  43% | [  13s] <**/***|*****/---------->  43% | [  13s] <**/***|*****----------->  43% | [  13s] <**/***|*****\---------->  43% | [  13s] <**/***|*****|---------->  43% | [  13s] <**/***|*****/---------->  43% | [  13s] <**/***|*****----------->  43% | [  13s] <**/***|*****\---------->  43% | [  13s] <**/***|*****|---------->  43% | [  13s] <**/***|*****/---------->  43% | [  13s] <**/***|*****----------->  43% | [  13s] <**/***|*****\---------->  43% | [  13s] <**/***|*****|---------->  43% | [  13s] <**/***|*****/---------->  43% | [  13s] <**/***|*****----------->  43% | [  13s] <**/***|*****\---------->  43% | [  13s] <**/***|*****|---------->  43% | [  13s] <**/***|*****/---------->  43% | [  13s] <**/***|*****----------->  43% | [  13s] <**/***|*****\---------->  43% | [  13s] <**/***|*****|---------->  43% | [  13s] <**/***|*****/---------->  43% | [  13s] <**/***|*****----------->  43% | [  13s] <**/***|*****\---------->  43% | [  13s] <**/***/*****\---------->  43% | [  13s] <**/***/******---------->  48% | [  13s] <**/***-******---------->  48% | [  13s] <**/***-******\--------->  48% | [  13s] <**-***-******\--------->  48% | [  13s] <**-***\******\--------->  48% | [  13s] <**-***|******\--------->  48% | [  13s] <**\***|******\--------->  48% | [  13s] <**\***|******|--------->  48% | [  14s] <**\***|******/--------->  48% | [  14s] <**\***|******---------->  48% | [  14s] <**\***|******\--------->  48% | [  14s] <**\***|******|--------->  48% | [  14s] <**\***|******/--------->  48% | [  14s] <**\***/******/--------->  48% | [  14s] <**\***-******/--------->  48% | [  14s] <**\***-******---------->  48% | [  14s] <**\***\******---------->  48% | [  14s] <**\***|******---------->  48% | [  14s] <**|***|******---------->  48% | [  14s] <**|***|******\--------->  48% | [  14s] <**|***/******\--------->  48% | [  14s] <**|***/******|--------->  48% | [  14s] <**|***/******/--------->  48% | [  14s] <**|***/******---------->  48% | [  14s] <**/***/******---------->  48% | [  14s] <**/***/******\--------->  48% | [  15s] <**-***/******\--------->  48% | [  15s] <**-***-******\--------->  48% | [  15s] <**-***-******|--------->  48% | [  15s] <**-***-******/--------->  48% | [  15s] <**-***-******---------->  48% | [  15s] <**\***-******---------->  48% | [  15s] <**\***-******\--------->  48% | [  15s] <**\***\******\--------->  48% | [  15s] <**\***\******|--------->  48% | [  15s] <**\***|******|--------->  48% | [  15s] <**\***|******/--------->  48% | [  15s] <**|***|******/--------->  48% | [  16s] <**|***/******/--------->  48% | [  16s] <**|***/******---------->  48% | [  16s] <**|***/******\--------->  48% | [  16s] <**|***/******|--------->  48% | [  16s] <**|***/******/--------->  48% | [  16s] <**|***/******---------->  48% | [  16s] <**|***-******---------->  48% | [  16s] <**/***-******---------->  48% | [  16s] <**/***-******\--------->  48% | [  16s] <**/***\******\--------->  48% | [  16s] <**/***\******|--------->  48% | [  16s] <**-***\******|--------->  48% | [  16s] <**\***\******|--------->  48% | [  16s] <**\***|******|--------->  48% | [  16s] <**\***|******/--------->  48% | [  16s] <**\***|******---------->  48% | [  16s] <**\***|******\--------->  48% | [  17s] <**\***|******|--------->  48% | [  17s] <**\***|******/--------->  48% | [  17s] <**\***|******---------->  48% | [  17s] <**\***/******---------->  48% | [  17s] <**|***/******---------->  48% | [  17s] <******/******---------->  52% | [  17s] <******/******\--------->  52% | [  17s] <******/******|--------->  52% | [  17s] <******/******/--------->  52% | [  17s] <******/******---------->  52% | [  17s] <******/******\--------->  52% | [  17s] <******/******|--------->  52% | [  17s] <******/******/--------->  52% | [  17s] <******/******---------->  52% | [  17s] <******-******---------->  52% | [  17s] <******\******---------->  52% | [  18s] <******\******\--------->  52% | [  18s] <******\******|--------->  52% | [  18s] <******|******|--------->  52% | [  18s] <******|******|\-------->  52% | [  18s] <******/******|\-------->  52% | [  18s] <******/******/\-------->  52% | [  18s] <******/******-\-------->  52% | [  18s] <******/******\\-------->  52% | [  18s] <******/*******\-------->  57% | [  18s] <******/*******\\------->  57% | [  18s] <******/*******\|------->  57% | [  18s] <******/*******\*------->  61% | [  18s] <******/*******\*\------>  61% | [  18s] <******-*******\*\------>  61% | [  18s] <******-*******|*\------>  61% | [  18s] <******-*******/*\------>  61% | [  18s] <******-*******/*|------>  61% | [  18s] <******\*******/*|------>  61% | [  18s] <******\*******/*/------>  61% | [  18s] <******\*******/*------->  61% | [  18s] <******\*******/*\------>  61% | [  18s] <******|*******/*\------>  61% | [  18s] <******|*******/*|------>  61% | [  19s] <******/*******/*|------>  61% | [  19s] <******/*******/*/------>  61% | [  19s] <******-*******/*/------>  61% | [  19s] <******-*******/*------->  61% | [  19s] <******-*******-*------->  61% | [  19s] <******-*******\*------->  61% | [  19s] <******-*******\*\------>  61% | [  19s] <******-*******|*\------>  61% | [  19s] <******\*******|*\------>  61% | [  19s] <******\*******/*\------>  61% | [  19s] <******|*******/*\------>  61% | [  19s] <******/*******/*\------>  61% | [  19s] <******/*******-*\------>  61% | [  19s] <******-*******-*\------>  61% | [  19s] <******-*******\*\------>  61% | [  19s] <******\*******\*\------>  61% | [  19s] <******\*******|*\------>  61% | [  19s] <******\*******|*|------>  61% | [  19s] <******|*******|*|------>  61% | [  20s] <******|*******|*/------>  61% | [  20s] <******/*******|*/------>  61% | [  20s] <******/*******|*------->  61% | [  20s] <******/*******/*------->  61% | [  20s] <******/*******-*------->  61% | [  20s] <******/*******-*\------>  61% | [  20s] <******-*******-*\------>  61% | [  20s] <******-*******-*|------>  61% | [  20s] <******-*******\*|------>  61% | [  20s] <******-*******\*/------>  61% | [  20s] <******-*******\*------->  61% | [  20s] <******-*******\*\------>  61% | [  20s] <******-*******|*\------>  61% | [  20s] <******-*******|*|------>  61% | [  20s] <******-*******|*/------>  61% | [  20s] <******-*******|*------->  61% | [  20s] <******-*******|*\------>  61% | [  20s] <******-*******|*|------>  61% | [  20s] <******-*******/*|------>  61% | [  20s] <******-*******/*/------>  61% | [  20s] <**************/*/------>  65% | [  20s] <**************/*------->  65% | [  20s] <**************-*------->  65% | [  20s] <**************-*\------>  65% | [  20s] <**************-*|------>  65% | [  20s] <**************-*/------>  65% | [  20s] <**************-*------->  65% | [  20s] <**************\*------->  65% | [  20s] <**************\*\------>  65% | [  20s] <**************\*|------>  65% | [  20s] <**************\*/------>  65% | [  20s] <**************\*------->  65% | [  20s] <**************\*\------>  65% | [  20s] <**************|*\------>  65% | [  20s] <**************|*|------>  65% | [  20s] <**************/*|------>  65% | [  20s] <**************/*/------>  65% | [  20s] <**************/*------->  65% | [  20s] <**************-*------->  65% | [  20s] <**************-*\------>  65% | [  21s] <**************-*|------>  65% | [  21s] <**************-*/------>  65% | [  21s] <**************\*/------>  65% | [  21s] <**************\*------->  65% | [  21s] <**************|*------->  65% | [  21s] <**************|*\------>  65% | [  21s] <**************|*|------>  65% | [  21s] <**************|*/------>  65% | [  21s] <**************|*------->  65% | [  21s] <**************|*\------>  65% | [  21s] <**************/*\------>  65% | [  21s] <**************/*|------>  65% | [  21s] <**************/*/------>  65% | [  21s] <**************/*------->  65% | [  21s] <**************/*\------>  65% | [  21s] <**************-*\------>  65% | [  21s] <**************-*|------>  65% | [  21s] <**************-**------>  70% | [  21s] <**************-**-\---->  70% | [  21s] <**************-**-|---->  70% | [  21s] <**************-**-/---->  70% | [  21s] <**************-**------>  70% | [  21s] <**************-**-*---->  74% | [  21s] <**************-**-*\--->  74% | [  21s] <**************-**-*|--->  74% | [  21s] <**************-**-*/--->  74% | [  21s] <**************-**-**--->  78% | [  21s] <**************-**-**\-->  78% | [  21s] <**************-**-**|-->  78% | [  21s] <**************-**-**/-->  78% | [  21s] <**************-**-***-->  83% | [  21s] <**************-**-***\->  83% | [  21s] <**************-**-***|->  83% | [  21s] <**************-**-***/->  83% | [  21s] <**************-**-****->  87% | [  21s] <**************\**-****->  87% | [  21s] <**************|**-****->  87% | [  22s] <**************/**-****->  87% | [  22s] <**************-**-****->  87% | [  22s] <**************\**-****->  87% | [  22s] <**************|**-****->  87% | [  22s] <**************/**-****->  87% | [  22s] <**************-**-****->  87% | [  22s] <**************\**-****->  87% | [  22s] <**************|**-****->  87% | [  22s] <**************/**-****->  87% | [  22s] <**************-**-****->  87% | [  22s] <**************\**-****->  87% | [  22s] <**************|**-****->  87% | [  23s] <**************/**-****->  87% | [  23s] <**************-**-****->  87% | [  23s] <**************\**-****->  87% | [  23s] <**************|**-****->  87% | [  23s] <**************/**-****->  87% | [  23s] <**************-**-****->  87% | [  23s] <**************\**-****->  87% | [  23s] <**************|**-****->  87% | [  23s] <**************|**\****->  87% | [  23s] <**************/**\****->  87% | [  23s] <**************-**\****->  87% | [  23s] <**************\**\****->  87% | [  23s] <**************|**\****->  87% | [  23s] <*****************\****->  91% | [  24s] <*****************|****->  91% | [  25s] <*****************/****->  91% | [  26s] <*****************-****->  91% | [  28s] <*****************\****->  91% | [  31s] <*****************|****->  91% | [  33s] <*****************/****->  91% | [  34s] <*****************-****->  91% | [  37s] <*****************\****->  91% | [  39s] <*****************|****->  91% | [  41s] <*****************/****->  91% | [  43s] <*****************-****->  91% | [  44s] <*****************\****->  91% | [  46s] <*****************|****->  91% | [  47s] <*****************/****->  91% | [  49s] <*****************-****->  91% | [  50s] <*****************\****->  91% | [  52s] <*****************|****->  91% | [  54s] <*****************/****->  91% | [  55s] <*****************-****->  91% | [  57s] <*****************\****->  91% | [  58s] <*****************|****->  91% | [  59s] <*****************/****->  91% | [   1m] <*****************-****->  91% | [   1m] <*****************\****->  91% | [   1m] <*****************|****->  91% | [   1m] <*****************/****->  91% | [   1m] <*****************-****->  91% | [   1m] <*****************\****->  91% | [   1m] <*****************|****->  91% | [   1m] <*****************/****->  91% | [   1m] <*****************-****->  91% | [   1m] <*****************\****->  91% | [   1m] <*****************|****->  91% | [   1m] <*****************/****->  91% | [   1m] <*****************-****->  91% | [   1m] <*****************\****->  91% | [   1m] <*****************|****->  91% | [   1m] <*****************/****->  91% | [   1m] <*****************-****->  91% | [   1m] <*****************\****->  91% | [   1m] <*****************|****->  91% | [   1m] <*****************/****->  91% | [   1m] <*****************-****->  91% | [   1m] <*****************\****->  91% | [   1m] <*****************|****->  91% | [   1m] <*****************/****->  91% | [   1m] <*****************-****->  91% | [   1m] <*****************\****->  91% | [   1m] <*****************|****->  91% | [   1m] <**********************->  96% | [   1m] <***********************> 100% | [   1m] | Completed!
 Welcome to Concurnas 1.14.020 (OpenJDK 64-Bit Server VM, Java 1.8.0_372).
 Currently running in REPL mode. For help type: /help
 
 conc> |  Bye!
-, ✅(187s) 
+, ✅(120s) 
  sdkman/connor 1.1.0
-, ✅(7s) 
+, ✅(6s) 
  sdkman/coursier 2.1.0
 , ✅(9s) 
- sdkman/cxf , ✅(15s) 
+ sdkman/cxf , ✅(43s) 
  sdkman/doctoolchain Downloading https://services.gradle.org/distributions/gradle-6.9.2-bin.zip
 ..........10%..........20%..........30%...........40%..........50%..........60%..........70%...........80%..........90%..........100%
 
@@ -405,7 +389,7 @@ USAGE: gradlew [option...] [task...]
 --write-locks                      Persists dependency resolution for locked configurations, ignoring existing locking information if it exists [incubating]
 -x, --exclude-task                 Specify a task to be excluded from execution.
 
-, ✅(18s) 
+, ✅(19s) 
  sdkman/flink Error: Could not find or load main class org.apache.flink.client.cli.CliFrontend
 Caused by: java.lang.ClassNotFoundException: org.apache.flink.client.cli.CliFrontend
 , ❌(smoke) 
@@ -459,7 +443,7 @@ Caused by: java.lang.RuntimeException: Could not determine whether class 'org.pe
 	at org.parboiled.transform.ParserTransformer.transformParser(ParserTransformer.java:35)
 	at org.parboiled.Parboiled.createParser(Parboiled.java:54)
 	... 34 more
-Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.findLoadedClass(java.lang.String) accessible: module java.base does not "opens java.lang" to unnamed module @2f58222
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.findLoadedClass(java.lang.String) accessible: module java.base does not "opens java.lang" to unnamed module @84bac40d
 	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
 	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
 	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:200)
@@ -491,18 +475,18 @@ Ant:          Apache Ant(TM) version 1.10.11 compiled on July 10 2021
 JVM:          18.0.2 (Eclipse OpenJ9 openj9-0.33.0)
 OS:           Windows Server 2022 10.0 amd64
 
-, ✅(27s) 
+, ✅(28s) 
  sdkman/grails |Grails Version: 5.3.2
 |JVM Version: 18.0.2
-, ✅(19s) 
+, ✅(22s) 
  sdkman/groovyserv Setup completed successfully for linux_amd64.
 It's required only just after installation. Please run the same command once again.
-, ✅(13s) 
+, ✅(12s) 
  sdkman/hadoop , ❌(smoke) 
  sdkman/infrastructor version:    [34m0.3.1[m
 revision:   [34m4b2f340a9fe757dc624968739dd5817b7035ff10[m
 build date: [34m10-02-2020 22:22[m
-, ✅(15s) 
+, ✅(14s) 
  sdkman/jbake JBake v2.6.7 (2021-05-14 21:54:29[GMT+01:00]) [http://jbake.org]
 
 Usage: jbake
@@ -528,7 +512,7 @@ Options:
                        the current directory (default: false)
  -t (--template) VAL : use specified template engine for default templates
                        (uses Freemarker if <value> is not supplied)
-, ✅(16s) 
+, ✅(14s) 
  sdkman/jmeter WARNING: package sun.awt.X11 not in java.desktop
     _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____
    / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \
@@ -538,7 +522,7 @@ Options:
 
 Copyright (c) 1999-2022 The Apache Software Foundation
 
-, ✅(24s) 
+, ✅(27s) 
  sdkman/jreleaser ------------------------------------------------------------
 jreleaser 1.5.1
 ------------------------------------------------------------
@@ -562,22 +546,22 @@ Hit '[1m<ctrl-d>[0m' or type '[1msystem:shutdown[0m' or '[1mlogout[0m' to 
 
 karaf@root()> logout
 WARNING: EventAdmin: Event Task Processing Interrupted. Events may not be received in proper order.
-, ✅(29s) 
+, ✅(38s) 
  sdkman/ki ki-shell 0.5.2/1.7.0
-, ✅(14s) 
- sdkman/kobweb kobweb 0.9.11
 , ✅(13s) 
+ sdkman/kobweb kobweb 0.9.11
+, ✅(11s) 
  sdkman/kscript , ❌(smoke) 
- sdkman/ktx , ✅(14s) 
+ sdkman/ktx , ✅(13s) 
  sdkman/layrry , ❌(smoke) 
- sdkman/maven , ✅(14s) 
+ sdkman/maven , ✅(12s) 
  sdkman/mcs , ✅(7s) 
- sdkman/micronaut , ✅(9s) 
+ sdkman/micronaut , ✅(8s) 
  sdkman/mulefd , ✅(12s) 
  sdkman/mvnd , ✅(18s) 
  sdkman/mybatis_migrations , ❌(smoke) 
  sdkman/neo4j_migrations , ❌(smoke) 
- sdkman/pierrot , ✅(10s) 
+ sdkman/pierrot , ✅(9s) 
  sdkman/pomchecker ------------------------------------------------------------
 pomchecker 1.9.0
 ------------------------------------------------------------
@@ -585,14 +569,14 @@ Build timestamp: 2023-03-22T09:20:17Z
 Revision:        08d655579cbcfc28755227b84358e44fa37ae06d
 JVM:             18.0.2 (IBM Corporation openj9-0.33.0)
 ------------------------------------------------------------
-, ✅(12s) 
+, ✅(11s) 
  sdkman/quarkus 2.16.6.Final
 , ✅(13s) 
  sdkman/sbt copying runtime jar...
 [info] [launcher] getting org.scala-sbt sbt 1.8.2  (this may take some time)...
 [info] [launcher] getting Scala 2.12.17 (for sbt)...
 [0Jsbt script version: 1.8.2
-, ✅(53s) 
+, ✅(51s) 
  sdkman/scala_cli Scala code runner version: 1.0.0-RC1
 Scala version (default): 3.2.2
 Your Scala code runner version is outdated. The newest version is 1.0.2
@@ -657,12 +641,12 @@ Core options:
  sdkman/znai Error: Could not find or load main class org.testingisdocumenting.znai.cli.ZnaiCliApp
 Caused by: java.lang.ClassNotFoundException: org.testingisdocumenting.znai.cli.ZnaiCliApp
 , ❌(smoke) 
- security/openssl , ✅(9s) 
+ security/openssl , ✅(8s) 
  security/skate skate version v0.2.2 (b8e7bbc)
-, ✅(10s) 
+, ✅(9s) 
  security/smartctl , ✅(8s) 
- security/sodium , ❌(smoke) 
- shell/bat , ✅(9s) 
+ security/sodium , ✅(6s) 
+ shell/bat , ✅(8s) 
  shell/busybox BusyBox v1.33.0.git (2020-10-27 01:01:35 -03) multi-call binary
 BusyBox is copyrighted by many authors between 1998-2020.
 Licensed under GPLv2. See source distribution for detailed
@@ -697,27 +681,27 @@ Currently defined functions:
 	uncompress, unexpand, uniq, unix2dos, unlink, unlzma, unlzop, unxz,
 	unzip, usleep, uudecode, uuencode, vi, watch, wc, wget, which, whoami,
 	whois, xargs, xxd, xz, xzcat, yes, zcat
-, ✅(12s) 
- shell/exa , ✅(3s) 
- shell/hyperfine hyperfine 1.16.1
 , ✅(8s) 
+ shell/exa , ✅(4s) 
+ shell/hyperfine hyperfine 1.16.1
+, ✅(7s) 
  shell/procs procs 0.11.9
 , ✅(7s) 
  shell/usql usql 0.14.1
-, ✅(13s) 
- terminal/chatgpt , ✅(10s) 
+, ✅(12s) 
+ terminal/chatgpt , ✅(9s) 
  terminal/glow glow version 1.5.1 (ad21129)
 , ✅(10s) 
  terminal/gotop gotop v4.2.0 (20220929T182421)
-, ✅(7s) 
+, ✅(8s) 
  terminal/gum gum version v0.10.0 (0f0f8e9)
-, ✅(19s) 
+, ✅(8s) 
  terminal/helix helix 23.03 (3cf03723)
-, ✅(17s) 
+, ✅(19s) 
  terminal/shtris 3.0.0
 , ✅(7s) 
  terminal/tmux , ❌(smoke) 
  terminal/vhs vhs version v0.5.0 (59a14d0)
-, ✅(16s) 
+, ✅(15s) 
  terminal/zellij , - 
  terminal/zenith , - 
