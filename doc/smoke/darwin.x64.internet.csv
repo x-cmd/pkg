@@ -1,742 +1,158 @@
- osman/terraform Terraform v1.4.6
-on darwin_amd64
-
-Your version of Terraform is out of date! The latest version
-is 1.5.3. You can update by downloading from https://www.terraform.io/downloads.html
-, ✅(6s) 
- osman/mirrord mirrord 3.34.0
-, ✅(8s) 
+ osman/terraform , ✅(4s) 
+ osman/mirrord , ✅(5s) 
  osman/proot , - 
- osman/aliyun , ✅(3s) 
- osman/ucloud ucloud cli 0.1.38
-, ✅(3s) 
- osman/ffuf , ✅(2s) 
- osman/hurl , ✅(3s) 
- security/skate skate version v0.2.2 (b8e7bbc)
-, ✅(3s) 
- security/sodium , ✅(2s) 
+ osman/aliyun , ✅(2s) 
+ osman/ucloud , ✅(1s) 
+ osman/ffuf , ✅(1s) 
+ osman/hurl , ✅(2s) 
+ security/skate , ✅(1s) 
+ security/sodium , ✅(0s) 
  security/smartctl , ❌(smoke) 
- security/openssl , ✅(2s) 
- sdkman/activemq INFO: Loading '/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0//bin/env'
-INFO: Using java '/Users/runner/.x-cmd.root/local/data/pkg/populate/java/18.0.2-sem/bin/java'
-Java Runtime: IBM Corporation 18.0.2 /Users/runner/.x-cmd.root/local/data/pkg/populate/java/18.0.2-sem
-  Heap sizes: current=65536k  free=55781k  max=1048576k
-    JVM args: -Xoptionsfile=/Users/runner/.x-cmd.root/local/data/pkg/populate/java/18.0.2-sem/lib/options.default -Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple -Xjcl:jclse29 -Dcom.ibm.oti.vm.bootstrap.library.path=/Users/runner/.x-cmd.root/local/data/pkg/populate/java/18.0.2-sem/lib/default:/Users/runner/.x-cmd.root/local/data/pkg/populate/java/18.0.2-sem/lib -Dsun.boot.library.path=/Users/runner/.x-cmd.root/local/data/pkg/populate/java/18.0.2-sem/lib/default:/Users/runner/.x-cmd.root/local/data/pkg/populate/java/18.0.2-sem/lib -Djava.library.path=/Users/runner/.x-cmd.root/local/data/pkg/populate/java/18.0.2-sem/lib/default:/Users/runner/.x-cmd.root/local/data/pkg/populate/java/18.0.2-sem/lib:/usr/lib -Djava.home=/Users/runner/.x-cmd.root/local/data/pkg/populate/java/18.0.2-sem -Duser.dir=/Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg -Xms64M -Xmx1G -Djava.util.logging.config.file=logging.properties -Djava.security.auth.login.config=/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0//conf/login.config --add-reads=java.xml=java.logging --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport.tcp=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-exports=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-exports=java.base/sun.net.www.protocol.https=ALL-UNNAMED --add-exports=java.base/sun.net.www.protocol.jar=ALL-UNNAMED --add-exports=jdk.xml.dom/org.w3c.dom.html=ALL-UNNAMED --add-exports=jdk.naming.rmi/com.sun.jndi.url.rmi=ALL-UNNAMED -Dactivemq.classpath=/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0//conf:/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0//../lib/: -Dactivemq.home=/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0/ -Dactivemq.base=/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0/ -Dactivemq.conf=/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0//conf -Dactivemq.data=/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0//data -Djolokia.conf=file:/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0//conf/jolokia-access.xml -Djava.class.path=/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0//bin/activemq.jar -Dsun.java.command=/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0//bin/activemq.jar --version -Dsun.java.launcher=SUN_STANDARD
-Extensions classpath:
-  [/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0/lib,/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0/lib/camel,/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0/lib/optional,/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0/lib/web,/Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0/lib/extra]
-ACTIVEMQ_HOME: /Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0
-ACTIVEMQ_BASE: /Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0
-ACTIVEMQ_CONF: /Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0/conf
-ACTIVEMQ_DATA: /Users/runner/.x-cmd.root/local/data/pkg/populate/activemq/5.18.0/data
-
-ActiveMQ 5.18.0
-For help or more information please see: http://activemq.apache.org
-
-, ✅(288s) 
- sdkman/ant Apache Ant(TM) version 1.10.13 compiled on January 4 2023
-, ✅(13s) 
- sdkman/quarkus 2.16.6.Final
-, ✅(9s) 
- sdkman/karaf IBM Semeru Runtime Open Edition 18.0.2.0 (build 18.0.2+9)
-[36m        __ __                  ____      [0m
-[36m       / //_/____ __________ _/ __/      [0m
-[36m      / ,<  / __ `/ ___/ __ `/ /_        [0m
-[36m     / /| |/ /_/ / /  / /_/ / __/        [0m
-[36m    /_/ |_|\__,_/_/   \__,_/_/         [0m
-
-[1m  Apache Karaf[0m (4.4.3)
-
-Hit '[1m<tab>[0m' for a list of available commands
-and '[1m[cmd] --help[0m' for help on a specific command.
-Hit '[1m<ctrl-d>[0m' or type '[1msystem:shutdown[0m' or '[1mlogout[0m' to shutdown Karaf.
-
-karaf@root()> logout
-, ✅(21s) 
- sdkman/kscript , ✅(16s) 
- sdkman/btrace BTrace v.2.2.3 (71df581ff6c89afa41ef611b987fc87c17ee8537)
-, ✅(3s) 
- sdkman/connor 1.1.0
-, ✅(5s) 
- sdkman/neo4j_migrations neo4j-migrations/2.2.2
-, ✅(5s) 
- sdkman/tomcat /Users/runner/.x-cmd.root/local/data/pkg/raw/sdkman/tomcat/.x-cmd/smoke.sh: line 3: tomcat: command not found
-, ❌(smoke) 
- sdkman/flink Version: 1.17.1, Commit ID: 2750d5c
-, ✅(63s) 
- sdkman/maven , ✅(4s) 
- sdkman/ktx , ✅(10s) 
- sdkman/layrry , ✅(3s) 
- sdkman/kobweb kobweb 0.9.11
-, ✅(5s) 
- sdkman/grails | Grails Version: 5.3.2
-| JVM Version: 18.0.2
-, ✅(16s) 
- sdkman/jmeter WARNING: package sun.awt.X11 not in java.desktop
-    _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____
-   / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \
-  / _ \ | |_) / _ \| |   | |_| |  _|    _  | | |\/| |  _|   | | |  _| | |_) |
- / ___ \|  __/ ___ \ |___|  _  | |___  | |_| | |  | | |___  | | | |___|  _ <
-/_/   \_\_| /_/   \_\____|_| |_|_____|  \___/|_|  |_|_____| |_| |_____|_| \_\ 5.5
-
-Copyright (c) 1999-2022 The Apache Software Foundation
-
-, ✅(19s) 
- sdkman/mybatis_migrations , ✅(2s) 
- sdkman/schemacrawler SchemaCrawler 16.19.9
-Database schema discovery and comprehension tool
-https://www.schemacrawler.com/
-Copyright (c) 2000-2023, Sualeh Fatehi <sualeh@hotmail.com>.
-
-You can search for database schema objects using regular expressions,
-and output the schema and data in a readable text format. You can find
-potential schema design issues with lint. The output serves for
-database documentation is designed to be diff-ed against other database
-schemas. SchemaCrawler also generates schema diagrams.
-
-, ✅(26s) 
- sdkman/znai Error: Could not find or load main class org.testingisdocumenting.znai.cli.ZnaiCliApp
-Caused by: java.lang.ClassNotFoundException: org.testingisdocumenting.znai.cli.ZnaiCliApp
-, ❌(smoke) 
- sdkman/gradle 
-------------------------------------------------------------
-Gradle 8.1.1
-------------------------------------------------------------
-
-Build time:   2023-04-21 12:31:26 UTC
-Revision:     1cf537a851c635c364a4214885f8b9798051175b
-
-Kotlin:       1.8.10
-Groovy:       3.0.15
-Ant:          Apache Ant(TM) version 1.10.11 compiled on July 10 2021
-JVM:          18.0.2 (Eclipse OpenJ9 openj9-0.33.0)
-OS:           Mac OS X 12.6.7 x86_64
-
-, ✅(11s) 
- sdkman/mulefd , ✅(6s) 
- sdkman/webtau Exception in thread "main" java/lang/Error: java.lang.ClassNotFoundException: groovy.lang.GroovyClassLoader
-	at java/lang/ClassLoader.getSystemClassLoader (java.base@18.0.2/ClassLoader.java:997)
-	at java/lang/J9VMInternals.threadCompleteInitialization (java.base@18.0.2/J9VMInternals.java:72)
-	at java/lang/J9VMInternals.completeInitialization (java.base@18.0.2/J9VMInternals.java:110)
-, ❌(smoke) 
- sdkman/pomchecker ------------------------------------------------------------
-pomchecker 1.9.0
-------------------------------------------------------------
-Build timestamp: 2023-03-22T09:20:17Z
-Revision:        08d655579cbcfc28755227b84358e44fa37ae06d
-JVM:             18.0.2 (IBM Corporation openj9-0.33.0)
-------------------------------------------------------------
-, ✅(4s) 
- sdkman/jbake JBake v2.6.6 (2021-03-14 23:17:22pm) [http://jbake.org]
-
-Usage: jbake
-   or  jbake <source> <destination>
-   or  jbake [OPTION]... [<value>...]
-
-Options:
- <source>            : source folder of site content (with templates and assets), if not supplied
-                       will default to current directory
- <destination>       : destination folder for output, if not supplied will default to a folder
-                       called "output" in the current directory
- --reset             : clears the local cache, enforcing rendering from scratch (default: false)
- -b (--bake)         : performs a bake (default: false)
- -h (--help)         : prints this message (default: true)
- -i (--init)         : initialises required folder structure with default templates (defaults to
-                       current directory if <value> is not supplied) (default: false)
- -s (--server)       : runs HTTP server to serve out baked site, if no <value> is supplied will
-                       default to a folder called "output" in the current directory (default: false)
- -t (--template) VAL : use specified template engine for default templates (uses Freemarker if
-                       <value> is not supplied)
-, ✅(10s) 
- sdkman/jreleaser ------------------------------------------------------------
-jreleaser 1.5.1
-------------------------------------------------------------
-Build time:   2023-03-12 09:27:00Z
-Revision:     0366d10cf9d2feb193247ead0482491ff6dc2162
-JVM:          17.0.2 (Azul Systems, Inc. 17.0.2+8-LTS)
-------------------------------------------------------------
-, ✅(10s) 
- sdkman/asciidoctorj JVMJ9VM193W Since Java 13 -Xverify:none and -noverify were deprecated for removal and may not be accepted options in the future.
-2023-07-13T11:52:11.235Z [main] WARN FilenoUtil : Native subprocess control requires open access to the JDK IO subsystem
-Pass '--add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED' to enable.
-Unhandled exception
-Type=Segmentation error vmState=0x00000000
-J9Generic_Signal_Number=00000018 Signal_Number=0000000b Error_Value=00000000 Signal_Code=00000001
-Handler1=0000000001B45340 Handler2=00000000018ADCC0 InaccessibleAddress=0000000000000008
-RDI=0000000009B3D100 RSI=00007FD7A78403F8 RAX=0000000000000012 RBX=000000000A7F0001
-RCX=00006000006E6123 RDX=00007FD7A783FD98 R8=00006000006E6123 R9=0000000000000010
-R10=0000000000000000 R11=00006000001EB632 R12=0000000009B3D100 R13=000000000A813C00
-R14=00000000017DB178 R15=0000000000000000
-RIP=0000000002157FB1 GS=0000 FS=0000 RSP=00007000098F9150
-RFlags=0000000000010213 CS=002B RBP=00007000098F9240 ERR=0000000800000004
-TRAPNO=000000040000000E CPU=0008000000040000 FAULTVADDR=0000000000000008
-XMM0 0000000000000000 (f: 0.000000, d: 0.000000e+00)
-XMM1 0000000000000000 (f: 0.000000, d: 0.000000e+00)
-XMM2 c3e0000000000000 (f: 0.000000, d: -9.223372e+18)
-XMM3 4330000000000000 (f: 0.000000, d: 4.503600e+15)
-XMM4 412e848000000000 (f: 0.000000, d: 1.000000e+06)
-XMM5 d9b9aef3480a1d60 (f: 1208622464.000000, d: -1.697816e+124)
-XMM6 3fe3d9026a7156fb (f: 1785812736.000000, d: 6.202404e-01)
-XMM7 403205966f2b4f12 (f: 1865109248.000000, d: 1.802183e+01)
-XMM8 0800080007000200 (f: 117441024.000000, d: 3.793161e-270)
-XMM9 0000000000000000 (f: 0.000000, d: 0.000000e+00)
-XMM10 0000000000000000 (f: 0.000000, d: 0.000000e+00)
-XMM11 ca62c1d6ca62c1d6 (f: 3395469824.000000, d: -2.193092e+50)
-XMM12 0000000000000000 (f: 0.000000, d: 0.000000e+00)
-XMM13 0000000000000000 (f: 0.000000, d: 0.000000e+00)
-XMM14 0000000000000000 (f: 0.000000, d: 0.000000e+00)
-XMM15 0000000000000000 (f: 0.000000, d: 0.000000e+00)
-Module=/Users/runner/.x-cmd.root/local/data/pkg/populate/java/18.0.2-sem/lib/default/libjclse29.dylib
-Module_base_address=0000000002113000 Symbol=Java_java_lang_invoke_MethodHandleNatives_resolve
-Symbol_address=0000000002156D00
-Target=2_90_20220804_38 (Mac OS X 12.6.7)
-CPU=amd64 (3 logical CPUs) (0x380000000 RAM)
------------ Stack Backtrace -----------
-Java_java_lang_invoke_MethodHandleNatives_resolve+0x12b2 (0x0000000002157FB2 [libjclse29.dylib+0x44fb2])
----------------------------------------
-JVMDUMP039I Processing dump event "gpf", detail "" at 2023/07/13 11:52:13 - please wait.
-JVMDUMP032I JVM requested System dump using '/Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/core.20230713.115213.17763.0001.dmp' in response to an event
-task_thread failed with:  (ipc/send) invalid destination port
-error getting thread command data:
- (ipc/send) invalid destination port
-JVMDUMP012E Error in System dump: /Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/core.20230713.115213.17763.0001.dmp
-JVMDUMP032I JVM requested Java dump using '/Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/javacore.20230713.115213.17763.0002.txt' in response to an event
-JVMDUMP010I Java dump written to /Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/javacore.20230713.115213.17763.0002.txt
-JVMDUMP032I JVM requested Snap dump using '/Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/Snap.20230713.115213.17763.0003.trc' in response to an event
-JVMDUMP010I Snap dump written to /Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/Snap.20230713.115213.17763.0003.trc
-JVMDUMP032I JVM requested JIT dump using '/Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/jitdump.20230713.115213.17763.0004.dmp' in response to an event
-JVMDUMP051I JIT dump occurred in 'main' thread 0x0000000009B3D100
-JVMDUMP053I JIT dump is recompiling java/lang/invoke/MemberName$Factory.resolve(BLjava/lang/invoke/MemberName;Ljava/lang/Class;IZ)Ljava/lang/invoke/MemberName;
-JVMDUMP053I JIT dump is recompiling java/lang/invoke/MemberName$Factory.resolveOrFail(BLjava/lang/invoke/MemberName;Ljava/lang/Class;ILjava/lang/Class;)Ljava/lang/invoke/MemberName;
-JVMDUMP010I JIT dump written to /Users/runner/work/pkg/pkg/pkg/.tmp/x-cmd-pkg/jitdump.20230713.115213.17763.0004.dmp
-JVMDUMP013I Processed dump event "gpf", detail "".
-, ❌(smoke) 
- sdkman/hadoop Hadoop 3.3.5
-Source code repository https://github.com/apache/hadoop.git -r 706d88266abcee09ed78fbaa0ad5f74d818ab0e9
-Compiled by stevel on 2023-03-15T15:56Z
-Compiled with protoc 3.7.1
-From source with checksum 6bbd9afcf4838a0eb12a5f189e9bd7
-This command was run using /Users/runner/.x-cmd.root/local/data/pkg/populate/hadoop/3.3.5/share/hadoop/common/hadoop-common-3.3.5.jar
-, ✅(108s) 
- sdkman/ki ki-shell 0.5.2/1.7.0
-, ✅(9s) 
- sdkman/micronaut , ✅(6s) 
- sdkman/skeletal Skeletal version 0.15.0
-, ✅(6s) 
- sdkman/gaiden Exception in thread "main" org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pageBuilder': Unsatisfied dependency expressed through field 'markdownProcessor'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'gaidenMarkdownProcessor' defined in URL [jar:file:/Users/runner/.x-cmd.root/local/data/pkg/populate/gaiden/v1.3/lib/gaiden-core-1.3.jar!/gaiden/markdown/GaidenMarkdownProcessor.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [gaiden.markdown.GaidenMarkdownProcessor]: Constructor threw exception; nested exception is java.lang.RuntimeException: Error creating extended parser class: Could not determine whether class 'org.pegdown.GaidenParser$$parboiled' has already been loaded
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:397)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1429)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
-	at gaiden.GaidenApplication.initialize(GaidenApplication.groovy:32)
-	at gaiden.GaidenMain.executeCommand(GaidenMain.groovy:61)
-	at gaiden.GaidenMain.run(GaidenMain.groovy:45)
-	at gaiden.GaidenMain.main(GaidenMain.groovy:40)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'gaidenMarkdownProcessor' defined in URL [jar:file:/Users/runner/.x-cmd.root/local/data/pkg/populate/gaiden/v1.3/lib/gaiden-core-1.3.jar!/gaiden/markdown/GaidenMarkdownProcessor.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [gaiden.markdown.GaidenMarkdownProcessor]: Constructor threw exception; nested exception is java.lang.RuntimeException: Error creating extended parser class: Could not determine whether class 'org.pegdown.GaidenParser$$parboiled' has already been loaded
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:636)
-	... 16 more
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [gaiden.markdown.GaidenMarkdownProcessor]: Constructor threw exception; nested exception is java.lang.RuntimeException: Error creating extended parser class: Could not determine whether class 'org.pegdown.GaidenParser$$parboiled' has already been loaded
-	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:213)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312)
-	... 27 more
-Caused by: java.lang.RuntimeException: Error creating extended parser class: Could not determine whether class 'org.pegdown.GaidenParser$$parboiled' has already been loaded
-	at org.parboiled.Parboiled.createParser(Parboiled.java:58)
-	at gaiden.markdown.GaidenMarkdownProcessor.<init>(GaidenMarkdownProcessor.groovy:56)
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:200)
-	... 29 more
-Caused by: java.lang.RuntimeException: Could not determine whether class 'org.pegdown.GaidenParser$$parboiled' has already been loaded
-	at org.parboiled.transform.AsmUtils.findLoadedClass(AsmUtils.java:213)
-	at org.parboiled.transform.ParserTransformer.transformParser(ParserTransformer.java:35)
-	at org.parboiled.Parboiled.createParser(Parboiled.java:54)
-	... 34 more
-Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.findLoadedClass(java.lang.String) accessible: module java.base does not "opens java.lang" to unnamed module @4af551c1
-	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
-	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
-	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:200)
-	at java.base/java.lang.reflect.Method.setAccessible(Method.java:194)
-	at org.parboiled.transform.AsmUtils.findLoadedClass(AsmUtils.java:206)
-	... 36 more
-, ❌(smoke) 
- sdkman/sbt copying runtime jar...
-[info] [launcher] getting org.scala-sbt sbt 1.8.2  (this may take some time)...
-[info] [launcher] getting Scala 2.12.17 (for sbt)...
-[0Jsbt script version: 1.8.2
-, ✅(32s) 
- sdkman/bpipe 
-Could not understand command --version or find it as a file
-
-usage: bpipe [run|test|debug|touch|execute] [options] <pipeline> <in1> <in2>...
-             retry [job id] [test]
-             remake <file1> <file2>...
-             resume
-             stop [preallocated]
-             history
-             log [-n <lines>] [job id]
-             jobs
-             checks [options]
-             override
-             status
-             cleanup
-             query <file>
-             preallocate
-             archive [--delete] <zip file path>
-             autoarchive
-             preserve
-             register <pipeline> <in1> <in2>...
-             diagram <pipeline> <in1> <in2>...
-             diagrameditor <pipeline> <in1> <in2>...
-
-Options:
-
- -a,--autoarchive <arg>           clean up all internal files after run into given archive
- -b,--branch <arg>                Comma separated list of branches to limit execution to
- -d,--dir <arg>                   output directory
- -e,--env <arg>                   Environment to select from alternate configurations in
-                                  bpipe.config
- -f,--filename <arg>              output file name of report
- -h,--help                        usage information
- -l,--resource <resource=value>   place limit on named resource
- -L,--interval <arg>              the default genomic interval to execute pipeline for (samtools
-                                  format)
- -m,--memory <arg>                maximum memory in MB, or specified as <n>GB or <n>MB
- -n,--threads <arg>               maximum threads
- -p,--param <param=value>         defines a pipeline parameter, or file of parameters via @<file>
- -r,--report                      generate an HTML report / documentation for pipeline
- -R,--report <arg>                generate report using named template
- -s,--source <arg>                Load the given pipeline file(s) before running / executing
- -t,--test                        test mode
- -u,--until <arg>                 run until stage given
- -v,--verbose                     print internal logging to standard error
- -y,--yes                         answer yes to any prompts or questions
-
-
-, ✅(9s) 
- sdkman/doctoolchain Downloading https://services.gradle.org/distributions/gradle-6.9.2-bin.zip
-..........10%..........20%..........30%...........40%..........50%..........60%..........70%...........80%..........90%..........100%
-
-Welcome to Gradle 6.9.2!
-
-Here are the highlights of this release:
- - This is a small backport release.
- - Java 16 can be used to compile when used with Java toolchains
- - Dynamic versions can be used within plugin declarations
- - Native support for Apple Silicon processors
-
-For more details see https://docs.gradle.org/6.9.2/release-notes.html
-
-
-USAGE: gradlew [option...] [task...]
-
--?, -h, --help                     Shows this help message.
--a, --no-rebuild                   Do not rebuild project dependencies.
--b, --build-file                   Specify the build file.
---build-cache                      Enables the Gradle build cache. Gradle will try to reuse outputs from previous builds.
--c, --settings-file                Specify the settings file.
---configuration-cache              Enables the configuration cache. Gradle will try to reuse the build configuration from previous builds. [incubating]
---configuration-cache-problems     Configures how the configuration cache handles problems (fail or warn). Defaults to fail. [incubating]
---configure-on-demand              Configure necessary projects only. Gradle will attempt to reduce configuration time for large multi-project builds. [incubating]
---console                          Specifies which type of console output to generate. Values are 'plain', 'auto' (default), 'rich' or 'verbose'.
---continue                         Continue task execution after a task failure.
--D, --system-prop                  Set system property of the JVM (e.g. -Dmyprop=myvalue).
--d, --debug                        Log in debug mode (includes normal stacktrace).
---daemon                           Uses the Gradle Daemon to run the build. Starts the Daemon if not running.
---export-keys                      Exports the public keys used for dependency verification. [incubating]
--F, --dependency-verification      Configures the dependency verification mode (strict, lenient or off) [incubating]
---foreground                       Starts the Gradle Daemon in the foreground.
--g, --gradle-user-home             Specifies the gradle user home directory.
--I, --init-script                  Specify an initialization script.
--i, --info                         Set log level to info.
---include-build                    Include the specified build in the composite.
--M, --write-verification-metadata  Generates checksums for dependencies used in the project (comma-separated list) [incubating]
--m, --dry-run                      Run the builds with all task actions disabled.
---max-workers                      Configure the number of concurrent workers Gradle is allowed to use.
---no-build-cache                   Disables the Gradle build cache.
---no-configuration-cache           Disables the configuration cache. [incubating]
---no-configure-on-demand           Disables the use of configuration on demand. [incubating]
---no-daemon                        Do not use the Gradle daemon to run the build. Useful occasionally if you have configured Gradle to always run with the daemon by default.
---no-parallel                      Disables parallel execution to build projects.
---no-scan                          Disables the creation of a build scan. For more information about build scans, please visit https://gradle.com/build-scans.
---no-watch-fs                      Disables watching the file system.
---offline                          Execute the build without accessing network resources.
--P, --project-prop                 Set project property for the build script (e.g. -Pmyprop=myvalue).
--p, --project-dir                  Specifies the start directory for Gradle. Defaults to current directory.
---parallel                         Build projects in parallel. Gradle will attempt to determine the optimal number of executor threads to use.
---priority                         Specifies the scheduling priority for the Gradle daemon and all processes launched by it. Values are 'normal' (default) or 'low' [incubating]
---profile                          Profile build execution time and generates a report in the <build_dir>/reports/profile directory.
---project-cache-dir                Specify the project-specific cache directory. Defaults to .gradle in the root project directory.
--q, --quiet                        Log errors only.
---refresh-dependencies             Refresh the state of dependencies.
---refresh-keys                     Refresh the public keys used for dependency verification. [incubating]
---rerun-tasks                      Ignore previously cached task results.
--S, --full-stacktrace              Print out the full (very verbose) stacktrace for all exceptions.
--s, --stacktrace                   Print out the stacktrace for all exceptions.
---scan                             Creates a build scan. Gradle will emit a warning if the build scan plugin has not been applied. (https://gradle.com/build-scans)
---status                           Shows status of running and recently stopped Gradle Daemon(s).
---stop                             Stops the Gradle Daemon if it is running.
--t, --continuous                   Enables continuous build. Gradle does not exit and will re-execute tasks when task file inputs change.
---update-locks                     Perform a partial update of the dependency lock, letting passed in module notations change version. [incubating]
--v, --version                      Print version info.
--w, --warn                         Set log level to warn.
---warning-mode                     Specifies which mode of warnings to generate. Values are 'all', 'fail', 'summary'(default) or 'none'
---watch-fs                         Enables watching the file system for changes, allowing data about the file system to be re-used for the next build.
---write-locks                      Persists dependency resolution for locked configurations, ignoring existing locking information if it exists [incubating]
--x, --exclude-task                 Specify a task to be excluded from execution.
-
-, ✅(10s) 
- sdkman/mvnd , ✅(9s) 
- sdkman/visualvm Usage: /Users/runner/.x-cmd.root/local/data/pkg/populate/visualvm/2.1.5/platform/lib/nbexec {options} arguments
-
-General options:
-  --help                show this help 
-  --jdkhome <path>      path to Java(TM) 2 SDK, Standard Edition
-  -J<jvm_option>        pass <jvm_option> to JVM
-
-  --cp:p <classpath>    prepend <classpath> to classpath
-  --cp:a <classpath>    append <classpath> to classpath
-WARNING: package com.sun.java.swing.plaf.gtk not in java.desktop
-WARNING: package sun.awt.X11 not in java.desktop
-netbeans.user points to a non-existent directory.
-WARNING: GL pipe is running in software mode (Renderer ID=0x1020400)
-Module reload options:
-  --reload /path/to/module.jar  install or reinstall a module JAR file
-
-Additional module options:
-  --openpid <arg>              open application with process id <arg>
-  --openid <arg>               open application with id <arg>
-  --openjmx <arg>              open application specified by JMX connection (host:port)
-  --source-roots <arg>         set the source roots to be searched by Go To Source
-  --source-viewer <arg>        set the source viewer command to be executed by Go To Source
-  --source-config <arg>        set the path to sources configuration file containing source roots and viewer definition
-  --threaddump <arg>           take thread dump of the provided process
-  --heapdump <arg>             take heap dump of the provided process
-  --modules                    
-  --refresh                    Refresh all catalogs
-  --list                       Prints the list of all modules, their versions and enablement status
-  --install <arg1>...<argN>    Installs provided JAR files as modules
-  --disable <arg1>...<argN>    Disable modules for specified codebase names
-  --enable <arg1>...<argN>     Enable modules for specified codebase names
-  --update <arg1>...<argN>     Updates all or specified modules
-  --update-all                 Updates all modules
-  --extra-uc <arg>             Add a extra Update Center (URL)
-  --start-cpu-sampler <arg>    start CPU sampler for the provided process
-  --stop-sampler <arg>         stop sampling the provided process
-  --start-memory-sampler <arg> start Memory sampler for the provided process
-  --snapshot-sampler <arg>     take sampler snapshot for the provided process
-  --openfile <arg>             open file specified by <arg>, file can be .apps Application snapshot, .nps Sampler/Profiler snapshot, .tdump thread dump, HPROF heap dump, or a .jfr recording
-  --window-to-front            bring VisualVM window to front
-  --stop-jfr <arg>             stop JFR of the provided process
-  --start-jfr <arg>            start JFR of the provided process
-  --dump-jfr <arg>             dump JFR data of the provided process
-
-Core options:
-  --laf <LaF classname> use given LookAndFeel class instead of the default
-  --fontsize <size>     set the base font size of the user interface, in points
-  --locale <language[:country[:variant]]> use specified locale
-  --userdir <path>      use specified directory to store user settings
-  --cachedir <path>     use specified directory to store user cache, must be different from userdir
-  --nosplash            do not show the splash screen
-
-, ❌(smoke) 
- sdkman/cxf , ✅(13s) 
- sdkman/scala_cli Scala code runner version: 1.0.0-RC1
-Scala version (default): 3.2.2
-Your Scala code runner version is outdated. The newest version is 1.0.2
-It is recommended that you update Scala code runner through the same tool or method you used for its initial installation for avoiding the creation of outdated duplicates.
-, ✅(8s) 
- sdkman/coursier 2.1.0
-, ✅(5s) 
- sdkman/concurnas Caching runtime enviroment for Concurnas version: 1.14.020 and JVM Spec: 1.8.0_372. This needs to be done only once. This may take a few minutes...
- <\-------------------->   0% | [ 67ms] <\--\----------------->   0% | [ 68ms] <\\-\----------------->   0% | [ 68ms] <\\\\----------------->   0% | [ 68ms] <|\\\----------------->   0% | [ 69ms] <|\|\----------------->   0% | [ 69ms] <|\||----------------->   0% | [ 70ms] </\||----------------->   0% | [ 70ms] </|||----------------->   0% | [ 70ms] </||/----------------->   0% | [ 70ms] <//|/----------------->   0% | [ 71ms] <////----------------->   0% | [ 72ms] <//-/----------------->   0% | [ 72ms] <*/-/----------------->   5% | [ 74ms] <*/*/----------------->  10% | [ 75ms] <*/*/-\--------------->  10% | [ 75ms] <*/*/-|--------------->  10% | [ 76ms] <*/**-|--------------->  14% | [ 77ms] <****-|--------------->  19% | [ 81ms] <****-/--------------->  19% | [352ms] <****----------------->  19% | [356ms] <****-\--------------->  19% | [384ms] <****-|--------------->  19% | [449ms] <****-/--------------->  19% | [484ms] <****----------------->  19% | [518ms] <****-\--------------->  19% | [584ms] <****-|--------------->  19% | [601ms] <****-|\-------------->  19% | [608ms] <****-/\-------------->  19% | [672ms] <****--\-------------->  19% | [673ms] <****-\\-------------->  19% | [681ms] <****-|\-------------->  19% | [683ms] <****-/\-------------->  19% | [689ms] <****--\-------------->  19% | [692ms] <****-\\-------------->  19% | [695ms] <****-|\-------------->  19% | [697ms] <****-|\\------------->  19% | [703ms] <****-/\\------------->  19% | [796ms] <****--\\------------->  19% | [799ms] <****-\\\------------->  19% | [801ms] <****-|\\------------->  19% | [838ms] <****-/\\------------->  19% | [870ms] <****--\\------------->  19% | [887ms] <****-\\\------------->  19% | [894ms] <****-|\\------------->  19% | [901ms] <****-/\\------------->  19% | [958ms] <****-/|\------------->  19% | [959ms] <****-/||------------->  19% | [968ms] <****--||------------->  19% | [971ms] <****-\||------------->  19% | [   1s] <****-*||------------->  24% | [   1s] <****-*||\------------>  24% | [   1s] <****-*|||------------>  24% | [   1s] <****-*||/------------>  24% | [   1s] <****-*||------------->  24% | [   1s] <****-*||\------------>  24% | [   1s] <****-*|||------------>  24% | [   1s] <****-*||/------------>  24% | [   1s] <****-*||------------->  24% | [   1s] <****-*||*------------>  29% | [   1s] <****-*||*\----------->  29% | [   1s] <****-*/|*\----------->  29% | [   1s] <****-*//*\----------->  29% | [   1s] <****-*//*|----------->  29% | [   1s] <****-*//*/----------->  29% | [   1s] <****-*-/*/----------->  29% | [   1s] <****-*-/*------------>  29% | [   1s] <****-*-/*\----------->  29% | [   1s] <****-*--*\----------->  29% | [   1s] <****-*--*|----------->  29% | [   1s] <****-*\-*|----------->  29% | [   1s] <****-*\-*/----------->  29% | [   1s] <****-*\\*/----------->  29% | [   1s] <****-*\\*------------>  29% | [   1s] <****-*\\*\----------->  29% | [   1s] <****-*|\*\----------->  29% | [   2s] <****-*|\*|----------->  29% | [   2s] <****-*||*|----------->  29% | [   2s] <****-*/|*|----------->  29% | [   2s] <****-*/|*/----------->  29% | [   2s] <****-*/|*------------>  29% | [   2s] <****-*/|*\----------->  29% | [   2s] <****-*//*\----------->  29% | [   2s] <****-*//*|----------->  29% | [   2s] <****-*//*/----------->  29% | [   2s] <****-*//*------------>  29% | [   2s] <****-*-/*------------>  29% | [   2s] <****-*-/*\----------->  29% | [   2s] <****-*--*\----------->  29% | [   2s] <****-*--*|----------->  29% | [   2s] <****-*--*/----------->  29% | [   2s] <****-*\-*/----------->  29% | [   2s] <****-*\-*------------>  29% | [   2s] <****-*\-*\----------->  29% | [   2s] <****-*\\*\----------->  29% | [   2s] <****-*\\*|----------->  29% | [   3s] <****-*\\*/----------->  29% | [   3s] <****-*|\*/----------->  29% | [   3s] <****-*|\*------------>  29% | [   3s] <****-*|\*\----------->  29% | [   3s] <****-*|\*|----------->  29% | [   3s] <****-*||*|----------->  29% | [   3s] <****-*||*/----------->  29% | [   3s] <****-*||*------------>  29% | [   3s] <****-*||*\----------->  29% | [   3s] <****-*||*|----------->  29% | [   3s] <****-*||*/----------->  29% | [   3s] <****-*|/*/----------->  29% | [   3s] <****-*|/*------------>  29% | [   3s] <****-*//*------------>  29% | [   3s] <****-*//*\----------->  29% | [   3s] <****-*//*|----------->  29% | [   3s] <****-*//*/----------->  29% | [   3s] <****-*/-*/----------->  29% | [   3s] <****-*/-*------------>  29% | [   3s] <****-*/-*\----------->  29% | [   3s] <****-*/-*|----------->  29% | [   3s] <****-*/-*/----------->  29% | [   3s] <****-*/\*/----------->  29% | [   3s] <****-*-\*/----------->  29% | [   3s] <****-*-\*------------>  29% | [   3s] <****-*-\*\----------->  29% | [   3s] <****-*-\*|----------->  29% | [   3s] <****-*-|*|----------->  29% | [   3s] <****-*-|*/----------->  29% | [   3s] <****-*-|*------------>  29% | [   4s] <****-*-|*\----------->  29% | [   4s] <****-*\|*\----------->  29% | [   4s] <****-*\|*|----------->  29% | [   4s] <****-*\|*/----------->  29% | [   4s] <****-*\|*------------>  29% | [   4s] <****-*\/*------------>  29% | [   4s] <****-*\/*\----------->  29% | [   4s] <****-*|/*\----------->  29% | [   4s] <****\*|/*\----------->  29% | [   4s] <****\*|/**----------->  33% | [   4s] <****\*|-**----------->  33% | [   4s] <****\*|-**\---------->  33% | [   4s] <****\*|-**|---------->  33% | [   4s] <****\*|-**/---------->  33% | [   4s] <****\*/-**/---------->  33% | [   4s] <****\*/-**----------->  33% | [   4s] <****\*/-**\---------->  33% | [   4s] <****\*/-**|---------->  33% | [   4s] <****\*/-**/---------->  33% | [   4s] <****\*/-**----------->  33% | [   4s] <****\*/\**----------->  33% | [   4s] <****\*/\**\---------->  33% | [   4s] <****\*-\**\---------->  33% | [   4s] <****\*-\**|---------->  33% | [   4s] <****\*-\**/---------->  33% | [   4s] <****\*-\**----------->  33% | [   4s] <****\*-|**----------->  33% | [   4s] <****\*-|**\---------->  33% | [   5s] <****\*-|**|---------->  33% | [   5s] <****\*-|**/---------->  33% | [   5s] <****\*-|**----------->  33% | [   5s] <****\*-|**\---------->  33% | [   5s] <****\*-|**|---------->  33% | [   5s] <****\*\|**|---------->  33% | [   5s] <****\*\|**/---------->  33% | [   5s] <****\*\/**/---------->  33% | [   5s] <****\*\/**----------->  33% | [   5s] <****\*\/**\---------->  33% | [   5s] <****\*\/**|---------->  33% | [   5s] <****\*\/**/---------->  33% | [   5s] <****\*\-**/---------->  33% | [   5s] <****\*\-**----------->  33% | [   5s] <****\*\-**\---------->  33% | [   5s] <****\*|-**\---------->  33% | [   5s] <****\*|-**|---------->  33% | [   5s] <****\*|-**/---------->  33% | [   5s] <****\*|-**----------->  33% | [   5s] <****\*|\**----------->  33% | [   5s] <****\*|\**\---------->  33% | [   5s] <****\*|\**|---------->  33% | [   5s] <****\*|\**/---------->  33% | [   5s] <****\*/\**/---------->  33% | [   5s] <****\*/\**----------->  33% | [   5s] <****\*/\**\---------->  33% | [   5s] <****\*/|**\---------->  33% | [   6s] <****\*/|**|---------->  33% | [   6s] <****\*/|**/---------->  33% | [   6s] <****\*/|**----------->  33% | [   6s] <****\*/|**\---------->  33% | [   6s] <****\*-|**\---------->  33% | [   6s] <****\*-|**|---------->  33% | [   6s] <****\*-/**|---------->  33% | [   6s] <****\*-/**/---------->  33% | [   6s] <****\*-/**----------->  33% | [   6s] <****\*-/**\---------->  33% | [   6s] <****\*\/**\---------->  33% | [   6s] <****\*\/***---------->  38% | [   6s] <****\*\/***\--------->  38% | [   6s] <****\*\-***\--------->  38% | [   6s] <****\*\-***|--------->  38% | [   6s] <****\*\-***/--------->  38% | [   6s] <****\*\-***---------->  38% | [   6s] <****\*\\***---------->  38% | [   6s] <****\*\\***\--------->  38% | [   6s] <****\*\\***|--------->  38% | [   6s] <****\*\\***/--------->  38% | [   6s] <****\*\\***---------->  38% | [   6s] <****\*\\***\--------->  38% | [   6s] <****\*\\***|--------->  38% | [   6s] <****\*\\***/--------->  38% | [   6s] <****\*|\***/--------->  38% | [   6s] <****\*|\***---------->  38% | [   6s] <****\*|\***\--------->  38% | [   6s] <****\*|\***|--------->  38% | [   6s] <****\*||***|--------->  38% | [   6s] <****\*||***/--------->  38% | [   6s] <****\*||***---------->  38% | [   6s] <****\*||***\--------->  38% | [   6s] <****\*||***|--------->  38% | [   6s] <****\*||***/--------->  38% | [   6s] <****\*||***---------->  38% | [   6s] <****\*||***\--------->  38% | [   6s] <****\*||***|--------->  38% | [   7s] <****\*||***/--------->  38% | [   7s] <****\*|/***/--------->  38% | [   7s] <****\*|/***---------->  38% | [   7s] <****\*//***---------->  38% | [   7s] <****\*//***\--------->  38% | [   7s] <****\*//***|--------->  38% | [   7s] <****\*/-***|--------->  38% | [   7s] <****\*/-***/--------->  38% | [   7s] <****\*/-***---------->  38% | [   7s] <****\*/-***\--------->  38% | [   7s] <****\*/\***\--------->  38% | [   7s] <****\*-\***\--------->  38% | [   7s] <****\*-|***\--------->  38% | [   7s] <****\*-|***|--------->  38% | [   7s] <****\*-|***/--------->  38% | [   7s] <****\*-|***---------->  38% | [   7s] <****\*\|***---------->  38% | [   7s] <****\*\/***---------->  38% | [   7s] <****\*\/***\--------->  38% | [   7s] <****\*\-***\--------->  38% | [   7s] <****\*\-***|--------->  38% | [   7s] <****\*\-***/--------->  38% | [   7s] <****\*|-***/--------->  38% | [   7s] <****\*|\***/--------->  38% | [   7s] <****\*|\***---------->  38% | [   7s] <****\*|\***\--------->  38% | [   7s] <****\*|\***|--------->  38% | [   7s] <****\*||***|--------->  38% | [   7s] <****\*/|***|--------->  38% | [   8s] <****\*/|***/--------->  38% | [   8s] <****\*/|***---------->  38% | [   8s] <****\*/|***\--------->  38% | [   8s] <****\*//***\--------->  38% | [   8s] <****\*//***|--------->  38% | [   8s] <****\*//****--------->  43% | [   8s] <****\*//****\-------->  43% | [   8s] <****\*//****|-------->  43% | [   8s] <****\*//****/-------->  43% | [   8s] <****\*//****--------->  43% | [   8s] <****\*-/****--------->  43% | [   8s] <****\*-/****\-------->  43% | [   8s] <****\*--****\-------->  43% | [   8s] <****\*--****|-------->  43% | [   8s] <****\*--****/-------->  43% | [   8s] <****\*--****--------->  43% | [   8s] <****\*--****\-------->  43% | [   8s] <****\*--****|-------->  43% | [   8s] <****\*--****/-------->  43% | [   8s] <****\*--****--------->  43% | [   8s] <****\*--****\-------->  43% | [   8s] <****\*--****|-------->  43% | [   8s] <****\*--****/-------->  43% | [   8s] <****\*--****--------->  43% | [   8s] <****\*--****\-------->  43% | [   8s] <****|*--****\-------->  43% | [   8s] <****|*--****|-------->  43% | [   8s] <****|*--****/-------->  43% | [   8s] <****|*--****--------->  43% | [   8s] <****|*--****\-------->  43% | [   8s] <****|*--****|-------->  43% | [   8s] <****|*--****/-------->  43% | [   8s] <****|*--****--------->  43% | [   8s] <****|*\-****--------->  43% | [   8s] <****|*\-****\-------->  43% | [   8s] <****|*\\****\-------->  43% | [   8s] <****|*\\****|-------->  43% | [   8s] <****|*\\*****-------->  48% | [   8s] <****|*\\*****\------->  48% | [   8s] <****|*\\*****|------->  48% | [   8s] <****|*\\*****/------->  48% | [   8s] <****|*\\*****-------->  48% | [   8s] <****|*\\*****\------->  48% | [   8s] <****|*\\*****|------->  48% | [   8s] <****|*\\*****/------->  48% | [   8s] <****|*\|*****/------->  48% | [   8s] <****|*||*****/------->  48% | [   8s] <****|*||*****-------->  48% | [   8s] <****|*||*****\------->  48% | [   8s] <****|*||*****|------->  48% | [   8s] <****|*||*****/------->  48% | [   8s] <****|*||*****-------->  48% | [   8s] <****|*||*****\------->  48% | [   8s] <****|*|/*****\------->  48% | [   8s] <****|*|/*****|------->  48% | [   8s] <****|*|/*****/------->  48% | [   8s] <****|*//*****/------->  48% | [   8s] <****|*/-*****/------->  48% | [   9s] <****|*/-*****-------->  48% | [   9s] <****|*/-*****\------->  48% | [   9s] <****|*/-*****|------->  48% | [   9s] <****|*/-*****/------->  48% | [   9s] <****|*/-*****-------->  48% | [   9s] <****|*/-*****\------->  48% | [   9s] <****|*/\*****\------->  48% | [   9s] <****|*/\*****|------->  48% | [   9s] <****|*/\*****/------->  48% | [   9s] <****|*/\*****-------->  48% | [   9s] <****|*/\*****\------->  48% | [   9s] <****|*/\*****|------->  48% | [   9s] <****|*/\*****/------->  48% | [   9s] <****|*/\*****-------->  48% | [   9s] <****|*/\*****\------->  48% | [   9s] <****|*/\*****|------->  48% | [   9s] <****|*-\*****|------->  48% | [   9s] <****|*-\*****/------->  48% | [   9s] <****|*-|*****/------->  48% | [   9s] <****|*-|*****-------->  48% | [   9s] <****|*-|*****\------->  48% | [   9s] <****|*-|******------->  52% | [   9s] <****|*-|******\------>  52% | [   9s] <****|*-|******|------>  52% | [   9s] <****|*-/******|------>  52% | [   9s] <****|*-/******/------>  52% | [   9s] <****|*-/******------->  52% | [   9s] <****|*--******------->  52% | [   9s] <****|*--******\------>  52% | [   9s] <****|*\-******\------>  52% | [   9s] <****|*\\******\------>  52% | [   9s] <****|*\\******|------>  52% | [   9s] <****|*\|******|------>  52% | [   9s] <****|*\|******/------>  52% | [   9s] <****|*\|******------->  52% | [   9s] <****|*\/******------->  52% | [   9s] <****|*\/******\------>  52% | [   9s] <****|*|/******\------>  52% | [   9s] <****|*|-******\------>  52% | [   9s] <****|*|-******|------>  52% | [   9s] <****|*|-******/------>  52% | [   9s] <****|*|-******------->  52% | [   9s] <****|*|\******------->  52% | [  10s] <****|*|\******\------>  52% | [  10s] <****|*||******\------>  52% | [  10s] <****|*||******|------>  52% | [  10s] <****|*/|******|------>  52% | [  10s] <****|*/|******/------>  52% | [  10s] <****|*/|******------->  52% | [  10s] <****|*/|******\------>  52% | [  10s] <****|*/|******|------>  52% | [  10s] <****|*/|******/------>  52% | [  10s] <****|*-|******/------>  52% | [  10s] <****|*-*******/------>  57% | [  10s] <****|*-*******------->  57% | [  10s] <****|*\*******------->  57% | [  10s] <****|*\*******\------>  57% | [  10s] <****|*\*******\\----->  57% | [  10s] <****|*|*******\\----->  57% | [  10s] <****|*|*******|\----->  57% | [  10s] <****|*|*******/\----->  57% | [  11s] <****|*|*******/|----->  57% | [  11s] <****|*|*******-|----->  57% | [  11s] <****|*|*******-/----->  57% | [  11s] <****|*|*******\/----->  57% | [  11s] <****|*|*******|/----->  57% | [  11s] <****|*|*******|------>  57% | [  11s] <****|*/*******|------>  57% | [  11s] <****|*/*******/------>  57% | [  11s] <****|*/*******------->  57% | [  11s] <****|*/*******-\----->  57% | [  11s] <****|*/*******\\----->  57% | [  11s] <****|*/*******\|----->  57% | [  11s] <****|*/*******||----->  57% | [  11s] <****|*/*******|/----->  57% | [  11s] <****|*/*******//----->  57% | [  11s] <****|*/*******-/----->  57% | [  11s] <****|*-*******-/----->  57% | [  11s] <****|*-*******\/----->  57% | [  11s] <****|*-*******|/----->  57% | [  11s] <****|*-*******//----->  57% | [  11s] <****|*-*******/------>  57% | [  11s] <****|*-*******------->  57% | [  11s] <****|*-*******\------>  57% | [  11s] <****|*-*******|------>  57% | [  11s] <****|*-*******/------>  57% | [  11s] <****|*-*******/\----->  57% | [  11s] <****|*\*******/\----->  57% | [  11s] <****|*\*******-\----->  57% | [  11s] <****|*\*******-|----->  57% | [  11s] <****|*\*******\|----->  57% | [  11s] <****|*\*******||----->  57% | [  11s] <****|*\*******/|----->  57% | [  12s] <****|*\*******//----->  57% | [  12s] <****|*\*******-/----->  57% | [  12s] <****|*\*******\/----->  57% | [  12s] <****|*\********/----->  62% | [  12s] <****|*\********------>  62% | [  12s] <****|*\********-\---->  62% | [  12s] <****|*\********\\---->  62% | [  12s] <****|*\********\|---->  62% | [  12s] <****|*\********\/---->  62% | [  12s] <****|*|********\/---->  62% | [  12s] <****|*|********\----->  62% | [  12s] <****|*|********|----->  62% | [  12s] <****|*|********|\---->  62% | [  12s] <****|*|********/\---->  62% | [  12s] <****|*|********/|---->  62% | [  12s] <****|*|********//---->  62% | [  12s] <****|*|********-/---->  62% | [  12s] <****|*|********------>  62% | [  12s] <****|*|********-\---->  62% | [  12s] <****|*/********-\---->  62% | [  12s] <****|*/********-|---->  62% | [  12s] <****|*/********-/---->  62% | [  12s] <****|*/********\/---->  62% | [  12s] <****|*/********|/---->  62% | [  12s] <****|*/********|----->  62% | [  12s] <****|*/********|\---->  62% | [  12s] <****|*-********|\---->  62% | [  12s] <****|*-********/\---->  62% | [  12s] <****|*-********/|---->  62% | [  12s] <****|*-********//---->  62% | [  13s] <****|*-********/----->  62% | [  13s] <****|*-********------>  62% | [  13s] <****|*-********-\---->  62% | [  13s] <****|*-********-|---->  62% | [  13s] <****/*-********-|---->  62% | [  13s] <****/*-********-/---->  62% | [  13s] <****/*-********\/---->  62% | [  13s] <****/*\********\/---->  62% | [  13s] <****/*\********\----->  62% | [  13s] <****/*\********\\---->  62% | [  13s] <****/*\********\|---->  62% | [  13s] <****/*\********||---->  62% | [  13s] <****/*\********|/---->  62% | [  13s] <****/*|********|/---->  62% | [  13s] <****/*|********|----->  62% | [  13s] <****/*|********|\---->  62% | [  13s] <****/*/********|\---->  62% | [  13s] <****/*/********/\---->  62% | [  13s] <****/*/********/|---->  62% | [  13s] <****/*/********//---->  62% | [  13s] <****/*/********-/---->  62% | [  13s] <****/*/********------>  62% | [  13s] <****/*-********------>  62% | [  13s] <****/*-********\----->  62% | [  13s] <****/*-********\\---->  62% | [  13s] <****/*-********\|---->  62% | [  13s] <****/*-********||---->  62% | [  13s] <****/*-********|/---->  62% | [  13s] <****/*-********|----->  62% | [  13s] <****/*-********|\---->  62% | [  13s] <****/*-********||---->  62% | [  13s] <****/*-********/|---->  62% | [  13s] <****/*-********//---->  62% | [  13s] <****/*-********/----->  62% | [  13s] <****/*-********------>  62% | [  13s] <****/*-********-\---->  62% | [  13s] <****/*-********-|---->  62% | [  13s] <****/*-********\|---->  62% | [  14s] <****/*-********\/---->  62% | [  14s] <****/*-********\----->  62% | [  14s] <****/**********\----->  67% | [  14s] <****/**********\\---->  67% | [  14s] <****/**********|\---->  67% | [  14s] <****/**********|\\--->  67% | [  14s] <****/**********|\|--->  67% | [  14s] <****/**********|\/--->  67% | [  14s] <****/**********|\---->  67% | [  14s] <****/**********|\\--->  67% | [  14s] <****/**********|\|--->  67% | [  14s] <****/**********|\/--->  67% | [  14s] <****/**********|\---->  67% | [  14s] <****/**********|\\--->  67% | [  14s] <****/**********|\|--->  67% | [  14s] <****/**********|\/--->  67% | [  14s] <****/**********|\---->  67% | [  14s] <****/**********||---->  67% | [  14s] <****/**********||\--->  67% | [  14s] <****/**********|||--->  67% | [  14s] <****/**********||/--->  67% | [  14s] <****/**********||---->  67% | [  14s] <****/**********||\--->  67% | [  14s] <****/**********|||--->  67% | [  14s] <****/**********||/--->  67% | [  14s] <****/**********||---->  67% | [  14s] <****/**********||\--->  67% | [  14s] <****/**********|/\--->  67% | [  14s] <****/**********|/|--->  67% | [  14s] <****/**********//|--->  67% | [  14s] <****/**********/-|--->  67% | [  14s] <****/**********/-/--->  67% | [  14s] <****/**********/----->  67% | [  14s] <****/**********/-\--->  67% | [  14s] <****/**********/-|--->  67% | [  14s] <****/**********/-/--->  67% | [  14s] <****/**********/----->  67% | [  14s] <****/**********/\---->  67% | [  14s] <****/**********/\\--->  67% | [  14s] <****/**********/\|--->  67% | [  14s] <****/**********/\/--->  67% | [  14s] <****/**********/\---->  67% | [  14s] <****/**********/\\--->  67% | [  14s] <****/**********/\|--->  67% | [  14s] <****/**********/\/--->  67% | [  14s] <****/**********/\---->  67% | [  14s] <****/**********/\\--->  67% | [  14s] <****/**********/\|--->  67% | [  14s] <****/**********/\/--->  67% | [  14s] <****/**********-\/--->  67% | [  14s] <****/**********-\---->  67% | [  14s] <****/**********-\\--->  67% | [  14s] <****/**********-\|--->  67% | [  14s] <****/**********-\/--->  67% | [  14s] <****/**********-\---->  67% | [  14s] <****/**********-\\--->  67% | [  14s] <****/**********-\|--->  67% | [  14s] <****/**********-\/--->  67% | [  14s] <****/**********-\---->  67% | [  14s] <****/**********-\\--->  67% | [  14s] <****/**********-*\--->  71% | [  14s] <****/**********-*|--->  71% | [  14s] <****/**********-*|\-->  71% | [  14s] <****/**********-*||-->  71% | [  14s] <****/**********-*|*-->  76% | [  14s] <****/**********-*|*\->  76% | [  14s] <****/**********-*|*|->  76% | [  14s] <****/**********-*|*/->  76% | [  14s] <****/**********\*|*/->  76% | [  14s] <****/**********\*|*-->  76% | [  14s] <****/**********\*|*\->  76% | [  14s] <****/**********\*|*|->  76% | [  14s] <****/**********\*|*/->  76% | [  14s] <****/**********|*|*/->  76% | [  14s] <****/**********|*|*-->  76% | [  14s] <****/**********|*|*\->  76% | [  14s] <****/**********|*|*|->  76% | [  14s] <****/**********|*|*/->  76% | [  14s] <****/**********/*|*/->  76% | [  14s] <****/**********/*|*-->  76% | [  14s] <****/**********/*|*\->  76% | [  14s] <****/**********/*|*|->  76% | [  14s] <****/**********/*|*/->  76% | [  14s] <****/**********/*|*-->  76% | [  14s] <****/**********-*|*-->  76% | [  14s] <****/**********-*|*\->  76% | [  14s] <****/**********-***\->  81% | [  14s] <****/**********-***|->  81% | [  14s] <****/**********-***/->  81% | [  14s] <****/**********-***-->  81% | [  14s] <****/**********-***\->  81% | [  14s] <****/**********-***|->  81% | [  14s] <****/**********-***/->  81% | [  14s] <****/**********-***-->  81% | [  14s] <****/**********-***\->  81% | [  14s] <****/**********-***|->  81% | [  14s] <****/**********\***|->  81% | [  14s] <****/**********\***/->  81% | [  14s] <****/**********\***-->  81% | [  14s] <****/**********\***\->  81% | [  14s] <****/**********\***|->  81% | [  14s] <****/**********\***/->  81% | [  14s] <****/**********\***-->  81% | [  14s] <****/**********\***\->  81% | [  14s] <****/**********\***|->  81% | [  14s] <****/**********\***/->  81% | [  14s] <****/**********\***-->  81% | [  14s] <****/**********\***\->  81% | [  14s] <****/**********\****->  86% | [  14s] <****/**********|****->  86% | [  14s] <****-**********|****->  86% | [  14s] <****-**********/****->  86% | [  14s] <****-**********-****->  86% | [  15s] <****-**********\****->  86% | [  15s] <****-**********|****->  86% | [  15s] <****-**********/****->  86% | [  15s] <****-**********-****->  86% | [  15s] <****-**********\****->  86% | [  15s] <****-**********|****->  86% | [  15s] <****-**********/****->  86% | [  15s] <****-**********-****->  86% | [  15s] <****-**********\****->  86% | [  15s] <****-**********|****->  86% | [  15s] <****-***************->  90% | [  15s] <****\***************->  90% | [  17s] <****|***************->  90% | [  19s] <****/***************->  90% | [  21s] <****-***************->  90% | [  22s] <****\***************->  90% | [  25s] <****|***************->  90% | [  27s] <****/***************->  90% | [  28s] <****-***************->  90% | [  30s] <****\***************->  90% | [  31s] <****|***************->  90% | [  32s] <****/***************->  90% | [  34s] <****-***************->  90% | [  35s] <****\***************->  90% | [  36s] <****|***************->  90% | [  37s] <****/***************->  90% | [  39s] <****-***************->  90% | [  40s] <****\***************->  90% | [  41s] <****|***************->  90% | [  42s] <****/***************->  90% | [  43s] <****-***************->  90% | [  44s] <****\***************->  90% | [  45s] <****|***************->  90% | [  46s] <****/***************->  90% | [  47s] <****-***************->  90% | [  49s] <****\***************->  90% | [  49s] <****|***************->  90% | [  51s] <****/***************->  90% | [  52s] <****-***************->  90% | [  54s] <****\***************->  90% | [  55s] <****|***************->  90% | [  56s] <****/***************->  90% | [  57s] <****-***************->  90% | [  58s] <****\***************->  90% | [  59s] <****|***************->  90% | [   1m] <****/***************->  90% | [   1m] <****-***************->  90% | [   1m] <****\***************->  90% | [   1m] <****|***************->  90% | [   1m] <****/***************->  90% | [   1m] <****-***************->  90% | [   1m] <****\***************->  90% | [   1m] <****|***************->  90% | [   1m] <****/***************->  90% | [   1m] <****-***************->  90% | [   1m] <****\***************->  90% | [   1m] <****|***************->  90% | [   1m] <********************->  95% | [   1m] <*********************> 100% | [   1m] | Completed!
-Welcome to Concurnas 1.14.020 (OpenJDK 64-Bit Server VM, Java 1.8.0_372).
-Currently running in REPL mode. For help type: /help
-
-conc> |  Bye!
-, ✅(93s) 
- sdkman/ballerina Ballerina 2201.5.0 (Swan Lake Update 5)
-Language specification 2022R4
-Update Tool 1.3.14
-, ✅(18s) 
- sdkman/pierrot , ✅(4s) 
- sdkman/toolkit v0.6.5
-, ✅(3s) 
- sdkman/spark 23/07/13 11:58:42 WARN Utils: Your hostname, Mac-1689248428483.local resolves to a loopback address: 127.0.0.1; using 10.79.4.23 instead (on interface en0)
-23/07/13 11:58:42 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
-Welcome to
-      ____              __
-     / __/__  ___ _____/ /__
-    _\ \/ _ \/ _ `/ __/  '_/
-   /___/ .__/\_,_/_/ /_/\_\   version 3.4.0
-      /_/
-                        
-Using Scala version 2.12.17, Eclipse OpenJ9 VM, 18.0.2
-Branch HEAD
-Compiled by user xinrong.meng on 2023-04-07T02:18:01Z
-Revision 87a5442f7ed96b11051d8a9333476d080054e5a0
-Url https://github.com/apache/spark
-Type --help for more information.
-, ✅(40s) 
- sdkman/mcs , ✅(3s) 
- sdkman/infrastructor version:    [34m0.3.1[m
-revision:   [34m4b2f340a9fe757dc624968739dd5817b7035ff10[m
-build date: [34m10-02-2020 22:22[m
-, ✅(6s) 
- sdkman/groovyserv Setup completed successfully for darwin_amd64.
-It's required only just after installation. Please run the same command once again.
-, ✅(4s) 
- shell/usql usql 0.14.1
-, ✅(7s) 
- shell/exa , ✅(0s) 
- shell/hyperfine hyperfine 1.16.1
-, ✅(1s) 
- shell/procs procs 0.11.9
-, ✅(2s) 
+ security/openssl , ✅(1s) 
+ sdkman/activemq , ❌(smoke) 
+ sdkman/ant , ✅(4s) 
+ sdkman/quarkus , ❌(smoke) 
+ sdkman/karaf , ✅(11s) 
+ sdkman/kscript , ❌(smoke) 
+ sdkman/btrace , ✅(1s) 
+ sdkman/connor , ✅(2s) 
+ sdkman/neo4j_migrations , ✅(2s) 
+ sdkman/tomcat , ❌(smoke) 
+ sdkman/flink , ✅(21s) 
+ sdkman/maven , ✅(2s) 
+ sdkman/ktx , ❌(smoke) 
+ sdkman/layrry , ❌(smoke) 
+ sdkman/kobweb , ❌(smoke) 
+ sdkman/grails , ✅(7s) 
+ sdkman/jmeter , ✅(12s) 
+ sdkman/mybatis_migrations , ✅(3s) 
+ sdkman/schemacrawler , ✅(9s) 
+ sdkman/znai , ❌(smoke) 
+ sdkman/gradle , ✅(9s) 
+ sdkman/mulefd , ✅(3s) 
+ sdkman/webtau , ❌(smoke) 
+ sdkman/pomchecker , ✅(7s) 
+ sdkman/jbake , ✅(14s) 
+ sdkman/jreleaser , ✅(10s) 
+ sdkman/asciidoctorj , ✅(9s) 
+ sdkman/hadoop , ✅(148s) 
+ sdkman/ki , ❌(smoke) 
+ sdkman/micronaut , ✅(3s) 
+ sdkman/skeletal , ✅(4s) 
+ sdkman/gaiden , ✅(4s) 
+ sdkman/sbt , ✅(12s) 
+ sdkman/bpipe , ✅(6s) 
+ sdkman/doctoolchain , ✅(7s) 
+ sdkman/mvnd , ✅(5s) 
+ sdkman/visualvm , ❌(smoke) 
+ sdkman/cxf , ✅(6s) 
+ sdkman/scala_cli , ✅(4s) 
+ sdkman/coursier , ✅(3s) 
+ sdkman/concurnas , ✅(94s) 
+ sdkman/ballerina , ✅(11s) 
+ sdkman/pierrot , ✅(2s) 
+ sdkman/toolkit , ✅(2s) 
+ sdkman/spark , ✅(19s) 
+ sdkman/mcs , ✅(2s) 
+ sdkman/infrastructor , ✅(4s) 
+ sdkman/groovyserv , ✅(3s) 
+ shell/usql , ✅(4s) 
+ shell/exa , ✅(1s) 
+ shell/hyperfine , ✅(1s) 
+ shell/procs , ✅(1s) 
  shell/busybox , - 
- shell/bat , ✅(3s) 
+ shell/bat , ✅(1s) 
  network/mosquitto , ❌(smoke) 
- network/termshark Could not find tshark in your PATH. The tshark binary is required to run termshark.
-Try installing with: apt install tshark
-, ❌(smoke) 
+ network/termshark , ❌(smoke) 
  network/ncat , ✅(2s) 
- network/gost , ✅(3s) 
- network/aria2 Usage: aria2c [OPTIONS] [URI | MAGNET | TORRENT_FILE | METALINK_FILE]...
-Printing options tagged with '#basic'.
-See 'aria2c -h#help' to know all available tags.
-Options:
- -v, --version                Print the version number and exit.
-, ✅(2s) 
+ network/gost , ✅(2s) 
+ network/aria2 , ✅(1s) 
  network/nping , ✅(2s) 
- network/curl , ✅(2s) 
- network/websocat websocat 1.11.0
-Vitaly "_Vi" Shukela <vi0oss@gmail.com>
-thread 'main' panicked at 'failed printing to stdout: Broken pipe (os error 32)', library/std/src/io/stdio.rs:1016:9
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-, ✅(2s) 
+ network/curl , ✅(1s) 
+ network/websocat , ✅(1s) 
  network/bandwhich , ✅(2s) 
  network/traceroute , - 
- network/socat dyld[27697]: Library not loaded: '/usr/local/lib/libssl.3.dylib'
-  Referenced from: '/Users/runner/.x-cmd.root/local/data/pkg/populate/socat/v0.0.1/bin/socat'
-  Reason: tried: '/usr/local/lib/libssl.3.dylib' (no such file), '/usr/lib/libssl.3.dylib' (no such file)
-, ❌(smoke) 
- network/ttyd /Users/runner/.x-cmd.root/local/data/pkg/raw/network/ttyd/.x-cmd/smoke.sh: line 4: /Users/runner/.x-cmd.root/local/data/pkg/populate/ttyd/1.7.2/bin/ttyd: cannot execute binary file
-, ❌(smoke) 
- network/nmap , ✅(3s) 
+ network/socat , ❌(smoke) 
+ network/ttyd , ❌(smoke) 
+ network/nmap , ✅(2s) 
  plugin/zsh-plugin , ✅(1s) 
- terminal/gum gum version v0.10.0 (0f0f8e9)
-, ✅(4s) 
+ terminal/gum , ✅(1s) 
  terminal/vhs , ❌(env_try) 
- terminal/zenith zenith 0.14.0
-, ✅(2s) 
- terminal/zellij zellij 0.36.0
-, ✅(3s) 
- terminal/tmux tmux 3.2a
-, ✅(2s) 
- terminal/shtris 3.0.0
-, ✅(1s) 
- terminal/chatgpt , ✅(4s) 
- terminal/glow glow version 1.5.1 (ad21129)
-, ✅(3s) 
- terminal/helix helix 23.03 (3cf03723)
-, ✅(6s) 
+ terminal/zenith , ✅(2s) 
+ terminal/zellij , ✅(1s) 
+ terminal/tmux , ✅(1s) 
+ terminal/shtris , ✅(2s) 
+ terminal/chatgpt , ✅(2s) 
+ terminal/glow , ✅(2s) 
+ terminal/helix , ✅(3s) 
  terminal/gotop , ❌(smoke) 
- filesystem/tokei tokei 12.1.2 compiled with serialization support: json, cbor, yaml
-, ✅(2s) 
+ filesystem/tokei , ✅(2s) 
  filesystem/dust , ✅(1s) 
- filesystem/broot broot 1.21.3
-, ✅(2s) 
- filesystem/rclone rclone v1.62.2
-- os/version: darwin 12.6.7 (64 bit)
-- os/kernel: 21.6.0 (x86_64)
-- os/type: darwin
-- os/arch: amd64
-- go/version: go1.20.2
-- go/linking: dynamic
-- go/tags: cmount
-, ✅(5s) 
- filesystem/fd , ✅(2s) 
+ filesystem/broot , ✅(2s) 
+ filesystem/rclone , ✅(4s) 
+ filesystem/fd , ✅(1s) 
  filesystem/duf , ✅(2s) 
- lang/deno , ✅(6s) 
- lang/zig , ✅(17s) 
- lang/go , ✅(14s) 
- lang/wasmtime , ✅(3s) 
- lang/python Looking in links: /var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/tmpg6a8ji3v
-Processing /private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/tmpg6a8ji3v/setuptools-58.1.0-py3-none-any.whl
-Processing /private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/tmpg6a8ji3v/pip-22.0.4-py3-none-any.whl
-Installing collected packages: setuptools, pip
-Successfully installed pip-22.0.4 setuptools-58.1.0
-Requirement already satisfied: pip in /Users/runner/.x-cmd.root/local/data/pkg/populate/python/pypy3.9-v7.3.11/lib/pypy3.9/site-packages (22.0.4)
-Collecting pip
-  Using cached pip-23.1.2-py3-none-any.whl (2.1 MB)
-Installing collected packages: pip
-  Attempting uninstall: pip
-    Found existing installation: pip 22.0.4
-    Uninstalling pip-22.0.4:
-      Successfully uninstalled pip-22.0.4
-Successfully installed pip-23.1.2
-, ✅(26s) 
- lang/perl , ✅(4s) 
- lang/rust install: creating uninstall script at /Users/runner/.x-cmd.root/local/data/pkg/populate/rust/1.60.0/lib/rustlib/uninstall.sh
-install: installing component 'rustc'
-install: installing component 'rust-std-x86_64-apple-darwin'
-install: installing component 'rust-docs'
-install: installing component 'rust-demangler-preview'
-install: installing component 'cargo'
-install: installing component 'rustfmt-preview'
-install: installing component 'rls-preview'
-install: installing component 'llvm-tools-preview'
-install: installing component 'clippy-preview'
-install: installing component 'rust-analysis-x86_64-apple-darwin'
-
-    rust installed.
-
-, ✅(118s) 
- lang/java , ✅(1s) 
+ lang/deno , ✅(3s) 
+ lang/zig , ✅(13s) 
+ lang/go , ✅(12s) 
+ lang/wasmtime , ✅(2s) 
+ lang/python , ✅(22s) 
+ lang/perl , ✅(3s) 
+ lang/rust , ✅(275s) 
+ lang/java , ❌(env_try) 
  lang/kotlin , ✅(2s) 
- lang/bun , ✅(5s) 
- lang/lua , ✅(1s) 
- lang/goreleaser goreleaser version 1.16.2
-commit: 9f91bea9211465901bc5407bbec5e7bbbeabdf0e
-built at: 2023-03-20T00:33:05Z
-built by: goreleaser
-goos: darwin
-goarch: amd64
-module version: v1.16.2, checksum: h1:usMTxv8JXDNUUmVo0VSTExYBwCmLOuqa1l6hkmE/diA=
-
-https://goreleaser.com
-, ✅(5s) 
- lang/wasmer , ✅(9s) 
- lang/scala , ✅(6s) 
- lang/julia , ✅(51s) 
- lang/groovy , ✅(6s) 
- lang/raku , ✅(5s) 
+ lang/bun , ✅(3s) 
+ lang/lua , ✅(2s) 
+ lang/goreleaser , ✅(3s) 
+ lang/wasmer , ✅(6s) 
+ lang/scala , ✅(3s) 
+ lang/julia , ✅(48s) 
+ lang/groovy , ✅(4s) 
+ lang/raku , ✅(4s) 
  lang/node , ✅(41s) 
- lang/mawk mawk 1.3.4 20230404
-Copyright 2008-2022,2023, Thomas E. Dickey
-Copyright 1991-1996,2014, Michael D. Brennan
-
-random-funcs:       arc4random_stir/arc4random
-regex-funcs:        internal
-
-compiled limits:
-sprintf buffer      8192
-maximum-integer     9223372036854775808
-, ✅(2s) 
- container/kube-score kube-score version: 1.16.1, commit: 74e551f58e9009e70012773a68dcd6424cf6379d, built: 2022-12-16T12:54:40Z
-, ✅(2s) 
+ lang/mawk , ✅(1s) 
+ container/kube-score , ✅(2s) 
  container/bwrap , - 
- container/kube-linter v0.6.1-0-gc6177366a3
-, ✅(3s) 
- container/k3d k3d version v5.4.9
-k3s version v1.25.7-k3s1 (default)
-, ✅(3s) 
- container/minikube minikube version: v1.30.0
-commit: ba4594e7b78814fd52a9376decb9c3d59c133712
-, ✅(6s) 
- container/kube-capacity kube-capacity version v0.7.4
-, ✅(3s) 
- container/kind kind version 0.16.0
-, ✅(2s) 
- container/kubectx 0.9.4
-, ✅(2s) 
- container/helm version.BuildInfo{Version:"v3.9.0", GitCommit:"7ceeda6c585217a19a1131663d8cd1f7d641b2a7", GitTreeState:"clean", GoVersion:"go1.17.5"}
-, ✅(4s) 
+ container/kube-linter , ✅(3s) 
+ container/k3d , ✅(2s) 
+ container/minikube , ✅(5s) 
+ container/kube-capacity , ✅(2s) 
+ container/kind , ✅(1s) 
+ container/kubectx , ✅(1s) 
+ container/helm , ✅(3s) 
  multimedia/ffmpeg , - 
  multimedia/termsvg , - 
- multimedia/pdfcpu pdfcpu: v0.4.1 dev
-build : 2023-05-06T21:02:34Z
-commit: 0342a83
-, ✅(3s) 
+ multimedia/pdfcpu , ✅(2s) 
  multimedia/magick , ❌(smoke) 
- data/7za 
-7-Zip (a) [64] 17.04 : Copyright (c) 1999-2021 Igor Pavlov : 2017-08-28
-p7zip Version 17.04 (locale=utf8,Utf16=on,HugeFiles=on,64 bits,3 CPUs x64)
-
-Usage: 7za <command> [<switches>...] <archive_name> [<file_names>...]
-, ✅(0s) 
- data/micro Version: 2.0.11
-Commit hash: 225927b9
-Compiled on August 01, 2022
-, ✅(3s) 
+ data/7za , ✅(1s) 
+ data/micro , ✅(2s) 
  data/sd , - 
- data/yq yq (https://github.com/mikefarah/yq/) version 4.14.1
-, ✅(0s) 
- data/pandoc pandoc 3.1.2
-Features: +server +lua
-Scripting engine: Lua 5.4
-User data directory: /Users/runner/.local/share/pandoc
-Copyright (C) 2006-2023 John MacFarlane. Web:  https://pandoc.org
-This is free software; see the source for copying conditions. There is no
-warranty, not even for merchantability or fitness for a particular purpose.
-, ✅(6s) 
+ data/yq , ✅(0s) 
+ data/pandoc , ✅(4s) 
  data/sqlean , - 
- data/ws4sqlite ws4sqlite v0.14.1, based on sqlite v3.41.2
-, ✅(3s) 
- data/rg ripgrep 13.0.0 (rev af6b6c543b)
--SIMD -AVX (compiled)
-+SIMD -AVX (runtime)
-, ✅(2s) 
- data/grex grex 1.4.1
-, ✅(2s) 
+ data/ws4sqlite , ✅(2s) 
+ data/rg , ✅(1s) 
+ data/grex , ✅(1s) 
  data/upx , - 
- data/sqlite3 , ✅(2s) 
+ data/sqlite3 , ✅(1s) 
  data/zstd , ❌(smoke) 
- data/brook , ✅(3s) 
- data/difft , ✅(3s) 
- data/trdsql trdsql version v0.11.1
-, ✅(3s) 
- data/qrencode qrencode version 4.1.1
-Copyright (C) 2006-2017 Kentaro Fukuchi
-, ✅(2s) 
- data/xsv 0.13.0
-, ✅(2s) 
+ data/brook , ✅(2s) 
+ data/difft , ✅(2s) 
+ data/trdsql , ✅(2s) 
+ data/qrencode , ✅(2s) 
+ data/xsv , ✅(3s) 
  data/dasel , ✅(2s) 
- data/jq jq-1.6-dirty
-, ✅(1s) 
- data/fzf , ✅(2s) 
- git/tig tig version 2.5.8
-ncurses version 5.7.20081102
-readline version 8.2
-PCRE2 version 10.42 2022-12-11
-, ✅(3s) 
- git/soft-serve soft version v0.5.4 (9b8e183)
-, ✅(3s) 
- git/gh gh version 2.25.1 (2023-03-21)
-https://github.com/cli/cli/releases/tag/v2.25.1
-, ✅(4s) 
+ data/jq , ✅(1s) 
+ data/fzf , ✅(1s) 
+ git/tig , ✅(1s) 
+ git/soft-serve , ✅(3s) 
+ git/gh , ✅(2s) 
  git/bit , ✅(2s) 
- git/lazygit commit=16802a048e0425182f08cf0e9a2bc31480e9a55d, build date=2023-02-01T11:02:43Z, build source=binaryRelease, version=0.37.0, os=darwin, arch=amd64, git version=2.41.0
-, ✅(3s) 
- git/gitui gitui 0.22.1
-, ✅(3s) 
- git/gix gix 
-, ✅(2s) 
- git/tea Version: [1m0.9.2[0m	golang: 1.18.10	go-sdk: v0.15.1-0.20220831004139-a0127ed0e7fe
-, ✅(5s) 
- git/gitea , ✅(5s) 
- git/act_runner act_runner version v0.2.0
-, ✅(15s) 
- git/gitleaks 8.16.2
-, ✅(2s) 
- media/agg , ✅(2s) 
+ git/lazygit , ✅(2s) 
+ git/gitui , ✅(2s) 
+ git/gix , ✅(2s) 
+ git/tea , ✅(5s) 
+ git/gitea , ✅(4s) 
+ git/act_runner , ✅(4s) 
+ git/gitleaks , ✅(1s) 
+ media/agg , ✅(1s) 
