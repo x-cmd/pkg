@@ -22,7 +22,7 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
-            xws push github_gitee
+            xws bundle
 
 
 
