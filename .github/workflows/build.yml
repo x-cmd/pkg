@@ -22,7 +22,6 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
-            x pkg update \
             xws bundle && \
             git pull && \
             xws push github_gitee
