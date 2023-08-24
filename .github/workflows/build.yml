@@ -23,8 +23,8 @@ jobs:
         with:
           code: |
             xws bundle && \
-            # # git pull && \
-            # xws push github_gitee
+            # git pull && \
+            xws push github_gitee
 
 
 
