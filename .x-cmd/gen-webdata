@@ -15,7 +15,7 @@ gen_web_data()(
         return 1
     }
     x qywx --send --markdown "
-        ## 官网数据生成成功 （$(date -d "8 hour" +%Y-%m-%d\ %H:%M:%S)）
+        ## ✅ 官网数据生成成功 （$(date -d "8 hour" +%Y-%m-%d\ %H:%M:%S)）
     "
 )
 
