@@ -1,7 +1,5 @@
 # shellcheck shell=dash
 gen_web_data()(
-    local HAS_FAILED
-    local msg
     x cd "$(x wsroot)"
 
     x:info "generate web data"
@@ -10,17 +8,15 @@ gen_web_data()(
     x cd .tmp
 
     xws gen_web_data
-    [ -z "$HAS_FAILED" ] || {
+
+    xws web_data || {
         x qywx --send --markdown "
-        ## 官网数据生成失败 （$(date -d "8 hour" +%Y-%m-%d\ %H:%M:%S)）: [详情](https://github.com/x-cmd/pkg/actions/workflows/gen-webdata.yml)
-        $msg
-        "
+        ## 官网数据生成失败 （$(date -d "8 hour" +%Y-%m-%d\ %H:%M:%S)）: [详情](https://github.com/x-cmd/pkg/actions/workflows/gen-webdata.yml)        "
         return 1
     }
     x qywx --send --markdown "
         ## 官网数据生成成功 （$(date -d "8 hour" +%Y-%m-%d\ %H:%M:%S)）
     "
-    xws web_data
 )
 
 gen_web_data
