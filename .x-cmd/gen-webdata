@@ -12,12 +12,12 @@ gen_web_data()(
     xws gen_web_data
     [ -z "$HAS_FAILED" ] || {
         x qywx --send --markdown "
-        ## 官网数据生成失败 （$(date)）: [详情](https://github.com/x-cmd/pkg/actions/workflows/gen-webdata.yml)
+        ## 官网数据生成失败 （$(date -d "8 hour" +%Y-%m-%d\ %H:%M:%S)）: [详情](https://github.com/x-cmd/pkg/actions/workflows/gen-webdata.yml)
         "
         return 1
     }
     x qywx --send --markdown "
-        ## 官网数据生成功 （$(date)）
+        ## 官网数据生成功 （$(date -d "8 hour" +%Y-%m-%d\ %H:%M:%S)）
     "
     xws web_data
 )
