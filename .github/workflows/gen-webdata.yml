@@ -27,4 +27,5 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
-            xws gen-webdata
+            x qywx --cfg webhook='${{ secrets.WEB_DATA_REPO_WEBHOOK_URL }}'
+            xws gen-webdata || return
