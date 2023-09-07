@@ -8,7 +8,6 @@ on:
     - cron: '10 11 * * *'
     - cron: '40 13 * * *'
     - cron: '00 18 * * *'
-    - cron: '00 20 * * *'
 
 jobs:
   Bundle:
