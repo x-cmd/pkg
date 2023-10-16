@@ -6,7 +6,7 @@ return 1
 # Test default url
 
 echo '{
-    "x-cmd-pkg-version":"v0.0.1",
+    "x-cmd-pkg-version":"v0.0.2",
     "x-cmd-pkg-branch":"main",
     "x-bash-pkg-branch":"main",
     "x-bash-env-branch":"main"
@@ -16,7 +16,7 @@ echo '{
 # Test xbin
 
 echo '{
-    "x-cmd-pkg-version":"v0.0.1",
+    "x-cmd-pkg-version":"v0.0.2",
     "x-cmd-pkg-branch":"main",
     "x-bash-pkg-branch":"main",
     "x-bash-env-branch":"main"
@@ -26,7 +26,7 @@ echo '{
 # Test smoke
 
 echo '{
-    "x-cmd-pkg-version":"v0.0.1",
+    "x-cmd-pkg-version":"v0.0.2",
     "x-cmd-pkg-branch":"main",
     "x-bash-pkg-branch":"main",
     "x-bash-env-branch":"main"
@@ -35,11 +35,11 @@ echo '{
 
 
 echo '{
-    "x-cmd-pkg-version":"v0.0.1",
+    "x-cmd-pkg-version":"v0.0.2",
     "x-cmd-pkg-branch":"main",
     "x-bash-pkg-branch":"main",
     "x-bash-env-branch":"main"
     "pkg-name":"hurl",
-    "pkg-version":"v0.0.1,
+    "pkg-version":"v0.0.2,
 }' | x gh action workflow run --repo x-cmd/pkg \
   --ref main --inputs - .id=62905756
