@@ -3,10 +3,10 @@
 test_xbin_main()(
     x cd .tmp/x-cmd-pkg && \
     xws bundle && rm -rf "$___X_CMD_PKG_RAW_PATH" && \
-    xws test_solo "$___X_CMD_WEBSRC_REGION" "$___x_CMD_PKG_CANDADITE" "${___x_CMD_PKG_CANDADITE_VERSION}" && \
-    cp -rf doc/* ../../doc/ || return
+    xws test_solo "$___X_CMD_WEBSRC_REGION" "$___x_CMD_PKG_CANDADITE" "${___x_CMD_PKG_CANDADITE_VERSION}" || return
+    # cp -rf doc/* ../../doc/ || return
 )
 
 x cd "$(x wsroot)"
 xws prepare || return 1
-test_xbin_main "${___X_CMD_PKG_VERSION:-v0.0.2}" || return 
+test_xbin_main "${___X_CMD_PKG_VERSION:-v0.0.2}" || return
