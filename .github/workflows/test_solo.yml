@@ -34,7 +34,7 @@ jobs:
       matrix:
         os: [ windows-latest, ubuntu-latest, macos-latest ]
     runs-on: ${{ matrix.os }}
-    timeout-minutes: 240
+    timeout-minutes: 10
     env:
       ___X_CMD_GHACTION_X: x2
       ___X_CMD_PKG_VERSION: ${{ github.event.inputs.x-cmd-pkg-version }}
@@ -56,4 +56,3 @@ jobs:
           code: |
             xws test_solo && \
             git pull && xws push test_doc
-
