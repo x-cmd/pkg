@@ -54,4 +54,4 @@ jobs:
         with:
           code: |
             xws test_solo && \
-            git pull && xws push test_doc
+            git pull && xws push test_doc || return
