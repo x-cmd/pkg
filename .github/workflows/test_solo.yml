@@ -25,7 +25,6 @@ on:
       pkg-version:
         description: 'test candidate version'
         required: true
-        default: 'v0.0.2'
 
 jobs:
   test-xbin:
