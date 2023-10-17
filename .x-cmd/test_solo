@@ -7,9 +7,9 @@ test_solo_main()(
         path="$(cygpath -w "${___X_CMD_ROOT_DATA}")"
         /c/WINDOWS/System32/WindowsPowerShell/v1.0/PowerShell.exe "Start-Process -Wait -FilePath \"$path\pkg\download\python\\${___X_CMD_PKG_CANDADITE_VERSION}_win_x64.exe\"  -ArgumentList \"/S /D=$path\pkg\populate\python\\${___X_CMD_PKG_CANDADITE_VERSION}\""
         ls "$path\pkg\populate\python\\${___X_CMD_PKG_CANDADITE_VERSION}" >&2
+        x mkdirp "$path\pkg\populate\python\\${___X_CMD_PKG_CANDADITE_VERSION}\bin"
+        ln -sf "$path\pkg\populate\python\\${___X_CMD_PKG_CANDADITE_VERSION}\python.exe" "$path\pkg\populate\python\\${___X_CMD_PKG_CANDADITE_VERSION}\bin\python"
         # if [ "$(x os name)" = "win" ];then
-        #     x mkdirp "$___X_CMD_PKG_POPULATE_PATH/$___X_CMD_PKG___META_NAME/$___X_CMD_PKG___META_VERSION/bin"
-        #     ln -sf "$path\pkg\populate\python\\${___X_CMD_PKG_CANDADITE_VERSION}" "$___X_CMD_PKG_POPULATE_PATH/$___X_CMD_PKG___META_NAME/$___X_CMD_PKG___META_VERSION/bin/python"
         # fi
     fi
     x cd .tmp/x-cmd-pkg && \
