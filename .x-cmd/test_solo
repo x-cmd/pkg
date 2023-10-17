@@ -4,8 +4,10 @@ test_solo_main()(
     if [ "$___X_CMD_PKG_CANDADITE" = "python" ] && [ "$(x os name)" = "win" ];then
         x pkg download python
         local path
+        local cmd
         path="$(cygpath -w "${___X_CMD_ROOT_DATA}")"
-        /c/WINDOWS/System32/WindowsPowerShell/v1.0/PowerShell.exe "Start-Process -Wait -FilePath \"$path\pkg\download\python\py310_23.1.0-1_win_x64.exe\"  -ArgumentList \"/S /D=$path\pkg\populate\python\py310_23.1.0-1\""
+        cmd="Start-Process -Wait -FilePath \"$path\pkg\download\python\"""$(printf "%s" "${___X_CMD_PKG_CANDADITE_VERSION}")""_win_x64.exe\"  -ArgumentList \"/S /D=$path\pkg\populate\python\"""$(printf "%s" "${___X_CMD_PKG_CANDADITE_VERSION}")"
+        /c/WINDOWS/System32/WindowsPowerShell/v1.0/PowerShell.exe "$cmd"
     fi
 
     x cd .tmp/x-cmd-pkg && \
