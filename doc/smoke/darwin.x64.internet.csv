@@ -1,340 +1,187 @@
- osman/terraform terraform
-, ✅(5s) 
- osman/mirrord mirrord
-, ✅(6s) 
+ osman/terraform , ✅(4s) 
+ osman/mirrord , ✅(6s) 
  osman/proot , - 
- osman/cfssl cfssl
-, ✅(2s) 
- osman/ffuf ffuf
-, ✅(2s) 
- osman/etcd etcd
-, ✅(3s) 
- osman/easyrsa easyrsa
-, ✅(1s) 
- osman/pm2 pm2
-, ✅(9s) 
- security/osquery osquery
-, ✅(4s) 
- security/skate skate
-, ✅(2s) 
- security/sodium sodium
-, ✅(1s) 
+ osman/cfssl , ✅(2s) 
+ osman/ffuf , ✅(2s) 
+ osman/etcd , ✅(4s) 
+ osman/easyrsa , ✅(2s) 
+ osman/pm2 , ✅(10s) 
+ security/osquery , ✅(5s) 
+ security/skate , ✅(2s) 
+ security/sodium , ✅(1s) 
  security/smartctl , ❌(smoke) 
- security/openssl openssl
-, ✅(1s) 
- security/lynis lynis
-, ✅(1s) 
- sdkman/activemq activemq
-, ✅(144s) 
- sdkman/ant ant
-, ✅(5s) 
- sdkman/quarkus quarkus
-, ✅(5s) 
- sdkman/karaf karaf
-, ✅(15s) 
- sdkman/kscript kscript
-, ✅(8s) 
- sdkman/btrace btrace
-, ✅(2s) 
- sdkman/connor connor
-, ✅(2s) 
- sdkman/neo4j_migrations neo4j_migrations
-, ✅(3s) 
- sdkman/flink flink
-, ✅(10s) 
- sdkman/maven maven
-, ✅(2s) 
- sdkman/ktx ktx
-, ✅(4s) 
- sdkman/layrry layrry
-, ✅(3s) 
- sdkman/kobweb kobweb
-, ✅(4s) 
- sdkman/grails grails
-, ✅(8s) 
- sdkman/jmeter jmeter
-, ✅(36s) 
- sdkman/mybatis_migrations mybatis_migrations
-, ✅(3s) 
- sdkman/schemacrawler schemacrawler
-, ✅(45s) 
+ security/openssl , ✅(2s) 
+ security/lynis , ✅(2s) 
+ sdkman/activemq , ✅(25s) 
+ sdkman/ant , ✅(3s) 
+ sdkman/quarkus , ✅(9s) 
+ sdkman/karaf , ✅(19s) 
+ sdkman/kscript , ✅(15s) 
+ sdkman/btrace , ✅(3s) 
+ sdkman/connor , ✅(3s) 
+ sdkman/neo4j_migrations , ❌(env_try) 
+ sdkman/flink , ✅(13s) 
+ sdkman/maven , ✅(4s) 
+ sdkman/ktx , ✅(6s) 
+ sdkman/layrry , ✅(3s) 
+ sdkman/kobweb , ✅(4s) 
+ sdkman/grails , ✅(12s) 
+ sdkman/jmeter , ✅(14s) 
+ sdkman/mybatis_migrations , ✅(3s) 
+ sdkman/schemacrawler , ✅(16s) 
  sdkman/znai , - 
- sdkman/gradle gradle
-, ✅(36s) 
- sdkman/mulefd mulefd
-, ✅(12s) 
+ sdkman/gradle , ✅(10s) 
+ sdkman/mulefd , ✅(5s) 
  sdkman/webtau , - 
- sdkman/pomchecker pomchecker
-, ✅(7s) 
- sdkman/jbake jbake
-, ✅(17s) 
+ sdkman/pomchecker , ✅(4s) 
+ sdkman/jbake , ✅(5s) 
  sdkman/jreleaser , - 
- sdkman/hadoop hadoop
-, ✅(45s) 
- sdkman/ki ki
-, ✅(3s) 
- sdkman/micronaut micronaut
-, ✅(2s) 
- sdkman/skeletal skeletal
-, ✅(6s) 
- sdkman/gaiden gaiden
-, ✅(4s) 
- sdkman/sbt sbt
-, ✅(28s) 
- sdkman/bpipe bpipe
-, ✅(6s) 
- sdkman/doctoolchain doctoolchain
-, ✅(7s) 
- sdkman/mvnd mvnd
-, ✅(6s) 
- sdkman/visualvm visualvm
-, ✅(8s) 
- sdkman/cxf cxf
-, ✅(3s) 
- sdkman/scala_cli scala_cli
-, ✅(4s) 
- sdkman/coursier coursier
-, ✅(3s) 
- sdkman/concurnas concurnas
-, ✅(90s) 
- sdkman/ballerina ballerina
-, ✅(11s) 
- sdkman/pierrot pierrot
-, ✅(2s) 
- sdkman/toolkit toolkit
-, ✅(2s) 
- sdkman/spark spark
-, ✅(8s) 
- sdkman/mcs mcs
-, ✅(2s) 
- sdkman/infrastructor infrastructor
-, ✅(3s) 
- sdkman/groovyserv groovyserv
-, ✅(2s) 
+ sdkman/hadoop , ✅(189s) 
+ sdkman/ki , ✅(4s) 
+ sdkman/micronaut , ✅(3s) 
+ sdkman/skeletal , ✅(7s) 
+ sdkman/gaiden , ✅(5s) 
+ sdkman/sbt , ✅(31s) 
+ sdkman/bpipe , ✅(7s) 
+ sdkman/doctoolchain , ✅(12s) 
+ sdkman/mvnd , ✅(8s) 
+ sdkman/visualvm , ❌(env_try) 
+ sdkman/cxf , ✅(7s) 
+ sdkman/scala_cli , ✅(5s) 
+ sdkman/coursier , ✅(3s) 
+ sdkman/concurnas , ✅(93s) 
+ sdkman/ballerina , ✅(12s) 
+ sdkman/pierrot , ✅(3s) 
+ sdkman/toolkit , ✅(2s) 
+ sdkman/spark , ✅(26s) 
+ sdkman/mcs , ✅(2s) 
+ sdkman/infrastructor , ✅(5s) 
+ sdkman/groovyserv , ✅(5s) 
  shell/bash-preexec , ❌(smoke) 
- shell/usql usql
-, ✅(4s) 
- shell/exa exa
-, ✅(1s) 
- shell/hyperfine hyperfine
-, ✅(2s) 
- shell/procs procs
-, ✅(2s) 
+ shell/usql , ✅(5s) 
+ shell/exa , ✅(1s) 
+ shell/hyperfine , ✅(2s) 
+ shell/procs , ✅(1s) 
  shell/busybox , - 
- shell/bat bat
-, ✅(2s) 
- shell/zsh zsh
-, ✅(3s) 
- network/mosquitto mosquitto
-, ✅(2s) 
- network/termshark termshark
-, ✅(1s) 
- network/ncat ncat
-, ✅(1s) 
- network/doggo doggo
-, ✅(2s) 
- network/gost gost
-, ✅(3s) 
- network/aria2 aria2
-, ✅(1s) 
- network/nping nping
-, ✅(2s) 
+ shell/bat , ✅(3s) 
+ shell/zsh , ✅(3s) 
+ network/mosquitto , ✅(3s) 
+ network/termshark , ✅(2s) 
+ network/ncat , ✅(3s) 
+ network/doggo , ✅(2s) 
+ network/gost , ✅(3s) 
+ network/aria2 , ✅(2s) 
+ network/nping , ✅(2s) 
  network/curl , ✅(2s) 
- network/frp frp
-, ✅(2s) 
- network/websocat websocat
-, ✅(2s) 
- network/youtube-dl , ❌(env_try) 
- network/httpie , ❌(env_try) 
- network/bandwhich bandwhich
-, ✅(2s) 
+ network/frp , ✅(3s) 
+ network/websocat , ✅(2s) 
+ network/youtube-dl , ✅(51s) 
+ network/httpie , ✅(14s) 
+ network/bandwhich , ✅(2s) 
  network/traceroute , - 
- network/socat socat
-, ✅(2s) 
+ network/socat , ✅(1s) 
  network/ttyd , - 
- network/nmap nmap
-, ✅(2s) 
- network/tget tget
-, ✅(5s) 
- network/hurl hurl
-, ✅(1s) 
- plugin/zsh-plugin zsh-plugin
-, ✅(1s) 
+ network/nmap , ✅(3s) 
+ network/tget , ✅(5s) 
+ network/hurl , ✅(2s) 
+ plugin/zsh-plugin , ✅(2s) 
  plugin/sqlite-vss , ❌(smoke) 
- plugin/sqlite-xsv sqlite-xsv
-, ✅(2s) 
- plugin/sqlite-simple sqlite-simple
-, ✅(2s) 
- terminal/gum gum
-, ✅(2s) 
+ plugin/sqlite-xsv , ✅(2s) 
+ plugin/sqlite-simple , ✅(2s) 
+ terminal/gum , ✅(3s) 
  terminal/vhs , - 
- terminal/zenith zenith
-, ✅(1s) 
- terminal/zellij zellij
-, ✅(2s) 
- terminal/tmux tmux
-, ✅(2s) 
- terminal/shtris shtris
-, ✅(2s) 
- terminal/chatgpt chatgpt
-, ✅(2s) 
- terminal/glow glow
-, ✅(2s) 
- terminal/helix helix
-, ✅(3s) 
+ terminal/zenith , ✅(2s) 
+ terminal/zellij , ✅(3s) 
+ terminal/tmux , ✅(2s) 
+ terminal/shtris , ✅(2s) 
+ terminal/chatgpt , ✅(2s) 
+ terminal/glow , ✅(3s) 
+ terminal/helix , ✅(3s) 
  terminal/gotop , ❌(smoke) 
- filesystem/tokei tokei
-, ✅(2s) 
- filesystem/dust dust
-, ✅(2s) 
- filesystem/ismc ismc
-, ✅(2s) 
+ filesystem/tokei , ✅(2s) 
+ filesystem/dust , ✅(2s) 
+ filesystem/ismc , ✅(2s) 
  filesystem/broot , - 
- filesystem/rclone rclone
-, ✅(4s) 
- filesystem/fd fd
-, ✅(2s) 
- filesystem/lf lf
-, ✅(2s) 
- filesystem/duf duf
-, ✅(2s) 
- lang/deno deno
-, ✅(4s) 
- lang/zig zig
-, ✅(14s) 
+ filesystem/rclone , ✅(3s) 
+ filesystem/fd , ✅(2s) 
+ filesystem/lf , ✅(2s) 
+ filesystem/duf , ✅(2s) 
+ lang/deno , ✅(3s) 
+ lang/zig , ✅(13s) 
  lang/go , ❌(env_try) 
- lang/wasmtime wasmtime
-, ✅(2s) 
- lang/python python
-, ✅(39s) 
- lang/perl perl
-, ✅(3s) 
- lang/rust rust
-, ✅(53s) 
- lang/java java
-, ✅(3s) 
- lang/kotlin kotlin
-, ✅(2s) 
- lang/bun bun
-, ✅(3s) 
- lang/lua lua
-, ✅(2s) 
- lang/goreleaser goreleaser
-, ✅(3s) 
- lang/wasmer wasmer
-, ✅(8s) 
- lang/scala scala
-, ✅(4s) 
- lang/julia julia
-, ✅(52s) 
+ lang/wasmtime , ✅(3s) 
+ lang/python , ✅(2s) 
+ lang/perl , ✅(3s) 
+ lang/rust , ✅(60s) 
+ lang/java , ✅(2s) 
+ lang/kotlin , ✅(13s) 
+ lang/bun , ✅(4s) 
+ lang/lua , ✅(2s) 
+ lang/goreleaser , ✅(3s) 
+ lang/wasmer , ✅(8s) 
+ lang/scala , ✅(5s) 
+ lang/julia , ✅(55s) 
  lang/groovy , ❌(env_try) 
- lang/raku raku
-, ✅(2s) 
- lang/node node
-, ✅(45s) 
- lang/mawk mawk
-, ✅(1s) 
- container/kube-score kube-score
-, ✅(1s) 
+ lang/raku , ✅(7s) 
+ lang/node , ✅(45s) 
+ lang/mawk , ✅(2s) 
+ container/kube-score , ✅(2s) 
  container/bwrap , - 
- container/kube-linter kube-linter
-, ✅(2s) 
- container/k3d k3d
-, ✅(2s) 
- container/minikube minikube
-, ✅(5s) 
- container/kube-capacity kube-capacity
-, ✅(2s) 
- container/kind kind
-, ✅(1s) 
- container/kubectx kubectx
-, ✅(1s) 
- container/helm helm
-, ✅(3s) 
- cloud/gcloud gcloud
-, ✅(19s) 
- cloud/tccli , ❌(env_try) 
- cloud/doctl doctl
-, ✅(3s) 
- cloud/azure-cli , ❌(env_try) 
- cloud/aliyun aliyun
-, ✅(2s) 
- cloud/wrangler wrangler
-, ✅(10s) 
- cloud/linode-cli , ❌(env_try) 
- cloud/ucloud ucloud
-, ✅(2s) 
- cloud/awscli , ❌(env_try) 
- cloud/qingcloud-cli , ❌(env_try) 
- cloud/vultr-cli vultr-cli
-, ✅(1s) 
+ container/kube-linter , ✅(3s) 
+ container/k3d , ✅(3s) 
+ container/minikube , ✅(5s) 
+ container/kube-capacity , ✅(4s) 
+ container/kind , ✅(2s) 
+ container/kubectx , ✅(1s) 
+ container/helm , ✅(3s) 
+ cloud/gcloud , ✅(24s) 
+ cloud/tccli , ✅(81s) 
+ cloud/doctl , ✅(3s) 
+ cloud/azure-cli , ✅(118s) 
+ cloud/aliyun , ✅(2s) 
+ cloud/wrangler , ✅(10s) 
+ cloud/linode-cli , ✅(12s) 
+ cloud/ucloud , ✅(2s) 
+ cloud/awscli , ✅(21s) 
+ cloud/qingcloud-cli , ❌(smoke) 
+ cloud/vultr-cli , ✅(3s) 
  cloud/koocli , ❌(smoke) 
- cloud/hcloud hcloud
-, ✅(2s) 
- multimedia/ffmpeg ffmpeg
-, ✅(4s) 
- multimedia/termsvg termsvg
-, ✅(2s) 
- multimedia/pdfcpu pdfcpu
-, ✅(2s) 
+ cloud/hcloud , ✅(2s) 
+ multimedia/ffmpeg , ✅(5s) 
+ multimedia/termsvg , ✅(1s) 
+ multimedia/pdfcpu , ✅(2s) 
  multimedia/magick , ❌(smoke) 
  data/7zz , ✅(2s) 
  data/7za , ✅(0s) 
- data/micro micro
-, ✅(2s) 
+ data/micro , ✅(2s) 
  data/sd , - 
- data/yq , ✅(1s) 
- data/pandoc pandoc
-, ✅(4s) 
+ data/yq , ✅(0s) 
+ data/pandoc , ✅(5s) 
  data/sqlean , - 
- data/ws4sqlite ws4sqlite
-, ✅(2s) 
- data/rg rg
-, ✅(1s) 
- data/grex grex
-, ✅(2s) 
+ data/ws4sqlite , ✅(3s) 
+ data/rg , ✅(2s) 
+ data/grex , ✅(2s) 
  data/upx , - 
- data/sqlite3 sqlite3
-, ✅(1s) 
- data/csvkit , ❌(env_try) 
- data/zstd zstd
-, ✅(1s) 
- data/brook brook
-, ✅(2s) 
- data/difft difft
-, ✅(3s) 
- data/trdsql trdsql
-, ✅(2s) 
- data/qrencode qrencode
-, ✅(2s) 
- data/xsv xsv
-, ✅(1s) 
- data/dasel dasel
-, ✅(1s) 
+ data/sqlite3 , ✅(1s) 
+ data/csvkit , ✅(17s) 
+ data/zstd , ✅(2s) 
+ data/brook , ✅(2s) 
+ data/difft , ✅(3s) 
+ data/trdsql , ✅(3s) 
+ data/qrencode , ✅(2s) 
+ data/xsv , ✅(2s) 
+ data/dasel , ✅(2s) 
  data/jq , ✅(1s) 
- data/fzf fzf
-, ✅(2s) 
- git/tig tig
-, ✅(2s) 
- git/soft-serve soft-serve
-, ✅(2s) 
- git/gh gh
-, ✅(3s) 
- git/bit bit
-, ✅(2s) 
- git/lazygit lazygit
-, ✅(2s) 
- git/gitui gitui
-, ✅(2s) 
- git/gix gix
-, ✅(3s) 
- git/tea tea
-, ✅(5s) 
- git/gitea gitea
-, ✅(4s) 
- git/act_runner act_runner
-, ✅(6s) 
- git/gitleaks gitleaks
-, ✅(2s) 
- media/agg agg
-, ✅(2s) 
+ data/fzf , ✅(2s) 
+ git/tig , ✅(3s) 
+ git/soft-serve , ✅(3s) 
+ git/gh , ✅(4s) 
+ git/bit , ✅(3s) 
+ git/lazygit , ✅(3s) 
+ git/gitui , ✅(2s) 
+ git/gix , ✅(2s) 
+ git/tea , ✅(4s) 
+ git/gitea , ✅(4s) 
+ git/act_runner , ✅(4s) 
+ git/gitleaks , ✅(2s) 
+ media/agg , ✅(2s) 
