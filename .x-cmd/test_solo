@@ -7,7 +7,7 @@ test_solo_main()(
         echo "path: " "$path" >&2
         echo "DOWNLOAD_PATH: " "$___X_CMD_PKG_DOWNLOAD_PATH" >&2
         echo "POPULATE_PATH: " "$___X_CMD_PKG_POPULATE_PATH" >&2
-        ls "/c/WINDOWS/System32/WindowsPowerShell/v1.0/"dowsPowerShell/v1.0/PowerShell.exe "Start-Process -Wait -FilePath \"$path\pkg\download\python\py310_23.1.0-1_win_x64.exe\"  -ArgumentList \"/S /D=$path\pkg\populate\python\py310_23.1.0-1\""
+        ls "/c/WINDOWS/System32/WindowsPowerShell"
     fi
 
     x cd .tmp/x-cmd-pkg && \
