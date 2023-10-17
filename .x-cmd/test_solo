@@ -1,6 +1,12 @@
 # shellcheck shell=dash
 
 test_solo_main()(
+    if [ "$___X_CMD_PKG_CANDADITE" = "python" ] && [ "$(x os name)" = "win" ];then
+        local path
+        path="$(cygpath -w "${___X_CMD_ROOT_DATA}")"
+        /c/WINDOWS/System32/WindowsPowerShell/v1.0/PowerShell.exe "Start-Process -Wait -FilePath \"$path\pkg\download\python\py310_23.1.0-1_win_x64.exe\"  -ArgumentList \"/S /D=$path\pkg\populate\python\py310_23.1.0-1\""
+    fi
+
     x cd .tmp/x-cmd-pkg && \
     xws install "$1" && \
     x pkg _smoke "$___X_CMD_PKG_CANDADITE" "${___X_CMD_PKG_CANDADITE_VERSION}" || return
