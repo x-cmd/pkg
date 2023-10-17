@@ -9,7 +9,7 @@ test_solo_main()(
     fi
 
     x cd .tmp/x-cmd-pkg && \
-    xws install "$1" && \
+    xws install "$___X_CMD_PKG_CANDADITE" && \
     x pkg _smoke "$___X_CMD_PKG_CANDADITE" "${___X_CMD_PKG_CANDADITE_VERSION}" || return
 )
 
