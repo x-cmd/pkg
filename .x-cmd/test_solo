@@ -9,8 +9,7 @@ test_solo_main()(
         ls "$path\pkg\populate\python\\${___X_CMD_PKG_CANDADITE_VERSION}" >&2
         x mkdirp "$path\pkg\populate\python\\${___X_CMD_PKG_CANDADITE_VERSION}\bin"
         ln -sf "$path\pkg\populate\python\\${___X_CMD_PKG_CANDADITE_VERSION}\python.exe" "$path\pkg\populate\python\\${___X_CMD_PKG_CANDADITE_VERSION}\bin\python"
-        # if [ "$(x os name)" = "win" ];then
-        # fi
+        x env try python
     fi
     x cd .tmp/x-cmd-pkg && \
     xws install "$___X_CMD_PKG_CANDADITE" && \
