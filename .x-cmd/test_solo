@@ -7,14 +7,16 @@ test_solo_main()(
         echo "path: " "$path" >&2
         echo "DOWNLOAD_PATH: " "$___X_CMD_PKG_DOWNLOAD_PATH" >&2
         echo "POPULATE_PATH: " "$___X_CMD_PKG_POPULATE_PATH" >&2
-        ls "/c/WINDOWS/System32/WindowsPowerShell"
+        ls "/c/WINDOWS/System32/WindowsPowerShell/v1.0"
     fi
 
     x cd .tmp/x-cmd-pkg && \
     xws install "$1" && \
     x pkg _smoke "$___X_CMD_PKG_CANDADITE" "${___X_CMD_PKG_CANDADITE_VERSION}" || return
 )
-
+echo "--------------------------------------------------------------------------">&2
+ls "/c/WINDOWS/System32/WindowsPowerShell/v1.0" >&2
+echo "--------------------------------------------------------------------------">&2
 x cd "$(x wsroot)"
 xws prepare || return 1
 test_solo_main "${___X_CMD_PKG_VERSION:-v0.0.2}" || return
