@@ -1,17 +1,6 @@
 # shellcheck shell=dash
 
 test_solo_main()(
-    if [ "$___X_CMD_PKG_CANDADITE" = "python" ] && [ "$(x os name)" = "win" ];then
-        x pkg download python
-        local path
-        path="$(cygpath -w "${___X_CMD_ROOT_DATA}")"
-        /c/WINDOWS/System32/WindowsPowerShell/v1.0/PowerShell.exe "Start-Process -Wait -FilePath \"$path\pkg\download\python\\${___X_CMD_PKG_CANDADITE_VERSION}_win_x64.exe\"  -ArgumentList \"/S /D=$path\pkg\populate\python\\${___X_CMD_PKG_CANDADITE_VERSION}\""
-
-        x mkdirp "$path\pkg\populate\python\\${___X_CMD_PKG_CANDADITE_VERSION}\bin"
-        ln -sf "$path\pkg\populate\python\\${___X_CMD_PKG_CANDADITE_VERSION}\python.exe" "$path\pkg\populate\python\\${___X_CMD_PKG_CANDADITE_VERSION}\bin\python"
-        x python --version
-        x log +pkg env
-    fi
     x cd .tmp/x-cmd-pkg && \
     xws install "$___X_CMD_PKG_CANDADITE" && \
     x pkg _smoke "$___X_CMD_PKG_CANDADITE" "${___X_CMD_PKG_CANDADITE_VERSION}" || return
