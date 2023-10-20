@@ -24,7 +24,7 @@ on:
         required: true
       pkg-version:
         description: 'test candidate version'
-        required: true
+        required: false
 
 jobs:
   test-xbin:
