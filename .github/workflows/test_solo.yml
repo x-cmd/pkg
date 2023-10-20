@@ -1,6 +1,5 @@
 
 name: Test solo
-run-name: "Test solo ( ${{github.event.inputs.pkg-name}} ${{github.event.inputs.pkg-version}})"
 on:
   workflow_dispatch:
     inputs:
