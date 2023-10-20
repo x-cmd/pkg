@@ -1,0 +1,18 @@
+# shellcheck shell=dash
+
+# ___X_CMD_PKG_LIST="
+# jq,v0.0.1
+# yq,v0.0.1
+# "
+test_solo_main()(
+    x cd .tmp/x-cmd-pkg
+    echo "$___X_CMD_PKG_LIST" | while read -r tmp_pkg
+    do
+        xws install "${tmp_pkg%,*}" && \
+        x pkg _smoke "${tmp_pkg%,*}" "${tmp_pkg#*,}" || return
+    done
+)
+
+x cd "$(x wsroot)"
+xws prepare || return 1
+test_solo_main "${___X_CMD_PKG_VERSION:-v0.0.2}" || return
