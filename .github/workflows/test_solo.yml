@@ -1,5 +1,5 @@
 
-name: Test solo
+name: Test solo :${{github.event.inputs.pkg-name}}
 on:
   workflow_dispatch:
     inputs:
