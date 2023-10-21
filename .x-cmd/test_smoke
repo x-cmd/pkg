@@ -3,7 +3,6 @@
 test_xbin_main()(
     x cd .tmp/x-cmd-pkg && \
     xws bundle && rm -rf "$___X_CMD_PKG_RAW_PATH" && \
-    xws install && \
     xws test_smoke "$___X_CMD_WEBSRC_REGION" && \
     cp -rf doc/* ../../doc/
 )
