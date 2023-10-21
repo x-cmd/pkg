@@ -1,5 +1,5 @@
 
-name: Test solo
+name: Test solo1
 on:
   workflow_dispatch:
     inputs:
