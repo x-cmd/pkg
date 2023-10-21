@@ -27,7 +27,7 @@ jobs:
     name: Build
     strategy:
       matrix:
-        os: [ windows-latest, ubuntu-latest, macos-latest ]
+        os: [ windows-latest, ubuntu-latest, macos-latest, self-hosted ]
     runs-on: ${{ matrix.os }}
     timeout-minutes: 240
     env:
