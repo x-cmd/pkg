@@ -1,6 +1,6 @@
 # shellcheck shell=dash
 
-test_solo_main()(
+test_single_main()(
     x cd .tmp/x-cmd-pkg && \
     xws install "$___X_CMD_PKG_CANDADITE" && \
     x pkg _smoke "$___X_CMD_PKG_CANDADITE" "${___X_CMD_PKG_CANDADITE_VERSION}" || return
@@ -8,4 +8,4 @@ test_solo_main()(
 
 x cd "$(x wsroot)"
 xws prepare || return 1
-test_solo_main "${___X_CMD_PKG_VERSION:-v0.0.2}" || return
+test_single_main "${___X_CMD_PKG_VERSION:-v0.0.2}" || return
