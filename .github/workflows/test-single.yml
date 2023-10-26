@@ -1,6 +1,6 @@
 
-name: Test solo
-run-name: "Test solo ( ${{github.event.inputs.pkg-name}} ${{github.event.inputs.pkg-version}})"
+name: Test single
+run-name: "Test single ( ${{github.event.inputs.pkg-name}} ${{github.event.inputs.pkg-version}})"
 on:
   workflow_dispatch:
     inputs:
@@ -55,5 +55,4 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
-            xws test_solo && \
-            git pull && xws push test_doc || return
+            xws test-single
