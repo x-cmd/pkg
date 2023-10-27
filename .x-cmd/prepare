@@ -43,6 +43,7 @@ main(){
     ___X_CMD_XRC_RELOAD=1 xrc pkg
     ___X_CMD_XRC_RELOAD=1 xrc env
     x:info "prepare done"
+    x:warn "$? hello"
 }
 
 x yq >/dev/null

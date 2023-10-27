@@ -3,14 +3,18 @@
 set -o errexit
 
 test_single_main()(
+    pkg:info "test single main"
     cd .tmp/x-cmd-pkg && \
     xws install "$___X_CMD_PKG_CANDADITE" && \
     x pkg _smoke "$___X_CMD_PKG_CANDADITE" "${___X_CMD_PKG_CANDADITE_VERSION}" || return
 )
 
 x cd "$(x wsroot)"
+echo hello
+
 xws prepare || {
     x:info "Use prepare failed"
     return 1
 }
+echo hello
 test_single_main "${___X_CMD_PKG_VERSION:-v0.0.2}" || return
