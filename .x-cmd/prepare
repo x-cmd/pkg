@@ -47,4 +47,7 @@ main(){
 
 x yq >/dev/null
 x 7z >/dev/null
-main "$@"
+main "$@" || {
+    x:info "Use main function failed"
+    return 1
+}
