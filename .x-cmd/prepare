@@ -42,7 +42,7 @@ main(){
     ___X_CMD_LDICT____X_CMD_XRC_SET_MAIN_DICT=""
     ___X_CMD_XRC_RELOAD=1 xrc pkg
     ___X_CMD_XRC_RELOAD=1 xrc env
-    x:info "prepare done" || true
+    x:info "prepare done"
 }
 
 x yq >/dev/null
