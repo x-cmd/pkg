@@ -1,5 +1,7 @@
 # shellcheck shell=dash
 
+set -o errexit
+
 test_single_main()(
     x cd .tmp/x-cmd-pkg && \
     xws install "$___X_CMD_PKG_CANDADITE" && \
