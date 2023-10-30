@@ -5,7 +5,7 @@ on:
   #   - cron: '0 18 * * *'
   workflow_dispatch:
     inputs:
-      x-cmd-pkg-version:
+      x_cmd_pkg_version:
         description: 'x-cmd pkg version'
         required: true
         default: 'v0.0.2'

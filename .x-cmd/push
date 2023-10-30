@@ -13,8 +13,8 @@ case "$1" in
 
         (
             git clone git@gitcode.net:x-cmd/pkg
-            cp -f release/dist/"${x-cmd-pkg-version}".tar.gz pkg/dist/"${x-cmd-pkg-version}".tar.gz
-            cp -f release/dist/"${x-cmd-pkg-version}".tar.gz pkg/dist/"${x-cmd-pkg-version}_hash.txt"
+            cp -f release/dist/"${x_cmd_pkg_version}".tar.gz pkg/dist/"${x_cmd_pkg_version}".tar.gz
+            cp -f release/dist/"${x_cmd_pkg_version}".tar.gz pkg/dist/"${x_cmd_pkg_version}_hash.txt"
             cd ./pkg || return
             git add "$(x wsroot)/dist"
             git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
