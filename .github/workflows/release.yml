@@ -25,9 +25,7 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
-            xws bundle && \
-            git pull && \
-            xws push pre_release
+            xws push release
 
 
 

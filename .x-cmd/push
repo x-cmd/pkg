@@ -8,8 +8,10 @@ case "$1" in
         git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
         git push -f git@github.com:x-cmd-pkg/release main
         ;;
-    github_gitee)
-        git add "$(x wsroot)"
+    release)
+        git clone git@github.com:x-cmd-pkg/release
+        cd release || return
+        git add "$(x wsroot)/dist"
         git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
         # git push git@github.com:x-cmd/pkg main
         # git push git@gitee.com:x-cmd/pkg main
