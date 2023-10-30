@@ -5,7 +5,7 @@ on:
   #   - cron: '0 18 * * *'
   workflow_dispatch:
     inputs:
-      x_cmd_pkg_version:
+      x-cmd-pkg-version:
         description: 'x-cmd pkg version'
         required: true
         default: 'v0.0.2'
@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
+      ___X_CMD_PKG_RELEASE_VERSION: ${{ github.event.inputs.x-cmd-pkg-version }}
       ___X_CMD_GHACTION_X: x1
       WEBHOOK_URL: ${{ secrets.ROBOT }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -29,7 +30,7 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
-            xws push release
+            xws push release || return 
 
 
 

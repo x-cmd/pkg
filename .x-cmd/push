@@ -9,12 +9,13 @@ case "$1" in
         git push -f git@github.com:x-cmd-pkg/release main
         ;;
     release)
+        [ -n "$___X_CMD_PKG_RELEASE_VERSION" ] || return 
         git clone git@github.com:x-cmd-pkg/release
 
         (
             git clone git@gitcode.net:x-cmd/pkg
-            cp -f release/dist/"${x_cmd_pkg_version}".tar.gz pkg/dist/"${x_cmd_pkg_version}".tar.gz
-            cp -f release/dist/"${x_cmd_pkg_version}".tar.gz pkg/dist/"${x_cmd_pkg_version}_hash.txt"
+            cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz pkg/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz
+            cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz pkg/dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt"
             cd ./pkg || return
             git add "$(x wsroot)/dist"
             git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
@@ -22,8 +23,8 @@ case "$1" in
         ) || return
             rm -rf pkg
         (
-            cp -f release/dist/"${x-cmd-pkg-version}".tar.gz ./dist/"${x-cmd-pkg-version}".tar.gz
-            cp -f release/dist/"${x-cmd-pkg-version}".tar.gz ./dist/"${x-cmd-pkg-version}_hash.txt"
+            cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz ./dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz
+            cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz ./dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt"
             git add "$(x wsroot)/dist"
             git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
             # git push git@github.com:x-cmd/pkg main
@@ -31,8 +32,8 @@ case "$1" in
 
         (
             git clone git@gitee.com:x-cmd/pkg
-            cp -f release/dist/"${x-cmd-pkg-version}".tar.gz pkg/dist/"${x-cmd-pkg-version}".tar.gz
-            cp -f release/dist/"${x-cmd-pkg-version}".tar.gz pkg/dist/"${x-cmd-pkg-version}_hash.txt"
+            cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz pkg/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz
+            cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz pkg/dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt"
             cd ./pkg || return
             git add "$(x wsroot)/dist"
             git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
