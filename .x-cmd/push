@@ -10,12 +10,35 @@ case "$1" in
         ;;
     release)
         git clone git@github.com:x-cmd-pkg/release
-        cd release || return
-        git add "$(x wsroot)/dist"
-        git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
-        # git push git@github.com:x-cmd/pkg main
-        # git push git@gitee.com:x-cmd/pkg main
-        git push git@gitcode.net:x-cmd/pkg main
+
+        (
+            git clone git@gitcode.net:x-cmd/pkg
+            cp -f release/dist/"${x-cmd-pkg-version}".tar.gz pkg/dist/"${x-cmd-pkg-version}".tar.gz
+            cp -f release/dist/"${x-cmd-pkg-version}".tar.gz pkg/dist/"${x-cmd-pkg-version}_hash.txt"
+            cd ./pkg || return
+            git add "$(x wsroot)/dist"
+            git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
+            git push git@gitcode.net:x-cmd/pkg main
+        ) || return
+            rm -rf pkg
+        (
+            cp -f release/dist/"${x-cmd-pkg-version}".tar.gz ./dist/"${x-cmd-pkg-version}".tar.gz
+            cp -f release/dist/"${x-cmd-pkg-version}".tar.gz ./dist/"${x-cmd-pkg-version}_hash.txt"
+            git add "$(x wsroot)/dist"
+            git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
+            # git push git@github.com:x-cmd/pkg main
+        ) || return
+
+        (
+            git clone git@gitee.com:x-cmd/pkg
+            cp -f release/dist/"${x-cmd-pkg-version}".tar.gz pkg/dist/"${x-cmd-pkg-version}".tar.gz
+            cp -f release/dist/"${x-cmd-pkg-version}".tar.gz pkg/dist/"${x-cmd-pkg-version}_hash.txt"
+            cd ./pkg || return
+            git add "$(x wsroot)/dist"
+            git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
+            #git push git@gitee.com:x-cmd/pkg main
+        ) || return
+
         ;;
     test_doc)
         git add "$(x wsroot)/doc"
