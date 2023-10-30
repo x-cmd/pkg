@@ -8,6 +8,7 @@ case "$1" in
         git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
         git push git@github.com:x-cmd/pkg main
         git push git@gitee.com:x-cmd/pkg main
+        git push git@gitcode.net:x-cmd/pkg main
         ;;
     test_doc)
         git add "$(x wsroot)/doc"
