@@ -13,9 +13,12 @@ jobs:
       ___X_CMD_GHACTION_X: x1
       WEBHOOK_URL: ${{ secrets.ROBOT }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
-      git_user: agent-zero
-      git_email: 0@x-cmd.com
+      # ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
+      # git_user: agent-zero
+      # git_email: 0@x-cmd.com
+      ssh_key: ${{ SSH_PRIVATE_KEY_MNNNA }}
+      git_user: mnnna
+      git_email: zhengyuhang@x-cmd.com
       CONCURRENCY: 10
     steps:
       - name: main

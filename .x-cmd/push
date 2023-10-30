@@ -3,6 +3,11 @@
 cd "$(x wsroot)" || return 1
 
 case "$1" in
+    pre_release)
+            git add "$(x wsroot)"
+            git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
+            git push git@github.com:x-cmd-pkg/release main
+        ;;
     github_gitee)
         git add "$(x wsroot)"
         git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
