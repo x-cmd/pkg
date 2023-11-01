@@ -14,11 +14,7 @@ case "$1" in
 
         (
             git clone git@gitcode.net:x-cmd/pkg
-            cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz   pkg/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz || return
-            cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt" pkg/dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt" || return
-            cd ./pkg || return
-            git add "$(x wsroot)/dist"
-            git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
+            ___x_cmd_release_push
             git push git@gitcode.net:x-cmd/pkg main
         ) || return
             rm -rf pkg
@@ -32,11 +28,7 @@ case "$1" in
 
         (
             git clone git@gitee.com:x-cmd/pkg
-            cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz pkg/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz
-            cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt" pkg/dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt"
-            cd ./pkg || return
-            git add "$(x wsroot)/dist"
-            git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
+            ___x_cmd_release_push
             git push git@gitee.com:x-cmd/pkg main
         ) || return
 
@@ -51,3 +43,12 @@ case "$1" in
         x:error "unknown push type: $1"
         return 1
 esac
+
+___x_cmd_release_push(){
+    cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz   pkg/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz || return
+    cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt" pkg/dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt" || return
+    cd ./pkg || return
+    git add "$(x wsroot)/dist"
+    git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
+
+}
