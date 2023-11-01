@@ -12,11 +12,11 @@ case "$1" in
     fabu)
         git clone git@github.com:x-cmd-pkg/release
         cd release || return
-        git push -f git@github.com:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}.tar.gz
-        git push -f git@github.com:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}_hash.txt
+        # git push -f git@github.com:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}.tar.gz
+        # git push -f git@github.com:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}_hash.txt
 
-        git push -f git@git@gitee.com:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}.tar.gz
-        git push -f git@git@gitee.com:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}_hash.txt
+        # git push -f git@git@gitee.com:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}.tar.gz
+        # git push -f git@git@gitee.com:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}_hash.txt
 
         git push -f git@gitcode.net:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}.tar.gz
         git push -f git@gitcode.net:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}_hash.txt
