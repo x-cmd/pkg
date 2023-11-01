@@ -30,7 +30,7 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
-            xws push release_gitcode || return
+            xws push fabu || return
 
 
 

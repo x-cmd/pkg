@@ -6,53 +6,20 @@ case "$1" in
     pre_release)
         git add "$(x wsroot)"
         git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
-        git push -f git@github.com:x-cmd-pkg/release main
+        git push -f git@github.com:x-cmd-pkg/release main:dist/${___X_CMD_PKG_RELEASE_VERSION}.tar.gz
+        git push -f git@github.com:x-cmd-pkg/release main:dist/${___X_CMD_PKG_RELEASE_VERSION}_hash.txt
         ;;
-    release_gitcode)
-        [ -n "$___X_CMD_PKG_RELEASE_VERSION" ] || return
+    fabu)
         git clone git@github.com:x-cmd-pkg/release
+        cd release || return
+        git push -f git@github.com:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}.tar.gz
+        git push -f git@github.com:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}_hash.txt
 
-        (
-            git clone git@gitcode.net:x-cmd/pkg
-            cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz pkg/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz || return
-            cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz pkg/dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt" || return
-            cd ./pkg || return
-            git add "$(x wsroot)/dist"
-            git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
-            git push git@gitcode.net:x-cmd/pkg main
-        ) || return
-            rm -rf pkg
-        (
-            cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz ./dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz || return
-            cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz ./dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt" || return 
-            git add "$(x wsroot)/dist"
-            git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
-            # git push git@github.com:x-cmd/pkg main
-        ) || return
+        git push -f git@git@gitee.com:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}.tar.gz
+        git push -f git@git@gitee.com:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}_hash.txt
 
-        ;;
-
-        release_gitee)
-            ___X_CMD_PKG_RELEASE_VERSION="v0.0.2"
-            git clone git@github.com:x-cmd-pkg/release
-
-            (
-                git clone git@gitee.com:x-cmd/pkg
-                cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz pkg/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz || return
-                cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz pkg/dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt" || return
-                cd ./pkg || return
-                git add "$(x wsroot)/dist"
-                git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
-                git push git@gitcode.net:x-cmd/pkg main
-            ) || return
-                rm -rf pkg
-            (
-                cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz ./dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz || return
-                cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz ./dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt" || return
-                git add "$(x wsroot)/dist"
-                git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
-                # git push git@github.com:x-cmd/pkg main
-            ) || return
+        git push -f git@gitcode.net:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}.tar.gz
+        git push -f git@gitcode.net:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}_hash.txt
             ;;
 
     test_doc)

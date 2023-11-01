@@ -4,6 +4,11 @@ on:
   # schedule:
   #   - cron: '0 18 * * *'
   workflow_dispatch:
+    inputs:
+      x-cmd-pkg-version:
+        description: 'x-cmd pkg version'
+        required: true
+        default: 'v0.0.2'
 
 jobs:
   Bundle:
@@ -11,6 +16,7 @@ jobs:
     timeout-minutes: 20
     env:
       ___X_CMD_GHACTION_X: x1
+      ___X_CMD_PKG_RELEASE_VERSION: ${{ github.event.inputs.x-cmd-pkg-version }}
       WEBHOOK_URL: ${{ secrets.ROBOT }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
