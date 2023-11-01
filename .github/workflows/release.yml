@@ -4,6 +4,10 @@ on:
   # schedule:
   #   - cron: '0 18 * * *'
   workflow_dispatch:
+    x-cmd-pkg-version:
+        description: 'x-cmd pkg version'
+        required: true
+        default: 'v0.0.2'
 
 jobs:
   Bundle:

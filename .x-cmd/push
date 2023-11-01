@@ -9,15 +9,36 @@ case "$1" in
         git push -f git@github.com:x-cmd-pkg/release main
         ;;
     fabu)
+        [ -n "$___X_CMD_PKG_RELEASE_VERSION" ] || return
         git clone git@github.com:x-cmd-pkg/release
-        cd release || return
-        # git push -f git@github.com:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}.tar.gz
-        # git push -f git@github.com:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}_hash.txt
 
-        # git push -f git@git@gitee.com:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}.tar.gz
-        # git push -f git@git@gitee.com:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}_hash.txt
+        (
+            git clone git@gitcode.net:x-cmd/pkg
+            cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz pkg/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz || return
+            cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz pkg/dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt" || return
+            cd ./pkg || return
+            git add "$(x wsroot)/dist"
+            git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
+            git push git@gitcode.net:x-cmd/pkg main
+        ) || return
+            rm -rf pkg
+        (
+            cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz ./dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz || return
+            cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz ./dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt" || return
+            git add "$(x wsroot)/dist"
+            git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
+            # git push git@github.com:x-cmd/pkg main
+        ) || return
 
-        git push -f git@gitcode.net:x-cmd/pkg main
+        (
+            git clone git@gitee.com:x-cmd/pkg
+            cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz pkg/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz
+            cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz pkg/dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt"
+            cd ./pkg || return
+            git add "$(x wsroot)/dist"
+            git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
+            # git push git@gitcode.net:x-cmd/pkg main
+        ) || return
 
             ;;
 
