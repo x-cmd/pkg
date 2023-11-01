@@ -17,8 +17,8 @@ case "$1" in
         # git push -f git@git@gitee.com:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}.tar.gz
         # git push -f git@git@gitee.com:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}_hash.txt
 
-        git push -f git@gitcode.net:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}.tar.gz
-        git push -f git@gitcode.net:x-cmd/pkg main:dist/${___X_CMD_PKG_RELEASE_VERSION}_hash.txt
+        git push -f git@gitcode.net:x-cmd/pkg main
+
             ;;
 
     test_doc)
