@@ -1,9 +1,10 @@
-name: release to gitee  (用于v0.0.2版本)
+name: release
 
 on:
   # schedule:
   #   - cron: '0 18 * * *'
   workflow_dispatch:
+
 jobs:
   Bundle:
     runs-on: ubuntu-latest
@@ -13,19 +14,19 @@ jobs:
       ___X_CMD_GHACTION_X: x1
       WEBHOOK_URL: ${{ secrets.ROBOT }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
-      git_user: agent-zero
-      git_email: 0@x-cmd.com
-      # ssh_key: ${{ secrets.SSH_PRIVATE_KEY_MNNNA }}
-      # git_user: mnnna
-      # git_email: zhengyuhang@x-cmd.com
+      # ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
+      # git_user: agent-zero
+      # git_email: 0@x-cmd.com
+      ssh_key: ${{ secrets.SSH_PRIVATE_KEY_MNNNA }}
+      git_user: mnnna
+      git_email: zhengyuhang@x-cmd.com
       CONCURRENCY: 10
     steps:
       - name: main
         uses: x-cmd/action@main
         with:
           code: |
-            xws push release_gitee || return
+            xws push fabu || return
 
 
 
