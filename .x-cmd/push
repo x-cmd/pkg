@@ -13,9 +13,9 @@ cd "$(x wsroot)" || return 1
 
 case "$1" in
     pre_release)
+        x rmrf .github/workflows
         git add "$(x wsroot)"
         git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
-        x rmrf .github/workflows
         git push -f git@github.com:x-cmd-pkg/release main
         ;;
     fabu)
