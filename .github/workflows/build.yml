@@ -20,7 +20,7 @@ jobs:
     timeout-minutes: 20
     env:
       ___X_CMD_GHACTION_X: x1
-      ___X_CMD_PKG_RELEASE_VERSION: ${{ github.event.inputs.x-cmd-pkg-version }}
+      ___X_CMD_PKG_VERSION: ${{ github.event.inputs.x-cmd-pkg-version }}
       ___X_CMD_PKG_BRANCH: ${{ github.event.inputs.x-cmd-pkg-branch }}
       WEBHOOK_URL: ${{ secrets.ROBOT }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
