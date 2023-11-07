@@ -55,5 +55,6 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
+            ls -lh
             xws test-single
             ls -lh
