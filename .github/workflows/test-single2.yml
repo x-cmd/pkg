@@ -56,8 +56,5 @@ jobs:
         with:
           code: |
             xws test-single
-            ! [ -d "$HOME/actions-runner/_work/pkg/pkg" ] || {
-              cd "$HOME/actions-runner/_work/pkg/pkg"
-              rm -rf "ws/"
-              rm -rf "pkg/"
-            }
+            x rmrf "$HOME/actions-runner/_work/pkg/pkg/ws"
+            x rmrf "$HOME/actions-runner/_work/pkg/pkg/pkg"
