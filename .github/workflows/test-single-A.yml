@@ -1,6 +1,6 @@
 
-name: Test single2
-run-name: "Test single2 ( ${{github.event.inputs.pkg-name}} ${{github.event.inputs.pkg-version}})"
+name: Test single-A
+run-name: "Test single-A ( ${{github.event.inputs.pkg-name}} ${{github.event.inputs.pkg-version}})"
 on:
   workflow_dispatch:
     inputs:
@@ -33,7 +33,7 @@ jobs:
     strategy:
       matrix:
         os: [ windows-latest, ubuntu-latest, macos-latest,[self-hosted,linux,ARM64], [self-hosted,macOs,ARM64] ]
-        # os: [ windows-latest, ubuntu-latest, macos-latest ]
+        # os: [ [self-hosted,linux,ARM64], [self-hosted,macOs,ARM64] ]
     runs-on: ${{ matrix.os }}
     timeout-minutes: 10
     env:
