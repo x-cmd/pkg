@@ -32,7 +32,7 @@ jobs:
     name: Build
     strategy:
       matrix:
-        os: [ 'self-hosted[minibuild]' ]
+        os: [ [self-hosted,linux,ARM64],'self-hosted[minibuild]' ]
     runs-on: ${{ matrix.os }}
     timeout-minutes: 10
     env:
