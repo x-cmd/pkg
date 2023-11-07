@@ -55,8 +55,6 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
-            pwd
-            ls -lh
             xws test-single
-            pwd
-            ls -lh
+            x rmrf "$HOME/actions-runner/_work/pkg/pkg/ws"
+            x rmrf "$HOME/actions-runner/_work/pkg/pkg/pkg"
