@@ -32,7 +32,7 @@ jobs:
     name: Build
     strategy:
       matrix:
-        os: [ [self-hosted,linux,ARM64], [self-hosted,macOs,ARM64] ]
+        os: [ ubuntu-latest, [self-hosted,linux,ARM64], [self-hosted,macOs,ARM64] ]
         # os: [ windows-latest, ubuntu-latest, macos-latest ]
     runs-on: ${{ matrix.os }}
     timeout-minutes: 10
@@ -55,6 +55,8 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
+            pwd
             ls -lh
             xws test-single
+            pwd
             ls -lh
