@@ -14,5 +14,3 @@ xws install "$___X_CMD_PKG_CANDADITE"
 
 set -o errexit
 x pkg _smoke "$___X_CMD_PKG_CANDADITE" "${___X_CMD_PKG_CANDADITE_VERSION}"
-x env untry "$___X_CMD_PKG_CANDADITE=${___X_CMD_PKG_CANDADITE_VERSION}"
-x pkg remove "$___X_CMD_PKG_CANDADITE" "${___X_CMD_PKG_CANDADITE_VERSION}"
