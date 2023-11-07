@@ -1,6 +1,6 @@
 
-name: Test single
-run-name: "Test single ( ${{github.event.inputs.pkg-name}} ${{github.event.inputs.pkg-version}})"
+name: Test single2
+run-name: "Test single2 ( ${{github.event.inputs.pkg-name}} ${{github.event.inputs.pkg-version}})"
 on:
   workflow_dispatch:
     inputs:
