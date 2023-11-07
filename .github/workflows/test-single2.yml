@@ -56,3 +56,4 @@ jobs:
         with:
           code: |
             xws test-single
+            ls -lh
