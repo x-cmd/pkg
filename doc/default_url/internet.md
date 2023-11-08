@@ -102,8 +102,8 @@
 |network/nmap | - | - | - | - | - |
 |network/nping | - | - | - | - | - |
 |network/socat | - | - | - | - | - |
-|network/t-get | - | - | - | - | - |
 |network/termshark | - | - | - | - | - |
+|network/tget | - | - | - | - | - |
 |network/traceroute | - | - | - | - | - |
 |network/ttyd | - | - | - | - | - |
 |network/websocat | - | - | - | - | - |
