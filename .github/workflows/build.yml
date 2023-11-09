@@ -12,7 +12,7 @@ on:
       x-cmd-pkg-branch:
         description: 'x-cmd pkg branch'
         required: true
-        default: 'main'
+        default: 'v0.0.2'
 
 jobs:
   Bundle:

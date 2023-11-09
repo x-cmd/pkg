@@ -11,7 +11,7 @@ on:
       x-cmd-pkg-branch:
         description: 'x-cmd pkg branch'
         required: true
-        default: 'main'
+        default: 'v0.0.2'
       x-bash-pkg-branch:
         description: 'x-bash pkg branch'
         required: true
