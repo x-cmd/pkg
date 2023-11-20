@@ -8,6 +8,7 @@ gen_web_data()(
     x cd .tmp
 
     # x env use bun
+    x log +bun
     xws gen_web_data
     xws push_official_doc_data || {
         x qywx --send --markdown "
