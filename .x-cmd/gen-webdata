@@ -8,7 +8,7 @@ gen_web_data()(
     x cd .tmp
 
     xws gen_web_data
-    xws web_data || {
+    xws push_official_doc_data || {
         x qywx --send --markdown "
         ## ❌ 官网数据生成失败 （$(date -d "8 hour" +%Y-%m-%d\ %H:%M:%S)）: [详情](https://github.com/x-cmd/pkg/actions/workflows/gen-webdata.yml)
         "
