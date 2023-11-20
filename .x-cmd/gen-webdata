@@ -6,7 +6,7 @@ gen_web_data()(
 
     git clone git@github.com:x-cmd-pkg/x-cmd-pkg.git .tmp && \
     x cd .tmp
-
+    x env use bun
     xws gen_web_data
     xws push_official_doc_data || {
         x qywx --send --markdown "
