@@ -9,4 +9,4 @@ test_xbin_main()(
 
 x cd "$(x wsroot)"
 xws prepare || return 1
-test_xbin_main "${___X_CMD_PKG_VERSION:-v0.0.2}"
+test_xbin_main "${___X_CMD_PKG_VERSION:-v0.0.4}"

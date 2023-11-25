@@ -15,4 +15,4 @@ bundle()(
     xws bundle -o ../dist
 )
 
-bundle "${___X_CMD_PKG_VERSION:-v0.0.2}"
+bundle "${___X_CMD_PKG_VERSION:-v0.0.4}"

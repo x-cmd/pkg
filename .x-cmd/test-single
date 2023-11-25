@@ -7,7 +7,7 @@ xws prepare || {
     return 1
 }
 
-___X_CMD_PKG_VERSION="${___X_CMD_PKG_VERSION:-v0.0.2}"
+___X_CMD_PKG_VERSION="${___X_CMD_PKG_VERSION:-v0.0.4}"
 x:info "test single main"
 cd .tmp/x-cmd-pkg && \
 xws install "$___X_CMD_PKG_CANDADITE"
