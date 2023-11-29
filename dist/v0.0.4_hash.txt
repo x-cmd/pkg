@@ -1,1 +1,1 @@
-ed338bbe5a7eaec2aeb683e4269fb9774ff7e436ae9f9b7d5a68609679986b81063c66cb019877190ed3c7bfe01a6064c3658280f647e246389b4294a9e68905  /home/runner/work/pkg/pkg/ws/.tmp/../dist/v0.0.4.tar.gz
+36a02dd946bcd62a57dc4b7c50f2c2b929b4f1ac09454698ee4d2a38bba40fbc898fd43dd40841b14cf7af7e7bf52dc47a5e787b6c69d9ed15b1ad62d06be7e8  /home/runner/work/pkg/pkg/ws/.tmp/../dist/v0.0.4.tar.gz
