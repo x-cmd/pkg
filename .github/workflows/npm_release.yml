@@ -1,0 +1,45 @@
+name: npm package release
+
+on:
+  # schedule:
+  #   - cron: '0 18 * * *'
+  workflow_dispatch:
+    inputs:
+      x-cmd-pkg-version:
+          description: 'x-cmd pkg version'
+          required: true
+          default: 'v0.0.4'
+      pkg_name:
+          description: 'pkg_name'
+          required: true
+      pkg_version:
+          description: 'pkg_version'
+          required: true
+
+
+jobs:
+  Bundle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      ___X_CMD_PKG_BRANCH: ${{ github.event.inputs.x-cmd-pkg-version }}
+      ___X_CMD_PKG_NAME: ${{ github.event.inputs.pkg_name }}
+      ___X_CMD_PKG_VERSION: ${{ github.event.inputs.pkg_version }}
+      ___X_CMD_GHACTION_X: x1
+      WEBHOOK_URL: ${{ secrets.ROBOT }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
+      # git_user: agent-zero
+      # git_email: 0@x-cmd.com
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN_MNNNA }}
+      ssh_key: ${{ secrets.SSH_PRIVATE_KEY_MNNNA }}
+      git_user: mnnna
+      git_email: zhengyuhang@x-cmd.com
+      CONCURRENCY: 10
+    steps:
+      - name: main
+        uses: x-cmd/action@main
+        with:
+          code: |
+            xws npm_release || return
+
