@@ -24,4 +24,4 @@ jobs:
         with:
           code: |
             x qywx --cfg webhook='${{ secrets.WEB_DATA_REPO_WEBHOOK_URL }}'
-            xws gen-webdata || return
+            x ws gen-webdata || return

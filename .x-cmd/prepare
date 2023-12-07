@@ -25,7 +25,7 @@ main(){
             git clone git@github.com:x-bash/pkg.git .tmp/pkg -b "$x_bash_pkg_branch" && \
             x cd .tmp/pkg
         fi
-        xws install
+        x ws install
     ) || return 1
 
     (
@@ -36,7 +36,7 @@ main(){
             git clone git@github.com:x-bash/env.git .tmp/env -b "$x_bash_env_branch" && \
             x cd .tmp/env
         fi
-        xws install
+        x ws install
     ) || return 1
 
     ___X_CMD_LDICT____X_CMD_XRC_SET_MAIN_DICT=""

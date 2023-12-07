@@ -11,7 +11,7 @@ npm_release_main()(
         x cd .tmp/x-cmd-pkg || return
     fi
 
-    xws npm_release "$___X_CMD_PKG_NAME"  "$___X_CMD_PKG_VERSION" || return
+    x ws npm_release "$___X_CMD_PKG_NAME"  "$___X_CMD_PKG_VERSION" || return
 )
 
 x cd "$(x wsroot)"  || return

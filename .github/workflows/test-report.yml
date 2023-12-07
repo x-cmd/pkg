@@ -45,4 +45,4 @@ jobs:
         with:
           code: |
             x qywx --cfg webhook='${{ secrets.WEBHOOK_URL }}'
-            xws test_report
+            x ws test_report

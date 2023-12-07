@@ -4,12 +4,12 @@ test_default_url_main()(
 
     x cd .tmp/x-cmd-pkg &&  \
     git branch --show-current && \
-    xws bundle && \
-    xws test_default_url "$___X_CMD_WEBSRC_REGION" && \
-    xws test_default_url "cn" && \
+    x ws bundle && \
+    x ws test_default_url "$___X_CMD_WEBSRC_REGION" && \
+    x ws test_default_url "cn" && \
     cp -rf doc/* ../../doc/
 )
 
 x cd "$(x wsroot)"
-xws prepare || return 1
+x ws prepare || return 1
 test_default_url_main "${___X_CMD_PKG_VERSION:-v0.0.4}"

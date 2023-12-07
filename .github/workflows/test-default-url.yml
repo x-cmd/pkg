@@ -43,6 +43,6 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
-            xws test_default_url && \
+            x ws test_default_url && \
             git pull && \
-            xws push test_doc
+            x ws push test_doc

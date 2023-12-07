@@ -41,5 +41,5 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
-            xws npm_release || return
+            x ws npm_release || return
 

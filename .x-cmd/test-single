@@ -2,7 +2,7 @@
 
 x cd "$(x wsroot)"
 
-xws prepare || {
+x ws prepare || {
     x:info "Use prepare failed"
     return 1
 }
@@ -10,7 +10,7 @@ xws prepare || {
 ___X_CMD_PKG_VERSION="${___X_CMD_PKG_VERSION:-v0.0.4}"
 x:info "test single main"
 cd .tmp/x-cmd-pkg && \
-xws install "$___X_CMD_PKG_CANDADITE"
+x ws install "$___X_CMD_PKG_CANDADITE"
 
 set -o errexit
 x rmrf "$___X_CMD_PKG_POPULATE_PATH/$___X_CMD_PKG_CANDADITE/${___X_CMD_PKG_CANDADITE_VERSION}"

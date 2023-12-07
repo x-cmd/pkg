@@ -48,6 +48,6 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
-            xws test_smoke && \
-            git pull && xws push test_doc
+            x ws test_smoke && \
+            git pull && x ws push test_doc
 
