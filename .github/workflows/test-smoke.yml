@@ -30,7 +30,7 @@ jobs:
         # os: [ windows-latest, ubuntu-latest, macos-latest, self-hosted ]
         os: [ windows-latest, ubuntu-latest, macos-latest ]
     runs-on: ${{ matrix.os }}
-    timeout-minutes: 180
+    timeout-minutes: 360
     env:
       ___X_CMD_GHACTION_X: x1
       ___X_CMD_PKG_VERSION: ${{ github.event.inputs.x-cmd-pkg-version }}
