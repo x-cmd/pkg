@@ -184,6 +184,7 @@
 |pip/mkdocs | - | - | - | - | - |
 |pip/mssql-cli | - | - | - | - | - |
 |pip/mycli | - | - | - | - | - |
+|pip/pipx | - | - | - | - | - |
 |pip/pre-commit | - | - | - | - | - |
 |pip/pypinyin | - | - | - | - | - |
 |pip/python-openstackclient | - | - | - | - | - |
