@@ -1,15 +1,15 @@
 # shellcheck shell=dash
 
 ___x_cmd_release_push(){
-    cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz   pkg/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz || return
-    cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt" pkg/dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt" || return
-    cd ./pkg || return
+    x cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz   pkg/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz || return
+    x cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt" pkg/dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt" || return
+    x cd ./pkg || return
     git add "$(x wsroot)/dist"
     git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
 
 }
 
-cd "$(x wsroot)" || return 1
+x cd "$(x wsroot)" || return 1
 
 case "$1" in
     pre_release)
@@ -27,10 +27,10 @@ case "$1" in
             ___x_cmd_release_push || return
             git push git@gitcode.net:x-cmd/pkg main
         ) || return
-            rm -rf pkg
+            x rmrf pkg
         (
-            cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz   ./dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz || return
-            cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt" ./dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt" || return
+            x cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz   ./dist/"${___X_CMD_PKG_RELEASE_VERSION}".tar.gz || return
+            x cp -f release/dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt" ./dist/"${___X_CMD_PKG_RELEASE_VERSION}_hash.txt" || return
             git add "$(x wsroot)/dist"
             git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
             git push git@github.com:x-cmd/pkg main
