@@ -9,7 +9,7 @@ x ws prepare || {
 
 ___X_CMD_PKG_VERSION="${___X_CMD_PKG_VERSION:-v0.0.4}"
 x:info "test single main"
-cd .tmp/x-cmd-pkg && \
+x cd .tmp/x-cmd-pkg && \
 x ws install "$___X_CMD_PKG_CANDADITE"
 
 set -o errexit
