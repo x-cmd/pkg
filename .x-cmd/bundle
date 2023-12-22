@@ -15,4 +15,4 @@ bundle()(
     x ws bundle -o ../dist
 )
 
-bundle "${___X_CMD_PKG_VERSION:-v0.0.4}"
+bundle "${___X_CMD_PKG_VERSION:-v0.0.5}"
