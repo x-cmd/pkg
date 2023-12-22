@@ -2,7 +2,7 @@
 
 test_xbin_main()(
     x cd .tmp/x-cmd-pkg && \
-    x ws bundle && rm -rf "$___X_CMD_PKG_RAW_PATH" && \
+    x ws bundle && x rmrf "$___X_CMD_PKG_RAW_PATH" && \
     x ws test_smoke "$___X_CMD_WEBSRC_REGION" && \
     x cp -rf doc/* ../../doc/
 )
