@@ -4,7 +4,7 @@ test_xbin_main()(
     x cd .tmp/x-cmd-pkg && \
     x ws bundle && rm -rf "$___X_CMD_PKG_RAW_PATH" && \
     x ws test_xbin "$___X_CMD_WEBSRC_REGION" && \
-    cp -rf doc/* ../../doc/
+    x cp -rf doc/* ../../doc/
 )
 
 x cd "$(x wsroot)"
