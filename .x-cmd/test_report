@@ -31,15 +31,13 @@ x qywx --send --markdown "
 ---
 $(printf "$smoke_report")
 
-
----
-$(printf "$xbin_report")
-
-
----
-$default_url_content
-
-
 ### 报告链接:
 [default-url](https://github.com/x-cmd/pkg/actions/workflows/test-default-url.yml) / [xbin](https://github.com/x-cmd/pkg/actions/workflows/test-xbin.yml) / [smoke](https://github.com/x-cmd/pkg/actions/workflows/test-smoke.yml)
 "
+
+# ---
+# $(printf "$xbin_report")
+
+
+# ---
+# $default_url_content
