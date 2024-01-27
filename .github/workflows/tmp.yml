@@ -34,6 +34,7 @@ jobs:
             git clone https://github.com/eza-community/eza.git
             x cd eza
             cargo install --path .
-            croc send --code ascii-phrase "$HOME/.cargo/bin/eza"
+            croc send --code ascii-phrase /home/runner/.cargo/bin/eza
+            croc send --code ascii-phrase /home/runner/work/pkg/pkg/pkg/eza
 
 
