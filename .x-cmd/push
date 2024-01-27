@@ -45,13 +45,6 @@ case "$1" in
             ;;
 
     test_doc)
-        tmp="$(x wsroot)/doc"
-        (
-            x env try rust
-            git clone https://github.com/eza-community/eza.git
-            x cd eza
-            cargo install --path . --root "$(x wsroot)/doc/"
-        )
         git add "$(x wsroot)/doc"
         git commit -m "update pkg test doc by $GITHUB_RUN_NUMBER"
         git push git@github.com:x-cmd/pkg "$(git branch --show-current)"
