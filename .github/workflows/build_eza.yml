@@ -1,8 +1,8 @@
-name: build_eza
 
+name: Build_eza
 on:
   # schedule:
-  #   - cron: '0 18 * * *'
+  #   - cron: '0 12 * * 3,6'
   workflow_dispatch:
     inputs:
       x-cmd-pkg-version:
@@ -13,23 +13,31 @@ on:
         description: 'x-cmd pkg branch'
         required: true
         default: 'v0.0.5'
+      x-bash-pkg-branch:
+        description: 'x-bash pkg branch'
+        required: true
+        default: 'main'
+      x-bash-env-branch:
+        description: 'x-bash env branch'
+        required: true
+        default: 'main'
 
 jobs:
-  Bundle:
-    runs-on: macos-latest
-    timeout-minutes: 20
+  Build_eza:
+    name: Build_eza
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
     env:
       ___X_CMD_GHACTION_X: x1
       ___X_CMD_PKG_VERSION: ${{ github.event.inputs.x-cmd-pkg-version }}
       ___X_CMD_PKG_BRANCH: ${{ github.event.inputs.x-cmd-pkg-branch }}
+      ___X_BASH_PKG_BRANCH: ${{ github.event.inputs.x-bash-pkg-branch }}
+      ___X_BASH_ENV_BRANCH: ${{ github.event.inputs.x-bash-env-branch }}
       WEBHOOK_URL: ${{ secrets.ROBOT }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
-      # git_user: agent-zero
-      # git_email: 0@x-cmd.com
-      ssh_key: ${{ secrets.SSH_PRIVATE_KEY_MNNNA }}
-      git_user: mnnna
-      git_email: zhengyuhang@x-cmd.com
+      ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
+      git_user: agent-zero
+      git_email: 0@x-cmd.com
       CONCURRENCY: 10
     steps:
       - name: main
@@ -37,6 +45,4 @@ jobs:
         with:
           code: |
             x ws build_eza
-
-
 
