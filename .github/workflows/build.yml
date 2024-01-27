@@ -36,7 +36,7 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
-            x ws bundle && \
+            x ws bundle "$___X_CMD_PKG_VERSION" && \
             git pull && \
             x ws push pre_release
 
