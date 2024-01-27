@@ -10,6 +10,7 @@
 (
     git clone https://github.com/x-cmd/pkg.git
     x cd pkg
+    x rmrf "./doc/"
     x cp "$HOME/.cargo/bin/eza" "./doc/"
     git add .
     git commit -m ...
