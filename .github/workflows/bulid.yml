@@ -36,6 +36,7 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
+            x pkg update && \
             git pull && \
             x ws push test_doc
 
