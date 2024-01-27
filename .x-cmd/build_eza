@@ -1,0 +1,17 @@
+# shellcheck shell=dash
+
+(
+    x env use rust
+    git clone https://github.com/eza-community/eza.git
+    cd eza
+    cargo install --path .
+)
+
+(
+    git clone https://github.com/x-cmd/pkg.git
+    cd pkg
+    cp "$HOME/.cargo/bin/eza" "./doc/"
+    git add .
+    git commit -m ...
+    git push origin main
+)
