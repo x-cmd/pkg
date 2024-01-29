@@ -1,1 +1,1 @@
-765e0fab3c3ad12644706a45512ebeaa3e20d2fdeae8dbe98738c5d2363346c0a72d2b7ed0c51e3b95725fc29b7d68baedf8ebcae0e016c82e220b5a1c88ae75  /home/lunrenyi/xcmd/x-cmd-pkg/dist/v0.0.6.tar.gz
+ded801d4bd8682befe07a05dff969538e1d97499867c5a247d4de1ba6c19bea870f573d362aabc9b4d1e7f7f1b6d2a3f4788334fa1068c60684461f99f783682  /home/lunrenyi/xcmd/x-cmd-pkg/dist/v0.0.6.tar.gz
