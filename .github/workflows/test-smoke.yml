@@ -8,11 +8,11 @@ on:
       x-cmd-pkg-version:
         description: 'x-cmd pkg version'
         required: true
-        default: 'v0.0.5'
+        default: 'v0.0.6'
       x-cmd-pkg-branch:
         description: 'x-cmd pkg branch'
         required: true
-        default: 'v0.0.5'
+        default: 'v0.0.6'
       x-bash-pkg-branch:
         description: 'x-bash pkg branch'
         required: true
@@ -30,7 +30,7 @@ jobs:
         # os: [ windows-latest, ubuntu-latest, macos-latest, self-hosted ]
         os: [ windows-latest, ubuntu-latest, macos-latest ]
     runs-on: ${{ matrix.os }}
-    timeout-minutes: 180
+    timeout-minutes: 240
     env:
       ___X_CMD_GHACTION_X: x1
       ___X_CMD_PKG_VERSION: ${{ github.event.inputs.x-cmd-pkg-version }}
