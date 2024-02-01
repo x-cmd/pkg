@@ -55,5 +55,4 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
-            x pkg update
             x ws test-single
