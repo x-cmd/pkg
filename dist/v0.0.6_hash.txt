@@ -1,1 +1,1 @@
-e2afab45e39a6e1a635ea24b1e78820030bc4e9e1d97b946e62177091da704e8fff4dfe07ecc61a03c93e6b1095fbf02ef8a10bc5f0805b7079a82afb6d2135c  /home/lunrenyi/xcmd/x-cmd-pkg/dist/v0.0.6.tar.gz
+b0b6e670b46d27dd168aaa727bee0b8be8d63474f81203017bfc54e1e0c8dd3d1c610ac915691602a54321aa56eced5f78ce8e3574c496134a904948cd0e9427  /home/runner/work/pkg/pkg/ws/.tmp/../dist/v0.0.6.tar.gz
