@@ -26,7 +26,6 @@ main(){
             x cd .tmp/pkg
         fi
         x ws install
-        x pkg update
     ) || return 1
 
     (
