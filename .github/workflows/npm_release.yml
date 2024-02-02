@@ -24,7 +24,7 @@ jobs:
     env:
       ___X_CMD_PKG_BRANCH: ${{ github.event.inputs.x-cmd-pkg-version }}
       ___X_CMD_PKG_NAME: ${{ github.event.inputs.pkg_name }}
-      ___X_CMD_PKG_VERSION: ${{ github.event.inputs.pkg_version }}
+      ___X_CMD_PKG_VERSION_: ${{ github.event.inputs.pkg_version }}
       ___X_CMD_GHACTION_X: x1
       WEBHOOK_URL: ${{ secrets.ROBOT }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

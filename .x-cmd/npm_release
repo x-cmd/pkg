@@ -11,10 +11,10 @@ npm_release_main()(
         x cd .tmp/x-cmd-pkg || return
     fi
 
-    x ws npm_release "$___X_CMD_PKG_NAME"  "$___X_CMD_PKG_VERSION" || return
+    x ws npm_release "$___X_CMD_PKG_NAME"  "$___X_CMD_PKG_VERSION_" || return
 )
 
 x cd "$(x wsroot)"  || return
 x pkg update
-npm_release_main "${___X_CMD_PKG_VERSION:-v0.0.6}" || return
+npm_release_main "${___X_CMD_PKG_BRANCH:-v0.0.6}" || return
 
