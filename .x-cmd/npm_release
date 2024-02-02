@@ -15,5 +15,6 @@ npm_release_main()(
 )
 
 x cd "$(x wsroot)"  || return
+x pkg update
 npm_release_main "${___X_CMD_PKG_VERSION:-v0.0.6}" || return
 
