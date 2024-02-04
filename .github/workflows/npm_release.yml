@@ -1,5 +1,5 @@
 name: npm package release
-
+run-name: "Test single ( ${{github.event.inputs.pkg_name}} ${{github.event.inputs.pkg_version}})"
 on:
   # schedule:
   #   - cron: '0 18 * * *'
