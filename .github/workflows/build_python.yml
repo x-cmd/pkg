@@ -25,8 +25,8 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
-            git switch build_python
             git pull
+            git switch build_python
             x ws build_python
 
 
