@@ -1,4 +1,4 @@
-name: Bundle x-cmd pkg
+name: build_python
 
 on:
   # schedule:
