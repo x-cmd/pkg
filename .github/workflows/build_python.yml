@@ -1,0 +1,34 @@
+name: build_python
+
+on:
+  # schedule:
+  #   - cron: '0 18 * * *'
+  workflow_dispatch:
+
+jobs:
+  Bundle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      ___X_CMD_GHACTION_X: x1
+      WEBHOOK_URL: ${{ secrets.ROBOT }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
+      # git_user: agent-zero
+      # git_email: 0@x-cmd.com
+      ssh_key: ${{ secrets.SSH_PRIVATE_KEY_MNNNA }}
+      git_user: mnnna
+      git_email: zhengyuhang@x-cmd.com
+      CONCURRENCY: 10
+    steps:
+      - name: main
+        uses: x-cmd/action@main
+        with:
+          code: |
+            git pull
+            git switch build_python
+            git pull origin build_python
+            x ws build_python
+
+
+
