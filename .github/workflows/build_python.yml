@@ -27,6 +27,7 @@ jobs:
           code: |
             git pull
             git switch build_python
+            git pull origin build_python
             x ws build_python
 
 
