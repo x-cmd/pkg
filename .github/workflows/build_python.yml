@@ -7,8 +7,8 @@ on:
 
 jobs:
   Bundle:
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
+    runs-on: macos-latest
+    timeout-minutes: 30
     env:
       ___X_CMD_GHACTION_X: x1
       WEBHOOK_URL: ${{ secrets.ROBOT }}
