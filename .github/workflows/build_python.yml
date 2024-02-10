@@ -11,14 +11,15 @@ jobs:
     timeout-minutes: 30
     env:
       ___X_CMD_GHACTION_X: x1
+      # ___X_CMD_PKG_VERSION: ${{ github.event.inputs.x-cmd-pkg-version }}
+      # ___X_CMD_PKG_BRANCH: ${{ github.event.inputs.x-cmd-pkg-branch }}
+      # ___X_BASH_PKG_BRANCH: ${{ github.event.inputs.x-bash-pkg-branch }}
+      # ___X_BASH_ENV_BRANCH: ${{ github.event.inputs.x-bash-env-branch }}
       WEBHOOK_URL: ${{ secrets.ROBOT }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
-      # git_user: agent-zero
-      # git_email: 0@x-cmd.com
-      ssh_key: ${{ secrets.SSH_PRIVATE_KEY_MNNNA }}
-      git_user: mnnna
-      git_email: zhengyuhang@x-cmd.com
+      ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
+      git_user: agent-zero
+      git_email: 0@x-cmd.com
       CONCURRENCY: 10
     steps:
       - name: main
