@@ -8,7 +8,7 @@ on:
 jobs:
   Bundle:
     runs-on: macos-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
     env:
       ___X_CMD_GHACTION_X: x1
       # ___X_CMD_PKG_VERSION: ${{ github.event.inputs.x-cmd-pkg-version }}
