@@ -10,8 +10,8 @@ npm_release_main()(
         git clone --depth 1 git@github.com:x-cmd-pkg/x-cmd-pkg.git .tmp/x-cmd-pkg -b "$x_cmd_pkg_branch"
         x cd .tmp/x-cmd-pkg || return
     fi
-    x:warn "[done]"
     x ws npm_release "$___X_CMD_PKG_NAME"  "$___X_CMD_PKG_VERSION_" || return
+    x:info "Done!"
 )
 
 x cd "$(x wsroot)"  || return
