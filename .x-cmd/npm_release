@@ -7,7 +7,7 @@ npm_release_main()(
     if [ -d .tmp/x-cmd-pkg ]; then
         x cd .tmp/x-cmd-pkg && git switch "${x_cmd_pkg_branch}" && git pull
     else
-        git clone --depth 1 git@github.com:x-cmd-pkg/x-cmd-pkg.git .tmp/x-cmd-pkg -b "$x_cmd_pkg_branch"
+        git clone git@github.com:x-cmd-pkg/x-cmd-pkg.git .tmp/x-cmd-pkg -b "$x_cmd_pkg_branch"
         x cd .tmp/x-cmd-pkg || return
     fi
 
