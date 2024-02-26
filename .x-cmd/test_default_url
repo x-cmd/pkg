@@ -1,15 +1,17 @@
 # shellcheck shell=dash
+case "$___X_CMD_PKG___SOURCE" in
+    github) ___X_CMD_GHACTION_INSIDE=1  ;;
+    npm)    ___X_CMD_GHACTION_INSIDE=   ;;
+esac
 
 test_default_url_main()(
-
     x cd .tmp/x-cmd-pkg &&  \
     git branch --show-current && \
     x ws bundle && \
     x ws test_default_url "$___X_CMD_WEBSRC_REGION" && \
-    x ws test_default_url "cn" && \
     x cp -rf doc/* ../../doc/
 )
 
 x cd "$(x wsroot)"
 x ws prepare || return 1
-test_default_url_main "${___X_CMD_PKG_VERSION:-v0.0.6}"
+test_default_url_main "${___X_CMD_PKG___VERSION:-v0.0.6}"

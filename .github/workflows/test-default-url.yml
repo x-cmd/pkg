@@ -21,6 +21,10 @@ on:
         description: 'x-bash env branch'
         required: true
         default: 'main'
+      x-cmd-pkg-source:
+        description: 'x-cmd pkg source'
+        required: false
+        default: 'github'
 
 jobs:
   test-default-url:
@@ -28,8 +32,9 @@ jobs:
     timeout-minutes: 30
     env:
       ___X_CMD_GHACTION_X: x2
-      ___X_CMD_PKG_VERSION: ${{ github.event.inputs.x-cmd-pkg-version }}
-      ___X_CMD_PKG_BRANCH: ${{ github.event.inputs.x-cmd-pkg-branch }}
+      ___X_CMD_PKG___VERSION: ${{ github.event.inputs.x-cmd-pkg-version }}
+      ___X_CMD_PKG___BRANCH: ${{ github.event.inputs.x-cmd-pkg-branch }}
+      ___X_CMD_PKG___SOURCE: ${{ github.event.inputs.x-cmd-pkg-source }}
       ___X_BASH_PKG_BRANCH: ${{ github.event.inputs.x-bash-pkg-branch }}
       ___X_BASH_ENV_BRANCH: ${{ github.event.inputs.x-bash-env-branch }}
       WEBHOOK_URL: ${{ secrets.ROBOT }}
