@@ -8,11 +8,11 @@ bundle()(
     if [ -d .tmp ]; then
         x cd .tmp && git pull
     else
-        git clone git@github.com:x-cmd-pkg/x-cmd-pkg.git .tmp -b "${____X_CMD_PKG___BRANCH}" && \
+        git clone git@github.com:x-cmd-pkg/x-cmd-pkg.git .tmp -b "${___X_CMD_PKG___BRANCH}" && \
         x cd .tmp
     fi
 
-    x ws bundle --version "$x_cmd_pkg_version" "$x_cmd_pkg_version" -o ../dist
+    x ws bundle --version "$x_cmd_pkg_version" -o ../dist
 )
 
 bundle "${___X_CMD_PKG___VERSION}"
