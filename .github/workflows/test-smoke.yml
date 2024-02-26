@@ -1,5 +1,6 @@
 
 name: Test smoke
+run-name: Test smoke (source-${{github.event.inputs.x-cmd-pkg-source}})
 on:
   schedule:
     - cron: '0 12 * * 3,6'
