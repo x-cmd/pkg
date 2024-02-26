@@ -1,7 +1,7 @@
 # shellcheck shell=dash
 
 main(){
-    local x_cmd_pkg_branch="${___X_CMD_PKG_BRANCH:-main}"
+    local x_cmd_pkg_branch="${___X_CMD_PKG___BRANCH:-main}"
     local x_bash_pkg_branch="${___X_BASH_PKG_BRANCH:-main}"
     local x_bash_env_branch="${___X_BASH_ENV_BRANCH:-main}"
     x cd "$(x wsroot)"

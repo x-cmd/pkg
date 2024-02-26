@@ -1,7 +1,8 @@
 # shellcheck shell=dash
+___X_CMD_GHACTION_INSIDE=1
 
 npm_release_main()(
-    local x_cmd_pkg_branch="${1:-main}"
+    local x_cmd_pkg_branch="${1:-"v0.0.6"}"
 
     x:info "prepare x-cmd-pkg ${x_cmd_pkg_branch}"
     if [ -d .tmp/x-cmd-pkg ]; then
@@ -10,11 +11,11 @@ npm_release_main()(
         git clone --depth 1 git@github.com:x-cmd-pkg/x-cmd-pkg.git .tmp/x-cmd-pkg -b "$x_cmd_pkg_branch"
         x cd .tmp/x-cmd-pkg || return
     fi
-    x ws npm_release "$___X_CMD_PKG_NAME"  "$___X_CMD_PKG_VERSION_" || return
+    x ws npm_release "$___X_CMD_PKG___NAME"  "$___X_CMD_PKG___VERSION" || return
     x:info "Done!"
 )
 
 x cd "$(x wsroot)"  || return
 x pkg update
-npm_release_main "${___X_CMD_PKG_BRANCH:-v0.0.6}" || return
+npm_release_main "${___X_CMD_PKG___BRANCH}" || return
 

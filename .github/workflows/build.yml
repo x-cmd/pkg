@@ -20,8 +20,8 @@ jobs:
     timeout-minutes: 20
     env:
       ___X_CMD_GHACTION_X: x1
-      ___X_CMD_PKG_VERSION_: ${{ github.event.inputs.x-cmd-pkg-version }}
-      ___X_CMD_PKG_BRANCH: ${{ github.event.inputs.x-cmd-pkg-branch }}
+      ___X_CMD_PKG___VERSION: ${{ github.event.inputs.x-cmd-pkg-version }}
+      ___X_CMD_PKG___BRANCH: ${{ github.event.inputs.x-cmd-pkg-branch }}
       WEBHOOK_URL: ${{ secrets.ROBOT }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
@@ -36,7 +36,7 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
-            x ws bundle "$___X_CMD_PKG_VERSION_" && \
+            x ws bundle && \
             git pull && \
             x ws push pre_release
 

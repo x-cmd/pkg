@@ -1,18 +1,18 @@
 # shellcheck shell=dash
 
 bundle()(
-    local x_cmd_pkg_version="$1"
+    local x_cmd_pkg_version="${1:-"v0.0.6"}"
     x cd "$(x wsroot)"
 
     x:info "bundle package"
     if [ -d .tmp ]; then
         x cd .tmp && git pull
     else
-        git clone git@github.com:x-cmd-pkg/x-cmd-pkg.git .tmp -b "${___X_CMD_PKG_BRANCH}" && \
+        git clone git@github.com:x-cmd-pkg/x-cmd-pkg.git .tmp -b "${____X_CMD_PKG___BRANCH}" && \
         x cd .tmp
     fi
 
-    x ws bundle -o ../dist
+    x ws bundle --version "$x_cmd_pkg_version" -o ../dist
 )
 
-bundle "${1:-"v0.0.6"}"
+bundle "${___X_CMD_PKG___VERSION}"
