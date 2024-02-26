@@ -19,13 +19,13 @@
 |cloud/drive | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |cloud/firebase-tools | - | - | - | - | - |
 |cloud/flarectl | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|cloud/gcloud | ✅(167ms) | ✅(171ms) | ✅(146ms) | ✅(161ms) | ✅(166ms) |
+|cloud/gcloud | ✅(279ms) | ✅(272ms) | ✅(284ms) | ✅(277ms) | ✅(274ms) |
 |cloud/gobackup | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |cloud/hcloud | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |cloud/ibmcloud | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |cloud/influx | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |cloud/jdcloud_cli | - | - | - | - | - |
-|cloud/koocli | ✅(163ms) | ✅(165ms) | ✅(179ms) | ✅(157ms) | ✅(199ms) |
+|cloud/koocli | ✅(275ms) | ✅(288ms) | ✅(268ms) | ✅(262ms) | ✅(280ms) |
 |cloud/linode-cli | - | - | - | - | - |
 |cloud/oci-cli | - | - | - | - | - |
 |cloud/qingcloud-cli | - | - | - | - | - |
@@ -36,7 +36,7 @@
 |cloud/ucloud | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |cloud/vultr-cli | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |cloud/wrangler | - | - | - | - | - |
-|container/bwrap | ✅(174ms) | ✅(193ms) | ✅(89ms) | ✅(90ms) | ✅(88ms) |
+|container/bwrap | ✅(290ms) | ✅(264ms) | ✅(205ms) | ✅(211ms) | ✅(204ms) |
 |container/ctop | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |container/dive | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |container/docker | - | - | - | - | - |
@@ -51,7 +51,7 @@
 |container/minikube | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |container/slim | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |container/syft | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|data/7za | ✅(155ms) | ✅(172ms) | ✅(172ms) | ✅(157ms) | ✅(166ms) |
+|data/7za | ✅(198ms) | ✅(263ms) | ✅(268ms) | ✅(258ms) | ✅(264ms) |
 |data/7zz | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |data/ag | - | - | - | - | - |
 |data/brook | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
@@ -94,7 +94,7 @@
 |data/pdfminer | - | - | - | - | - |
 |data/pygments | - | - | - | - | - |
 |data/pypinyin | - | - | - | - | - |
-|data/qrencode | ✅(174ms) | ✅(185ms) | ✅(163ms) | ✅(155ms) | ✅(176ms) |
+|data/qrencode | ✅(266ms) | ✅(312ms) | ✅(306ms) | ✅(263ms) | ✅(263ms) |
 |data/readability-cli | - | - | - | - | - |
 |data/restic | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |data/rg | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
@@ -116,7 +116,7 @@
 |data/yq | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |data/ytt | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |data/zip | - | - | - | - | - |
-|data/zstd | ✅(172ms) | ✅(161ms) | ✅(188ms) | ✅(166ms) | ✅(192ms) |
+|data/zstd | ✅(277ms) | ✅(264ms) | ✅(270ms) | ✅(279ms) | ✅(243ms) |
 |db/anidbcli | - | - | - | - | - |
 |db/atuin | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |db/datasette | - | - | - | - | - |
@@ -130,7 +130,7 @@
 |db/mysql | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |db/pgcli | - | - | - | - | - |
 |db/psutilsql | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|db/sqlite3 | ✅(206ms) | ✅(246ms) | ✅(178ms) | ✅(177ms) | ✅(199ms) |
+|db/sqlite3 | ✅(274ms) | ✅(282ms) | ✅(264ms) | ✅(252ms) | ✅(269ms) |
 |db/xlsxsql | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |filesystem/bcrypt | - | - | - | - | - |
 |filesystem/broot | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
@@ -168,34 +168,34 @@
 |git/pre-commit | - | - | - | - | - |
 |git/soft-serve | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |git/tea | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|git/tig | ✅(186ms) | ✅(158ms) | ✅(179ms) | ✅(171ms) | ✅(81ms) |
+|git/tig | ✅(260ms) | ✅(260ms) | ✅(257ms) | ✅(272ms) | ✅(181ms) |
 |iac/ansible | - | - | - | - | - |
 |iac/heroku | - | - | - | - | - |
 |iac/pyinfra | - | - | - | - | - |
 |iac/python-openstackclient | - | - | - | - | - |
 |iac/scw | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|iac/terraform | ✅(175ms) | ✅(154ms) | ✅(165ms) | ✅(156ms) | ✅(149ms) |
+|iac/terraform | ✅(272ms) | ✅(251ms) | ✅(270ms) | ✅(264ms) | ✅(269ms) |
 |lang/bun | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|lang/deno | ✅(141ms) | ✅(78ms) | ✅(175ms) | ✅(165ms) | ✅(142ms) |
-|lang/go | ✅(127ms) | ✅(80ms) | ✅(73ms) | ✅(85ms) | ✅(65ms) |
+|lang/deno | ✅(248ms) | ✅(193ms) | ✅(268ms) | ✅(264ms) | ✅(260ms) |
+|lang/go | ✅(192ms) | ✅(99ms) | ✅(106ms) | ✅(110ms) | ✅(104ms) |
 |lang/goreleaser | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |lang/groovy | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|lang/java | ✅(1434ms) | ✅(977ms) | ✅(879ms) | ✅(943ms) | ✅(1384ms) |
-|lang/julia | ✅(51ms) | ✅(39ms) | ✅(34ms) | ✅(40ms) | ✅(39ms) |
+|lang/java | ✅(1140ms) | ✅(747ms) | ✅(762ms) | ✅(799ms) | ✅(865ms) |
+|lang/julia | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |lang/kotlin | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|lang/lua | ❌(404)| ❌(404)| ✅(141ms) | ✅(129ms) | ❌(404)|
-|lang/mawk | ✅(172ms) | ✅(89ms) | ✅(162ms) | ✅(149ms) | ✅(171ms) |
-|lang/node | ✅(160ms) | ✅(157ms) | ✅(164ms) | ✅(161ms) | ✅(61ms) |
+|lang/lua | ❌(404)| ❌(404)| ✅(127ms) | ✅(125ms) | ❌(404)|
+|lang/mawk | ✅(269ms) | ✅(202ms) | ✅(255ms) | ✅(261ms) | ✅(286ms) |
+|lang/node | ✅(257ms) | ✅(257ms) | ✅(278ms) | ✅(257ms) | ✅(168ms) |
 |lang/perl | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|lang/python | ✅(63ms) | ✅(97ms) | ✅(69ms) | ✅(76ms) | ✅(79ms) |
+|lang/python | ✅(177ms) | ✅(161ms) | ✅(123ms) | ✅(101ms) | ✅(92ms) |
 |lang/raku | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |lang/rust | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |lang/scala | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |lang/ts-node | - | - | - | - | - |
 |lang/tsx | - | - | - | - | - |
-|lang/wasmer | ✅(175ms) | ✅(173ms) | ✅(146ms) | ✅(191ms) | ✅(164ms) |
+|lang/wasmer | ✅(270ms) | ✅(260ms) | ✅(240ms) | ✅(253ms) | ✅(302ms) |
 |lang/wasmtime | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|lang/zig | ✅(167ms) | ✅(167ms) | ✅(184ms) | ✅(194ms) | ✅(172ms) |
+|lang/zig | ✅(263ms) | ✅(244ms) | ✅(260ms) | ✅(255ms) | ✅(261ms) |
 |lint/oxlint | - | - | - | - | - |
 |lint/shellcheck | - | - | - | - | - |
 |linter/alex | - | - | - | - | - |
@@ -218,6 +218,7 @@
 |linter/revive | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |linter/ruff | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |linter/sqlfluff | - | - | - | - | - |
+|linter/sqlfmt | - | - | - | - | - |
 |linter/typos | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |linter/vale | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |linter/vulture | - | - | - | - | - |
@@ -229,9 +230,9 @@
 |multimedia/carbon-now-cli | - | - | - | - | - |
 |multimedia/editly | - | - | - | - | - |
 |multimedia/face_recognition | - | - | - | - | - |
-|multimedia/ffmpeg | ✅(195ms) | ✅(161ms) | ✅(154ms) | ✅(166ms) | ✅(156ms) |
+|multimedia/ffmpeg | ✅(273ms) | ✅(265ms) | ✅(274ms) | ✅(255ms) | ✅(252ms) |
 |multimedia/gifski | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|multimedia/magick | ✅(176ms) | ✅(150ms) | ✅(156ms) | ✅(165ms) | ✅(78ms) |
+|multimedia/magick | ✅(279ms) | ✅(278ms) | ✅(267ms) | ✅(290ms) | ✅(193ms) |
 |multimedia/mermaid-cli | - | - | - | - | - |
 |multimedia/mystmd | - | - | - | - | - |
 |multimedia/ocrmypdf | - | - | - | - | - |
@@ -241,8 +242,8 @@
 |multimedia/termsvg | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |multimedia/themer | - | - | - | - | - |
 |multimedia/video-to-ascii | - | - | - | - | - |
-|network/aria2 | ✅(175ms) | ✅(158ms) | ✅(155ms) | ✅(93ms) | ✅(179ms) |
-|network/bandwhich | ✅(171ms) | ✅(171ms) | ✅(209ms) | ✅(152ms) | ✅(79ms) |
+|network/aria2 | ✅(282ms) | ✅(277ms) | ✅(265ms) | ✅(196ms) | ✅(277ms) |
+|network/bandwhich | ✅(295ms) | ✅(246ms) | ✅(256ms) | ✅(288ms) | ✅(203ms) |
 |network/benthos | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |network/bore | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |network/chisel | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
@@ -268,18 +269,18 @@
 |network/miniserve | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |network/mitmproxy | - | - | - | - | - |
 |network/mkcert | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|network/mosquitto | ✅(157ms) | ✅(164ms) | ✅(163ms) | ✅(168ms) | ✅(168ms) |
-|network/ncat | ✅(191ms) | ✅(97ms) | ✅(167ms) | ✅(159ms) | ❌(404)|
-|network/nmap | ✅(173ms) | ✅(169ms) | ✅(162ms) | ✅(158ms) | ✅(87ms) |
-|network/nping | ✅(159ms) | ✅(167ms) | ✅(169ms) | ✅(165ms) | ✅(90ms) |
+|network/mosquitto | ✅(263ms) | ✅(255ms) | ✅(254ms) | ✅(249ms) | ✅(275ms) |
+|network/ncat | ✅(280ms) | ✅(193ms) | ✅(334ms) | ✅(274ms) | ❌(404)|
+|network/nmap | ✅(288ms) | ✅(305ms) | ✅(282ms) | ✅(272ms) | ✅(191ms) |
+|network/nping | ✅(271ms) | ✅(258ms) | ✅(261ms) | ✅(255ms) | ✅(192ms) |
 |network/public-ip-cli | - | - | - | - | - |
 |network/q | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|network/socat | ✅(169ms) | ✅(172ms) | ✅(156ms) | ✅(187ms) | ✅(96ms) |
+|network/socat | ✅(299ms) | ✅(270ms) | ✅(271ms) | ✅(278ms) | ✅(191ms) |
 |network/speedtest-cli | - | - | - | - | - |
 |network/t-get | - | - | - | - | - |
 |network/termshark | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |network/tproxy | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|network/traceroute | ✅(166ms) | ✅(97ms) | ✅(89ms) | ✅(84ms) | ✅(88ms) |
+|network/traceroute | ✅(268ms) | ✅(193ms) | ✅(194ms) | ✅(181ms) | ✅(180ms) |
 |network/ttyd | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |network/websocat | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |network/webtorrent-cli | - | - | - | - | - |
@@ -292,7 +293,7 @@
 |osman/bed | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |osman/cfssl | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |osman/dry | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|osman/easyrsa | ✅(171ms) | ✅(158ms) | ✅(151ms) | ✅(164ms) | ✅(88ms) |
+|osman/easyrsa | ✅(281ms) | ✅(252ms) | ✅(302ms) | ✅(260ms) | ✅(191ms) |
 |osman/etcd | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |osman/fkill-cli | - | - | - | - | - |
 |osman/git-chglog | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
@@ -313,42 +314,42 @@
 |plugin/sqlite-simple | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |plugin/sqlite-vss | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |plugin/sqlite-xsv | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|plugin/zsh-plugin | ✅(173ms) | ✅(97ms) | ✅(96ms) | ✅(79ms) | ✅(87ms) |
+|plugin/zsh-plugin | ✅(286ms) | ✅(205ms) | ✅(204ms) | ✅(191ms) | ✅(206ms) |
 |python/bowler | - | - | - | - | - |
 |python/cruft | - | - | - | - | - |
-|python/miniconda | ✅(62ms) | ✅(74ms) | ✅(80ms) | ✅(70ms) | ✅(49ms) |
+|python/miniconda | ✅(115ms) | ✅(119ms) | ✅(95ms) | ✅(93ms) | ✅(91ms) |
 |python/pipx | - | - | - | - | - |
-|python/pypy | ✅(113ms) | ✅(83ms) | ✅(89ms) | ✅(126ms) | ✅(66ms) |
+|python/pypy | ✅(105ms) | ✅(1341ms) | ✅(56ms) | ✅(97ms) | ✅(57ms) |
 |python/pywal | - | - | - | - | - |
 |python/xonsh | - | - | - | - | - |
 |sdkman/activemq | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |sdkman/ant | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |sdkman/ballerina | ❌(403)| ❌(403)| ❌(403)| ❌(403)| ❌(403)|
 |sdkman/bpipe | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|sdkman/btrace | ✅(178ms) | ✅(80ms) | ✅(98ms) | ✅(78ms) | ✅(79ms) |
+|sdkman/btrace | ✅(276ms) | ✅(194ms) | ✅(193ms) | ✅(192ms) | ✅(204ms) |
 |sdkman/concurnas | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |sdkman/connor | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|sdkman/coursier | ✅(169ms) | ✅(79ms) | ✅(166ms) | ✅(89ms) | ✅(155ms) |
+|sdkman/coursier | ✅(263ms) | ✅(193ms) | ✅(235ms) | ✅(206ms) | ✅(264ms) |
 |sdkman/cxf | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|sdkman/doctoolchain | ✅(182ms) | ✅(88ms) | ✅(82ms) | ✅(89ms) | ✅(89ms) |
+|sdkman/doctoolchain | ✅(274ms) | ✅(180ms) | ✅(192ms) | ✅(192ms) | ✅(193ms) |
 |sdkman/flink | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|sdkman/gaiden | ✅(168ms) | ✅(78ms) | ✅(88ms) | ✅(97ms) | ✅(87ms) |
+|sdkman/gaiden | ✅(279ms) | ✅(194ms) | ✅(194ms) | ✅(193ms) | ✅(205ms) |
 |sdkman/gradle | ❌(301)| ❌(301)| ❌(301)| ❌(301)| ❌(301)|
-|sdkman/grails | ✅(167ms) | ✅(98ms) | ✅(89ms) | ✅(91ms) | ✅(80ms) |
+|sdkman/grails | ✅(278ms) | ✅(195ms) | ✅(193ms) | ✅(191ms) | ✅(182ms) |
 |sdkman/groovyserv | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |sdkman/hadoop | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |sdkman/infrastructor | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|sdkman/jbake | ✅(182ms) | ✅(91ms) | ✅(81ms) | ✅(78ms) | ✅(82ms) |
+|sdkman/jbake | ✅(257ms) | ✅(193ms) | ✅(194ms) | ✅(181ms) | ✅(190ms) |
 |sdkman/jmeter | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |sdkman/karaf | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|sdkman/ki | ✅(210ms) | ✅(96ms) | ✅(79ms) | ✅(90ms) | ✅(90ms) |
-|sdkman/kobweb | ✅(164ms) | ✅(111ms) | ✅(88ms) | ✅(83ms) | ✅(85ms) |
-|sdkman/kscript | ✅(176ms) | ✅(78ms) | ✅(79ms) | ✅(98ms) | ✅(90ms) |
+|sdkman/ki | ✅(265ms) | ✅(195ms) | ✅(206ms) | ✅(194ms) | ✅(205ms) |
+|sdkman/kobweb | ✅(283ms) | ✅(192ms) | ✅(203ms) | ✅(206ms) | ✅(193ms) |
+|sdkman/kscript | ✅(263ms) | ✅(203ms) | ✅(207ms) | ✅(179ms) | ✅(191ms) |
 |sdkman/ktx | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |sdkman/layrry | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |sdkman/maven | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |sdkman/mcs | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|sdkman/micronaut | ✅(158ms) | ✅(79ms) | ✅(155ms) | ✅(90ms) | ✅(189ms) |
+|sdkman/micronaut | ✅(261ms) | ✅(192ms) | ✅(268ms) | ✅(206ms) | ✅(267ms) |
 |sdkman/mulefd | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |sdkman/mvnd | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |sdkman/mybatis_migrations | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
@@ -361,27 +362,27 @@
 |sdkman/skeletal | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |sdkman/spark | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |sdkman/toolkit | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|sdkman/visualvm | ✅(164ms) | ✅(96ms) | ✅(87ms) | ✅(81ms) | ✅(89ms) |
+|sdkman/visualvm | ✅(269ms) | ✅(181ms) | ✅(192ms) | ✅(192ms) | ✅(207ms) |
 |security/certbot | - | - | - | - | - |
 |security/cmctl | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |security/dnstwist | - | - | - | - | - |
 |security/lynis | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|security/openssl | ✅(154ms) | ✅(161ms) | ✅(154ms) | ✅(159ms) | ✅(147ms) |
+|security/openssl | ✅(280ms) | ✅(276ms) | ✅(278ms) | ✅(264ms) | ✅(312ms) |
 |security/osquery | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |security/shodan | - | - | - | - | - |
 |security/skate | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|security/smartctl | ✅(176ms) | ✅(145ms) | ✅(163ms) | ✅(171ms) | ✅(173ms) |
+|security/smartctl | ✅(262ms) | ✅(258ms) | ✅(256ms) | ✅(290ms) | ✅(253ms) |
 |security/snyk | - | - | - | - | - |
-|security/sodium | ✅(182ms) | ✅(164ms) | ✅(167ms) | ✅(167ms) | ✅(164ms) |
+|security/sodium | ✅(330ms) | ✅(272ms) | ✅(282ms) | ✅(282ms) | ✅(273ms) |
 |security/stegcloak | - | - | - | - | - |
 |security/trivy | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |security/zoomeye | - | - | - | - | - |
 |shell/bash-preexec | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |shell/bashhub | - | - | - | - | - |
 |shell/bat | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|shell/busybox | ✅(177ms) | ✅(98ms) | ✅(80ms) | ✅(88ms) | ✅(175ms) |
+|shell/busybox | ✅(282ms) | ✅(191ms) | ✅(204ms) | ✅(192ms) | ✅(286ms) |
 |shell/cppman | - | - | - | - | - |
-|shell/exa | ✅(186ms) | ✅(160ms) | ✅(145ms) | ✅(154ms) | ✅(170ms) |
+|shell/exa | ✅(283ms) | ✅(317ms) | ✅(265ms) | ✅(258ms) | ✅(278ms) |
 |shell/eza | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |shell/fastly | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |shell/funky | - | - | - | - | - |
@@ -399,7 +400,7 @@
 |shell/starship | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |shell/usql | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |shell/zoxide | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
-|shell/zsh | ✅(162ms) | ✅(152ms) | ✅(163ms) | ✅(166ms) | ✅(159ms) |
+|shell/zsh | ✅(273ms) | ✅(247ms) | ✅(253ms) | ✅(247ms) | ✅(263ms) |
 |ssh/assh | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |ssh/ssh-audit | - | - | - | - | - |
 |ssh/xxh-xxh | - | - | - | - | - |
@@ -449,13 +450,13 @@
 |terminal/peco | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
 |terminal/percol | - | - | - | - | - |
 |terminal/rebound-cli | - | - | - | - | - |
-|terminal/shtris | ✅(153ms) | ✅(91ms) | ✅(80ms) | ✅(98ms) | ✅(87ms) |
+|terminal/shtris | ✅(279ms) | ✅(192ms) | ✅(193ms) | ✅(191ms) | ✅(206ms) |
 |terminal/sncli | - | - | - | - | - |
 |terminal/taskbook | - | - | - | - | - |
 |terminal/td-cli | - | - | - | - | - |
 |terminal/terminal-image-cli | - | - | - | - | - |
 |terminal/thefuck | - | - | - | - | - |
-|terminal/tmux | ✅(158ms) | ✅(92ms) | ✅(163ms) | ✅(212ms) | ✅(173ms) |
+|terminal/tmux | ✅(280ms) | ✅(192ms) | ✅(251ms) | ✅(265ms) | ✅(256ms) |
 |terminal/tmuxp | - | - | - | - | - |
 |terminal/ulp | - | - | - | - | - |
 |terminal/vhs | ❌(404)| ❌(404)| ❌(404)| ❌(404)| ❌(404)|
