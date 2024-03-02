@@ -6,7 +6,7 @@ esac
 
 test_xbin_main()(
     x cd .tmp/x-cmd-pkg && \
-    x ws bundle && x ws install && \
+    x ws bundle && \
     x ws test_smoke "$___X_CMD_WEBSRC_REGION" && \
     x cp -rf doc/* ../../doc/
 )
