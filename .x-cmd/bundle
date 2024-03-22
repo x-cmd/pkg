@@ -1,7 +1,7 @@
 # shellcheck shell=dash
 
 bundle()(
-    local x_cmd_pkg_version="${1:-"v0.0.7"}"
+    local x_cmd_pkg_version="${1:-"v0.0.8"}"
     x cd "$(x wsroot)"
 
     x:info "bundle package"
