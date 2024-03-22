@@ -2,19 +2,21 @@
 
 bundle()(
     local x_cmd_pkg_version="${1:-"v0.0.8"}"
-    x cd "$(x wsroot)"
+    local root_path="$(x wsroot)"
+    x cd "$root_path"
     x:info "bundle package"
     (
         git clone git@github.com:x-cmd-pkg/x-cmd-pkg.git .tmp -b "${___X_CMD_PKG___BRANCH}" && \
         x cd .tmp
-        x ws bundle --version "$x_cmd_pkg_version" -o "$(x wsroot)/dist"
+        x ws bundle --version "$x_cmd_pkg_version" -o "$root_path/dist"
     )
     x:info "push package"
     (
         git clone git@github.com:x-cmd-pkg/release .release && \
         x cd .release
-        x mv "$(x wsroot)/dist/${x_cmd_pkg_version}.tar.gz" "$(x wsroot)/.release/dist/${x_cmd_pkg_version}.tar.gz"
-        x mv "$(x wsroot)/dist/${x_cmd_pkg_version}_hash.txt" "$(x wsroot)/.release/dist/${x_cmd_pkg_version}_hash.txt"
+        x mv "$root_path/dist/${x_cmd_pkg_version}.tar.gz" "$root_path/.release/dist/${x_cmd_pkg_version}.tar.gz"
+        x mv "$root_path/dist/${x_cmd_pkg_version}_hash.txt" "$root_path/.release/dist/${x_cmd_pkg_version}_hash.txt"
+        git add .
         git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
         git push git@github.com:x-cmd-pkg/release main
     )
