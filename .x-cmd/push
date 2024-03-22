@@ -38,12 +38,12 @@ case "$1" in
         #     x:info "release gitcode"
         # ) || return
         #     x rmrf pkg
-        (
-            git clone git@gitee.com:x-cmd/pkg
-            ___x_cmd_release_push || return
-            git push git@gitee.com:x-cmd/pkg main
-            x:info "release gitee"
-        ) || return
+        # (
+        #     git clone git@gitee.com:x-cmd/pkg
+        #     ___x_cmd_release_push || return
+        #     git push git@gitee.com:x-cmd/pkg main
+        #     x:info "release gitee"
+        # ) || return
 
             ;;
 
