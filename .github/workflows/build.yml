@@ -36,9 +36,5 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
-            x ws bundle && \
-            git pull && \
-            x ws push pre_release
-
-
+            x ws bundle
 

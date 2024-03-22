@@ -12,12 +12,6 @@ ___x_cmd_release_push(){
 x cd "$(x wsroot)" || return 1
 
 case "$1" in
-    pre_release)
-        x rmrf .github/workflows
-        git add "$(x wsroot)"
-        git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
-        git push -f git@github.com:x-cmd-pkg/release main
-        ;;
     fabu)
         [ -n "$___X_CMD_PKG_RELEASE_VERSION" ] || return
         git clone git@github.com:x-cmd-pkg/release
