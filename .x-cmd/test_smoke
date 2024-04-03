@@ -16,4 +16,4 @@ x ws prepare || {
     x:info "Use prepare failed"
     return 1
 }
-test_xbin_main "${___X_CMD_PKG___VERSION:-v0.0.8}"
+test_xbin_main "${___X_CMD_PKG___VERSION:-v0.0.9}"
