@@ -9,11 +9,11 @@ on:
       x-cmd-pkg-version:
         description: 'x-cmd pkg version'
         required: true
-        default: 'v0.0.9'
+        default: 'v0.1.0'
       x-cmd-pkg-branch:
         description: 'x-cmd pkg branch'
         required: true
-        default: 'v0.0.9'
+        default: 'v0.1.0'
       x-bash-pkg-branch:
         description: 'x-bash pkg branch'
         required: true
