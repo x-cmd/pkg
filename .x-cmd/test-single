@@ -11,7 +11,7 @@ x ws prepare || {
     return 1
 }
 
-___X_CMD_PKG_VERSION="${___X_CMD_PKG___VERSION:-v0.0.9}"
+___X_CMD_PKG_VERSION="${___X_CMD_PKG___VERSION:-v0.1.0}"
 x pkg update
 x:info "test single main"
 x cd .tmp/x-cmd-pkg && \

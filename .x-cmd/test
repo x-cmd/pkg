@@ -6,7 +6,7 @@ return 1
 # Test default url
 
 echo '{
-    "x-cmd-pkg-version":"v0.0.9",
+    "x-cmd-pkg-version":"v0.1.0",
     "x-cmd-pkg-branch":"main",
     "x-bash-pkg-branch":"main",
     "x-bash-env-branch":"main"
@@ -16,7 +16,7 @@ echo '{
 # Test xbin
 
 echo '{
-    "x-cmd-pkg-version":"v0.0.9",
+    "x-cmd-pkg-version":"v0.1.0",
     "x-cmd-pkg-branch":"main",
     "x-bash-pkg-branch":"main",
     "x-bash-env-branch":"main"
@@ -26,7 +26,7 @@ echo '{
 # Test smoke
 
 echo '{
-    "x-cmd-pkg-version":"v0.0.9",
+    "x-cmd-pkg-version":"v0.1.0",
     "x-cmd-pkg-branch":"main",
     "x-bash-pkg-branch":"main",
     "x-bash-env-branch":"main"
