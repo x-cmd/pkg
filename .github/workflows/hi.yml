@@ -1,0 +1,33 @@
+name: hi
+
+on:
+  # schedule:
+  #   - cron: '0 18 * * *'
+  workflow_dispatch:
+    # inputs:
+    #   x-cmd-pkg-version:
+    #     description: 'x-cmd pkg version'
+    #     required: true
+    #     default: 'v0.1.1'
+    #   x-cmd-pkg-branch:
+    #     description: 'x-cmd pkg branch'
+    #     required: true
+    #     default: 'v0.1.1'
+
+jobs:
+  Bundle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      CONCURRENCY: 10
+      # ___X_CMD_GHACTION_X: x1
+      ssh_key: ${{ secrets.SSH_PRIVATE_KEY_PKG }}
+      github_token: ${{ secrets.X_GITHUB_TOKEN }}
+      git_user: agent-zero
+      git_email: 0@x-cmd.com
+    steps:
+      - name: main
+        uses: x-cmd/action@v0
+        with:
+          code: |
+            x cowsay hello
