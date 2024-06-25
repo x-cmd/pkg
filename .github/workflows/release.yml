@@ -16,7 +16,7 @@ jobs:
     timeout-minutes: 20
     env:
       ___X_CMD_PKG_RELEASE_VERSION: ${{ github.event.inputs.x-cmd-pkg-version }}
-      ___X_CMD_GHACTION_X: x7
+      ___X_CMD_GHACTION_X: x6
       WEBHOOK_URL: ${{ secrets.ROBOT }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
@@ -24,7 +24,7 @@ jobs:
       # git_email: 0@x-cmd.com
       ssh_key: ${{ secrets.SSH_PRIVATE_KEY_PKG }}
       git_user: lunrenyi
-      git_email: 2863854515@qq.com
+      git_email: liaoxuanbin@x-cmd.com
       CONCURRENCY: 10
     steps:
       - name: main

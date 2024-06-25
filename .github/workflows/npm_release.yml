@@ -22,7 +22,7 @@ jobs:
       ___X_CMD_PKG___BRANCH: ${{ github.event.inputs.x-cmd-pkg-version }}
       ___X_CMD_PKG___NAME: ${{ github.event.inputs.pkg_name }}
       ___X_CMD_PKG___VERSION: ${{ github.event.inputs.pkg_version }}
-      ___X_CMD_GHACTION_X: x7
+      ___X_CMD_GHACTION_X: x6
       WEBHOOK_URL: ${{ secrets.ROBOT }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
@@ -31,7 +31,7 @@ jobs:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN_MNNNA }}
       ssh_key: ${{ secrets.SSH_PRIVATE_KEY_PKG }}
       git_user: lunrenyi
-      git_email: 2863854515@qq.com
+      git_email: liaoxuanbin@x-cmd.com
       CONCURRENCY: 10
     steps:
       - name: main
