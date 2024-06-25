@@ -29,7 +29,7 @@ jobs:
       # git_email: 0@x-cmd.com
       ssh_key: ${{ secrets.SSH_PRIVATE_KEY_PKG }}
       git_user: lunrenyi
-      git_email: liaoxuanbin@x-cmd.com
+      git_email: 2863854515@qq.com
       CONCURRENCY: 10
     steps:
       - name: main
