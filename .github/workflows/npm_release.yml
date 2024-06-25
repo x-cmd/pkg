@@ -28,7 +28,7 @@ jobs:
       # ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
       # git_user: agent-zero
       # git_email: 0@x-cmd.com
-      NPM_TOKEN: ${{ secrets.NPM_TOKEN_MNNNA }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN_PKG }}
       ssh_key: ${{ secrets.SSH_PRIVATE_KEY_PKG }}
       git_user: lunrenyi
       git_email: liaoxuanbin@x-cmd.com
