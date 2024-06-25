@@ -8,13 +8,18 @@ jobs:
     runs-on: ubuntu-latest
     env:
       CONCURRENCY: 10
-      ssh_key: ${{ secrets.SSH_PRIVATE_KEY_PKG }}
-      # ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
-      git_user: lunrenyi
-      git_email: liaoxuanbin@x-cmd.com
+      ___X_CMD_GHACTION_X: x6
+      # ssh_key: ${{ secrets.SSH_PRIVATE_KEY_PKG }} # 我的 ssh private key 无法使用这个 github action
+      # git_user: lunrenyi
+      # git_email: liaoxuanbin@x-cmd.com
+      ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}       # 这个是 agent-zero 账户的 ssh key，能正常 work
+      git_user: agent-zero
+      git_email: 0@x-cmd.com
+
     steps:
       - name: main
         uses: x-cmd/action@v0
         with:
           code: |
             x cowsay hello
+
