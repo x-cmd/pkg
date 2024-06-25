@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       CONCURRENCY: 10
-      # ssh_key: ${{ secrets.SSH_PRIVATE_KEY_PKG }}
-      ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
+      ssh_key: ${{ secrets.SSH_PRIVATE_KEY_PKG }}
+      # ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
       git_user: lunrenyi
       git_email: liaoxuanbin@x-cmd.com
     steps:
