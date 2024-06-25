@@ -29,7 +29,7 @@ jobs:
       # git_user: agent-zero
       # git_email: 0@x-cmd.com
       NPM_TOKEN: ${{ secrets.NPM_TOKEN_MNNNA }}
-      ssh_key: ${{ secrets.SSH_PRIVATE_KEY_MNNNA }}
+      ssh_key: ${{ secrets.SSH_PRIVATE_KEY_PKG }}
       git_user: mnnna
       git_email: zhengyuhang@x-cmd.com
       CONCURRENCY: 10

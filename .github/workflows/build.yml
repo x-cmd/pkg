@@ -27,7 +27,7 @@ jobs:
       # ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
       # git_user: agent-zero
       # git_email: 0@x-cmd.com
-      ssh_key: ${{ secrets.SSH_PRIVATE_KEY_MNNNA }}
+      ssh_key: ${{ secrets.SSH_PRIVATE_KEY_PKG }}
       git_user: mnnna
       git_email: zhengyuhang@x-cmd.com
       CONCURRENCY: 10
