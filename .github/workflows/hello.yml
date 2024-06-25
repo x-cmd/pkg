@@ -19,22 +19,16 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
-      # ___X_CMD_GHACTION_X: x6
-      ___X_CMD_PKG___VERSION: ${{ github.event.inputs.x-cmd-pkg-version }}
-      ___X_CMD_PKG___BRANCH: ${{ github.event.inputs.x-cmd-pkg-branch }}
-      WEBHOOK_URL: ${{ secrets.ROBOT }}
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
-      # git_user: agent-zero
-      # git_email: 0@x-cmd.com
-      ssh_key: ${{ secrets.SSH_PRIVATE_KEY_PKG }}
-      git_user: lunrenyi
-      git_email: liaoxuanbin@x-cmd.com
       CONCURRENCY: 10
+      # ___X_CMD_GHACTION_X: x1
+      ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
+      github_token: ${{ secrets.X_GITHUB_TOKEN }}
+      git_user: agent-zero
+      git_email: 0@x-cmd.com
     steps:
       - name: main
-        uses: x-cmd/action@main
+        uses: x-cmd/action@v0
         with:
           code: |
-            x ws bundle
+            x cowsay hello
 
