@@ -25,6 +25,6 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
-            [ -n "$WEB_DATA_PKG_QYWX_BOT" ] || x:warn "Bug"
+            x log +qywx
             x qywx --cfg webhook='$WEB_DATA_PKG_QYWX_BOT'
             x ws gen-webdata || return
