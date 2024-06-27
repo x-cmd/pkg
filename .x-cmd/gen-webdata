@@ -10,6 +10,7 @@ gen_web_data()(
     x env use bun || return
     x ws gen_web_data
 
+    x log +qywx
     x qywx --cfg webhook="$WEB_DATA_PKG_QYWX_BOT"
     x ws push_official_doc_data || {
         x qywx --send --markdown "
