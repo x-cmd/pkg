@@ -10,17 +10,18 @@ gen_web_data()(
     x env use bun || return
     x ws gen_web_data
 
-    x log +qywx
-    x qywx --cfg webhook="$WEB_DATA_PKG_QYWX_BOT"
-    x ws push_official_doc_data || {
-        x qywx --send --markdown "
-        ## ❌ 官网数据生成失败 （$(date -d "8 hour" +%Y-%m-%d\ %H:%M:%S)）: [详情](https://github.com/x-cmd/pkg/actions/workflows/gen-webdata.yml)
-        "
-        return 1
-    }
-    x qywx --send --markdown "
-        ## ✅ 官网数据生成成功 （$(date -d "8 hour" +%Y-%m-%d\ %H:%M:%S)）
-    "
+    x qywx --cfg webhook="https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=56382cff-a02a-4f5e-b054-4201dac3582a"
+    x qywx --send --markdown "test: $WEB_DATA_PKG_QYWX_BOT"
+
+    # x ws push_official_doc_data || {
+    #     x qywx --send --markdown "
+    #     ## ❌ 官网数据生成失败 （$(date -d "8 hour" +%Y-%m-%d\ %H:%M:%S)）: [详情](https://github.com/x-cmd/pkg/actions/workflows/gen-webdata.yml)
+    #     "
+    #     return 1
+    # }
+    # x qywx --send --markdown "
+    #     ## ✅ 官网数据生成成功 （$(date -d "8 hour" +%Y-%m-%d\ %H:%M:%S)）
+    # "
 )
 
 gen_web_data
