@@ -14,6 +14,7 @@ jobs:
     env:
       ___X_CMD_GHACTION_X: x6
       WEBHOOK_URL: ${{ secrets.ROBOT }}
+      WEB_DATA_PKG_QYWX_BOT: ${{ secrets.WEB_DATA_PKG_QYWX_BOT }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
       git_user: agent-zero
@@ -24,5 +25,5 @@ jobs:
         uses: x-cmd/action@main
         with:
           code: |
-            x qywx --cfg webhook='${{ secrets.WEB_DATA_PKG_QYWX_BOT }}'
+            x qywx --cfg webhook='$WEB_DATA_PKG_QYWX_BOT'
             x ws gen-webdata || return
