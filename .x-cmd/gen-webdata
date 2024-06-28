@@ -4,22 +4,25 @@ gen_web_data()(
 
     x:info "generate web data"
 
-    git clone git@github.com:x-cmd-pkg/x-cmd-pkg.git .tmp && \
-    x cd .tmp
+    # git clone git@github.com:x-cmd-pkg/x-cmd-pkg.git .tmp && \
+    # x cd .tmp
 
-    x env use bun || return
-    x ws gen_web_data
+    # x env use bun || return
+    # x ws gen_web_data
 
-    x qywx --cfg webhook="$WEB_DATA_PKG_QYWX_BOT"
-    x ws push_official_doc_data || {
-        x qywx --send --markdown "
-        ## ❌ 官网数据生成失败 （$(date -d "8 hour" +%Y-%m-%d\ %H:%M:%S)）: [详情](https://github.com/x-cmd/pkg/actions/workflows/gen-webdata.yml)
-        "
-        return 1
-    }
-    x qywx --send --markdown "
-        ## ✅ 官网数据生成成功 （$(date -d "8 hour" +%Y-%m-%d\ %H:%M:%S)）
-    "
+    x qywx --cfg webhook="https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=b67b4fa1-e323-4f11-a37e-a0179115abe2"
+    x qywx --send --markdown "test"
+
+    # x qywx --cfg webhook="$WEB_DATA_PKG_QYWX_BOT"
+    # x ws push_official_doc_data || {
+    #     x qywx --send --markdown "
+    #     ## ❌ 官网数据生成失败 （$(date -d "8 hour" +%Y-%m-%d\ %H:%M:%S)）: [详情](https://github.com/x-cmd/pkg/actions/workflows/gen-webdata.yml)
+    #     "
+    #     return 1
+    # }
+    # x qywx --send --markdown "
+    #     ## ✅ 官网数据生成成功 （$(date -d "8 hour" +%Y-%m-%d\ %H:%M:%S)）
+    # "
 )
 
 gen_web_data
