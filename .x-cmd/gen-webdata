@@ -12,8 +12,11 @@ gen_web_data()(
     x log +qywx +http +curl
     (
 
-        O=___X_BASH_HTTP_post x qywx --cfg webhook='https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=b67b4fa1-e323-4f11-a37e-a0179115abe2'
-        O=___X_BASH_HTTP_post x qywx --send --markdown "test"
+        x dict size
+        x dict free
+        x dict size
+        x qywx --cfg webhook='https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=b67b4fa1-e323-4f11-a37e-a0179115abe2'
+        x qywx --send --markdown "test"
     )
 
     # x qywx --cfg webhook="$WEB_DATA_PKG_QYWX_BOT"
