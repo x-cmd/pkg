@@ -10,7 +10,7 @@ gen_web_data()(
     # x env use bun || return
     # x ws gen_web_data
     x log +qywx
-    x qywx --cfg webhook="https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=b67b4fa1-e323-4f11-a37e-a0179115abe2"
+    x qywx --cfg webhook='https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=b67b4fa1-e323-4f11-a37e-a0179115abe2'
     curl 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=b67b4fa1-e323-4f11-a37e-a0179115abe2' \
    -H 'Content-Type: application/json' \
    -d '
@@ -21,7 +21,7 @@ gen_web_data()(
         }
    }'
 
-    # x qywx --send --markdown "test"
+    x qywx --send --markdown "test"
 
     # x qywx --cfg webhook="$WEB_DATA_PKG_QYWX_BOT"
     # x ws push_official_doc_data || {
