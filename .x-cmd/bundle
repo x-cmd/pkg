@@ -15,13 +15,23 @@ bundle()(
     x:info "push package"
     (
         x:info "clone git@github.com:x-cmd-pkg/release -b main"
-        git clone git@github.com:x-cmd-pkg/release .release && \
-        x cd .release
-        x mv "$root_path/.tmp/dist/${x_cmd_pkg_version}.tar.gz" "$root_path/.release/dist/${x_cmd_pkg_version}.tar.gz"
-        x mv "$root_path/.tmp/dist/${x_cmd_pkg_version}_hash.txt" "$root_path/.release/dist/${x_cmd_pkg_version}_hash.txt"
+        git clone git@github.com:x-cmd-pkg/release .release_gh && \
+        x cd .release_gh
+        x cp "$root_path/.tmp/dist/${x_cmd_pkg_version}.tar.gz" "$root_path/.release_gh/dist/${x_cmd_pkg_version}.tar.gz"
+        x cp "$root_path/.tmp/dist/${x_cmd_pkg_version}_hash.txt" "$root_path/.release_gh/dist/${x_cmd_pkg_version}_hash.txt"
         git add .
         git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
         git push git@github.com:x-cmd-pkg/release main
+    )
+    (
+        x:info "clone git@codeberg.org:x-cmd-pkg/release.git -b main"
+        git clone git@codeberg.org:x-cmd-pkg/release.git .release_cb && \
+        x cd .release_cb
+        x mv "$root_path/.tmp/dist/${x_cmd_pkg_version}.tar.gz" "$root_path/.release_cb/dist/${x_cmd_pkg_version}.tar.gz"
+        x mv "$root_path/.tmp/dist/${x_cmd_pkg_version}_hash.txt" "$root_path/.release_cb/dist/${x_cmd_pkg_version}_hash.txt"
+        git add .
+        git commit -m "update pkg bundle package by $GITHUB_RUN_NUMBER"
+        git push git@codeberg.org:x-cmd-pkg/release main
     )
     x:info "Finish"
 )
