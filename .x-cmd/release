@@ -24,6 +24,11 @@ release()(
     local oss_pkg="${oss_home}/res/data/x-cmd/pkg/dist"
     (
         ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no "$oss_host" 'echo hello'
+        ssh "$oss_host" 'echo hello-2'
+        # ssh res@world.hub.x-cmd.com "rm -rf ${oss_path}/${x_cmd_pkg_version}.tar.gz"
+        # ssh res@world.hub.x-cmd.com "rm -rf ${ssh_path}/${x_cmd_pkg_version}_hash.txt"
+        # scp "release/dist/${x_cmd_pkg_version}.tar.gz" "res@world.hub.x-cmd.com:${ssh_path}/"
+        # scp "release/dist/${x_cmd_pkg_version}_hash.txt" "res@world.hub.x-cmd.com:${ssh_path}/"
         # ssh res@world.hub.x-cmd.com 'cd $HOME/res && . $HOME/.x-cmd.root/X && x ws upload_pkg'
     ) || return
     x:info "Finish"
