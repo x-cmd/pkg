@@ -30,7 +30,8 @@ release()(
             -r ./pkg.tmp "${oss_host}:${oss_pkg}/"
         ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no \
             "$oss_host" "mv ${oss_pkg}/pkg.tmp/${x_cmd_pkg_version}.tar.gz ${oss_pkg}/ && mv ${oss_pkg}/pkg.tmp/${x_cmd_pkg_version}_hash.txt ${oss_pkg}/ && rm -rf  ${oss_pkg}/pkg.tmp"
-        ssh res@world.hub.x-cmd.com 'cd $HOME/res && . $HOME/.x-cmd.root/X && x ws upload_pkg'
+        ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no \
+            "$oss_host"  'cd $HOME/res && . $HOME/.x-cmd.root/X && x ws upload_pkg'
     ) || return
     x:info "Finish"
 )
