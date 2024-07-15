@@ -7,7 +7,7 @@ release()(
     x cd "$root_path"
 
     x:info "clone git@github.com:x-cmd-pkg/release.git"
-    # git clone git@github.com:x-cmd-pkg/release || returns
+    git clone git@github.com:x-cmd-pkg/release || returns
 
     # x:info "Release on github."
     # (
