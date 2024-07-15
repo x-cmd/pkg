@@ -9,15 +9,15 @@ release()(
     x:info "clone git@github.com:x-cmd-pkg/release.git"
     git clone git@github.com:x-cmd-pkg/release || returns
 
-    # x:info "Release on github."
-    # (
-    #     x cp -f release/dist/"${x_cmd_pkg_version}".tar.gz   ./dist/"${x_cmd_pkg_version}".tar.gz   || return
-    #     x cp -f release/dist/"${x_cmd_pkg_version}_hash.txt" ./dist/"${x_cmd_pkg_version}_hash.txt" || return
-    #     git add "$(x wsroot)/dist"
-    #     git commit -m "update pkg bundle package by github.com/x-cmd-pkg/release"
-    #     git push git@github.com:x-cmd/pkg main
-    #     x:info "release github"
-    # ) || return
+    x:info "Release on github."
+    (
+        x cp -f release/dist/"${x_cmd_pkg_version}".tar.gz   ./dist/"${x_cmd_pkg_version}".tar.gz   || return
+        x cp -f release/dist/"${x_cmd_pkg_version}_hash.txt" ./dist/"${x_cmd_pkg_version}_hash.txt" || return
+        git add "$(x wsroot)/dist"
+        git commit -m "update pkg bundle package by github.com/x-cmd-pkg/release"
+        git push git@github.com:x-cmd/pkg main
+        x:info "release github"
+    ) || return
     x:info "Release on oss."
     local oss_host="res@world.hub.x-cmd.com"
     local oss_home="/home/res"
@@ -30,7 +30,7 @@ release()(
             -r ./pkg.tmp "${oss_host}:${oss_pkg}/"
         ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no \
             "$oss_host" "mv ${oss_pkg}/pkg.tmp/${x_cmd_pkg_version}.tar.gz ${oss_pkg}/ && mv ${oss_pkg}/pkg.tmp/${x_cmd_pkg_version}_hash.txt ${oss_pkg}/ && rm -rf  ${oss_pkg}/pkg.tmp"
-        # ssh res@world.hub.x-cmd.com 'cd $HOME/res && . $HOME/.x-cmd.root/X && x ws upload_pkg'
+        ssh res@world.hub.x-cmd.com 'cd $HOME/res && . $HOME/.x-cmd.root/X && x ws upload_pkg'
     ) || return
     x:info "Finish"
 )
