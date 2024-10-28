@@ -27,6 +27,6 @@ jobs:
         #     x cowsay hi
         run: |
           curl https://get.x-cmd.com
-          git --verison
-          git clone git@github.com:x-cmd/x-cmd.git
+          git --version
+          git clone https://github.com/x-cmd/x-cmd.git
 
