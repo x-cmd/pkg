@@ -35,7 +35,5 @@ jobs:
 
           echo 'Run ==> git config --global credential.provider generic'
           git config --global credential.provider generic
-          echo 'Test ==> git clone https://github.com/x-cmd/x6.git'
-          git clone https://github.com/x-cmd/x6.git
           echo 'Test ==> eval "$(curl "https://raw.githubusercontent.com/x-cmd/get/main/x6")"'
           eval "$(curl "https://raw.githubusercontent.com/x-cmd/get/main/x6")"
