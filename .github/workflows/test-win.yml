@@ -21,7 +21,9 @@ jobs:
       CONCURRENCY: 10
     steps:
       - name: main
-        uses: x-cmd/action@main
-        with:
-          code: |
-            x cowsay hi
+        # uses: x-cmd/action@main
+        # with:
+        #   code: |
+        #     x cowsay hi
+        run: |
+          eval "$(curl https://get.x-cmd.com)"
