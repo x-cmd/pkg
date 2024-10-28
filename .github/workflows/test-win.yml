@@ -12,7 +12,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     timeout-minutes: 10
     env:
-      ___X_CMD_GHACTION_X: x1
+      ___X_CMD_GHACTION_X: latest
       WEBHOOK_URL: ${{ secrets.ROBOT }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
@@ -21,20 +21,20 @@ jobs:
       CONCURRENCY: 10
     steps:
       - name: main
-        # uses: x-cmd/action@main
-        # with:
-        #   code: |
-        #     x cowsay hi
-        shell: bash
-        run: |
-          bash --version
-          curl -s https://raw.githubusercontent.com/x-cmd/action/main/lib/index.sh > ~/xghaction
-          echo "1=========="
-          . ~/xghaction init || return 1
-          echo "2=========="
-          . ~/xghaction run || return 1
-          echo "3=========="
-          x version
+        uses: x-cmd/action@main
+        with:
+          code: |
+            x cowsay hi
+        # shell: bash
+        # run: |
+        #   bash --version
+        #   curl -s https://raw.githubusercontent.com/x-cmd/action/main/lib/index.sh > ~/xghaction
+        #   echo "1=========="
+        #   . ~/xghaction init || return 1
+        #   echo "2=========="
+        #   . ~/xghaction run || return 1
+        #   echo "3=========="
+        #   x version
 
 
 
