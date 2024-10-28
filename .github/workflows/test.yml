@@ -22,6 +22,7 @@ jobs:
       CONCURRENCY: 10
     steps:
       - name: main
+        shell: bash
         run: |
           bash --version
           printf "%s\n" "ssh: loding ssh-agent and create ~/.ssh and add known_hosts"
