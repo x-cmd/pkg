@@ -1,0 +1,57 @@
+if [ -n "$ZSH_VERSION" ]; then
+# `command cd` will not execute buildin command `cd` in zsh, refer: https://linux.die.net/man/1/zshbuiltins
+___x_cmd_inner_cd(){
+    builtin cd "$@" || return
+}
+
+else
+
+___x_cmd_inner_cd(){
+    command cd "$@" || return
+}
+
+fi
+
+___x_cmd_get_setupscript(){
+    ___X_CMD_ROOT="${___X_CMD_ROOT:-"$HOME/.x-cmd.root"}";
+    command mkdir -p "$___X_CMD_ROOT/v";
+
+    ___X_CMD_VERSION="${1:?Provide version}";
+
+    (
+        ___x_cmd_inner_cd "$___X_CMD_ROOT/v";
+
+        if [ ! -d "$___X_CMD_VERSION" ]; then
+            command git clone -c core.autocrlf=false "${___X_CMD_GET_GITPROVIDER:-"git@github.com:"}x-cmd/$___X_CMD_VERSION.git";
+        else
+            printf "%s\n" "- I|x: Already exists: $PWD/$___X_CMD_VERSION" >&2;
+            ___x_cmd_inner_cd "$___X_CMD_VERSION";
+            if [ "$(command git status -s | command wc -l)" -ne 0 ]; then
+                command git status -s;
+                command git stash;
+                command git clean -fd;
+            fi;
+
+            command git pull origin "$(command git branch --show-current)";
+        fi;
+    ) || return 1;
+
+    (
+        ___X_CMD_WEBSRC_REGION=cn;
+        ___X_CMD_ROOT_CODE=;
+        ___X_CMD_ROOT_MOD=;
+        ___X_CMD_XRC_RELOAD=1;
+        . "$___X_CMD_ROOT/v/$___X_CMD_VERSION/X";
+        ___x_cmd boot init;
+    );
+
+    if [ -z "$___X_CMD_ROOT_MOD" ]; then
+        ___X_CMD_ROOT_CODE=;
+        . "$___X_CMD_ROOT/v/$___X_CMD_VERSION/X";
+    elif [ "${-#*i}" != "$-" ]; then
+        printf "%s\n" "- I|x: x-cmd detected in current shell env. Opening a new shell to avoid collision." >&2;
+        ___X_CMD_ROOT_CODE= ___X_CMD_ROOT="$___X_CMD_ROOT" ___X_CMD_VERSION="$___X_CMD_VERSION" "${SHELL:-/bin/sh}";
+    fi;
+};
+
+___x_cmd_get_setupscript "${XX:-x2}";

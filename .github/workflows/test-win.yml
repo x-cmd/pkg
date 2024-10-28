@@ -26,7 +26,13 @@ jobs:
         #   code: |
         #     x cowsay hi
         run: |
-          curl https://get.x-cmd.com
-          git --version
-          git clone https://github.com/x-cmd/x-cmd.git
+          bash
+          curl -s https://raw.githubusercontent.com/x-cmd/action/main/lib/index.sh > ~/xghaction
+          echo "1=========="
+          . ~/xghaction init
+          echo "2=========="
+          . ~/xghaction run
+          echo "3=========="
+
+
 
