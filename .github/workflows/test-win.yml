@@ -29,9 +29,9 @@ jobs:
         run: |
           curl -s https://raw.githubusercontent.com/x-cmd/action/main/lib/index.sh > ~/xghaction
           echo "1=========="
-          . ~/xghaction init
+          . ~/xghaction init || return 1
           echo "2=========="
-          . ~/xghaction run
+          . ~/xghaction run || return 1
           echo "3=========="
           x version
 
