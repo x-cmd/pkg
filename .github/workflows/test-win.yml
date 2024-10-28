@@ -25,14 +25,16 @@ jobs:
         # with:
         #   code: |
         #     x cowsay hi
+        shell: bash
         run: |
-          bash
           curl -s https://raw.githubusercontent.com/x-cmd/action/main/lib/index.sh > ~/xghaction
           echo "1=========="
           . ~/xghaction init
           echo "2=========="
           . ~/xghaction run
           echo "3=========="
+          x version
+
 
 
 
