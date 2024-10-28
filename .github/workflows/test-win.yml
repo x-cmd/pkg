@@ -12,7 +12,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     timeout-minutes: 10
     env:
-      ___X_CMD_GHACTION_X: latest
+      ___X_CMD_GHACTION_X: x6
       WEBHOOK_URL: ${{ secrets.ROBOT }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       ssh_key: ${{ secrets.SSH_PRIVATE_KEY }}
@@ -21,21 +21,27 @@ jobs:
       CONCURRENCY: 10
     steps:
       - name: main
-        uses: x-cmd/action@main
-        with:
-          code: |
-            x cowsay hi
-        # shell: bash
-        # run: |
-        #   bash --version
-        #   curl -s https://raw.githubusercontent.com/x-cmd/action/main/lib/index.sh > ~/xghaction
-        #   echo "1=========="
-        #   . ~/xghaction init || return 1
-        #   echo "2=========="
-        #   . ~/xghaction run || return 1
-        #   echo "3=========="
-        #   x version
+        # uses: x-cmd/action@main
+        # with:
+        #   code: |
+        #     x cowsay hi
+        shell: bash
+        run: |
+          bash --version
+          printf "%s\n" "ssh: loding ssh-agent and create ~/.ssh and add known_hosts"
 
+          eval "$(ssh-agent)"
+          mkdir -p ~/.ssh
 
+          curl -s https://raw.githubusercontent.com/x-cmd/knownhost/main/dist/all.txt >> ~/.ssh/known_hosts
 
+          [ -z "$ssh_key" ] && return
 
+          printf "%s\n" "$ssh_key" >> ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/known_hosts ~/.ssh/id_rsa
+          ssh-add ~/.ssh/id_rsa
+
+          echo 'Test ==> git clone https://github.com/x-cmd/x-cmd.git'
+          git clone https://github.com/x-cmd/x-cmd.git
+          echo 'Test ==> eval "$(curl "https://raw.githubusercontent.com/x-cmd/get/main/x6")"'
+          eval "$(curl "https://raw.githubusercontent.com/x-cmd/get/main/x6")"
