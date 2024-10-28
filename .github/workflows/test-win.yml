@@ -27,6 +27,7 @@ jobs:
         #     x cowsay hi
         shell: bash
         run: |
+          bash --version
           curl -s https://raw.githubusercontent.com/x-cmd/action/main/lib/index.sh > ~/xghaction
           echo "1=========="
           . ~/xghaction init || return 1
