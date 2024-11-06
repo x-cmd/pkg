@@ -36,5 +36,5 @@ jobs:
           ssh -T git@github.com || true
           git --version
           printf "================||=======================\n\n"
-          choco install git -y
-          GIT_TRACE=1 GIT_SSH_COMMAND="ssh -v" command git clone -c core.autocrlf=false "git@github.com:x-cmd/x6.git"
+          git config --global core.sshCommand "'C:\Windows\System32\OpenSSH\ssh.exe'"
+          command git clone -c core.autocrlf=false "git@github.com:x-cmd/x6.git"
