@@ -35,6 +35,6 @@ jobs:
 
           ssh -T git@github.com || true
           git --version
-          which scoop winget choco || true
-          winget install --id Git.Git -e --source winget
+          printf "================||=======================\n\n"
+          choco install git -y
           GIT_TRACE=1 GIT_SSH_COMMAND="ssh -v" command git clone -c core.autocrlf=false "git@github.com:x-cmd/x6.git"
