@@ -39,5 +39,5 @@ jobs:
           git config --global credential.provider generic
           echo 'Run ==> export GPG_TTY=$(tty)'
           export GPG_TTY=$(tty)
-          echo 'Test ==> eval "$(curl "https://raw.githubusercontent.com/x-cmd/get/main/x6")"'
-          yes Y|eval "$(curl "https://raw.githubusercontent.com/x-cmd/get/main/x6")"
+          echo 'Test ==> eval "$(curl "https://raw.githubusercontent.com/x-cmd/get/main/latest")"'
+          yes Y|eval "$(curl "https://raw.githubusercontent.com/x-cmd/get/main/latest")"
