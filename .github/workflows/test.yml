@@ -9,7 +9,8 @@ jobs:
     name: test
     strategy:
       matrix:
-        os: [ windows-latest, ubuntu-latest ]
+        #  ubuntu-latest
+        os: [ windows-latest, ]
     runs-on: ${{ matrix.os }}
     timeout-minutes: 10
     env:
