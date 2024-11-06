@@ -9,8 +9,7 @@ jobs:
     name: test
     strategy:
       matrix:
-        #  ubuntu-latest
-        os: [ windows-latest, ]
+        os: [ windows-latest, ubuntu-latest ]
     runs-on: ${{ matrix.os }}
     timeout-minutes: 10
     env:
@@ -39,5 +38,5 @@ jobs:
           git config --global credential.provider generic
           echo 'Run ==> export GPG_TTY=$(tty)'
           export GPG_TTY=$(tty)
-          echo 'Test ==> eval "$(curl "https://raw.githubusercontent.com/x-cmd/get/main/latest")"'
-          yes Y|eval "$(curl "https://raw.githubusercontent.com/x-cmd/get/main/latest")"
+          echo 'Test ==> eval "$(curl "https://raw.githubusercontent.com/x-cmd/get/main/alpha")"'
+          eval "$(curl "https://raw.githubusercontent.com/x-cmd/get/main/alpha")"
