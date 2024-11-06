@@ -38,5 +38,6 @@ jobs:
           git config --global credential.provider generic
           echo 'Run ==> export GPG_TTY=$(tty)'
           export GPG_TTY=$(tty)
-          echo 'Test ==> eval "$(curl "https://raw.githubusercontent.com/x-cmd/get/main/alpha")"'
-          eval "$(curl "https://raw.githubusercontent.com/x-cmd/get/main/alpha")"
+          # echo 'Test ==> eval "$(curl "https://raw.githubusercontent.com/x-cmd/get/main/alpha")"'
+          # eval "$(curl "https://raw.githubusercontent.com/x-cmd/get/main/alpha")"
+          command git clone -c core.autocrlf=false "git@github.com:x-cmd/x6.git"
