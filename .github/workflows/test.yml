@@ -40,4 +40,5 @@ jobs:
           export GPG_TTY=$(tty)
           # echo 'Test ==> eval "$(curl "https://raw.githubusercontent.com/x-cmd/get/main/alpha")"'
           # eval "$(curl "https://raw.githubusercontent.com/x-cmd/get/main/alpha")"
-          command git clone -c core.autocrlf=false "git@github.com:x-cmd/x6.git"
+          ssh -T git@github.com
+          GIT_TRACE=1 GIT_SSH_COMMAND="ssh -v" command git clone -c core.autocrlf=false "git@github.com:x-cmd/x6.git"
