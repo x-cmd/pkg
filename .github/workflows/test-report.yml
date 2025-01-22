@@ -26,7 +26,7 @@ jobs:
         with:
           code: |
             x qywx --cfg webhook='${{ secrets.WEBHOOK_URL }}'
-            x qywx --send --markdown "$(date), test failed"
+            x qywx send --markdown "$(date), test failed"
   on-success:
     runs-on: ubuntu-latest
     timeout-minutes: 10
