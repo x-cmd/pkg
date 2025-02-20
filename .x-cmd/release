@@ -1,7 +1,7 @@
 # shellcheck shell=dash
 
 release()(
-    local x_cmd_pkg_version="${1:-"v0.1.1"}"
+    local x_cmd_pkg_version="${1:-"v0.1.2"}"
     local root_path="$(x wsroot)"
     x:info "run cmd -> x cd $root_path"
     x cd "$root_path"

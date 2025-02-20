@@ -2,7 +2,7 @@
 ___X_CMD_GHACTION_INSIDE=1
 
 npm_release_main()(
-    local x_cmd_pkg_branch="${1:-"v0.1.1"}"
+    local x_cmd_pkg_branch="${1:-"v0.1.2"}"
 
     x:info "prepare x-cmd-pkg ${x_cmd_pkg_branch}"
     if [ -d .tmp/x-cmd-pkg ]; then
