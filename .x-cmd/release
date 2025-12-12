@@ -20,7 +20,7 @@ release()(
     ) || return
 
     x:info "Release on oss."
-    local oss_host="res@world.hub.x-cmd.com"
+    local oss_host="res@47.113.145.63"
     local oss_home="/home/res"
     local oss_pkg="${oss_home}/res/data/x-cmd/pkg/dist"
     (
