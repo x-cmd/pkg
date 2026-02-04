@@ -2,10 +2,10 @@
 name: gen web_data
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '00 7 * * *'   # 15
-    - cron: '00 10 * * *'  # 18
-    - cron: '00 18 * * *'  # 2
+  # schedule:
+  #   - cron: '00 7 * * *'   # 15
+  #   - cron: '00 10 * * *'  # 18
+  #   - cron: '00 18 * * *'  # 2
 
 jobs:
   Bundle:
