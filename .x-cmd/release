@@ -7,7 +7,7 @@ release()(
     x cd "$root_path"
 
     x:info "clone git@github.com:x-cmd-pkg/release.git"
-    git clone git@github.com:x-cmd-pkg/release || returns
+    git clone git@github.com:x-cmd-pkg/release || return
 
     x:info "Release on github."
     (
@@ -20,22 +20,110 @@ release()(
     ) || return
 
     x:info "Release on oss."
-    local oss_host="res@47.113.145.63"
-    local oss_home="/home/res"
-    local oss_pkg="${oss_home}/res/data/x-cmd/pkg/dist"
     (
-        x mkdirp ./pkg.tmp/
-        x cp  "release/dist/${x_cmd_pkg_version}.tar.gz" ./pkg.tmp/
-        x cp  "release/dist/${x_cmd_pkg_version}_hash.txt" ./pkg.tmp/
-        scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no \
-            -r ./pkg.tmp "${oss_host}:${oss_pkg}/"
-        ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no \
-            "$oss_host" "mv ${oss_pkg}/pkg.tmp/${x_cmd_pkg_version}.tar.gz ${oss_pkg}/ && mv ${oss_pkg}/pkg.tmp/${x_cmd_pkg_version}_hash.txt ${oss_pkg}/ && rm -rf  ${oss_pkg}/pkg.tmp"
-        ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no \
-            "$oss_host"  'cd $HOME/res && . $HOME/.x-cmd.root/X && x ws upload_pkg'
+        x pkg update
+        x env try rclone aliyun
+
+        x:info "Prepare upload directory"
+        x mkdirp ./data/x-cmd/pkg/dist/
+        x cp "release/dist/${x_cmd_pkg_version}.tar.gz" ./data/x-cmd/pkg/dist/
+        x cp "release/dist/${x_cmd_pkg_version}_hash.txt" ./data/x-cmd/pkg/dist/
+
+        x:info "Configure rclone"
+        x touch .tmp/rclone.conf
+        cat > .tmp/rclone.conf << EOF
+[oss]
+type = s3
+provider = Alibaba
+env_auth = false
+access_key_id = ${ALIYUN_ACCESS_KEY_ID}
+secret_access_key = ${ALIYUN_ACCESS_KEY_SECRET}
+region = oss-cn-heyuan
+endpoint = oss-cn-heyuan.aliyuncs.com
+acl = private
+EOF
+
+        x:info "Upload to OSS"
+        x rclone -vvvv copy ./data/ oss:x-cmd-resource/ \
+            --include "/x-cmd/pkg/dist/**" \
+            --s3-acl public-read \
+            --config .tmp/rclone.conf
+
+        x:info "Configure aliyun"
+        release_config_aliyun
+
+        x:info "Refresh CDN cache"
+        x aliyun \
+            --profile akProfile cdn RefreshObjectCaches \
+            --ObjectType Directory \
+            --ObjectPath https://oss.resource.x-cmd.com/
+
     ) 1>&2 >/dev/null || return
 
     x:info "Finish"
 )
+
+release_config_aliyun(){
+    x touch ~/.aliyun/config.json
+    x jq -n \
+    --arg id "$ALIYUN_ACCESS_KEY_ID" \
+    --arg secret "$ALIYUN_ACCESS_KEY_SECRET" \
+    '{
+    current: "akProfile",
+    profiles: [
+        ({
+        name: "default",
+        mode: "AK",
+        access_key_id: $id,
+        access_key_secret: $secret,
+        sts_token: "",
+        sts_region: "",
+        ram_role_name: "",
+        ram_role_arn: "",
+        ram_session_name: "",
+        source_profile: "",
+        private_key: "",
+        key_pair_name: "",
+        expired_seconds: 0,
+        verified: "",
+        region_id: "cn-shenzhen",
+        output_format: "json",
+        language: "en",
+        site: "",
+        retry_timeout: 0,
+        connect_timeout: 0,
+        retry_count: 0,
+        process_command: "",
+        credentials_uri: ""
+        } | .name = "default"),
+        ({
+        name: "akProfile",
+        mode: "AK",
+        access_key_id: $id,
+        access_key_secret: $secret,
+        sts_token: "",
+        sts_region: "",
+        ram_role_name: "",
+        ram_role_arn: "",
+        ram_session_name: "",
+        source_profile: "",
+        private_key: "",
+        key_pair_name: "",
+        expired_seconds: 0,
+        verified: "",
+        region_id: "cn-shenzhen",
+        output_format: "json",
+        language: "en",
+        site: "",
+        retry_timeout: 0,
+        connect_timeout: 0,
+        retry_count: 0,
+        process_command: "",
+        credentials_uri: ""
+        } | .name = "akProfile")
+    ],
+    meta_path: ""
+    }' > ~/.aliyun/config.json
+}
 
 release "$___X_CMD_PKG_RELEASE_VERSION"
